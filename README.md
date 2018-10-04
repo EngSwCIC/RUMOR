@@ -1,24 +1,5 @@
-# README
+![Rumor Logo](app/assets/images/rumor-logo.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O RUMOR é um aplicativo que se propõe a aproximar e conectar usuários do RU da Universidade de Brasília.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Acreditamos em uma universidade mais engajada e conectada, em que os próprios alunos colocam a mão na massa para impactar o próprio meio e melhorá-la.
