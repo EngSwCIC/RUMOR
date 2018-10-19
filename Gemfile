@@ -39,7 +39,17 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
+  # Gems added by Thiago Luis on Oct 19th for BDD purpouses
+  gem	'cucumber-rails' 
+  gem	'cucumber-rails-training-wheels'	#	some	pre-fabbed	step	definitions
+  gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
+  gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
+  gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
 end
+
+group	:test,	:development	do 
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
