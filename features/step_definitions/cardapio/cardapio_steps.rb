@@ -1,13 +1,9 @@
 require 'uri'
 require 'cgi'
-require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
-require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "selectors"))
+require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "paths"))
+require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 
-Dado /^que (?:|eu )estou logado como "(.+)"$/ do |email|
-  visit path_to("página de login")
-  fill_in "Email", with: email
-  fill_in "Senha", with: "senha123"
-  click_button "Log in"
+Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao|
 end
 
 

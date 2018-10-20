@@ -8,14 +8,14 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
   Eu quero criar um cardápio
 
   Cenário: Gestor criar um cardápio[Cenário - Feliz]
-    Dado que eu estou logado
+    Dado que eu estou logado como gestor
     E que eu estou na página de criar cardápio
     E que eu preencho os campos adequadamente.
     Quando eu clicar em "Criar Cadápio"
     Então eu quero ser redirecionado para a página de cardápios
   
   Cenário: Gestor criar um cardápio[Cenário - Triste]
-    Dado que eu estou logado
+    Dado que eu estou logado como gestor
     E que eu estou na página de criar cardápio
     E que eu preencho os campos inadequadamente.
     Quando eu clicar em "Criar Cadápio"
