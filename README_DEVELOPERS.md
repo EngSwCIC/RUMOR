@@ -24,3 +24,10 @@ After that if you have problems with your bundler ruby version being different f
 **$ sudo gem install bundler**
 
 
+After that to install cucumber run:
+ **rails generate cucumber:install capybara**
+ **rails generate cucumber_rails_training_wheels:install**
+
+ Then you must update your database. 
+ **rails db:migrate**
+ **rails db:test:prepare**
