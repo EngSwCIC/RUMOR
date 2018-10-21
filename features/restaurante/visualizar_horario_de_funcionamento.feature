@@ -1,7 +1,7 @@
 #language: pt
 #encoding: utf-8
 
-Funcionalidade Eu, enquanto usuário, consigo visualizar o horário de funcionamento do RU 
+Funcionalidade: Eu, enquanto usuário, consigo visualizar o horário de funcionamento do RU 
 
 Cenário de Fundo
 Dado que eu estou na página de visualização do cardápio consultado
