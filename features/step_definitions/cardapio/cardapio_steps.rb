@@ -10,31 +10,25 @@ end
 Quando /^(?:|eu )visito a (.+)$/ do |page_name|
 end
 
-Quando /^(?:|eu )clicar em "([^"]*)"$/ do |text|
-  click_link text
+Quando /^(?:|eu )clico em "([^"]*)"$/ do |text|
 end
 
 Quando /^(?:|eu )selecionar (?:|a |o )([^"]*) como "([^"]*)"$/ do |selection_id, option_name|
 end
 
-Dado /^que (?:|eu )adiciono o arquivo (.+)$/  do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+Dado /^que (?:|eu )adiciono o arquivo de "(.+)"$/  do |string|
 end
+
 
 Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
-    
-end
   
-Dado /^(?:|eu )preencher os campos adequadamente.$/ do
-  pending # Write code here that turns the phrase above into concrete actions
 end
 
-Dado /^(?:|eu )preencher os campos inadequadamente.$/ do
-  pending # Write code here that turns the phrase above into concrete actions
+
+E /^(?:|que )(?:|eu )preencho os campos adequadamente.$/ do
 end
 
-E /^que (?:|eu )estou na (.+)$/ do |page_name|
-    
+Dado /^(?:|que )(?:|eu )preencho os campos inadequadamente.$/ do
 end
 
 Então /^(?:|eu )deveria ver "([^"]*)"$/ do |text|
@@ -52,6 +46,5 @@ end
 Então /^(?:|eu )não quero ser redirecionado para ([^"]*)$/ do |page_name|
 end
 
-Então /^(?:|eu )uma mensagem de erro deve aparecer $/ do
-  pending # Write code here that turns the phrase above into concrete actions
+E  /^uma mensagem de erro deve aparecer$/ do
 end
