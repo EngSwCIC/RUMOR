@@ -1,7 +1,6 @@
 #language: pt
 #encoding: utf-8
 
-loginFacebook.feature
 Funcionalidade: Eu, enquanto usuário, consigo fazer login no Facebook para compartilhar o cardápio
 
 Cenário de Fundo:

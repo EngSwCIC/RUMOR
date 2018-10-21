@@ -1,9 +1,11 @@
-visualizarLocalizacao.feature 
-Funcionalidade Eu, enquanto usu·rio, consigo visualizar a localizaÁ„o 
+#language: pt
+#encoding: utf-8
 
-Cen·rio de Fundo:
-Dado que eu estou na p·gina de visualizaÁ„o do card·pio consultado
+Funcionalidade Eu, enquanto usu√°rio, consigo visualizar a localiza√ß√£o 
 
-Cen·rio Usu·rio visualiza as informaÁıes do RU do campus de entrada
-	Quando eu clico em ìLocalizaÁ„o e Hor·riosî
-Ent„o eu devo entrar na p·gina de visualizaÁ„o da localizaÁ„o do Campus selecionado
+Cen√°rio de Fundo:
+Dado que eu estou na p√°gina de visualiza√ß√£o do card√°pio consultado
+
+Cen√°rio Usu√°rio visualiza as informa√ß√µes do RU do campus de entrada
+	Quando eu clico em "Localiza√ß√£o e Hor√°rios"
+Ent√£o eu devo entrar na p√°gina de visualiza√ß√£o da localiza√ß√£o do Campus selecionado

@@ -1,4 +1,5 @@
-avaliarCardapio.feature
+#language: pt
+#encoding: utf-8
 
 Funcionalidade: Eu, enquanto usuário, consigo avaliar um cardápio.
 

@@ -1,8 +1,11 @@
-Funcionalidade Eu, enquanto usu·rio, consigo visualizar o hor·rio de funcionamento do RU 
+#language: pt
+#encoding: utf-8
 
-Cen·rio de Fundo
-Dado que eu estou na p·gina de visualizaÁ„o do card·pio consultado
+Funcionalidade Eu, enquanto usu√°rio, consigo visualizar o hor√°rio de funcionamento do RU 
 
-Cen·rio Usu·rio visualiza as informaÁıes do RU do campus de entrada
-	Quando eu clico em ìHor·riosî
-Ent„o eu devo entrar na p·gina de visualizaÁ„o dos hor·rios de funcionamento do Campus selecionado
+Cen√°rio de Fundo
+Dado que eu estou na p√°gina de visualiza√ß√£o do card√°pio consultado
+
+Cen√°rio Usu√°rio visualiza as informa√ß√µes do RU do campus de entrada
+	Quando eu clico em "Hor√°rios"
+Ent√£o eu devo entrar na p√°gina de visualiza√ß√£o dos hor√°rios de funcionamento do Campus selecionado
