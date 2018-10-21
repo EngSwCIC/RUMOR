@@ -7,7 +7,7 @@ Funcionalidade: sign_in
   Eu quero poder logar no aplicativo utilizando username e password
 
   Cenário: quero efetuar um login
-    Dado que eu estou deslogado
+    Dado que eu estou deslogado e quero logar
     E na página inicial do aplicativo
     Quando eu clicar em "Administração"
     Então eu quero ser redirecionado para a tela de login
