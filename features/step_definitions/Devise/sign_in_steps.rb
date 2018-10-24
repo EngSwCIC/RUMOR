@@ -1,6 +1,7 @@
 # This is the steps file referred to sign_in feature
 # Place your code relative to that feature here
 
+
 Dado("que eu estou deslogado e quero logar") do
   pending # Write code here that turns the phrase above into concrete actions
 end
