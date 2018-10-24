@@ -1,4 +1,5 @@
-#language:pt
+#language:pt 
+#encoding: utf-8
 
 Funcionalidade: Como gestor posso verificar as respostas das minhas pesquisas
 

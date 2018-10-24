@@ -1,4 +1,5 @@
-#language:pt
+#language:pt 
+#encoding: utf-8
 
 Funcionalidade: Testar a exportação dos relatorios da pesquisa de satisfação
 

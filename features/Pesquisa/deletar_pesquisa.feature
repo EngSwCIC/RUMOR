@@ -1,4 +1,5 @@
 #language:pt
+#encoding: utf-8
 
 Funcionalidade: Como gestor posso deletar minhas pesquisas
 

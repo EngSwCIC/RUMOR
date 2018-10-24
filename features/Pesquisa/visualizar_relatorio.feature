@@ -1,4 +1,5 @@
 #language:pt
+#encoding: utf-8
 
 Funcionalidade: Como gestor quero vizualizar um relatorio feito com  base nas pesquisas de satisfação
 
