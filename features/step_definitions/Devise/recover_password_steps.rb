@@ -1,7 +1,7 @@
 # This is the steps file referred to recover_password feature
 # Place your code relative to that feature here
 
-Dado("que eu estou deslogado") do
+Dado("que eu estou deslogado e quero recuperar minha senha") do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
