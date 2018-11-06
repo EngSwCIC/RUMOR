@@ -61,7 +61,8 @@ class CustomerSatisfactionsController < ApplicationController
     end
   end
 
-  def charts 
+  def charts
+    @customer_satisfactions = CustomerSatisfaction.all.collect{ |c| [c.user_group, c.rating]}
   end
 
   private
