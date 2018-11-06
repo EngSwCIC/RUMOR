@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Customer Satisfactions</h1>
 
 <table>
   <thead>
@@ -24,9 +22,6 @@
         <td><%= customer_satisfaction.like %></td>
         <td><%= customer_satisfaction.disgust %></td>
         <td><%= customer_satisfaction.suggestion %></td>
-        <td><%= link_to 'Show', customer_satisfaction %></td>
-        <td><%= link_to 'Edit', edit_customer_satisfaction_path(customer_satisfaction) %></td>
-        <td><%= link_to 'Destroy', customer_satisfaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,5 +29,3 @@
 
 <br>
 
-<%= link_to 'Gerar PDF', customer_satisfactions_path(format: :pdf) %>
-<%= link_to 'New Customer Satisfaction', new_customer_satisfaction_path %>

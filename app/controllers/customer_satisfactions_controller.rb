@@ -5,6 +5,13 @@ class CustomerSatisfactionsController < ApplicationController
   # GET /customer_satisfactions.json
   def index
     @customer_satisfactions = CustomerSatisfaction.all
+    # @customer_satisfaction_collect = CustomerSatisfaction.all.collect{ |c| [c.user_group, c.rating]}
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "relatorio"   # Excluding ".pdf" extension.
+      end
+    end
   end
 
   # GET /customer_satisfactions/1
