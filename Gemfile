@@ -47,6 +47,7 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
+   gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
 end
 
 group :development do
