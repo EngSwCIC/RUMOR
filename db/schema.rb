@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_07_161558) do
+ActiveRecord::Schema.define(version: 2018_11_07_164006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "breakfasts", force: :cascade do |t|
+    t.string "hot_drinks"
+    t.string "vegetarian_drink"
+    t.string "chocolate_milk"
+    t.string "bread"
+    t.string "vegetarian_bread"
+    t.string "margarine"
+    t.string "vegetarian_margarine"
+    t.string "complement"
+    t.string "vegetarian_complement"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "customer_satisfactions", force: :cascade do |t|
     t.integer "user_group"
@@ -22,6 +36,32 @@ ActiveRecord::Schema.define(version: 2018_11_07_161558) do
     t.text "like"
     t.text "disgust"
     t.text "suggestion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dinners", force: :cascade do |t|
+    t.string "salad"
+    t.string "sauce"
+    t.string "soup"
+    t.string "main_course"
+    t.string "vegetarian_dish"
+    t.string "accompaniments"
+    t.string "dessert"
+    t.string "juice"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lunches", force: :cascade do |t|
+    t.string "salad"
+    t.string "sauce"
+    t.string "main_course"
+    t.string "garnish"
+    t.string "vegetarian_dish"
+    t.string "accompaniments"
+    t.string "dessert"
+    t.string "juice"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

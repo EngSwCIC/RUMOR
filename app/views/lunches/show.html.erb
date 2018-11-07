@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Salad:</strong>
+  <%= @lunch.salad %>
+</p>
+
+<p>
+  <strong>Sauce:</strong>
+  <%= @lunch.sauce %>
+</p>
+
+<p>
+  <strong>Main course:</strong>
+  <%= @lunch.main_course %>
+</p>
+
+<p>
+  <strong>Garnish:</strong>
+  <%= @lunch.garnish %>
+</p>
+
+<p>
+  <strong>Vegetarian dish:</strong>
+  <%= @lunch.vegetarian_dish %>
+</p>
+
+<p>
+  <strong>Accompaniments:</strong>
+  <%= @lunch.accompaniments %>
+</p>
+
+<p>
+  <strong>Dessert:</strong>
+  <%= @lunch.dessert %>
+</p>
+
+<p>
+  <strong>Juice:</strong>
+  <%= @lunch.juice %>
+</p>
+
+<%= link_to 'Edit', edit_lunch_path(@lunch) %> |
+<%= link_to 'Back', lunches_path %>
