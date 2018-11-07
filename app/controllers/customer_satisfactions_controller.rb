@@ -10,7 +10,6 @@ class CustomerSatisfactionsController < ApplicationController
       format.html
       format.pdf do
         render pdf: "relatorio"   # Excluding ".pdf" extension.
-        layout: 'pdf'
       end
     end
   end
