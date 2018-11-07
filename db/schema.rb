@@ -10,9 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_11_07_221135) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "customer_satisfactions", force: :cascade do |t|
+    t.integer "user_group"
+    t.string "meal"
+    t.integer "rating"
+    t.text "like"
+    t.text "disgust"
+    t.text "suggestion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "menu_reviews", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "tipo_usuario"
+    t.string "refeicao"
+    t.string "categoria"
+    t.integer "nota"
+    t.text "consideracao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
