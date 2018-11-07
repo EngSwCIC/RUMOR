@@ -3,23 +3,49 @@
 
 
 Dado("que eu estou deslogado e quero logar") do
-  pending # Write code here that turns the phrase above into concrete actions
+  if user_signed_in
+    visit(root_path)
+    click_link('Sair')
+  end
+  expect(user_signed_in).to eq(false)
 end
 
 Dado("na página inicial do aplicativo") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit(root_path)
 end
 
 Quando("eu clicar em {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_link(string)
 end
 
 Então("eu quero ser redirecionado para a tela de login") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(current_path).to eq(new_user_session_path)
 end
 
 Dado("que eu estou logado") do
-  pending # Write code here that turns the phrase above into concrete actions
+  user = User.find_by(email: 'test_user@email.com')
+
+  if  user == nil
+    user = User.new
+  end
+
+  user.email = 'test_user@email.com'
+  user.password = '123456'
+  user.save
+
+  if user_signed_in
+    visit(root_path)
+    click_link('Sair')
+  end
+
+  visit(new_user_session_path)
+
+  fill_in 'Email', with: user.email
+  fill_in 'Password', with: user.password
+
+  click_link_or_button('Log in')
+
+  expect(user_signed_in).to eq(true)
 end
 
 Dado("que eu estou na página inicial do aplicativo") do

@@ -7,8 +7,8 @@
       <li><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
     <% else %>
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Sign in', new_user_session_path %></li>
-      <li><%= link_to 'Sign up', new_user_registration_path %></li>
+      <li>Rumor</li>
+      <li><%= link_to 'Administração', dashboard_home_path %></li>
     <% end %>
   </ul>
 </nav>
