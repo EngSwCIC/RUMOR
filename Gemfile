@@ -52,6 +52,7 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
@@ -61,6 +62,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-commands-rspec'
 end
 
 
