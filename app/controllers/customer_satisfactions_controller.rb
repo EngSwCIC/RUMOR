@@ -69,7 +69,14 @@ class CustomerSatisfactionsController < ApplicationController
   end
 
   def charts
-    @customer_satisfactions = CustomerSatisfaction.all.collect{ |c| [c.user_group, c.rating]}
+    @line_chart = CustomerSatisfaction.group(:meal).count
+    @pie_chart = CustomerSatisfaction.group(:rating).count
+    @column_chart = CustomerSatisfaction.group(:user_group).count
+
+
+    @customer_by_rating_1 = CustomerSatisfaction.where(user_group: 1).group(:rating).count
+    @customer_by_rating_2 = CustomerSatisfaction.where(user_group: 2).group(:rating).count
+    @customer_by_rating_3 = CustomerSatisfaction.where(user_group: 3).group(:rating).count
   end
 
   private

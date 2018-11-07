@@ -8,14 +8,14 @@
 
 puts "CRUD de Customer Satisfaction"
 
-array_meals = ["Café", "Almoço", "Janta"]
+array_meals = ["Cafe", "Almoco", "Janta"]
 
 888.times do
 
     CustomerSatisfaction.create([
         {
             user_group: Random.new.rand(1..3),
-            meal: array_meals[Random.new.rand(1..3)],
+            meal: array_meals[Random.new.rand(0..2)],
             rating: Random.new.rand(1..5),
             like: Faker::Lorem.sentence,
             disgust: Faker::Lorem.sentence,
