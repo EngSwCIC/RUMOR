@@ -1,0 +1,47 @@
+<%= form_with(model: customer_satisfaction, local: true) do |form| %>
+  <% if customer_satisfaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(customer_satisfaction.errors.count, "error") %> prohibited this customer_satisfaction from being saved:</h2>
+
+      <ul>
+      <% customer_satisfaction.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_group %>
+    <%= form.number_field :user_group %>
+  </div>
+
+  <div class="field">
+    <%= form.label :meal %>
+    <%= form.text_field :meal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.number_field :rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :like %>
+    <%= form.text_area :like %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disgust %>
+    <%= form.text_area :disgust %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suggestion %>
+    <%= form.text_area :suggestion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

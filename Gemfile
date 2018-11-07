@@ -36,6 +36,16 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#Library to generate charts
+gem "chartkick"
+
+#Library to generate pdf
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
+#Library to generate Fake datas
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -47,6 +57,7 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
+   gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
 end
 
 group :development do
