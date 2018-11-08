@@ -1,0 +1,29 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+.navbar ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li, .navbar a {
+  color: lightgray;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar li a:hover {
+  color: white;
+}
