@@ -7,7 +7,6 @@ Dado("que eu estou deslogado e quero logar") do
     visit(root_path)
     click_link('Sair')
   end
-  expect(user_signed_in).to eq(false)
 end
 
 Dado("na página inicial do aplicativo") do
@@ -44,22 +43,20 @@ Dado("que eu estou logado") do
   fill_in 'Password', with: user.password
 
   click_link_or_button('Log in')
-
-  expect(user_signed_in).to eq(true)
 end
 
 Dado("que eu estou na página inicial do aplicativo") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit(root_path)
 end
 
 Então("eu quero ser redirecionado para a tela de backoffice") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(current_path).to eq(dashboard_home_path)
 end
 
 Então("quero ser redirecionado para a tela inicial do aplicativo") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(current_path).to eq(root_path)
 end
 
 Então("quero estar deslogado") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(user_signed_in).to eq(false)
 end
