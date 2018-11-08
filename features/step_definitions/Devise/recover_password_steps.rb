@@ -2,17 +2,20 @@
 # Place your code relative to that feature here
 
 Dado("que eu estou deslogado e quero recuperar minha senha") do
-  pending # Write code here that turns the phrase above into concrete actions
+  if user_signed_in
+    visit(root_path)
+    click_link('Sair')
+  end
 end
 
 Dado("que eu estou na tela de login") do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit(root_path)
 end
 
 Quando("eu clicar em {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_link(string)
 end
 
 Então("eu quero ser redirecionado para a página de recuperação de senhas") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(current_path).to eq(new_user_password_path)
 end
