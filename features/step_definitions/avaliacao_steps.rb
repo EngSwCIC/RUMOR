@@ -5,6 +5,6 @@ require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", 
 
 Quando /^(?:|Eu )preencho.$/ do |fields|
   fields.rows_hash.each do |name, value|
-    Quando %{Eu preencho "#{name}" with "#{value}"}
+    Quando %{Eu preencho "#{name}" com "#{value}"}
   end
 end
