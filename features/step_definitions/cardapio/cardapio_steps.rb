@@ -1,3 +1,6 @@
+#language: pt
+#encoding: utf-8
+
 require 'uri'
 require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "paths"))
@@ -30,6 +33,11 @@ Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
   pending
 end
 
+E /^que (?:|eu )estou na (.+)$/ do |page_name|
+
+  pending
+end
+
 
 E /^(?:|que )(?:|eu )preencho os campos adequadamente.$/ do
   pending
@@ -59,6 +67,18 @@ Então /^(?:|eu )não quero ser redirecionado para ([^"]*)$/ do |page_name|
   pending
 end
 
+E /^ao ver um cardápio válido$/ do
+  pending
+  end
+E /^ao ver o cardápio do dia (.+)$/ do |data|
+  pending
+end
+
 E  /^uma mensagem de erro deve aparecer$/ do
   pending
 end
+
+Dado /^ao ver um cardápio de (.+)$/ do |opcao|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+

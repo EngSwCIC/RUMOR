@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hot drinks:</strong>
+  <%= @breakfast.hot_drinks %>
+</p>
+
+<p>
+  <strong>Vegetarian drink:</strong>
+  <%= @breakfast.vegetarian_drink %>
+</p>
+
+<p>
+  <strong>Chocolate milk:</strong>
+  <%= @breakfast.chocolate_milk %>
+</p>
+
+<p>
+  <strong>Bread:</strong>
+  <%= @breakfast.bread %>
+</p>
+
+<p>
+  <strong>Vegetarian bread:</strong>
+  <%= @breakfast.vegetarian_bread %>
+</p>
+
+<p>
+  <strong>Margarine:</strong>
+  <%= @breakfast.margarine %>
+</p>
+
+<p>
+  <strong>Vegetarian margarine:</strong>
+  <%= @breakfast.vegetarian_margarine %>
+</p>
+
+<p>
+  <strong>Complement:</strong>
+  <%= @breakfast.complement %>
+</p>
+
+<p>
+  <strong>Vegetarian complement:</strong>
+  <%= @breakfast.vegetarian_complement %>
+</p>
+
+<%= link_to 'Edit', edit_breakfast_path(@breakfast) %> |
+<%= link_to 'Back', breakfasts_path %>

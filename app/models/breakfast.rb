@@ -1,0 +1,2 @@
+class Breakfast < ApplicationRecord
+end
