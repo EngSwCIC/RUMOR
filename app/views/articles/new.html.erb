@@ -1,0 +1,24 @@
+<center>
+
+	<h1>RUMOR</h1>
+
+		<h3>Consultar Cardápio</h3>
+
+
+		<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+		  <p>
+		    <%= form.label :data %><br>
+		    <%= form.date_field :data, as: :date%>
+		  </p>
+		 
+		  <p>
+		    <%= form.label :campus %><br>
+		    <%= form.text_field :campus %>
+		  </p>
+		 
+		  <p>
+		    <%= form.submit "Consultar" %>
+		  </p>
+		<% end %>
+
+</center>
