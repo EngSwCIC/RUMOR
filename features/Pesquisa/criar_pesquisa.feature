@@ -1,4 +1,5 @@
-#language:pt
+#language:pt 
+#encoding: utf-8
 
 Funcionalidade: Testar a criação de novas pesquisas de satisfação
 
