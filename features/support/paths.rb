@@ -16,6 +16,12 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
+    when /^página do formulário de avaliação/
+      '/menu_reviews/new'
+    when /^página inicial do Rumor/
+      '/rumor/index'
+
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

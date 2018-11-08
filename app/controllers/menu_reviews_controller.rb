@@ -12,7 +12,9 @@ class MenuReviewsController < ApplicationController
   end
 
   def create
-
+    @menu_review = MenuReview.create!(menu_review_params)
+    flash[:notice] = "Avaliação enviada com sucesso"
+    redirect_to rumor_index_path
   end
 
   def edit
