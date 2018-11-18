@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ru.name %>
+</p>
+
+<p>
+  <strong>Working hour:</strong>
+  <%= @ru.working_hour %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @ru.location %>
+</p>
+
+<%= link_to 'Edit', edit_ru_path(@ru) %> |
+<%= link_to 'Back', rus_path %>

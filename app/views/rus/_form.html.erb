@@ -1,0 +1,32 @@
+<%= form_with(model: ru, local: true) do |form| %>
+  <% if ru.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ru.errors.count, "error") %> prohibited this ru from being saved:</h2>
+
+      <ul>
+      <% ru.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :working_hour %>
+    <%= form.text_area :working_hour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_area :location %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

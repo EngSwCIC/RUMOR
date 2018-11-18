@@ -81,7 +81,7 @@ test: &test
 production:
   <<: *default
   database: RUMOR_production
-  username: RUMOR
+  username: amanajas
   password: <%= ENV['RUMOR_DATABASE_PASSWORD'] %>
 
 cucumber:
