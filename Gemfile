@@ -49,6 +49,11 @@ gem 'wkhtmltopdf-binary'
 #Library to generate Fake datas
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
+group :test do
+  # used for test coverage, added by Icaro Rezende on 2018-11-18
+  gem 'simplecov', require: false
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

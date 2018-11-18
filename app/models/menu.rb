@@ -3,5 +3,5 @@ class Menu < ApplicationRecord
   has_one :lunch
   has_one :dinner
 
-  validates :date, presence: true
+  validates :date, presence: true, uniqueness: true
 end
