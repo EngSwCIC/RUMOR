@@ -6,6 +6,11 @@ Funcionalidade: Eu, enquanto usuário, consigo visualizar o horário de funciona
 Cenário de Fundo:
 Dado que eu estou na página de visualização de horário
 
+Cenário: Usuário pesquisa texto em branco
+Quando eu seleciono o nome "" 
+E aperto em "Pesquisar"
+Então eu não devo visualizar o resultado "Resultado da pesquisa"
+
 Cenário: Usuário visualiza as informações do RU do campus Darcy Ribeiro
 Quando eu seleciono o nome "Darcy Ribeiro" 
 E aperto em "Pesquisar"

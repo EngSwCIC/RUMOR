@@ -15,6 +15,7 @@ Então("eu devo visualizar o resultado {string}") do |string|
   page.should have_content(string)
 end
 
-Então("eu devo visualizar o resultado") do |table|
-  page.should have_content(arg1)
+
+Então("eu não devo visualizar o resultado {string}") do |string|
+  page.should have_no_content(string)
 end
