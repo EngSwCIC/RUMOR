@@ -6,9 +6,9 @@
 
 <%= form_tag(rus_path, :method => "get") do %>  
   <div class="input-group">  
-    <%= select_tag :name, options_for_select(Ru.all.collect {|ru| [ru.name]}), :onchange => params[:name], :include_blank => true  %>
+    <%= select_tag :name, options_for_select(Ru.all.collect {|ru| [ru.name]}), :include_blank => true%>
       
-    <%= button_tag "Search"%> 
+    <%= button_tag "Pesquisar"%> 
     
   </div>  
 <% end %>

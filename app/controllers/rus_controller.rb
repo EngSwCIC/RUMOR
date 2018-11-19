@@ -7,7 +7,6 @@ class RusController < ApplicationController
   # GET /rus.json
   def index
     @working_hour = Ru.search_working_hour(params[:name])
-    
   end
 
   # GET /rus/1

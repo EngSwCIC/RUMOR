@@ -48,10 +48,10 @@ group :development, :test do
   gem  'cucumber-rails-training-wheels'	#	some	pre-fabbed	step	definitions
   gem  'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem 'factory_bot_rails', '~> 4.0'
+  gem 'faker'
   gem 'gemaina' # Gema adicionada por Vinícius Gomes em 20 de Outubro de 2018
   gem 'launchy'	#	a	useful	debugging	aid	for	user stories end
   gem 'rspec-rails', '~> 3.6'
-  gem 'faker'
   gem 'simple_form'
 end
 

@@ -3,29 +3,30 @@
 require 'rails_helper'
 
 RSpec.describe Ru, type: :model do
+
+  fixtures :ru
+
   it 'Create a Ru' do
-    ru = create(:ru,name:'Darcy Ribeiro')
+    ru = ru(:darcy)
 
     expect(ru.name).to eq('Darcy Ribeiro')
   end
-
-  it {expect{create(:ru)}.to change{Ru.all.size}.by(1)}
-
+  
   it 'search_working_hour find_eq' do
-    ru = create(:ru,name:'RU/FGA',working_hour:'10h-12h')
+    ru = ru(:gama)
     ru_working_hour = Ru.search_working_hour('RU/FGA')
-    expect(ru_working_hour.working_hour).to eq('10h-12h')
+    expect(ru_working_hour.working_hour).to eq("De segunda-feira a sexta-feira** Café da manhã: 7h às 9h Almoço: 10h30 às 14h30* Jantar: 17h às 19h30\n*sáb, dom e feriados : 11h ás 14h30 **Exceto feriados")
   end
 
   it 'search_working_hour find_case_insensitve' do
-    ru = create(:ru,name:'RU/FCE',working_hour:'11h-12h')
+    ru = ru(:ceilandia)
     ru_working_hour = Ru.search_working_hour('rU/fcE')
-    expect(ru_working_hour.working_hour).to eq('11h-12h')
+    expect(ru_working_hour.working_hour).to eq("De segunda-feira a sexta-feira** Café da manhã: 7h às 9h Almoço: 11h às 14h30* Jantar: 17h às 19h30 Sábado** Café da manhã: 7h às 9h Almoço: 11h às 14h30\n*sáb, dom e feriados : 11h ás 14h30 **Exceto feriados")
   end
 
   it 'search_working_hour find_partial' do
-    ru = create(:ru,name:'RU/FUP',working_hour:'10h-11h')
+    ru = ru(:planaltina)
     ru_working_hour = Ru.search_working_hour('fup')
-    expect(ru_working_hour.working_hour).to eq('10h-11h')
+    expect(ru_working_hour.working_hour).to eq("Diariamente Café da manhã: 7h às 9h Almoço: 10h30 às 14h30 Jantar: 17h às 19h30")
   end
 end
