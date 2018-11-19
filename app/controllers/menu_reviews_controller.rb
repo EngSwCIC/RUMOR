@@ -9,12 +9,17 @@ class MenuReviewsController < ApplicationController
 
   def new
     # default: render 'new' template
+    @menu_review = MenuReview.new
   end
 
   def create
-    @menu_review = MenuReview.create!(menu_review_params)
-    flash[:notice] = "Avaliação enviada com sucesso"
-    redirect_to rumor_index_path
+    @menu_review = MenuReview.new(menu_review_params)
+    if @menu_review.save
+      flash[:notice] = "Avaliação enviada com sucesso"
+      redirect_to rumor_index_path
+    else
+      render 'new'
+    end
   end
 
   def edit
@@ -30,7 +35,7 @@ class MenuReviewsController < ApplicationController
   end
 
   def menu_review_params
-      params.require(:menu_review).permit(:nome, :email, :tipo_usuario, :refeicao, :categoria, :nota, :consideracao)
+    params.require(:menu_review).permit(:nome, :email, :tipo_usuario, :refeicao, :categoria, :nota, :consideracao)
   end
 
 end
