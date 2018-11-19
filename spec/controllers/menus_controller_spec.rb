@@ -24,16 +24,16 @@ require 'rails_helper'
 # `rails-controller-testing` gem.
 
 RSpec.describe MenusController, type: :controller do
-
+  login_user
   # This should return the minimal set of attributes required to create a valid
   # Menu. As you add validations to Menu, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {date: "2018-01-01"}
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {date: nil}
   }
 
   # This should return the minimal set of values that should be in the session

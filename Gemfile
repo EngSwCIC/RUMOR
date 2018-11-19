@@ -49,6 +49,10 @@ gem 'wkhtmltopdf-binary'
 #Library to generate Fake datas
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
+# gems for static checking, added by Icaro rezende on 2018-11-19
+gem 'rubocop', '~> 0.60.0', require: false
+gem 'rubocop-rspec'
+
 group :test do
   # used for test coverage, added by Icaro Rezende on 2018-11-18
   gem 'simplecov', require: false
@@ -65,7 +69,8 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
-   gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
+  gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
+  gem 'factory_bot_rails' # Factory_bot to fenerate factories. added by Icaro Rezende 2018-11-19
 end
 
 group :development do
