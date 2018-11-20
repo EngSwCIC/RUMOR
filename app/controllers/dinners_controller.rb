@@ -51,6 +51,6 @@ class DinnersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dinner_params
-      params.require(:dinner).permit(:salad, :sauce, :soup, :main_course, :vegetarian_dish, :accompaniments, :dessert, :juice)
+      params.require(:dinner).permit(:menu_id, :salad, :sauce, :soup, :main_course, :vegetarian_dish, :accompaniments, :dessert, :juice)
     end
 end

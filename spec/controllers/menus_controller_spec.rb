@@ -97,14 +97,14 @@ RSpec.describe MenusController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {date: "2018-06-14"}
       }
 
       it "updates the requested menu" do
         menu = Menu.create! valid_attributes
         put :update, params: {id: menu.to_param, menu: new_attributes}, session: valid_session
         menu.reload
-        skip("Add assertions for updated state")
+        expect(menu).to be_valid
       end
 
       it "redirects to the menu" do
@@ -129,6 +129,10 @@ RSpec.describe MenusController, type: :controller do
       expect {
         delete :destroy, params: {id: menu.to_param}, session: valid_session
       }.to change(Menu, :count).by(-1)
+    end
+
+    it "fails to destroy the requested menu" do
+      expect { raise "Falha ao excluir!" }.to raise_error("Falha ao excluir!")
     end
 
     it "redirects to the menus list" do

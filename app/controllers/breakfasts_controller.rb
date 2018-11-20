@@ -51,6 +51,6 @@ class BreakfastsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def breakfast_params
-      params.require(:breakfast).permit(:hot_drinks, :vegetarian_drink, :chocolate_milk, :bread, :vegetarian_bread, :margarine, :vegetarian_margarine, :complement, :vegetarian_complement)
+      params.require(:breakfast).permit(:menu_id, :hot_drinks, :vegetarian_drink, :chocolate_milk, :bread, :vegetarian_bread, :margarine, :vegetarian_margarine, :complement, :vegetarian_complement)
     end
 end

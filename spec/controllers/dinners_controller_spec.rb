@@ -24,16 +24,37 @@ require 'rails_helper'
 # `rails-controller-testing` gem.
 
 RSpec.describe DinnersController, type: :controller do
-
+  login_user
+  before (:each) do
+    @menu = FactoryBot.create(:menu)
+  end
   # This should return the minimal set of attributes required to create a valid
   # Dinner. As you add validations to Dinner, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { menu_id: @menu.to_param,
+      salad: "alface e pepino",
+      sauce: "molho oriental",
+      soup: "feijao com massinha",
+      main_course: "carne de sol",
+      vegetarian_dish: "silveirinha de soja",
+      accompaniments: "arroz e feijao",
+      dessert: "banana",
+      juice: "manga",
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { menu_id: nil,
+      salad: "alface e pepino",
+      sauce: "molho oriental",
+      soup: nil,
+      main_course: "carne de sol",
+      vegetarian_dish: "silveirinha de soja",
+      accompaniments: "arroz e feijao",
+      dessert: "banana",
+      juice: "manga",
+    }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -97,14 +118,23 @@ RSpec.describe DinnersController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        { menu_id: @menu.to_param,
+          salad: "repolho e beterraba",
+          sauce: "vinagrete",
+          soup: "feijao com massinha",
+          main_course: "carne de sol",
+          vegetarian_dish: "silveirinha de soja",
+          accompaniments: "arroz e feijao",
+          dessert: "banana",
+          juice: "manga",
+        }
       }
 
       it "updates the requested dinner" do
         dinner = Dinner.create! valid_attributes
         put :update, params: {id: dinner.to_param, dinner: new_attributes}, session: valid_session
         dinner.reload
-        skip("Add assertions for updated state")
+        expect(dinner).to be_valid
       end
 
       it "redirects to the dinner" do

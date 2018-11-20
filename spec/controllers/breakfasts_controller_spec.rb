@@ -24,16 +24,40 @@ require 'rails_helper'
 # `rails-controller-testing` gem.
 
 RSpec.describe BreakfastsController, type: :controller do
+  login_user
+  before (:each) do
+    @menu = FactoryBot.create(:menu)
+  end
 
   # This should return the minimal set of attributes required to create a valid
   # Breakfast. As you add validations to Breakfast, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { menu_id: @menu.to_param,
+      hot_drinks: "leite",
+      vegetarian_drink: "leite de soja",
+      chocolate_milk: "chocolate",
+      bread: "pão careca",
+      vegetarian_bread: "pão sem leite",
+      margarine: "manteiga",
+      vegetarian_margarine: "margarina vegana",
+      complement: "geleia",
+      vegetarian_complement: "geleia"
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      hot_drinks: nil,
+      vegetarian_drink: "leite de soja",
+      chocolate_milk: "chocolate",
+      bread: "pão careca",
+      vegetarian_bread: "pão sem leite",
+      margarine: "manteiga",
+      vegetarian_margarine: "margarina vegana",
+      complement: "geleia",
+      vegetarian_complement: "geleia"
+    }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -97,14 +121,24 @@ RSpec.describe BreakfastsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        { menu_id: @menu.to_param,
+          hot_drinks: "leite",
+          vegetarian_drink: "leite de soja",
+          chocolate_milk: "chocolate",
+          bread: "pão francês",
+          vegetarian_bread: "pão vegano",
+          margarine: "manteiga",
+          vegetarian_margarine: "margarina vegana",
+          complement: "geleia",
+          vegetarian_complement: "geleia"
+        }
       }
 
       it "updates the requested breakfast" do
         breakfast = Breakfast.create! valid_attributes
         put :update, params: {id: breakfast.to_param, breakfast: new_attributes}, session: valid_session
         breakfast.reload
-        skip("Add assertions for updated state")
+        expect(breakfast).to be_valid
       end
 
       it "redirects to the breakfast" do

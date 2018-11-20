@@ -24,22 +24,43 @@ require 'rails_helper'
 # `rails-controller-testing` gem.
 
 RSpec.describe LunchesController, type: :controller do
-
+  login_user
+  before (:each) do
+    @menu = FactoryBot.create(:menu)
+  end
   # This should return the minimal set of attributes required to create a valid
   # Lunch. As you add validations to Lunch, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { menu_id: @menu.to_param,
+      salad: "alface e pepino",
+      sauce: "molho oriental",
+      garnish: "mandioca",
+      main_course: "carne de sol",
+      vegetarian_dish: "silveirinha de soja",
+      accompaniments: "arroz e feijao",
+      dessert: "banana",
+      juice: "manga",
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { menu_id: nil,
+      salad: "alface e pepino",
+      sauce: "molho oriental",
+      garnish: "mandioca",
+      main_course: nil,
+      vegetarian_dish: "silveirinha de soja",
+      accompaniments: "arroz e feijao",
+      dessert: "banana",
+      juice: "manga",
+    }
   }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # LunchesController. Be sure to keep this updated too.
-  let(:valid_session) { sign_in users(:bob), scope: :admin }
+  let(:valid_session) { {} }
 
   describe "GET #index" do
     it "returns a success response" do
@@ -97,14 +118,23 @@ RSpec.describe LunchesController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        { menu_id: @menu.to_param,
+          salad: "alface e tomate",
+          sauce: "molho de salsa",
+          garnish: "mandioca",
+          main_course: "carne de sol",
+          vegetarian_dish: "silveirinha de soja",
+          accompaniments: "arroz e feijao",
+          dessert: "banana",
+          juice: "limao",
+        }
       }
 
       it "updates the requested lunch" do
         lunch = Lunch.create! valid_attributes
         put :update, params: {id: lunch.to_param, lunch: new_attributes}, session: valid_session
         lunch.reload
-        skip("Add assertions for updated state")
+        expect(lunch).to be_valid
       end
 
       it "redirects to the lunch" do
