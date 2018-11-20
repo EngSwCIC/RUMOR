@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Menus</h1>
+<h1>Cardápios</h1>
 
 <table>
   <thead>
@@ -13,7 +13,7 @@
   <tbody>
     <% @menus.each do |menu| %>
       <tr>
-        <td><%= menu.date %></td>
+        <td><%= menu.date.strftime("%d %B %Y") %></td>
         <td><%= link_to 'Show', menu %></td>
         <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
         <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,3 +25,7 @@
 <br>
 
 <%= link_to 'New Menu', new_menu_path %>
+<p>This Month</p>
+<% @month_menu.each do |mm|  %>
+  <p><%= mm.date %></p>
+<% end %>

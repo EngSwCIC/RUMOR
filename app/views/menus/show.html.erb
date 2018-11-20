@@ -5,5 +5,10 @@
   <%= @menu.date %>
 </p>
 
+<% if @menu.dinner %>
+  <p><%= @menu.dinner %></p>
+<% else %>
+  <%= link_to 'Criar Jantar', new_dinner_path(menu_id: @menu.id) %>
+<% end %>
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
 <%= link_to 'Back', menus_path %>

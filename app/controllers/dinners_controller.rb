@@ -1,5 +1,6 @@
 class DinnersController < ApplicationController
   before_action :set_dinner, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @dinners = Dinner.all
@@ -10,6 +11,8 @@ class DinnersController < ApplicationController
 
   def new
     @dinner = Dinner.new
+    @menu =[]
+    @menu << Menu.find_by(id: params[:menu_id])
   end
 
   def edit
@@ -20,7 +23,7 @@ class DinnersController < ApplicationController
       if @dinner.save
         redirect_to @dinner, notice: 'Dinner was successfully created.'
       else
-        render :new
+        render :new, locals: { :menu_id => :menu_id }
       end
   end
 

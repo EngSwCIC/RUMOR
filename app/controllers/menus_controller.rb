@@ -1,8 +1,9 @@
 class MenusController < ApplicationController
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @menus = Menu.all
+    @month_menu = this_month_menu(@menus)
   end
 
   def show
