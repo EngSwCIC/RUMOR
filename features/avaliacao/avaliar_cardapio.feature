@@ -30,4 +30,3 @@ Funcionalidade: Eu, enquanto usuário, consigo avaliar um cardápio
 			|Considerações    | |
 		E eu pressiono "Enviar"
 		Então eu devo ver "Os seguintes erros impediram o envio da avaliação"
-	# E eu devo ver todas as mensagens de falha para envio da pesquisa de satisfação

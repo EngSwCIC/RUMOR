@@ -16,9 +16,9 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
 
-    when "formulário de avaliação"
+    when "página do formulário de avaliação"
       '/menu_reviews/new'
-    when "inicial do Rumor"
+    when "página inicial do Rumor"
       '/rumor/index'
 
 

@@ -25,10 +25,9 @@ Dado /^que (?:|eu )adiciono o arquivo de "(.+)"$/  do |string|
 end
 
 
-Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
-  
-  pending
-end
+# Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
+#   visit path_to(page_name)
+# end
 
 
 E /^(?:|que )(?:|eu )preencho os campos adequadamente.$/ do
