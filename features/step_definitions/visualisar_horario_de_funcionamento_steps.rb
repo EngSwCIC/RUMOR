@@ -12,10 +12,10 @@ Quando("aperto em {string}") do |string|
 end
 
 Então("eu devo visualizar o resultado {string}") do |string|
-  page.should have_content(string)
+  expect have_content(string)
 end
 
 
 Então("eu não devo visualizar o resultado {string}") do |string|
-  page.should have_no_content(string)
+  expect have_no_content(string)
 end
