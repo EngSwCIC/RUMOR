@@ -63,3 +63,51 @@ Ru.create!([{
                   **Exceto feriados",
              location: 'Sede administrativa'
            }])
+
+
+Rating.create!([
+     {
+          meal: 'Café da Manhã',
+          rating: -1
+     },{
+          meal: 'Café da Manhã',
+          rating: 2
+     },{
+          meal: 'Café da Manhã',
+          rating: 3.6
+
+     },{
+          meal: 'Café da Manhã',
+          rating: 5
+
+     },{
+          meal: 'Almoço',
+          rating: -1
+     },{
+          meal: 'Almoço',
+          rating: 1.5
+
+     },{
+          meal: 'Almoço',
+          rating: 3.3
+
+     },{
+          meal: 'Almoço',
+          rating: 4.5
+
+     },{
+          meal: 'Jantar',
+          rating: -1
+     },{
+          meal: 'Jantar',
+          rating: 1
+
+     },{
+          meal: 'Jantar',
+          rating: 2.9
+
+     },{
+          meal: 'Jantar',
+          rating: 4.8
+     }
+])

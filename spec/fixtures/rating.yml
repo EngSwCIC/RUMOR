@@ -1,0 +1,72 @@
+manha_sem_nota:
+  meal: Café da Manhã
+  rating: -1
+
+manha_nota_muito_baixa:
+  meal: Café da Manhã
+  rating: 0.2
+
+manha_nota_baixa:
+  meal: Café da Manhã
+  rating: 2
+
+manha_nota_media:
+  meal: Café da Manhã
+  rating: 3.6
+
+manha_nota_media_alta:
+  meal: Café da Manhã
+  rating: 4.2  
+
+manha_nota_alta:
+  meal: Café da Manhã
+  rating: 5
+
+tarde_sem_nota:
+  meal: Almoço
+  rating: -1
+
+tarde_nota_muito_baixa:
+  meal: Almoço
+  rating: 0.8
+
+tarde_nota_baixa:
+  meal: Almoço
+  rating: 1.5
+
+tarde_nota_media:
+  meal: Almoço
+  rating: 3.3
+
+tarde_nota_media_alta:
+  meal: Almoço
+  rating: 4.2
+
+tarde_nota_alta:
+  meal: Almoço
+  rating: 4.7  
+
+noite_sem_nota:
+  meal: Jantar
+  rating: -1
+
+noite_nota_muito_baixa:
+  meal: Jantar
+  rating: 0
+   
+noite_nota_baixa:
+  meal: Jantar
+  rating: 1
+
+noite_nota_media:
+  meal: Jantar
+  rating: 2.9
+
+noite_nota_media_alta:
+  meal: Jantar
+  rating: 4.1
+
+noite_nota_alta:
+  meal: Jantar
+  rating: 4.8
+
