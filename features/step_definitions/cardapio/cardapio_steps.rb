@@ -6,9 +6,18 @@ require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "paths"))
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 
-Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao|
-  if funcao == "gestor"
-    visit()
+Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
+  if funcao_na_plataforma == "gestor"
+    email = 'gestorteste@email.com'
+    password = 'senha123'
+
+    visit '/users/sign_up'
+    fill_in 'user_email', :with => email
+    fill_in 'user_password', :with => password
+    fill_in 'user_password_confirmation', :with => password
+    click_button "Sign up"
+    expect(page).to have_text("Seja bem-vindo, #{email}!")
+
   end
 end
 
