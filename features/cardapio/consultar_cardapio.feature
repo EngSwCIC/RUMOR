@@ -1,24 +1,10 @@
 #language: pt
 #encoding: utf-8
 
-Funcionalidade: Eu, enquanto usuário, consigo consultar um cardápio 
+Funcionalidade: Consultar cardápio
 
-Cenário de Fundo:
-Dado que eu estou na página inicial do RUMOR
-Quando eu clico em “Consultar”
-Então eu devo visualizar o cardápio do dia e campus
-
-Cenário: Usuário visualiza cardápio consultado (Happy Path)
-	Quando eu preencho os campos com:
-		| Data	|17/10/2018|
-		| Campus | Darcy Ribeiro|
-E eu aperto em “Consultar”
-Então eu devo entrar na página de visualização do cardápio
-
-Cenário: Usuário não preenche os campos (Sad Path)
-Quando eu preencho os campos com:
-		| Data	| |
-		| Campus | |
-E eu aperto em “Consultar”
-Então estar na página inicial
-E eu devo ver todas as mensagens de falha para consulta de cardápio
+Cenário: Preencheu todos os campos e apertar em Consultar
+	Dado que eu estou na página de consulta de cardápio
+	Quando eu preencher todos os campos
+	E clicar em "Consultar"
+	Então deve mostrar a mensagem "Cardápio do dia"

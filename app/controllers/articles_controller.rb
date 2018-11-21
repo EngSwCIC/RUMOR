@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def create
-		render plain: params[:article].inspect
+		#render plain: params[:article].inspect
+		render 'cardapios/visualizacao_cardapio', :layout => false
 	end
 end
