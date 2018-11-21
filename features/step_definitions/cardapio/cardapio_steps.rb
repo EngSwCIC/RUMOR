@@ -7,39 +7,6 @@ require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", 
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 require "xpath"
 
-# capybara_select_dates_and_times.rb was a creation of user @szimek on github all credits givem to him
-module Cucumber
-  module Rails
-    module CapybaraSelectDatesAndTimes
-      def select_date(field, options = {})
-        date     = Date.parse(options[:with])
-        expect(page).to have_text("New Menu")
-        selector = %Q{.//fieldset[contains(./legend, "#{field}")]}
-        within(:xpath, selector) do
-          find(:xpath, './/select[contains(@id, "_1i")]').find(:xpath, ::XPath::HTML.option(date.year.to_s)).select_option
-          find(:xpath, './/select[contains(@id, "_2i")]').find(:xpath, ::XPath::HTML.option(date.strftime('%B').to_s)).select_option
-          find(:xpath, './/select[contains(@id, "_3i")]').find(:xpath, ::XPath::HTML.option(date.day.to_s)).select_option
-        end
-      end
-
-      def select_time(field, options = {})
-        time     = Time.parse(options[:with])
-        selector = %Q{.//fieldset[contains(./legend, "#{field}")]}
-        within(:xpath, selector) do
-          find(:xpath, './/select[contains(@id, "_4i")]').find(:xpath, ::XPath::HTML.option(time.hour.to_s.rjust(2,'0'))).select_option
-          find(:xpath, './/select[contains(@id, "_5i")]').find(:xpath, ::XPath::HTML.option(time.min.to_s.rjust(2,'0'))).select_option
-        end
-      end
-
-      def select_datetime(field, options = {})
-        select_date(field, options)
-        select_time(field, options)
-      end
-    end
-  end
-end
-World(Cucumber::Rails::CapybaraSelectDatesAndTimes)
-
 module CardapioHelpers 
   def login(email, senha)
     visit '/users/sign_in'
@@ -59,14 +26,15 @@ module CardapioHelpers
     expect(page).to have_text("Seja bem-vindo, #{email}!")
   end
 
-  def seleciona_data(year, month, day, hour, minute, label_text)
-    label = page.find('label', text: label_text)
+  # Os argumentos devem ser da forma que seu campo de data pede.
+  def seleciona_data_hora(ano_inteiro, mes_string, dia_inteiro, hora_inteiro, minuto_inteiro, texto_do_label)
+    label = page.find('label', text: texto_do_label)
     id = label['for']
-    select year,   from: "#{id}_1i"
-    select month,  from: "#{id}_2i"
-    select day,    from: "#{id}_3i"
-    select hour,   from: "#{id}_4i"
-    select minute, from: "#{id}_5i"
+    select ano_inteiro,   from: "#{id}_1i"
+    select mes_string,  from: "#{id}_2i"
+    select dia_inteiro,    from: "#{id}_3i"
+    select hora_inteiro,   from: "#{id}_4i"
+    select minuto_inteiro, from: "#{id}_5i"
   end
 end
 World(CardapioHelpers)
@@ -106,7 +74,8 @@ end
 
 
 E /^(?:|que )(?:|eu )preencho os campos adequadamente.$/ do
-  seleciona_data(2018, "November", 21, 21, 31, "Date")
+  #Data válida: "21 de Novembro de 2018 às 21:32"
+  seleciona_data_hora(2018, "November", 21, 21, 31, "Date")
 end
 
 Dado /^(?:|que )(?:|eu )preencho os campos inadequadamente.$/ do
