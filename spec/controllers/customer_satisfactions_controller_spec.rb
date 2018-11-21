@@ -3,7 +3,6 @@ require 'rails_helper'
 
 RSpec.describe CustomerSatisfactionsController, type: :controller do
 
- 
   let(:valid_attributes) {
     { 
       user_group: 2,
@@ -26,7 +25,6 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
     }
   }
 
- 
   let(:valid_session) { {} }
 
   describe "GET #index" do

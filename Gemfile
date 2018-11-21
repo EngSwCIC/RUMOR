@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Gema devise para autenticacao de usuarios
 gem 'devise'
 
+#Gemas para usar layouts bonitinhos
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

@@ -4,6 +4,7 @@ RSpec.describe MenusController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Menu. As you add validations to Menu, be sure to
   # adjust the attributes here as well.
+
   let(:valid_attributes) {
     {date: "2018-01-01"}
   }
