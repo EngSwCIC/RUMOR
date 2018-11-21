@@ -1,6 +1,6 @@
 class CustomerSatisfactionsController < ApplicationController
   before_action :set_customer_satisfaction, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:index, :charts]
 
   def index
     @customer_satisfactions = CustomerSatisfaction.all
