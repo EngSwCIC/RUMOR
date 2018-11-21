@@ -7,10 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(email: "user@user.com", password: "user123")
+puts "SEED DAS DATAS"
+datinha = Date.new(2018, 01, 01)
+while(datinha.year == 2018)
+  puts datinha.strftime("%Y - %m - %d")
+  Menu.create(date: datinha)
+  datinha = datinha.tomorrow
+end
+
 
 puts "CRUD de Customer Satisfaction"
 
 array_meals = ["Cafe", "Almoco", "Janta"]
+
 
 888.times do
 

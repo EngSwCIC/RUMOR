@@ -11,8 +11,7 @@ class DinnersController < ApplicationController
 
   def new
     @dinner = Dinner.new
-    @menu =[]
-    @menu << Menu.find_by(id: params[:menu_id])
+    @menus = Menu.all
   end
 
   def edit
@@ -21,7 +20,8 @@ class DinnersController < ApplicationController
   def create
     @dinner = Dinner.new(dinner_params)
       if @dinner.save
-        redirect_to @dinner, notice: 'Dinner was successfully created.'
+        @menu = Menu.find(@dinner.menu_id)
+        redirect_to @menu, notice: 'Dinner was successfully created.'
       else
         render :new, locals: { :menu_id => :menu_id }
       end
@@ -29,9 +29,10 @@ class DinnersController < ApplicationController
 
   def update
       if @dinner.update(dinner_params)
-        redirect_to @dinner, notice: 'Dinner was successfully updated.'
+        @menu = Menu.find(@dinner.menu_id)
+        redirect_to @menu, notice: 'Dinner was successfully updated.'
       else
-        render :edit
+        render :edit, locals: { :menu_id => :menu_id }
       end
   end
 

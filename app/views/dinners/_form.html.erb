@@ -10,11 +10,14 @@
       </ul>
     </div>
   <% end %>
-  <%= @menu.first.date %>
-  <div class='form-group'>
-    <%= form.label :menu_id, 'Dia do cardápio' %>
-    <%= form.collection_select(:menu_id, @menu.first, :id, :date, {}, {class: 'form-control'}) %>
-  </div>
+  <% if params[:menu_id] %>
+    <%= form.hidden_field :menu_id, :value => params[:menu_id] %>
+  <% else %>
+    <div class='form-group'>
+      <%= form.label :menu_id, 'Dia do cardápio' %>
+      <%= form.collection_select(:menu_id, Menu.all, :id, :date,  {},  {class: 'form-control'}) %>
+    </div>
+  <% end %>
   <div class="field">
     <%= form.label :salad %>
     <%= form.text_field :salad %>

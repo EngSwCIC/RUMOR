@@ -10,4 +10,5 @@ class Breakfast < ApplicationRecord
   validates :vegetarian_margarine, presence: true
   validates :complement, presence: true
   validates :vegetarian_complement, presence: true
+  validates :fruit, presence: true
 end

@@ -11,6 +11,7 @@ class LunchesController < ApplicationController
 
   def new
     @lunch = Lunch.new
+    @menus = Menu.all
   end
 
   def edit
@@ -18,19 +19,20 @@ class LunchesController < ApplicationController
 
   def create
     @lunch = Lunch.new(lunch_params)
-
       if @lunch.save
-        redirect_to @lunch, notice: 'Lunch was successfully created.'
+        @menu = Menu.find(@lunch.menu_id)
+        redirect_to @menu, notice: 'Lunch was successfully created.'
       else
-        render :new
+        render :new, locals: { :menu_id => :menu_id }
       end
   end
 
   def update
       if @lunch.update(lunch_params)
-        redirect_to @lunch, notice: 'Lunch was successfully updated.'
+        @menu = Menu.find(@lunch.menu_id)
+        redirect_to @menu, notice: 'Lunch was successfully updated.'
       else
-        render :edit
+        render :edit, locals: { :menu_id => :menu_id }
       end
   end
 
