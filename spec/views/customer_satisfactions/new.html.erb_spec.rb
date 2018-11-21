@@ -4,11 +4,11 @@ RSpec.describe "customer_satisfactions/new", type: :view do
   before(:each) do
     assign(:customer_satisfaction, CustomerSatisfaction.new(
       :user_group => 1,
-      :meal => "MyString",
+      :meal => "Desejum",
       :rating => 1,
-      :like => "MyText",
-      :disgust => "MyText",
-      :suggestion => "MyText"
+      :like => "quero café",
+      :disgust => "amora",
+      :suggestion => "pão de queijo"
     ))
   end
 

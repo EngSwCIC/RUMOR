@@ -21,7 +21,7 @@ class LunchesController < ApplicationController
     @lunch = Lunch.new(lunch_params)
       if @lunch.save
         @menu = Menu.find(@lunch.menu_id)
-        redirect_to @menu, notice: 'Lunch was successfully created.'
+        redirect_to @menu, notice: 'Almoço criado com sucesso'
       else
         render :new, locals: { :menu_id => :menu_id }
       end
@@ -30,7 +30,7 @@ class LunchesController < ApplicationController
   def update
       if @lunch.update(lunch_params)
         @menu = Menu.find(@lunch.menu_id)
-        redirect_to @menu, notice: 'Lunch was successfully updated.'
+        redirect_to @menu, notice: 'Almoço atualizado com sucesso'
       else
         render :edit, locals: { :menu_id => :menu_id }
       end
@@ -45,12 +45,10 @@ class LunchesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_lunch
       @lunch = Lunch.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def lunch_params
       params.require(:lunch).permit(:menu_id, :salad, :sauce, :main_course, :garnish, :vegetarian_dish, :accompaniments, :dessert, :juice)
     end

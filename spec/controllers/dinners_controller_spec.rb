@@ -6,9 +6,8 @@ RSpec.describe DinnersController, type: :controller do
   before (:each) do
     @menu = FactoryBot.create(:menu)
   end
-  # This should return the minimal set of attributes required to create a valid
-  # Dinner. As you add validations to Dinner, be sure to
-  # adjust the attributes here as well.
+  
+
   let(:valid_attributes) {
     { menu_id: @menu.to_param,
       salad: "alface e pepino",
@@ -35,9 +34,7 @@ RSpec.describe DinnersController, type: :controller do
     }
   }
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # DinnersController. Be sure to keep this updated too.
+  
   let(:valid_session) { {} }
 
   describe "GET #index" do

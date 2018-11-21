@@ -28,7 +28,7 @@ class CustomerSatisfactionsController < ApplicationController
   def create
     @customer_satisfaction = CustomerSatisfaction.new(customer_satisfaction_params)
     if @customer_satisfaction.save
-      redirect_to @customer_satisfaction, notice: 'Customer satisfaction was successfully created.'
+      redirect_to @customer_satisfaction, notice: 'Pesquisa de Satisfação criada com sucesso.'
     else
       render :new 
     end
@@ -38,7 +38,7 @@ class CustomerSatisfactionsController < ApplicationController
   
   def update
     if @customer_satisfaction.update(customer_satisfaction_params)
-      redirect_to @customer_satisfaction, notice: 'Customer satisfaction was successfully updated.'
+      redirect_to @customer_satisfaction, notice: 'Pesquisa de Satisfação atualizada com sucesso.'
     else
       render :edit
     end
@@ -49,7 +49,7 @@ class CustomerSatisfactionsController < ApplicationController
   def destroy
     @customer_satisfaction.destroy
   
-    redirect_to customer_satisfactions_url, notice: 'Customer satisfaction was successfully destroyed.'
+    redirect_to customer_satisfactions_url, notice: 'Pesquisa de Satisfação excluida com sucesso.'
   
   end
 
