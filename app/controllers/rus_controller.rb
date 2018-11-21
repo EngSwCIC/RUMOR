@@ -3,10 +3,15 @@
 class RusController < ApplicationController
   before_action :set_ru, only: %i[show edit update destroy]
 
+
+  def working_hour
+    @working_hour = Ru.search_working_hour(params[:name])
+  end
+
   # GET /rus
   # GET /rus.json
   def index
-    @working_hour = Ru.search_working_hour(params[:name])
+    @working_hour = Ru.all
   end
 
   # GET /rus/1

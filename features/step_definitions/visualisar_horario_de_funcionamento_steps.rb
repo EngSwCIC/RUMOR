@@ -1,6 +1,6 @@
 
 Dado /^que eu estou na página de visualização de horário$/ do 
-  visit rus_path
+  visit working_hour_path
 end
 
 Quando("eu seleciono o nome {string}") do |string|
