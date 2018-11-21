@@ -42,7 +42,8 @@ RSpec.describe BreakfastsController, type: :controller do
       margarine: "manteiga",
       vegetarian_margarine: "margarina vegana",
       complement: "geleia",
-      vegetarian_complement: "geleia"
+      vegetarian_complement: "geleia",
+      fruit: "abacaxi"
     }
   }
 
@@ -106,7 +107,7 @@ RSpec.describe BreakfastsController, type: :controller do
 
       it "redirects to the created breakfast" do
         post :create, params: {breakfast: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(Breakfast.last)
+        expect(response).to redirect_to(@menu)
       end
     end
 
@@ -130,7 +131,8 @@ RSpec.describe BreakfastsController, type: :controller do
           margarine: "manteiga",
           vegetarian_margarine: "margarina vegana",
           complement: "geleia",
-          vegetarian_complement: "geleia"
+          vegetarian_complement: "geleia",
+          fruit: "laranja"
         }
       }
 
@@ -144,7 +146,7 @@ RSpec.describe BreakfastsController, type: :controller do
       it "redirects to the breakfast" do
         breakfast = Breakfast.create! valid_attributes
         put :update, params: {id: breakfast.to_param, breakfast: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(breakfast)
+        expect(response).to redirect_to(@menu)
       end
     end
 

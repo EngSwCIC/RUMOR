@@ -41,9 +41,6 @@ class LunchesController < ApplicationController
       @lunch.destroy
       flash[:notice] = 'Almoço excluido com sucesso'
       redirect_to lunches_url
-    rescue StandardError => e
-      flash[:alert] = 'Erro ao excluir Almoço!!'
-      redirect_to lunches_url
     end
   end
 

@@ -132,6 +132,10 @@ RSpec.describe MenusController, type: :controller do
     end
 
     it "fails to destroy the requested menu" do
+      menu = Menu.create! valid_attributes
+      expect {
+        delete :destroy, params: {id: 0}, session: valid_session
+      }.to raise_error and flash[:alert]
       expect { raise "Falha ao excluir!" }.to raise_error("Falha ao excluir!")
     end
 

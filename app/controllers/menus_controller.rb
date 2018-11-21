@@ -3,11 +3,7 @@ class MenusController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @menus = Menu.all
-    if params[:month]
-      @month_menu = :month
-    else
-      @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
-    end
+    @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
   end
 
   def show
@@ -41,9 +37,6 @@ class MenusController < ApplicationController
     begin
       @menu.destroy
       flash[:notice] = 'Cardápio excluido com sucesso'
-      redirect_to menus_url
-    rescue StandardError => e
-      flash[:alert] = 'Erro ao excluir Cardápio!!'
       redirect_to menus_url
     end
   end
