@@ -29,9 +29,31 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
 
   describe "GET #index" do
     it "returns a success response" do
+      user = create(:user)
+      sign_in user
       CustomerSatisfaction.create! valid_attributes
-      get :index, params: {}, session: valid_session
+      get :index, format: :html ,params: {}, session: valid_session
       expect(response).to be_successful
+    end
+
+    it "returns a 302 response for html when not logged" do
+      CustomerSatisfaction.create! valid_attributes
+      get :index, format: :html ,params: {}, session: valid_session
+      expect(response).to have_http_status(302)
+    end
+
+    it "returns a 200 response for pdf" do
+      user = create(:user)
+      sign_in user
+      CustomerSatisfaction.create! valid_attributes
+      get :index, format: :pdf ,params: {}, session: valid_session
+      expect(response).to have_http_status(200)
+    end
+
+    it "returns a 401 response for pdf when not logged" do
+      CustomerSatisfaction.create! valid_attributes
+      get :index, format: :pdf ,params: {}, session: valid_session
+      expect(response).to have_http_status(401)
     end
   end
 
@@ -129,6 +151,23 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
       delete :destroy, params: {id: customer_satisfaction.to_param}, session: valid_session
       expect(response).to redirect_to(customer_satisfactions_url)
     end
+  end
+
+  describe "GET #charts" do
+    it "returns all line charts successful" do
+      user = create(:user)
+      sign_in user
+      CustomerSatisfaction.create! valid_attributes
+      get :charts, format: :html ,params: {}, session: valid_session
+      expect(response).to be_successful
+    end
+
+    it "returns 302 when access not logged" do 
+      CustomerSatisfaction.create! valid_attributes
+      get :charts, format: :html ,params: {}, session: valid_session
+      expect(response).to have_http_status(302)
+    end
+
   end
 
 end
