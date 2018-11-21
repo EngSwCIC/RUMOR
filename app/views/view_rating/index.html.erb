@@ -2,13 +2,26 @@
 <h2>Avaliação</h2>
 <p>Refeição: <%= @meal %></p>
 
-<br>
-<br>
-<% if (@rating.rating > -1) %>
-    <h1> <%= @rating.rating %> </h1>
+<%= form_tag(view_rating_path, :method => "get") do %>  
+  <div class="input-group">  
+    <%= select_tag :name, options_for_select(Ru.all.collect {|ru| [ru.name]}), :include_blank => true%>
+      
+    <%= button_tag "Pesquisar"%> 
+    
+  </div>  
 <% end %>
-<p> <%= @notification %> </p>
 
+<br>
+<br>
+<br>
+
+<% if @rating.nil? == false%>
+    <h2><%= @rating.campus_name%> </h2>
+    <% if (@rating.rating > -1) %>
+        <h1> <%= @rating.rating %> </h1>
+    <% end %>
+    <p> <%= @notification %> </p>
+<% end %>
 <br>
 <br>
 

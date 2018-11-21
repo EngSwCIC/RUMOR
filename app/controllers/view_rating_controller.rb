@@ -4,6 +4,7 @@ class ViewRatingController < ApplicationController
     before_action :set_rating, only: %i[show edit update destroy]
     before_action :init
     @@meal
+    @@campus_meals
   
     # GET /view_controller
     # GET /view_controller.json
@@ -12,7 +13,10 @@ class ViewRatingController < ApplicationController
     end
 
     def get_info
-        @rating = Rating.get_rating(@meal)
+        @rating = Rating.get_rating(@meal,params[:name])
+        
+        return if @rating.nil?
+
         @notification = @rating.rating_notification
     end
 

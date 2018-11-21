@@ -1,6 +1,7 @@
 class Rating < ApplicationRecord
 
     def rating_notification
+
         if self.rating === -1
             return 'Nenhuma avaliação foi feita ainda :('
         elsif self.rating < 1
@@ -16,9 +17,13 @@ class Rating < ApplicationRecord
         end
     end
 
-    def self.get_rating(meal)
-        @param = meal
-        list = Rating.all.where('meal LIKE ?', "%#{@param}%")
+
+    def self.get_rating(meal,campus)
+        return if campus.nil? || campus.empty?
+
+        @param_meal = meal
+        @param_campus = campus
+        list = Rating.where('meal LIKE ? AND campus_name LIKE ?', "%#{@param_meal}%","%#{@param_campus}%")
         offset = rand(list.count)
         list.offset(offset).first
     end

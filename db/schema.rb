@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2018_11_21_110636) do
   end
 
   create_table "ratings", force: :cascade do |t|
+    t.string "campus_name"
     t.string "meal"
     t.float "rating"
     t.datetime "created_at", null: false

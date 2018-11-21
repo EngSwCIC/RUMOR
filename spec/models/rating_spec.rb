@@ -10,17 +10,17 @@ RSpec.describe Rating, type: :model do
   end
 
   it 'get_rating meal_cafe_da_manha' do
-    rating_get = Rating.get_rating('Café da Manhã')
+    rating_get = Rating.get_rating('Café da Manhã','Darcy Ribeiro')
     expect(rating_get.meal).to eq('Café da Manhã')
   end
   
   it 'get_rating meal_almoço' do
-    rating_get = Rating.get_rating('Almoço')
+    rating_get = Rating.get_rating('Almoço','RU/FGA')
     expect(rating_get.meal).to eq('Almoço')
   end
 
   it 'get_rating meal_jantar' do
-    rating_get = Rating.get_rating('Jantar')
+    rating_get = Rating.get_rating('Jantar','RU/FCE')
     expect(rating_get.meal).to eq('Jantar')
   end
 

@@ -66,47 +66,88 @@ Ru.create!([{
 
 
 Rating.create!([
-     {
+     {    
+          campus_name: 'Darcy Ribeiro',
           meal: 'Café da Manhã',
           rating: -1
      },{
+          campus_name: 'RU/FGA',
+          meal: 'Café da Manhã',
+          rating: 0.2
+     },{
+          campus_name: 'RU/FCE',
           meal: 'Café da Manhã',
           rating: 2
      },{
+          campus_name: 'RU/FUP',
           meal: 'Café da Manhã',
           rating: 3.6
 
      },{
+          campus_name: 'RU/FAL',
+          meal: 'Café da Manhã',
+          rating: 3.6
+
+     },{
+          campus_name: 'Darcy Ribeiro',
           meal: 'Café da Manhã',
           rating: 5
 
      },{
+          campus_name: 'RU/FGA',
           meal: 'Almoço',
           rating: -1
      },{
+          campus_name: 'RU/FCE',
+          meal: 'Almoço',
+          rating: 0.8
+
+     },{
+          campus_name: 'RU/FUP',
           meal: 'Almoço',
           rating: 1.5
 
      },{
+          campus_name: 'RU/FAL',
           meal: 'Almoço',
           rating: 3.3
 
      },{
+          campus_name: 'Darcy Ribeiro',
           meal: 'Almoço',
-          rating: 4.5
+          rating: 4.2
 
      },{
+          campus_name: 'RU/FGA',
+          meal: 'Almoço',
+          rating: 4.7
+
+     },{
+          campus_name: 'RU/FCE',
           meal: 'Jantar',
           rating: -1
      },{
+          campus_name: 'RU/FUP',
           meal: 'Jantar',
-          rating: 1
+          rating: 0
 
      },{
+          campus_name: 'RU/FAL',
+          meal: 'Jantar',
+          rating: 1.3
+
+     },{
+          campus_name: 'Darcy Ribeiro',
           meal: 'Jantar',
           rating: 2.9
 
      },{
+          campus_name: 'RU/FGA',
+          meal: 'Almoço',
+          rating: 4.1
+
+     },{
+          campus_name: 'RU/FCE',
           meal: 'Jantar',
           rating: 4.8
      }
