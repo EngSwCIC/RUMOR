@@ -4,13 +4,26 @@ require 'rails_helper'
 RSpec.describe CustomerSatisfactionsController, type: :controller do
 
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { 
+      user_group: 2,
+      meal: "jantar",
+      rating: 5,
+      like: "foi bom demais",
+      disgust: "prato deveria ser maior",
+      suggestion: "pizza",
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      user_group: nil,
+      meal: "lanche da tarde",
+      rating: 10,
+      like: nil,
+      disgust: nil,
+      suggestion: nil,
+    }
   }
-
 
   let(:valid_session) { {} }
 
