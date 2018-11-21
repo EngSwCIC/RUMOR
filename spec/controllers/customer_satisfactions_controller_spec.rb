@@ -30,7 +30,13 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
   describe "GET #index" do
     it "returns a success response" do
       CustomerSatisfaction.create! valid_attributes
-      get :index, params: {}, session: valid_session
+      get :index, format: :html ,params: {}, session: valid_session
+      expect(response).to be_successful
+    end
+
+    it "returns a success response for pdf" do
+      CustomerSatisfaction.create! valid_attributes
+      get :index, format: :pdf ,params: {}, session: valid_session
       expect(response).to be_successful
     end
   end
@@ -129,6 +135,15 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
       delete :destroy, params: {id: customer_satisfaction.to_param}, session: valid_session
       expect(response).to redirect_to(customer_satisfactions_url)
     end
+  end
+
+  describe "GET #charts" do
+    it "returns all line charts successful" do
+      CustomerSatisfaction.create! valid_attributes
+      get :charts, format: :html ,params: {}, session: valid_session
+      expect(response).to be_successful
+    end
+
   end
 
 end
