@@ -14,9 +14,9 @@ Funcionalidade: como_gestor_eu_quero_gerenciar_os_cardápios
     Quando eu clicar em "Gerenciar Cardápio"
     Então eu quero ser redirecionado para a página de edição de cardápio
 
-  Cenário: Gestor gerenciar almoço
+  Cenário: Gestor gerenciar café da manhã
     Dado que eu estou logado como gestor
-    E que eu estou na página de edição de desjejum
+    E que eu estou na página de edição de café da manhã
     E ao ver um cardápio de desjejum
     Quando eu clicar em "Editar desjejum"
     Então eu quero ser redirecionado para a página de edição de desjejum

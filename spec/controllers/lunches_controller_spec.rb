@@ -79,7 +79,7 @@ RSpec.describe LunchesController, type: :controller do
 
       it "redirects to the created lunch" do
         post :create, params: {lunch: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(Lunch.last)
+        expect(response).to redirect_to(@menu)
       end
     end
 
@@ -116,7 +116,7 @@ RSpec.describe LunchesController, type: :controller do
       it "redirects to the lunch" do
         lunch = Lunch.create! valid_attributes
         put :update, params: {id: lunch.to_param, lunch: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(lunch)
+        expect(response).to redirect_to(@menu)
       end
     end
 

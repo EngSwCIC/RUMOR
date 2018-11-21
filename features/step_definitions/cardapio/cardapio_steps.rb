@@ -7,7 +7,9 @@ require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", 
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 
 Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao|
-  pending
+  if funcao == "gestor"
+    visit()
+  end
 end
 
 
@@ -29,7 +31,7 @@ end
 
 
 Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
-  
+  puts page_name
   pending
 end
 

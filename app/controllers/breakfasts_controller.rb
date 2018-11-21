@@ -29,7 +29,8 @@ class BreakfastsController < ApplicationController
 
   def update
       if @breakfast.update(breakfast_params)
-        redirect_to @breakfast, notice: 'Breakfast was successfully updated.'
+        @menu = Menu.find(@breakfast.menu_id)
+        redirect_to @menu, notice: 'Breakfast was successfully updated.'
       else
         render :edit, locals: { :menu_id => :menu_id }
       end
@@ -39,9 +40,6 @@ class BreakfastsController < ApplicationController
     begin
       @breakfast.destroy
       flash[:notice] = 'Desjejum excluido com sucesso'
-      redirect_to breakfasts_url
-    rescue StandardError => e
-      flash[:alert] = 'Erro ao excluir Desjejum!!'
       redirect_to breakfasts_url
     end
   end
