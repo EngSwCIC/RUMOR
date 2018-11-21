@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe MenusController, type: :controller do
-  login_user
   # This should return the minimal set of attributes required to create a valid
   # Menu. As you add validations to Menu, be sure to
   # adjust the attributes here as well.

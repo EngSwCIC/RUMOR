@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe BreakfastsController, type: :controller do
-  login_user
   before (:each) do
     @menu = FactoryBot.create(:menu)
   end
@@ -15,6 +14,7 @@ RSpec.describe BreakfastsController, type: :controller do
       bread: "pão careca",
       vegetarian_bread: "pão sem leite",
       margarine: "manteiga",
+      fruit: "goiaba",
       vegetarian_margarine: "margarina vegana",
       complement: "geleia",
       vegetarian_complement: "geleia"
@@ -31,6 +31,7 @@ RSpec.describe BreakfastsController, type: :controller do
       margarine: "manteiga",
       vegetarian_margarine: "margarina vegana",
       complement: "geleia",
+      fruit: "goiaba",
       vegetarian_complement: "geleia"
     }
   }

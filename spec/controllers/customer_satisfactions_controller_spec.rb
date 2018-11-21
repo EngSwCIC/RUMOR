@@ -5,7 +5,7 @@ RSpec.describe CustomerSatisfactionsController, type: :controller do
 
  
   let(:valid_attributes) {
-    { menu_id: @customer_satisfaction.to_param,
+    { 
       user_group: 2,
       meal: "jantar",
       rating: 5,

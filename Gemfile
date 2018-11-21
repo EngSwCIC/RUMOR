@@ -69,7 +69,7 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
-  gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
+  gem 'rspec-rails', '~> 3.8' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
   gem 'factory_bot_rails' # Factory_bot to fenerate factories. added by Icaro Rezende 2018-11-19
   gem 'rails-controller-testing'
 end

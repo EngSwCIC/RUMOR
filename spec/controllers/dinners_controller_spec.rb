@@ -2,7 +2,6 @@ require 'rails_helper'
 
 
 RSpec.describe DinnersController, type: :controller do
-  login_user
   before (:each) do
     @menu = FactoryBot.create(:menu)
   end
