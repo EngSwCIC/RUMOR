@@ -99,10 +99,10 @@ GEM
     duktape (2.0.1.0)
     erubi (1.7.1)
     execjs (2.7.0)
-    factory_bot (4.11.1)
+    factory_girl (4.9.0)
       activesupport (>= 3.0.0)
-    factory_bot_rails (4.11.1)
-      factory_bot (~> 4.11.1)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
@@ -302,7 +302,7 @@ DEPENDENCIES
   cucumber-rails-training-wheels
   database_cleaner
   duktape
-  factory_bot_rails
+  factory_girl_rails
   gemaina
   guard-rspec
   haml

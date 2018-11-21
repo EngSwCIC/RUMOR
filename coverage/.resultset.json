@@ -1,0 +1,100 @@
+{
+  "RSpec": {
+    "coverage": {
+      "D:/luizm/Documents/RUMOR/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/helpers/rumor_helper.rb": [
+        1,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/controllers/menu_reviews_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        null,
+        null,
+        1,
+        4,
+        4,
+        2,
+        2,
+        null,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/models/menu_review.rb": [
+        1,
+        1,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "D:/luizm/Documents/RUMOR/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "D:/luizm/Documents/RUMOR/app/controllers/rumor_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "D:/luizm/Documents/RUMOR/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "D:/luizm/Documents/RUMOR/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "D:/luizm/Documents/RUMOR/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1542844440
+  }
+}

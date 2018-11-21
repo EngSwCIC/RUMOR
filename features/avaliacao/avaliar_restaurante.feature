@@ -3,7 +3,7 @@
 
 Funcionalidade: Eu, enquanto usuário, consigo avaliar o restaurante universitário como estabelecimento.
 
-Cenário de Fundo:
+Contexto:
 Dado que eu estou na página onde o formulário de avaliação do estabelecimento é visualizado
 
 Cenário: Usuário envia o formulário de avaliação do estabelecimento (Happy Path)

@@ -13,11 +13,11 @@ RSpec.describe MenuReviewsController, type: :controller do
   }
   
   let(:invalid_attributes) {
-    { nome: '',
+    { nome: 'Luiz',
       email: '',
       tipo_usuario: '',
-      refeicao: '',
-      categoria: '',
+      refeicao: 'Jantar',
+      categoria: 'Sopa',
       nota: '',
       consideracao: ''
     }
