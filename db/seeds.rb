@@ -86,7 +86,7 @@ Rating.create!([
      },{
           campus_name: 'RU/FAL',
           meal: 'Café da Manhã',
-          rating: 3.6
+          rating: 4.3
 
      },{
           campus_name: 'Darcy Ribeiro',
