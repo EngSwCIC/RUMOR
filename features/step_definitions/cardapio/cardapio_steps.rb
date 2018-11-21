@@ -6,18 +6,36 @@ require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "paths"))
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 
-Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
-  if funcao_na_plataforma == "gestor"
-    email = 'gestorteste@email.com'
-    password = 'senha123'
+module CardapioHelpers 
+  def login(email, senha)
+    visit '/users/sign_in'
+    expect(page).to have_text("Email")
+    fill_in 'user_email', :with => email
+    fill_in 'user_password', :with => senha
+    click_button "Sign in"
+    expect(page).to have_text("Seja bem-vindo, #{email}!")
+  end
 
+  def registrar_usuario(email, senha)
     visit '/users/sign_up'
     fill_in 'user_email', :with => email
-    fill_in 'user_password', :with => password
-    fill_in 'user_password_confirmation', :with => password
+    fill_in 'user_password', :with => senha
+    fill_in 'user_password_confirmation', :with => senha
     click_button "Sign up"
     expect(page).to have_text("Seja bem-vindo, #{email}!")
+  end
 
+end
+World(CardapioHelpers)
+
+Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
+  if funcao_na_plataforma == "gestor"
+    email_gestor = 'gestorteste@email.com'
+    senha_gestor = 'senha123'
+
+    registrar_usuario email_gestor, senha_gestor
+
+    @gestor = User.find_by(:email => email_gestor)
   end
 end
 
@@ -39,14 +57,8 @@ Dado /^que (?:|eu )adiciono o arquivo de "(.+)"$/  do |string|
 end
 
 
-Dado /^que (?:|eu )estou na (.+)$/ do |page_name|
-  puts page_name
-  pending
-end
-
 E /^que (?:|eu )estou na (.+)$/ do |page_name|
-
-  pending
+  visit path_to(page_name)
 end
 
 

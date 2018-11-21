@@ -15,7 +15,8 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-
+    when /^página de criar cardápio$/
+      '/menus/new'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
