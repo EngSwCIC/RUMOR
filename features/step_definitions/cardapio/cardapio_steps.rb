@@ -55,8 +55,10 @@ Quando /^(?:|eu )visito a (.+)$/ do |page_name|
   pending
 end
 
-Quando /^(?:|eu )clico em "([^"]*)"$/ do |text|
-  pending
+Quando /^(?:|eu )clico em "([^"]*)"$/ do |value_do_botao|
+  if value_do_botao == "Criar Cadápio"
+    click_button "Create Menu"
+  end
 end
 
 Quando /^(?:|eu )selecionar (?:|a |o )([^"]*) como "([^"]*)"$/ do |selection_id, option_name|
