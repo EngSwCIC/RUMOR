@@ -1,5 +1,6 @@
 class BreakfastsController < ApplicationController
   before_action :set_breakfast, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @breakfasts = Breakfast.all
@@ -10,6 +11,7 @@ class BreakfastsController < ApplicationController
 
   def new
     @breakfast = Breakfast.new
+    @menus = Menu.all
   end
 
   def edit
@@ -18,9 +20,10 @@ class BreakfastsController < ApplicationController
   def create
     @breakfast = Breakfast.new(breakfast_params)
       if @breakfast.save
-        redirect_to @breakfast, notice: 'Breakfast was successfully created.'
+        @menu = Menu.find(@breakfast.menu_id)
+        redirect_to @menu, notice: 'Breakfast was successfully created.'
       else
-        render :new
+        render :new, locals: { :menu_id => :menu_id }
       end
   end
 
@@ -28,7 +31,7 @@ class BreakfastsController < ApplicationController
       if @breakfast.update(breakfast_params)
         redirect_to @breakfast, notice: 'Breakfast was successfully updated.'
       else
-        render :edit
+        render :edit, locals: { :menu_id => :menu_id }
       end
   end
 
@@ -51,6 +54,6 @@ class BreakfastsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def breakfast_params
-      params.require(:breakfast).permit(:hot_drinks, :vegetarian_drink, :chocolate_milk, :bread, :vegetarian_bread, :margarine, :vegetarian_margarine, :complement, :vegetarian_complement)
+      params.require(:breakfast).permit(:menu_id, :hot_drinks, :vegetarian_drink, :chocolate_milk, :bread, :vegetarian_bread, :margarine, :vegetarian_margarine, :complement, :vegetarian_complement, :fruit)
     end
 end

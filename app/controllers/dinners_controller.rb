@@ -1,5 +1,6 @@
 class DinnersController < ApplicationController
   before_action :set_dinner, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
     @dinners = Dinner.all
@@ -10,6 +11,7 @@ class DinnersController < ApplicationController
 
   def new
     @dinner = Dinner.new
+    @menus = Menu.all
   end
 
   def edit
@@ -18,17 +20,19 @@ class DinnersController < ApplicationController
   def create
     @dinner = Dinner.new(dinner_params)
       if @dinner.save
-        redirect_to @dinner, notice: 'Dinner was successfully created.'
+        @menu = Menu.find(@dinner.menu_id)
+        redirect_to @menu, notice: 'Dinner was successfully created.'
       else
-        render :new
+        render :new, locals: { :menu_id => :menu_id }
       end
   end
 
   def update
       if @dinner.update(dinner_params)
-        redirect_to @dinner, notice: 'Dinner was successfully updated.'
+        @menu = Menu.find(@dinner.menu_id)
+        redirect_to @menu, notice: 'Dinner was successfully updated.'
       else
-        render :edit
+        render :edit, locals: { :menu_id => :menu_id }
       end
   end
 
@@ -51,6 +55,6 @@ class DinnersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dinner_params
-      params.require(:dinner).permit(:salad, :sauce, :soup, :main_course, :vegetarian_dish, :accompaniments, :dessert, :juice)
+      params.require(:dinner).permit(:menu_id, :salad, :sauce, :soup, :main_course, :vegetarian_dish, :accompaniments, :dessert, :juice)
     end
 end
