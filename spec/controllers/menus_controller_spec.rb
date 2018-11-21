@@ -3,9 +3,7 @@ require 'rails_helper'
 
 RSpec.describe MenusController, type: :controller do
   login_user
-  # This should return the minimal set of attributes required to create a valid
-  # Menu. As you add validations to Menu, be sure to
-  # adjust the attributes here as well.
+  
   let(:valid_attributes) {
     {date: "2018-01-01"}
   }
@@ -14,9 +12,6 @@ RSpec.describe MenusController, type: :controller do
     {date: nil}
   }
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # MenusController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
   describe "GET #index" do

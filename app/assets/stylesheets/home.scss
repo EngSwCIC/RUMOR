@@ -17,23 +17,25 @@
 }
 
 .navbar li, .navbar a {
-  color: lightgray;
+  color: lwhite;
   font-family: sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
+  font-weight: bold;
 }
 
-.navbar li a:hover {
+.navbar li a {
   color: white;
 }
-
 .navbarColor {
-  background-color: #E79051;
+  background-color: #F28D3C;
 }
  .navBarFlex {
   display: flex;
   width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
  .navBarItens {
   color: white;

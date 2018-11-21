@@ -21,7 +21,7 @@ class DinnersController < ApplicationController
     @dinner = Dinner.new(dinner_params)
       if @dinner.save
         @menu = Menu.find(@dinner.menu_id)
-        redirect_to @menu, notice: 'Dinner was successfully created.'
+        redirect_to @menu, notice: 'Jantar criado com sucesso'
       else
         render :new, locals: { :menu_id => :menu_id }
       end
@@ -30,7 +30,7 @@ class DinnersController < ApplicationController
   def update
       if @dinner.update(dinner_params)
         @menu = Menu.find(@dinner.menu_id)
-        redirect_to @menu, notice: 'Dinner was successfully updated.'
+        redirect_to @menu, notice: 'Jantar atualizado com sucesso'
       else
         render :edit, locals: { :menu_id => :menu_id }
       end
@@ -45,12 +45,10 @@ class DinnersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_dinner
       @dinner = Dinner.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def dinner_params
       params.require(:dinner).permit(:menu_id, :salad, :sauce, :soup, :main_course, :vegetarian_dish, :accompaniments, :dessert, :juice)
     end
