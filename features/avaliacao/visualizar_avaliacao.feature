@@ -18,12 +18,12 @@ Dado que a refeição é Jantar eu devo visualizar o texto "Refeição: Jantar"
 Cenário: Usuário visualiza avaliação Café da Manhã no Campus RU/FGA
 Quando eu escolho o nome "RU/FGA"
 E clico no botão "Pesquisar"
-Então eu devo ver o resultado "0.2 Se eu fosse você comia no postinho"
+Então eu devo ver o resultado "0.2 Se eu fosse você comia na lanchonete"
 
 Cenário: Usuário visualiza avaliação Café da Manhã no Campus RU/FCE
 Quando eu escolho o nome "RU/FCE"
 E clico no botão "Pesquisar"
-Então eu devo ver o resultado "2 Não recomento mas se quiser arriscar..."
+Então eu devo ver o resultado "2.0 Não recomento mas se quiser arriscar..."
 
 Cenário: Usuário visualiza avaliação Café da Manhã no Campus RU/FUP
 Quando eu escolho o nome "RU/FUP"
@@ -44,7 +44,7 @@ Então eu devo ver o resultado "4.2 Vai sem medo de ser feliz!!"
 Cenário: Usuário visualiza avaliação Almoço no Campus RU/FCE
 Quando eu escolho o nome "RU/FCE"
 E clico no botão "Pesquisar"
-Então eu devo ver o resultado "0.8 Se eu fosse você comia no postinho"
+Então eu devo ver o resultado "0.8 Se eu fosse você comia na lanchonete"
 
 Cenário: Usuário visualiza avaliação Almoço no Campus RU/FUP
 Quando eu escolho o nome "RU/FUP"
@@ -69,7 +69,7 @@ Então eu devo ver o resultado "4.1 Vai sem medo de ser feliz!!"
 Cenário: Usuário visualiza avaliação Jantar no Campus RU/FUP
 Quando eu escolho o nome "RU/FUP"
 E clico no botão "Pesquisar"
-Então eu devo ver o resultado "0 Se eu fosse você comia no postinho"
+Então eu devo ver o resultado "0.0 Se eu fosse você comia na lanchonete"
 
 Cenário: Usuário visualiza avaliação Jantar no Campus RU/FAL
 Quando eu escolho o nome "RU/FAL"

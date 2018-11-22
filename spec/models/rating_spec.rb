@@ -31,7 +31,7 @@ RSpec.describe Rating, type: :model do
 
   it 'rating_notification cafe_da_manha_nota_muito_baixa' do
     rating = rating(:manha_nota_muito_baixa)
-    expect(rating.rating_notification()).to eq('Se eu fosse você comia no postinho')
+    expect(rating.rating_notification()).to eq('Se eu fosse você comia na lanchonete')
   end
 
   it 'rating_notification cafe_da_manha_nota_baixa' do
@@ -61,7 +61,7 @@ RSpec.describe Rating, type: :model do
 
   it 'rating_notification almoço_nota_muito_baixa' do
     rating = rating(:tarde_nota_muito_baixa)
-    expect(rating.rating_notification()).to eq('Se eu fosse você comia no postinho')
+    expect(rating.rating_notification()).to eq('Se eu fosse você comia na lanchonete')
   end
 
   it 'rating_notification almoço_nota_baixa' do
@@ -91,7 +91,7 @@ RSpec.describe Rating, type: :model do
 
   it 'rating_notification jantar_nota_muito_baixa' do
     rating = rating(:noite_nota_muito_baixa)
-    expect(rating.rating_notification()).to eq('Se eu fosse você comia no postinho')
+    expect(rating.rating_notification()).to eq('Se eu fosse você comia na lanchonete')
   end
 
   it 'rating_notification jantar_nota_baixa' do

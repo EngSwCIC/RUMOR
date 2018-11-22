@@ -5,7 +5,7 @@ class Rating < ApplicationRecord
         if self.rating === -1
             return 'Nenhuma avaliação foi feita ainda :('
         elsif self.rating < 1
-            return 'Se eu fosse você comia no postinho'
+            return 'Se eu fosse você comia na lanchonete'
         elsif self.rating < 2.5
             return 'Não recomento mas se quiser arriscar...'
         elsif self.rating < 4
