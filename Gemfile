@@ -64,6 +64,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
+  #Creates an image for database schema
+  gem 'rails-erd'
+
   # Gems added by Thiago Luis on Oct 19th for BDD purpouses
   gem 'gemaina' # Gema adicionada por Vinícius Gomes em 20 de Outubro de 2018
   gem	'cucumber-rails', require: false # rails pediu para adicionar require: false
