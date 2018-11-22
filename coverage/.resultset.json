@@ -5,6 +5,10 @@
         1,
         null
       ],
+      "D:/luizm/Documents/RUMOR/app/helpers/ru_reviews_helper.rb": [
+        1,
+        null
+      ],
       "D:/luizm/Documents/RUMOR/app/helpers/rumor_helper.rb": [
         1,
         null
@@ -79,6 +83,45 @@
         0,
         0
       ],
+      "D:/luizm/Documents/RUMOR/app/controllers/ru_reviews_controller.rb": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
       "D:/luizm/Documents/RUMOR/app/jobs/application_job.rb": [
         0,
         0
@@ -93,8 +136,14 @@
         0,
         0,
         0
+      ],
+      "D:/luizm/Documents/RUMOR/app/models/ru_review.rb": [
+        0,
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1542845159
+    "timestamp": 1542847788
   }
 }
