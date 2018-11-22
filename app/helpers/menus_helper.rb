@@ -9,25 +9,25 @@ module MenusHelper
     end
     return chosen
   end
-  def last_month_menu(menus, first_day)
-    this_month = first_day.yesterday.mon
-    chosen = []
-    menus.each do |m|
-      if(m.date.mon == this_month)
-        chosen << m
-      end
-    end
-    return chosen
-    end
-  def last_month_menu(menus, last_day)
-    this_month = last_day.tomorrow.mon
-    chosen = []
-    menus.each do |m|
-      if(m.date.mon == this_month)
-        chosen << m
-      end
-    end
-    return chosen
-  end
+  # def last_month_menu(menus, first_day)
+  #   this_month = first_day.yesterday.mon
+  #   chosen = []
+  #   menus.each do |m|
+  #     if(m.date.mon == this_month)
+  #       chosen << m
+  #     end
+  #   end
+  #   return chosen
+  #   end
+  # def last_month_menu(menus, last_day)
+  #   this_month = last_day.tomorrow.mon
+  #   chosen = []
+  #   menus.each do |m|
+  #     if(m.date.mon == this_month)
+  #       chosen << m
+  #     end
+  #   end
+  #   return chosen
+  # end
 
 end
