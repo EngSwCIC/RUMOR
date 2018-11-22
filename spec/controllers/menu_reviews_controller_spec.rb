@@ -49,4 +49,11 @@ RSpec.describe MenuReviewsController, type: :controller do
     end
   end
 
+  describe "GET #new" do
+    it "cria com sucesso uma pesquisa de cardápio" do
+      get :new
+      expect(response).to be_success
+    end
+  end
+
 end
