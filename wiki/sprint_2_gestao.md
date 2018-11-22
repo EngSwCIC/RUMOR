@@ -61,4 +61,46 @@ Revisor: Diego Barbosa
 
 ## Resultados
 
-Não completada até o momento.
+### Resultado - #5 Como gestor eu quero visualizar os cardápios
+
+>Relizado com sucesso.
+
+### Resultado - #6 Como gestor eu quero criar um cardápio
+
+>Realizado com sucesso.
+
+### Resultado - #7 Como gestor eu quero gerenciar um cardápio
+
+>Realizado com sucesso.
+
+### Resultado  - #8 Como gestor eu quero importar uma planilha de cardápios
+
+>Não implementado.
+
+Nota dos desenvolvedores:  
+_O RSpec foi utilizado para desenvolver orientado a testes as features 5, 6 e 7. Elas foram principalmente a implementação de um CRUD incluindo views, models, rotas e controller. A parte de aceitação de usuário foi feita utilizando o cucumber com cenários de BDD. Todos ficaram verdes, exceto os da feature 8 que não pode ser implementada e testada._
+
+### Resultado - #12 Como gestor eu quero criar uma pesquisa de satisfação
+
+>Realizada com sucesso.
+
+### Resultado  - #13 Como gestor eu quero gerenciar as pesquisas de satisfação
+
+>Realizada com sucesso.  
+
+### Resultado  - #14 Como gestor eu quero exportar relatórios das pesquisas de satisfação
+
+>Realizada com sucesso.
+
+Nota dos desenvolvedores:  
+_As features 13 e 14 foram implementadas com desenvolvimento orientado a testes em que todos os métodos do controller da pesquisa, as rotas, models e views foram testados. Testes de integração e aceitação foram feitos utilizando BDD aonde se comparavam cenários em que um gestor do sistema poderia se encontrar._
+
+### Resultado - #22 Como gestor eu quero poder gerar e visualizar relatórios de pesquisa de satisfação
+
+>Realizada com sucesso
+
+Nota dos desenvolvedores:  
+_Essa sprint fizemos uma breve instalão do bootstrap. Por questões de logística optamos por deixar a última sprint para focar nas telas. Durante essa, foi desenvolvido em programação em pares os testes para as demais features e a implementação em rspec para as features de gráficos e relatórios em pdf. Além disso, foram feitos os testes usando o devise também que antes não tinha sido feito. E criamos e implementamos cenários de BDD para a feature de relatórios em pdf._
+
+### Modelo Entidade Relacionamento do Banco de Dados
+
