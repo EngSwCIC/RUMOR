@@ -7,6 +7,13 @@ Dado("que eu tenha uma lista de pesquisas {string}, {string}, {string}, {string}
 end
 
 Dado("que eu esteja na página index de pesquisas") do
+  email = 'user@user.com'
+  password = 'user123'
+  User.new(:email => email, :password => password, :password_confirmation => password).save!
+  visit new_user_session_path
+  fill_in :Email,with: "user@user.com"
+  fill_in :Password,with: "user123"
+  click_button "Log in"
   visit customer_satisfactions_path
 end
 
@@ -33,7 +40,6 @@ end
 Quando("eu clicar no link para ver detalhes daquela pesquisa") do 
   path = customer_satisfaction_path(@customer_satisfaction.id)
   link = "a[href=\'#{path}\']"
-
 end
 
 Então("eu devo ver a página de pesquisa com os dados dela:") do | table|
