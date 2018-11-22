@@ -7,7 +7,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", 
 require File.expand_path(File.join(File.dirname(__FILE__), "../../", "support", "selectors"))
 require "xpath"
 
-module CardapioHelpers 
+module CardapioHelpers
   def login(email, senha)
     visit '/users/sign_in'
     expect(page).to have_text("Email")
@@ -90,7 +90,7 @@ Dado /^(?:|que )(?:|eu )preencho os campos inadequadamente.$/ do
 end
 
 Então /^(?:|eu )deveria ver "([^"]*)"$/ do |texto_a_ser_visto|
-expect(page).to have_text(texto_a_ser_visto)
+  expect(page).to have_text(texto_a_ser_visto)
 end
 
 Então /^(?:|eu )não deveria ver "([^"]*)"$/ do |text|
@@ -102,7 +102,7 @@ Então /^(?:|eu )deveria estar na ([^"]*)$/ do |page_name|
 end
 
 Então /^(?:|eu )quero ser redirecionado para ([^"]*)$/ do |page_name|
-  pending
+  expect(current_path).to eq(path_to(page_name))
 end
 
 Então /^(?:|eu )não quero ser redirecionado para ([^"]*)$/ do |page_name|
@@ -133,7 +133,7 @@ E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
   # É necessário encontrar o id do cardápio do dia desejado
   # Para facilitar, os testes iniciais só envolverão cardápios do mês de novembro
   data_do_cardapio = Date.new(2018, 11, dia_do_cardapio)
-  cardapio = Menu.find_by( :date => data_do_cardapio ) 
+  cardapio = Menu.find_by( :date => data_do_cardapio )
 
   cafe_da_manha = Breakfast.new(
   :menu_id => cardapio.id,
@@ -149,9 +149,9 @@ E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
   :fruit => "pão de batata" )
   cafe_da_manha.save!
 
-  almoco = Lunch.new( 
-    :menu_id => cardapio.id, 
-    :salad => "Churrasco de Bode", 
+  almoco = Lunch.new(
+    :menu_id => cardapio.id,
+    :salad => "Churrasco de Bode",
     :sauce => "pão de batata",
     :main_course => "pão de batata",
     :garnish => "pão de batata",
@@ -161,9 +161,9 @@ E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
     :juice => "pão de batata")
   almoco.save!
 
-  jantar = Dinner.new( 
-    :menu_id => cardapio.id, 
-    :salad => "Churrasco de Bode", 
+  jantar = Dinner.new(
+    :menu_id => cardapio.id,
+    :salad => "Churrasco de Bode",
     :sauce => "pão de batata",
     :main_course => "pão de batata",
     :soup => "pão de batata",

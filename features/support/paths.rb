@@ -20,6 +20,16 @@ module NavigationHelpers
 
     when /^página de cardápios$/
       '/menus'
+
+    when /^tela de login$/
+      new_user_session_path
+
+    when /^a página de recuperação de senhas$/
+      new_user_password_path
+
+    when /^a tela de backoffice$/
+      dashboard_home_path
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
