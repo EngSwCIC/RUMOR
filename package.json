@@ -1,5 +1,7 @@
 {
   "name": "RUMOR",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "clipboard": "^2.0.4"
+  }
 }
