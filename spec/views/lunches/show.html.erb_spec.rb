@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe "lunches/show", type: :view do
   before(:each) do
+    @m1 = Menu.create!(:date => "2018-04-06")
     @lunch = assign(:lunch, Lunch.create!(
+       :menu_id => @m1.id,
       :salad => "Salad",
       :sauce => "Sauce",
       :main_course => "Main Course",

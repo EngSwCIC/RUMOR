@@ -1,8 +1,6 @@
 require 'rails_helper'
 
-puts "Starting Lunch Model Specs"
 RSpec.describe Lunch, type: :model do
-  puts "- without attributes"
   it "is not valid without attributes" do
     expect(Lunch.new).to_not be_valid, "where are the attributes?"
   end
@@ -22,4 +20,3 @@ RSpec.describe Lunch, type: :model do
     expect(lunch1).to_not be_valid
   end
 end
-puts "End of Lunch Model Specs"

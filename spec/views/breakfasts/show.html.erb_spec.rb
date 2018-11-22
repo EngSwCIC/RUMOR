@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe "breakfasts/show", type: :view do
   before(:each) do
+    @menu = Menu.create!(:date => "2018-06-06")
     @breakfast = assign(:breakfast, Breakfast.create!(
+      :menu_id => @menu.id,
       :hot_drinks => "Hot Drinks",
       :vegetarian_drink => "Vegetarian Drink",
       :chocolate_milk => "Chocolate Milk",
@@ -11,7 +13,8 @@ RSpec.describe "breakfasts/show", type: :view do
       :margarine => "Margarine",
       :vegetarian_margarine => "Vegetarian Margarine",
       :complement => "Complement",
-      :vegetarian_complement => "Vegetarian Complement"
+      :vegetarian_complement => "Vegetarian Complement",
+      :fruit => "Fruit"
     ))
   end
 
