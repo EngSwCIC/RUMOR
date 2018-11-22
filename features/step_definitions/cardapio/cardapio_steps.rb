@@ -55,10 +55,14 @@ Quando /^(?:|eu )visito a (.+)$/ do |page_name|
   pending
 end
 
-Quando /^(?:|eu )clico em "([^"]*)"$/ do |value_do_botao|
+Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
   if value_do_botao == "Criar Cadápio"
     click_button "Create Menu"
   end
+end
+
+Quando /^(?:|eu )clico em "([^"]*)"$/ do |value_do_link|
+  click_link value_do_link
 end
 
 Quando /^(?:|eu )selecionar (?:|a |o )([^"]*) como "([^"]*)"$/ do |selection_id, option_name|
@@ -107,12 +111,21 @@ end
 E /^ao ver um cardápio válido$/ do
   pending
   end
+
 E /^ao ver o cardápio do dia (.+)$/ do |data|
   pending
 end
 
 E  /^uma mensagem de erro deve aparecer$/ do
   pending
+end
+
+E /^as datas foram carregadas$/ do
+  datinha = Date.new(2018, 01, 01)
+  while(datinha.year == 2018)
+    Menu.create(date: datinha)
+    datinha = datinha.tomorrow
+  end
 end
 
 Dado /^ao ver um cardápio de (.+)$/ do |opcao|

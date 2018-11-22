@@ -10,5 +10,5 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
     Dado que eu estou logado como gestor
     E que eu estou na página de criar cardápio
     E que eu preencho os campos adequadamente.
-    Quando eu clico em "Criar Cadápio"
+    Quando eu clico no botão "Criar Cadápio"
     Então eu deveria ver "Menu was successfully created."
