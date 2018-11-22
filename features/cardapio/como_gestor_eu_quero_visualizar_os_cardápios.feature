@@ -15,6 +15,7 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
 
   Cenario: Gestor visualizar cardápio específico
     Dado que eu estou logado como gestor
+    E as datas foram carregadas
     E que eu estou na página de cardápios
-    E ao ver o cardápio do dia '04'
-    Então eu deveria ver "04, November 2018"
+    Quando eu clico em "04"
+    Então eu deveria ver "04 November 2018"
