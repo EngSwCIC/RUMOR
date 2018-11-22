@@ -102,5 +102,8 @@ _As features 13 e 14 foram implementadas com desenvolvimento orientado a testes 
 Nota dos desenvolvedores:  
 _Essa sprint fizemos uma breve instalão do bootstrap. Por questões de logística optamos por deixar a última sprint para focar nas telas. Durante essa, foi desenvolvido em programação em pares os testes para as demais features e a implementação em rspec para as features de gráficos e relatórios em pdf. Além disso, foram feitos os testes usando o devise também que antes não tinha sido feito. E criamos e implementamos cenários de BDD para a feature de relatórios em pdf._
 
-### Modelo Entidade Relacionamento do Banco de Dados
+### Informações adicionais
 
+[Modelo Entidade Relacionamento do Banco de Dados](https://github.com/EngSwCIC/RUMOR/blob/develop_grupo_1/erd.pdf)
+
+[Cobertura de Testes feita pelo Cucumber](https://github.com/EngSwCIC/RUMOR/blob/develop_grupo_1/coverage/cucumber/index.html)
