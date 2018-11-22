@@ -62,6 +62,7 @@ Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
 end
 
 Quando /^(?:|eu )clico em "([^"]*)"$/ do |value_do_link|
+  expect(page).to have_text(value_do_link)
   click_link value_do_link
 end
 
@@ -121,11 +122,56 @@ E  /^uma mensagem de erro deve aparecer$/ do
 end
 
 E /^as datas foram carregadas$/ do
-  datinha = Date.new(2018, 01, 01)
-  while(datinha.year == 2018)
-    Menu.create(date: datinha)
-    datinha = datinha.tomorrow
+  data_do_cardapio = Date.new(2018, 01, 01)
+  while(data_do_cardapio.year == 2018)
+    Menu.create(date: data_do_cardapio)
+    data_do_cardapio = data_do_cardapio.tomorrow
   end
+end
+
+E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
+  # É necessário encontrar o id do cardápio do dia desejado
+  # Para facilitar, os testes iniciais só envolverão cardápios do mês de novembro
+  data_do_cardapio = Date.new(2018, 11, dia_do_cardapio)
+  cardapio = Menu.find_by( :date => data_do_cardapio ) 
+
+  cafe_da_manha = Breakfast.new(
+  :menu_id => cardapio.id,
+  :hot_drinks => "pão de batata",
+  :vegetarian_drink => "pão de batata",
+  :chocolate_milk => "pão de batata",
+  :bread => "pão de batata",
+  :vegetarian_bread => "pão de batata",
+  :margarine => "pão de batata",
+  :vegetarian_margarine => "pão de batata",
+  :complement => "pão de batata",
+  :vegetarian_complement => "pão de batata",
+  :fruit => "pão de batata" )
+  cafe_da_manha.save!
+
+  almoco = Lunch.new( 
+    :menu_id => cardapio.id, 
+    :salad => "Churrasco de Bode", 
+    :sauce => "pão de batata",
+    :main_course => "pão de batata",
+    :garnish => "pão de batata",
+    :vegetarian_dish => "pão de batata",
+    :accompaniments => "pão de batata",
+    :dessert => "pão de batata",
+    :juice => "pão de batata")
+  almoco.save!
+
+  jantar = Dinner.new( 
+    :menu_id => cardapio.id, 
+    :salad => "Churrasco de Bode", 
+    :sauce => "pão de batata",
+    :main_course => "pão de batata",
+    :soup => "pão de batata",
+    :vegetarian_dish => "pão de batata",
+    :accompaniments => "pão de batata",
+    :dessert => "pão de batata",
+    :juice => "pão de batata")
+  jantar.save!
 end
 
 Dado /^ao ver um cardápio de (.+)$/ do |opcao|

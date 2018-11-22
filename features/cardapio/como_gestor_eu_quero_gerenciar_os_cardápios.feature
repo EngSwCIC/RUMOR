@@ -17,23 +17,29 @@ Funcionalidade: como_gestor_eu_quero_gerenciar_os_cardápios
 
   Cenário: Gestor gerenciar café da manhã
     Dado que eu estou logado como gestor
-    E que eu estou na página de edição de café da manhã
-    E ao ver um cardápio de desjejum
-    Quando eu clicar em "Editar desjejum"
-    Então eu quero ser redirecionado para a página de edição de desjejum
+    E as datas foram carregadas
+    E que eu estou na página de cardápios
+    E o cardápio "04" está completo
+    E eu clico em "04"
+    Quando eu clico em "Editar Café da Manhã"
+    Então eu deveria ver "Alterações no Café da Manhã"
 
   Cenário: Gestor gerenciar almoço
     Dado que eu estou logado como gestor
-    E que eu estou na página de edição de cardápio
-    E ao ver um cardápio de almoço
-    Quando eu clicar em "Editar almoço"
-    Então eu quero ser redirecionado para a página de edição de almoço
+    E as datas foram carregadas
+    E que eu estou na página de cardápios
+    E o cardápio "04" está completo
+    E eu clico em "04"
+    Quando eu clico em "Editar Almoço"
+    Então eu deveria ver "Alterações no Almoço"
 
   Cenário: Gestor gerenciar jantar
     Dado que eu estou logado como gestor
-    E que eu estou na página de edição de cardápio
-    E ao ver um cardápio de jantar
-    Quando eu clicar em "Editar jantar"
-    Então eu quero ser redirecionado para a página de edição de jantar
+    E as datas foram carregadas
+    E que eu estou na página de cardápios
+    E o cardápio "04" está completo
+    E eu clico em "04"
+    Quando eu clico em "Editar Jantar"
+    Então eu deveria ver "Alterações no Jantar"
 
 

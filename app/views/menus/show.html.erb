@@ -27,6 +27,7 @@
                 <tr><td><p>Complemento</p><%= @menu.breakfast.complement %></td></tr>
                 <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_complement %></td></tr>
                 <tr><td><p>Fruta</p><%= @menu.breakfast.fruit %></td></tr>
+                <tr><td><%= link_to 'Editar Café da Manhã', edit_breakfast_path(@menu.breakfast) %></td></tr>
               </tbody>
             </table>
           <% else %>
@@ -50,6 +51,7 @@
                 <tr><td><p>Acompanhamentos</p><%= @menu.lunch.accompaniments %></td></tr>
                 <tr><td><p>Sobremesa</p><%= @menu.lunch.dessert %></td></tr>
                 <tr><td><p>Refresco</p><%= @menu.lunch.juice %></td></tr>
+                <tr><td><%= link_to 'Editar Almoço', edit_lunch_path(@menu.lunch) %></td></tr>
               </tbody>
             </table>
           <% else %>
@@ -73,6 +75,7 @@
                 <tr><td><p>Acompanhamentos</p><%= @menu.dinner.accompaniments %></td></tr>
                 <tr><td><p>Sobremesa</p><%= @menu.dinner.dessert %></td></tr>
                 <tr><td><p>Refresco</p><%= @menu.dinner.juice %></td></tr>
+                <tr><td><%= link_to 'Editar Jantar', edit_dinner_path(@menu.dinner) %></td></tr>
               </tbody>
             </table>
           <% else %>
