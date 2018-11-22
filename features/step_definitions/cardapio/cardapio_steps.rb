@@ -84,8 +84,8 @@ Dado /^(?:|que )(?:|eu )preencho os campos inadequadamente.$/ do
   pending
 end
 
-Então /^(?:|eu )deveria ver "([^"]*)"$/ do |text|
-  pending
+Então /^(?:|eu )deveria ver "([^"]*)"$/ do |texto_a_ser_visto|
+expect(page).to have_text(texto_a_ser_visto)
 end
 
 Então /^(?:|eu )não deveria ver "([^"]*)"$/ do |text|
