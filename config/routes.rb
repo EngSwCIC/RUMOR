@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'rumor/index'
+  resources :rus
+  get 'working_hour', to: 'working_hour#index', as: '/working_hour' 
+  get 'view_rating', to: 'view_rating#index', as: '/view_rating' 
+  get 'rus/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'rumor#index'
+  root 'rus#index'
 end

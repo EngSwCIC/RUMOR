@@ -68,7 +68,6 @@ GEM
     coffee-script-source (1.8.0)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
-<<<<<<< HEAD
     cucumber (3.1.2)
       builder (>= 2.1.2)
       cucumber-core (~> 3.2.0)
@@ -94,32 +93,32 @@ GEM
     cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
     database_cleaner (1.7.0)
-=======
->>>>>>> b6480522afa0a1357b6be51d2873df9023747555
     diff-lcs (1.3)
+    docile (1.3.1)
     erubi (1.7.1)
     execjs (2.7.0)
+    factory_bot (4.11.1)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
+      railties (>= 3.0.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
-<<<<<<< HEAD
     gemaina (1.0)
     gherkin (5.1.0)
-=======
->>>>>>> b6480522afa0a1357b6be51d2873df9023747555
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-<<<<<<< HEAD
-    i18n (1.1.1)
-=======
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
->>>>>>> b6480522afa0a1357b6be51d2873df9023747555
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    json (2.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.1.5)
@@ -149,8 +148,6 @@ GEM
     nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
-    nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     pg (1.1.3)
     pg (1.1.3-x64-mingw32)
@@ -217,6 +214,14 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+    simplecov (0.16.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-commands-rspec (1.0.4)
@@ -264,13 +269,12 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
   cucumber-rails
   cucumber-rails-training-wheels
   database_cleaner
+  factory_bot_rails (~> 4.0)
+  faker
   gemaina
-=======
->>>>>>> b6480522afa0a1357b6be51d2873df9023747555
   haml
   jbuilder (~> 2.5)
   launchy
@@ -278,8 +282,10 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
-  rspec-rails (~> 3.8)
+  rspec-rails (~> 3.6)
   sass-rails (~> 5.0)
+  simple_form
+  simplecov
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
