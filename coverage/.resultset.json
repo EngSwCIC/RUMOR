@@ -60,6 +60,55 @@
         1,
         null
       ],
+      "D:/luizm/Documents/RUMOR/app/controllers/ru_reviews_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        4,
+        4,
+        2,
+        2,
+        null,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/models/ru_review.rb": [
+        1,
+        1,
+        null
+      ],
+      "D:/luizm/Documents/RUMOR/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "D:/luizm/Documents/RUMOR/app/models/menu_review.rb": [
         1,
         1,
@@ -83,45 +132,6 @@
         0,
         0
       ],
-      "D:/luizm/Documents/RUMOR/app/controllers/ru_reviews_controller.rb": [
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0
-      ],
       "D:/luizm/Documents/RUMOR/app/jobs/application_job.rb": [
         0,
         0
@@ -131,19 +141,8 @@
         0,
         0,
         0
-      ],
-      "D:/luizm/Documents/RUMOR/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "D:/luizm/Documents/RUMOR/app/models/ru_review.rb": [
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1542847788
+    "timestamp": 1542885899
   }
 }
