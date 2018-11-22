@@ -2,8 +2,11 @@ require 'rails_helper'
 
 RSpec.describe "breakfasts/index", type: :view do
   before(:each) do
+    @m1 = Menu.create!(:date => "2018-01-01")
+    @m2 = Menu.create!(:date => "2018-01-02")
     assign(:breakfasts, [
       Breakfast.create!(
+        :menu_id => @m1.id,
         :hot_drinks => "Hot Drinks",
         :vegetarian_drink => "Vegetarian Drink",
         :chocolate_milk => "Chocolate Milk",
@@ -12,9 +15,11 @@ RSpec.describe "breakfasts/index", type: :view do
         :margarine => "Margarine",
         :vegetarian_margarine => "Vegetarian Margarine",
         :complement => "Complement",
-        :vegetarian_complement => "Vegetarian Complement"
+        :vegetarian_complement => "Vegetarian Complement",
+        :fruit => "abacate"
       ),
       Breakfast.create!(
+        :menu_id => @m2.id,
         :hot_drinks => "Hot Drinks",
         :vegetarian_drink => "Vegetarian Drink",
         :chocolate_milk => "Chocolate Milk",
@@ -23,7 +28,8 @@ RSpec.describe "breakfasts/index", type: :view do
         :margarine => "Margarine",
         :vegetarian_margarine => "Vegetarian Margarine",
         :complement => "Complement",
-        :vegetarian_complement => "Vegetarian Complement"
+        :vegetarian_complement => "Vegetarian Complement",
+        :fruit => "abacaxi"
       )
     ])
   end
