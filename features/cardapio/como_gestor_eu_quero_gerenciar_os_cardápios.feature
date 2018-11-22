@@ -9,10 +9,11 @@ Funcionalidade: como_gestor_eu_quero_gerenciar_os_cardápios
 
   Cenário: Gestor gerenciar os cardápios
     Dado que eu estou logado como gestor
+    E as datas foram carregadas
     E que eu estou na página de cardápios
-    E ao ver um cardápio válido
-    Quando eu clicar em "Gerenciar Cardápio"
-    Então eu quero ser redirecionado para a página de edição de cardápio
+    E eu clico em "04"
+    Quando eu clico em "Edit"
+    Então eu deveria ver "Edição de Cardápio"
 
   Cenário: Gestor gerenciar café da manhã
     Dado que eu estou logado como gestor
