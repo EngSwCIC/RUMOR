@@ -40,7 +40,6 @@ end
 Quando("eu clicar no link para ver detalhes daquela pesquisa") do 
   path = customer_satisfaction_path(@customer_satisfaction.id)
   link = "a[href=\'#{path}\']"
-
 end
 
 Então("eu devo ver a página de pesquisa com os dados dela:") do | table|
