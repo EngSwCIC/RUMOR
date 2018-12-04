@@ -1,1 +1,38 @@
-<h1>RUMOR</h1>
+<center>
+  <h1>RUMOR</h1>
+  <h3>Consultar Cardápio</h3>
+
+  <%= form_tag(welcome_path, :method => "get") do %>  
+    <div class="input-group">  
+      <p> 
+      <p> Data </p> 
+      <%= date_field :data, as: :date, :required => 'required' %>
+      </p>
+      
+      <p> 
+      <p> Campus </p> 
+      <%= text_field :campus, :required => 'required'%>
+      </p>  
+      
+      <p>
+      <%= button_tag "Consultar cardápio"%> 
+      </p>
+
+    </div>  
+  <% end %>
+  
+  <br>
+  <br>
+  <br>
+
+  <% if @cardapio.nil? == false%>
+    <h2>Cardápio do dia</h2>
+    <p> <%= @cardapio.campus %> </p>
+    <% else %>
+    <p> Cadê esse cardápio?? </p>
+  <% end %>
+
+  <br>
+  <br>
+
+</center>

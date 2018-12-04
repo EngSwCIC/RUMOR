@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2018_11_21_160936) do
   enable_extension "plpgsql"
 
   create_table "cardapios", force: :cascade do |t|
+    t.text "data"
+    t.text "campus"
     t.text "bebidas_quentes"
     t.text "bebida_vegetariana"
     t.text "achocolatado"
@@ -40,7 +42,6 @@ ActiveRecord::Schema.define(version: 2018_11_21_160936) do
     t.text "jantar_acompanhamentos"
     t.text "jantar_sobremesa"
     t.text "jantar_refresco"
-
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

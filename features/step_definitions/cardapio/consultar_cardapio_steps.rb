@@ -1,6 +1,6 @@
 # encoding: utf-8
 Dado /^que eu estou na página de consulta de cardápio$/ do
-    visit ('/articles/new')
+    visit ('/welcome/index')
 end
      
 Quando /^eu preencher todos os campos$/ do
@@ -12,6 +12,6 @@ E /^clicar em "(.*?)"$/ do |consultar_button|
     find_button(consultar_button).click
 end
 
-Então /^deve mostrar a mensagem "(.*?)"$/ do |mensagem|
-    page.has_content?(mensagem)
+Então /^deve mostrar a tela de "(.*?)"$/ do |mensagem|
+    expect(page).to have_content(mensagem)
 end
