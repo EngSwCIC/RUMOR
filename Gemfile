@@ -32,6 +32,9 @@ gem 'devise'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 
+gem 'metric_fu'
+gem 'rdoc'
+gem 'flog'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
