@@ -7,6 +7,12 @@ gem 'jquery-rails'
 
 gem 'rspec'
 gem "rspec-rails"
+gem 'sdoc'
+gem 'rainbow'
+gem 'flog'
+gem 'metric_fu', git: 'https://github.com/metricfu/metric_fu.git'
+gem 'simplecov'
+gem 'simplecov-console'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

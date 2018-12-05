@@ -1,0 +1,146 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/dan/RUMOR/spec/pages_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/dan/RUMOR/app/controllers/pages_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/dan/RUMOR/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/ceilandia_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/darcy_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/gama_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/pages_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/planaltina_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/home/dan/RUMOR/spec/rails_helper.rb": [
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1544033388
+  }
+}

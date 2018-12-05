@@ -14,6 +14,16 @@ require File.expand_path("../../config/environment", __FILE__)
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+# spec/spec_helper.rb
+
+require 'simplecov'
+require 'simplecov-console'
+
+SimpleCov.formatter = SimpleCov::Formatter::Console
+
+SimpleCov.start
+
 RSpec.configure do |config|
   # config.include Capybara::DSL
   # rspec-expectations config goes here. You can use an alternate
