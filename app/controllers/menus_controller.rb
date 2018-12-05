@@ -23,13 +23,7 @@ class MenusController < ApplicationController
     case route_to params
       when :create_sheet
         load_imported_menu(params[:menu][:file])
-        raise params[:menu][:file].original_filename.inspect
-        @menu_import = Menu.new(params[:menu])
-        if @menus_import.save
-          redirect_to menus_path
-        else
-          render :new
-        end
+        redirect_to menus_path
       else
         @menu = Menu.new(menu_params)
           if @menu.save
@@ -89,7 +83,7 @@ class MenusController < ApplicationController
     def load_imported_menu(file)
       spreadsheet = open_spreadsheet(file)
 
-      for planilha in 0..spreadsheet.sheets.size do
+      for planilha in 0..spreadsheet.sheets.size-1 do
 
         first_row = spreadsheet.sheet(planilha).first_row
         
@@ -124,7 +118,7 @@ class MenusController < ApplicationController
           opcoes << spreadsheet.sheet(planilha).row(i).drop(1)
         end
   
-        opcoes_descricao = ["vegetarian_drink", "chocolate_milk", "bread", 
+        opcoes_descricao = ["hot_drinks", "vegetarian_drink", "chocolate_milk", "bread", 
                            "vegetarian_bread", "margarine", "vegetarian_margarine",
                            "complement", "vegetarian_complement", "fruit"]
   
@@ -138,9 +132,10 @@ class MenusController < ApplicationController
           opcoes << spreadsheet.sheet(planilha).row(i).drop(1)
         end
   
-        opcoes_descricao = ["salada", "molho", "prato_principal", "guarnicao",
-                            "prato_principal_vegetariano", "complementos",
-                            "sobremesa", "suco"]
+        opcoes_descricao = ["salad","sauce","main_course","garnish",
+                            "vegetarian_dish","accompaniments","dessert",
+                            "juice"]
+                           
   
         opcoes_descricao.each do |op_d|
           almoco[op_d] = opcoes.first
@@ -152,9 +147,9 @@ class MenusController < ApplicationController
           opcoes << spreadsheet.sheet(planilha).row(i).drop(1)
         end
   
-        opcoes_descricao = ["salada", "molho", "sopa", "pao", "prato_principal",
-                            "prato_principal_vegetariano", "complemento",
-                            "sobremesa", "suco"]
+        opcoes_descricao = ["salad", "sauce", "soup", "main_course", 
+                            "vegetarian_dish", "accompaniments", "dessert",
+                            "juice"]
   
         opcoes_descricao.each do |op_d|
           jantar[op_d] = opcoes.first
@@ -181,6 +176,7 @@ class MenusController < ApplicationController
   
           # Cria almoco e atribui ao cardapio
           almocos[i] = Lunch.new
+          almocos[i]
           almocos[i].menu = cardapios[i]
           almocos[i].save
   
@@ -200,20 +196,14 @@ class MenusController < ApplicationController
           end
   
           # Checa se o cardápio não foi preenchido
-          unless cardapios[i].breakfast.suco.present?
-            puts "[ERRO] Cardápio do dia #{cardapios[i].date} não preenchido! Excluindo..."
+          unless cardapios[i].breakfast.hot_drinks.present?
             cardapios[i].destroy
-          else
-            puts "Importado cardapio do dia #{cardapios[i].date}!\n"
-            cardapios_importados += 1
           end
   
         end
   
       end
   
-      puts "\nFim da importação.\nTotal de cardapios importados: #{cardapios_importados}."
-      #File.delete(Rails.root.join("cardapios", 'planilha.xlsx')) if File.exist?(Rails.root.join("cardapios", 'planilha.xlsx'))
     end
 
 end
