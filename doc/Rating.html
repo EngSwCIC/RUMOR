@@ -120,19 +120,19 @@
 
         <div class="method-description">
           
-          
+          <p>Retorna a nota do cardápio de acordo com o nome do campus e refeição</p>
           
           
 
           
           <div class="method-source-code" id="get_rating-source">
-            <pre><span class="ruby-comment"># File app/models/rating.rb, line 21</span>
+            <pre><span class="ruby-comment"># File app/models/rating.rb, line 22</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">get_rating</span>(<span class="ruby-identifier">meal</span>,<span class="ruby-identifier">campus</span>)
     <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">campus</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">campus</span>.<span class="ruby-identifier">empty?</span>
 
     <span class="ruby-ivar">@param_meal</span> = <span class="ruby-identifier">meal</span>
     <span class="ruby-ivar">@param_campus</span> = <span class="ruby-identifier">campus</span>
-    <span class="ruby-identifier">list</span> = <span class="ruby-constant">Rating</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&#39;meal LIKE ? AND campus_name LIKE ?&#39;</span>, <span class="ruby-node">&quot;%#{@param_meal}%&quot;</span>,<span class="ruby-node">&quot;%#{@param_campus}%&quot;</span>)
+    <span class="ruby-identifier">list</span> = <span class="ruby-constant">Rating</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&#39;meal LIKE ? AND campus_name LIKE ?&#39;</span>,<span class="ruby-node">&quot;%#{@param_meal}%&quot;</span>,<span class="ruby-node">&quot;%#{@param_campus}%&quot;</span>)
     <span class="ruby-identifier">offset</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-identifier">list</span>.<span class="ruby-identifier">count</span>)
     <span class="ruby-identifier">list</span>.<span class="ruby-identifier">offset</span>(<span class="ruby-identifier">offset</span>).<span class="ruby-identifier">first</span>
 <span class="ruby-keyword">end</span></pre>
@@ -167,27 +167,27 @@
 
         <div class="method-description">
           
-          
+          <p>Retorna uma mensagem de acordo com a nota do cardápio</p>
           
           
 
           
           <div class="method-source-code" id="rating_notification-source">
-            <pre><span class="ruby-comment"># File app/models/rating.rb, line 3</span>
+            <pre><span class="ruby-comment"># File app/models/rating.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">rating_notification</span>
-
-    <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span> <span class="ruby-operator">===</span> <span class="ruby-value">-1</span>
+    <span class="ruby-ivar">@rating</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@rating</span> <span class="ruby-operator">===</span> <span class="ruby-value">-1</span>
         <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Nenhuma avaliação foi feita ainda :(&#39;</span>
-    <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
         <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Se eu fosse você comia na lanchonete&#39;</span>
-    <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">2.5</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">2.5</span>
         <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Não recomento mas se quiser arriscar...&#39;</span>
-    <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">4</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">4</span>
         <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Vale o investimento :)&#39;</span>
-    <span class="ruby-keyword">elsif</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">4.5</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@rating</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">4.5</span>
         <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Vai sem medo de ser feliz!!&#39;</span>
     <span class="ruby-keyword">else</span>
-        <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Quem é outback comparado a esse RU hoje?!&#39;</span>            
+        <span class="ruby-keyword">return</span> <span class="ruby-string">&#39;Quem é outback comparado a esse RU hoje?!&#39;</span>
     <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -208,7 +208,7 @@
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="https://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 

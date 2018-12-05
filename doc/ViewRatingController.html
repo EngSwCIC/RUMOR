@@ -140,7 +140,7 @@
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 46</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@rating</span> = <span class="ruby-constant">Rating</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rating_params</span>)
   
@@ -183,7 +183,7 @@
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 76</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 77</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-ivar">@rating</span>.<span class="ruby-identifier">destroy</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
@@ -220,7 +220,7 @@
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 42</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 43</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>; <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -251,7 +251,7 @@
 
           
           <div class="method-source-code" id="get_info-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 14</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 15</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_info</span>
     <span class="ruby-ivar">@rating</span> = <span class="ruby-constant">Rating</span>.<span class="ruby-identifier">get_rating</span>(<span class="ruby-ivar">@meal</span>,<span class="ruby-identifier">params</span>[<span class="ruby-value">:name</span>])
     
@@ -288,7 +288,7 @@
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 10</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
     <span class="ruby-identifier">get_info</span>()
 <span class="ruby-keyword">end</span></pre>
@@ -321,7 +321,7 @@
 
           
           <div class="method-source-code" id="init-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 22</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 23</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">init</span>
     <span class="ruby-keyword">if</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&#39;%H:%M:%S&#39;</span>) <span class="ruby-operator">&lt;</span> <span class="ruby-string">&#39;10:30:00&#39;</span>.<span class="ruby-identifier">to_time</span>.<span class="ruby-identifier">strftime</span>( <span class="ruby-string">&quot;%H:%M:%S&quot;</span> )
         <span class="ruby-ivar">@meal</span> = <span class="ruby-string">&#39;Café da Manhã&#39;</span>
@@ -360,7 +360,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 37</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 38</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@rating</span> = <span class="ruby-constant">Rating</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -393,7 +393,7 @@
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 34</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>; <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -424,7 +424,7 @@
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 62</span>
+            <pre><span class="ruby-comment"># File app/controllers/view_rating_controller.rb, line 63</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@rating</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">rating_params</span>)
@@ -454,7 +454,7 @@
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="https://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 
