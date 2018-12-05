@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/icaro/RubymineProjects/RUMOR/config/environment.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/application.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/application.rb": [
         1,
         null,
         1,
@@ -43,13 +43,13 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/boot.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/environments/test.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/environments/test.rb": [
         1,
         null,
         null,
@@ -97,7 +97,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/application_controller_renderer.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -107,7 +107,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/assets.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -123,7 +123,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/backtrace_silencers.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -132,7 +132,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/content_security_policy.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -159,14 +159,14 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/cookies_serializer.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/devise.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/devise.rb": [
         null,
         null,
         null,
@@ -458,13 +458,13 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/filter_parameter_logging.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/inflections.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -482,13 +482,13 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/mime_types.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/wicked_pdf.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/wicked_pdf.rb": [
         null,
         null,
         null,
@@ -511,7 +511,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/initializers/wrap_parameters.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -527,7 +527,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/spec/factories/factories.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/spec/factories/factories.rb": [
         1,
         null,
         1,
@@ -541,7 +541,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/config/routes.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/config/routes.rb": [
         1,
         1,
         1,
@@ -559,7 +559,7 @@
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/user.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/user.rb": [
         1,
         null,
         null,
@@ -567,12 +567,12 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/application_record.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/support/paths.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/support/paths.rb": [
         null,
         null,
         null,
@@ -586,7 +586,7 @@
         null,
         null,
         1,
-        9,
+        14,
         null,
         null,
         2,
@@ -594,7 +594,7 @@
         1,
         null,
         null,
-        2,
+        5,
         null,
         null,
         3,
@@ -612,12 +612,12 @@
         null,
         null,
         null,
+        2,
+        2,
+        2,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         null,
@@ -626,7 +626,7 @@
         null,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/support/selectors.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/support/selectors.rb": [
         null,
         null,
         null,
@@ -672,7 +672,7 @@
         null,
         1
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/step_definitions/Devise/devise_steps.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/step_definitions/Devise/devise_steps.rb": [
         1,
         2,
         2,
@@ -711,7 +711,7 @@
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/step_definitions/cardapio/cardapio_steps.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/step_definitions/cardapio/cardapio_steps.rb": [
         null,
         null,
         null,
@@ -734,10 +734,10 @@
         1,
         9,
         9,
-        8,
-        8,
-        8,
-        8,
+        9,
+        9,
+        9,
+        9,
         null,
         null,
         null,
@@ -759,140 +759,140 @@
         9,
         null,
         9,
+        null,
+        9,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        10,
+        7,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        10,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        6,
+        2202,
+        2190,
+        2190,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        3,
+        3,
         null,
         3,
         null,
         null,
         null,
         null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
         null,
         null,
         null,
-        1,
-        4,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         3,
         null,
         null,
         1,
         0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        5,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        2,
-        734,
-        730,
-        730,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/step_definitions/pesquisa/gerar_relatorio_steps.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/step_definitions/pesquisa/gerar_relatorio_steps.rb": [
         1,
         1,
         1,
@@ -918,7 +918,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/step_definitions/pesquisa/pesquisa_steps.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/step_definitions/pesquisa/pesquisa_steps.rb": [
         null,
         null,
         null,
@@ -971,7 +971,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/features/step_definitions/pesquisa/visualizar_relatorio_steps.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/features/step_definitions/pesquisa/visualizar_relatorio_steps.rb": [
         1,
         1,
         1,
@@ -1002,7 +1002,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/controllers/home_controller.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -1010,51 +1010,51 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/controllers/application_controller.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/application_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/breakfasts_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/dashboard_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/dashboard_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/dinners_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/dinners_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/home_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/lunches_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/lunches_helper.rb": [
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/helpers/menus_helper.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/menus_helper.rb": [
         1,
         1,
-        2,
-        2,
-        2,
-        730,
-        62,
+        6,
+        6,
+        6,
+        2190,
+        186,
         null,
         null,
-        2,
+        6,
         null,
         null,
         null,
@@ -1079,7 +1079,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/controllers/dashboard_controller.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/dashboard_controller.rb": [
         1,
         1,
         null,
@@ -1090,7 +1090,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
         1,
         1,
         1,
@@ -1167,7 +1167,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/customer_satisfaction.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/customer_satisfaction.rb": [
         1,
         null,
         1,
@@ -1178,13 +1178,13 @@
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/controllers/menus_controller.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/menus_controller.rb": [
         1,
         1,
         1,
         1,
-        2,
-        64,
+        6,
+        192,
         null,
         null,
         1,
@@ -1224,7 +1224,7 @@
         null,
         1,
         1,
-        4,
+        7,
         null,
         null,
         1,
@@ -1232,7 +1232,7 @@
         null,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/menu.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/menu.rb": [
         1,
         1,
         1,
@@ -1241,26 +1241,12 @@
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/breakfast.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/breakfast.rb": [
         1,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/lunch.rb": [
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -1271,7 +1257,21 @@
         1,
         null
       ],
-      "/home/icaro/RubymineProjects/RUMOR/app/models/dinner.rb": [
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/lunch.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/dinner.rb": [
         1,
         1,
         null,
@@ -1286,6 +1286,6 @@
         null
       ]
     },
-    "timestamp": 1543923861
+    "timestamp": 1544015151
   }
 }
