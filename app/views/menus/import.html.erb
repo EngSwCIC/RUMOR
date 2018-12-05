@@ -1,21 +1,10 @@
-<h1>Import Menus From Excel</h1>
+<h1>Importando Cardápios</h1>
 
-<p>
-Note: Only import spreadsheets that were previously downloaded from this
-  application.
-</p>
 
-<h3>Requirements</h3>
-<ul>
-  <li>Here you could list the validations you have in place for your model</li>
-  <li>That way your user has a better chance of successful import</li>
-</ul>
-
-<h5>Select File</h5>
+<h5>Selecione o arquivo cardápio a ser importado</h5>
 <%= form_for @menu_import do |f| %>
   <% if @menu_import.errors.any? %>
-    <%= pluralize(@menu_import.errors.count, "error") %> prevented us from
-    importing your spreadsheet. Please update your spreadsheet and try agin.
+    <%= pluralize(@menu_import.errors.count, "erros") %> impediram esse cardápio de ser salvo.
     <ul>
       <% @menu_import.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -24,5 +13,5 @@ Note: Only import spreadsheets that were previously downloaded from this
   <% end %>
 
   <%= f.file_field :file %>
-  <%= button_tag 'Import File', name: 'route_to[create_sheet]' %>
+  <%= button_tag 'Importar Cardápio', name: 'route_to[create_sheet]' %>
 <% end %>

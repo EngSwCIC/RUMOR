@@ -20,6 +20,9 @@ module NavigationHelpers
 
     when /^página de cardápios$/
       '/menus'
+    
+    when /^página de importar cardápio$/
+      new_menus_import_path
 
     when /^tela de login$/
       new_user_session_path

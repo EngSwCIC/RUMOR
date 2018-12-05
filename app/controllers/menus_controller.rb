@@ -162,7 +162,7 @@ class MenusController < ApplicationController
           # Cria novo cardapio
           date = (datas[i].last(5).gsub('.', '/') + "/2018").to_date
           cardapios[i] = Menu.where(date: date).first_or_initialize
-          cardapios[i].save!
+          cardapios[i].save
   
           # Cria desjejum e atribui ao cardapio
           desjejuns[i] = Breakfast.new
