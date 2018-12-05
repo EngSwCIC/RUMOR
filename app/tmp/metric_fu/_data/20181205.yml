@@ -1,0 +1,104 @@
+---
+:flay:
+  :total_score: '0'
+  :matches: []
+:saikuro:
+  :files: []
+  :classes: []
+  :methods: []
+:cane:
+  :total_violations: 1
+  :violations:
+    :documentation:
+    - :description: No README found
+:stats:
+  :codeLOC: 0
+  :testLOC: 0
+  :code_to_test_ratio: 0.0
+  :lines: []
+:roodi:
+  :total:
+  - Found 0 errors.
+  :problems: []
+:churn:
+  :changes: []
+  :class_churn: []
+  :method_churn: []
+  :changed_files:
+  - ".rspec"
+  - "---require spec_helper"
+  - Gemfile
+  - Gemfile.lock
+  - app/assets/javascripts/application.js
+  - app/assets/javascripts/pages.coffee
+  - app/assets/javascripts/welcome.coffee
+  - app/assets/stylesheets/ceilandia.scss
+  - app/assets/stylesheets/darcy.scss
+  - app/assets/stylesheets/gama.scss
+  - app/assets/stylesheets/pages.scss
+  - app/assets/stylesheets/planaltina.scss
+  - app/assets/stylesheets/welcome.scss
+  - app/controllers/pages_controller.rb
+  - app/controllers/welcome_controller.rb
+  - app/helpers/ceilandia_helper.rb
+  - app/helpers/darcy_helper.rb
+  - app/helpers/gama_helper.rb
+  - app/helpers/pages_helper.rb
+  - app/helpers/planaltina_helper.rb
+  - app/helpers/welcome_helper.rb
+  - app/models/test_table.rb
+  - app/views/pages/cardapio.html.erb
+  - app/views/pages/ceilandia.html.erb
+  - app/views/pages/darcy.html.erb
+  - app/views/pages/gama.html.erb
+  - app/views/pages/planaltina.html.erb
+  - app/views/welcome/index.html.erb
+  - config/environments/production.rb
+  - config/routes.rb
+  - db/migrate/20181119194940_test_tables.rb
+  - db/schema.rb
+  - db/seeds.rb
+  - features/Devise/recover_password.feature
+  - features/Devise/sign_in.feature
+  - features/Pesquisa/criar_pesquisa.feature
+  - features/Pesquisa/deletar_pesquisa.feature
+  - features/Pesquisa/exportar_relatorio.feature
+  - features/Pesquisa/gerar_relatorio.feature
+  - features/Pesquisa/visualizar_pesquisa.feature
+  - features/Pesquisa/visualizar_relatorio.feature
+  - features/avaliacao/avaliar_cardapio.feature
+  - features/avaliacao/avaliar_restaurante.feature
+  - features/avaliacao/visualizar_avaliacao.feature
+  - '"b/features/cardapio/como_gestor_eu_quero_criar_um_card\303\241pio.feature"'
+  - '"b/features/cardapio/como_gestor_eu_quero_gerenciar_os_card\303\241pios.feature"'
+  - '"b/features/cardapio/como_gestor_eu_quero_importa_um_card\303\241pio.feature"'
+  - '"b/features/cardapio/como_gestor_eu_quero_visualizar_os_card\303\241pios.feature"'
+  - features/cardapio/consultar_cardapio.feature
+  - features/cardapio/login_facebook.feature
+  - features/compartilhamento/compartilhar_cardapio.feature
+  - features/compartilhamento/compartilhar_cardapio2.feature
+  - features/restaurante/visualizar_horario_de_funcionamento.feature
+  - features/restaurante/visualizar_localizacao.feature
+  - features/step_definitions/Devise/recover_password_steps.rb
+  - features/step_definitions/Devise/sign_in_steps.rb
+  - features/step_definitions/cardapio/cardapio_steps.rb
+  - features/step_definitions/compartilhamento/compartilhar_cardapio2_steps.rb
+  - features/step_definitions/restaurante/visualizar_localizacao_steps.rb
+  - features/step_definitions/web_steps.rb
+  - package.json
+  - spec/pages_controller_spec.rb
+  - spec/rails_helper.rb
+  - spec/spec_helper.rb
+  - yarn.lock
+  :changed_classes: []
+  :changed_methods: []
+:reek:
+  :matches: []
+:flog:
+  :total: 0
+  :average: 0
+  :method_containers: []
+:hotspots:
+  files: []
+  classes: []
+  methods: []
