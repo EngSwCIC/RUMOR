@@ -43,7 +43,7 @@ _Utilizamos o cucumber para testar o cenário de importação além de uma gema 
 >Realizada com sucesso
 
 Nota dos desenvolvedores:  
-_._
+_Essa sprint terminamos qualquer pendência que tivesse restado das últimas sprints. Realizei uma reunião na qual olhamos o desempenho do nosso código de acordo com os critérios de avaliação. Ou seja, rodamos com sucesso o rdoc, a avaliação do abc score, e verificamos que tínhamos testes com mais de 90% de cobertura no rspec e 88% no cucumber. Então, como já havia terminado nossas funcionalidades, documentamos todo o controller que utilizamos para nossas tarefas e implementamos dois casos no cucumber para aumentar para 90% nossa cobertura de testes._
 
 ### Informações adicionais
 
