@@ -54,7 +54,7 @@ RSpec.describe RuReviewsController, type: :controller do
   describe "GET #new" do
     it "cria com sucesso uma pesquisa do estabelecimento" do
       get :new
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 end
