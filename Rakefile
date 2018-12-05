@@ -3,4 +3,6 @@
 
 require_relative 'config/application'
 
+require 'metric_fu'
+
 Rails.application.load_tasks
