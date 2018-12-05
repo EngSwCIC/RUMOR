@@ -74,7 +74,7 @@ GEM
     byebug (10.0.2)
     cane (2.6.2)
       parallel
-    capybara (3.9.0)
+    capybara (3.10.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -95,6 +95,7 @@ GEM
       sexp_processor
     code_metrics (0.1.3)
     coderay (1.1.2)
+      xpath (~> 3.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -137,8 +138,17 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     fattr (2.4.0)
+    factory_bot (4.11.1)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
+      railties (>= 3.0.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
+    gemaina (1.0)
+    gherkin (5.1.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
@@ -205,8 +215,6 @@ GEM
     multi_test (0.1.2)
     netrc (0.11.0)
     nio4r (2.3.1)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     pg (1.1.3-x64-mingw32)
@@ -312,6 +320,9 @@ GEM
     sdoc (1.0.0)
       rdoc (>= 5.0)
     sexp_processor (4.11.0)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -371,12 +382,18 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
+<<<<<<< HEAD
   haml
   cucumber-rails
   cucumber-rails-training-wheels
   database_cleaner
   flog
   gemaina
+  factory_bot_rails (~> 4.0)
+  faker
+  gemaina
+  haml
+>>>>>>> e6866ebc14e5a5a73ef204f5ebf640491d566e8b
   jbuilder (~> 2.5)
   jquery-rails
   launchy
@@ -387,11 +404,11 @@ DEPENDENCIES
   rails (~> 5.2.1)
   rainbow
   rspec
-  rspec-rails
   sass-rails (~> 5.0)
   sdoc
   simplecov
   simplecov-console
+  simple_form
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
