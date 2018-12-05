@@ -1,6 +1,7 @@
 class MenusController < ApplicationController
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :import]
+
   def index
     @menus = Menu.all
     @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
@@ -17,12 +18,21 @@ class MenusController < ApplicationController
   end
 
   def create
-    @menu = Menu.new(menu_params)
-      if @menu.save
-        redirect_to @menu, notice: 'Menu was successfully created.'
+    case route_to params
+      when :create_sheet
+        raise "xablau"
       else
-        render :new
+        @menu = Menu.new(menu_params)
+          if @menu.save
+            redirect_to @menu, notice: 'Menu was successfully created.'
+          else
+            render :new
+          end
       end
+  end
+
+  def import
+    @menu_import = Menu.new
   end
 
   def update
@@ -49,4 +59,11 @@ class MenusController < ApplicationController
     def menu_params
       params.require(:menu).permit(:date)
     end
+
+    def route_to params
+      if params[:route_to]
+        params[:route_to].keys.first.to_sym
+      end
+    end
+
 end
