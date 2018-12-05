@@ -1,6 +1,7 @@
 class Dinner < ApplicationRecord
   belongs_to :menu
 
+  validates :menu_id, presence: true
   validates :salad, presence: true
   validates :sauce, presence: true
   validates :soup, presence: true
