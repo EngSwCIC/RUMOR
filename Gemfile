@@ -54,7 +54,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'rails-controller-testing' # permit using stubs
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
 
   gem 'gemaina'
   gem 'cucumber-rails', :require => false

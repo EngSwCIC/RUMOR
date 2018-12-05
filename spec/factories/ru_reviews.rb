@@ -1,5 +1,3 @@
-FactoryGirl.define do
-  factory :ru_review do
-    
-  end
+FactoryBot.define do
+
 end

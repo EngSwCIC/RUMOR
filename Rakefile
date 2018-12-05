@@ -4,5 +4,11 @@
 require_relative 'config/application'
 
 require 'metric_fu'
-
+MetricFu.configuration.configure_metrics.each do |metric|
+  if [:saikuro, :flog].include?(metric.name)
+    metric.enabled = true
+  else
+    metric.enabled = false
+  end
+end
 Rails.application.load_tasks
