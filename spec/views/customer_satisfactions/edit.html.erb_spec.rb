@@ -17,7 +17,7 @@ RSpec.describe "customer_satisfactions/edit", type: :view do
 
     assert_select "form[action=?][method=?]", customer_satisfaction_path(@customer_satisfaction), "post" do
 
-      assert_select "input[name=?]", "customer_satisfaction[user_group]"
+      assert_select "input[name=?]", "customer_satisfaction[group]"
 
       assert_select "input[name=?]", "customer_satisfaction[meal]"
 
