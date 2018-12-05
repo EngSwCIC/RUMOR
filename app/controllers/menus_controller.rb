@@ -160,13 +160,13 @@ class MenusController < ApplicationController
         dias.times do |i|
   
           # Cria novo cardapio
-          cardapios[i] = Menu.new
-          cardapios[i].date = (datas[i].last(5).gsub('.', '/') + "/2018").to_date
-          cardapios[i].save
+          date = (datas[i].last(5).gsub('.', '/') + "/2018").to_date
+          cardapios[i] = Menu.where(date: date).first_or_initialize
+          cardapios[i].save!
   
           # Cria desjejum e atribui ao cardapio
           desjejuns[i] = Breakfast.new
-          desjejuns[i].menu = cardapios[i]
+          desjejuns[i].menu_id  = cardapios[i].id                                                    
           desjejuns[i].save
   
           # Passa da lista de atributos para atributos dos objetos
@@ -176,8 +176,7 @@ class MenusController < ApplicationController
   
           # Cria almoco e atribui ao cardapio
           almocos[i] = Lunch.new
-          almocos[i]
-          almocos[i].menu = cardapios[i]
+          almocos[i].menu_id = cardapios[i].id
           almocos[i].save
   
           # Passa da lista de atributos para atributos dos objetos
@@ -187,7 +186,7 @@ class MenusController < ApplicationController
   
           # Cria jantar e atribui ao cardapio
           jantares[i] = Dinner.new
-          jantares[i].menu = cardapios[i]
+          jantares[i].menu_id = cardapios[i].id
           jantares[i].save
   
           # Passa da lista de atributos para atributos dos objetos
