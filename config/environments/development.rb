@@ -58,4 +58,15 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  Flog.configure do |config|
+    # If this value is true, not format on cached query
+    config.ignore_cached_query = false
+    # If query duration is under this value, not format
+    config.query_duration_threshold = 2.0
+    # If key count of parameters is under this value, not format
+    config.params_key_count_threshold = 2
+    # If this value is true, nested Hash parameter is formatted coercively in any situation
+    config.force_on_nested_params = false
+  end
 end
