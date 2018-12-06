@@ -1,24 +1,39 @@
 class MenusController < ApplicationController
+  # Funções para serem realizadas antes de qualquer método do controlador
+  # O only indica onde em quais métodos elas serão executadas antes
+  # No caso a set_menu que é uma função para definir exatamente qual cardapio
+  # É chamada antes dos métedos show, edit, update e destroy
+  # A segunda função é uma função padrão do devise que é chamada para verificar o usuario logado
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :import]
 
+  # Método Index é chamado para mostrar todos os cardápios cadastrados
   def index
-    @menus = Menu.all
+    @menus = Menu.all.sort_by {|a| a.date }
     @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
   end
 
+  # Método que é responsável por retornar um objeto
+  # Esse objeto é os dados especificos de um Cardápio
   def show
   end
 
+  # Método que é chamado ao ir para a página de cadastro de cardápio
+  # Ele é responsável por instanciar um novo objeto
+  # Objeto que será utilizado em conjunto com o método create
   def new
     @menu = Menu.new
   end
 
+  # Método que retorna um objeto específico de cardápio
+  # trabalha em conjunto com o método update
   def edit
   end
 
-# Create method will be called if the user wishes to create a new menu or if he/she chooses
-# to import an already existing valid sheet
+  # Método para efetuar o cadastro do cardápio
+  # Pode ser chamado de duas maneiras:
+  # 1. Após o método new, onde o gestor indica os parametros
+  # 2. Ao importar uma planilha válida
   def create
     case route_to params
       when :create_sheet
@@ -34,10 +49,16 @@ class MenusController < ApplicationController
       end
   end
 
+  # Método chamado quando o gestor quer importar a planilha de cardápios
+  # Leva à tela de importação
   def import
     @menu_import = Menu.new
   end
 
+  # Trabalha em conjunto com método edit
+  # Os parametros são passado e passando para um função update
+  # Caso as alterações consigam ser salvas no banco ele voltará para a página do método index
+  # Caso contrário irá chamar novamente a página do index edit
   def update
       if @menu.update(menu_params)
         redirect_to @menu, notice: 'Menu was successfully updated.'
@@ -46,6 +67,8 @@ class MenusController < ApplicationController
       end
   end
 
+  # Método chamado para deletar um objeto no banco de dados
+  # Ao terminar de apagar ele é redirecionado para a página que utiliza o index
   def destroy
     begin
       @menu.destroy

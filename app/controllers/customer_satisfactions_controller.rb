@@ -2,7 +2,7 @@ class CustomerSatisfactionsController < ApplicationController
   # Funções para serem realizadas antes de qualquer método do controlador
   # O only indica onde em quais métodos elas serão executadas antes
   # No caso a set_customer que é uma função para definir exatamente qual pesquisa
-  # É chamada antes dos métedos show, edit, update e destroy
+  # É chamada antes dos métodos show, edit, update e destroy
   # A segunda função é uma função padrão do devise que é chamada para verificar o usuario logado
   before_action :set_customer_satisfaction, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:index, :charts]
