@@ -9,6 +9,7 @@ module MenusHelper
     end
     return chosen
   end
+  
   # def last_month_menu(menus, first_day)
   #   this_month = first_day.yesterday.mon
   #   chosen = []

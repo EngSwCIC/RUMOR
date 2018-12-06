@@ -1,59 +1,53 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cardápios</h1>
-
-
-<p>Cardápios do Mês</p>
-  <% offset = @month_menu.first.date.wday %>
-<table style="background-color: lightcoral;">
-  <thead>
-    <tr>
-      <th>Domingo</th>
-      <th>Segunda-feira</th>
-      <th>Terça-feira</th>
-      <th>Quarta-feira</th>
-      <th>Quinta-feira</th>
-      <th>Sexta-feira</th>
-      <th>Sábado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <% offset.times do %>
-        <td>
-          <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-            <span style="padding: 1em; text-align: right;"><%=   %></span>
-          </div>
-        </td>
-      <% end %>
-      <% @month_menu.each do |mm|  %>
-        <td>
-        <%= link_to mm do %>
-          <div style="width: 6em; height: 4em; background-color: #c3d9ff; margin: .5em;">
-            <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
-          </div>
+<div class="container">
+    <h1>Cardápios</h1>
+    <p>Cardápios do Mês</p>
+    <table style="background-color: #F28D3C;">
+    <thead>
+        <tr>
+        <th>Domingo</th>
+        <th>Segunda-feira</th>
+        <th>Terça-feira</th>
+        <th>Quarta-feira</th>
+        <th>Quinta-feira</th>
+        <th>Sexta-feira</th>
+        <th>Sábado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
+                <span style="padding: 1em; text-align: right;"><%=   %></span>
+            </div>
+            </td>
+        <% @month_menu.each do |mm|  %>
+            <td>
+            <%= link_to mm do %>
+            <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
+                <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
+            </div>
+            <% end %>
+            </td>
+            <% if mm.date.wday == 6 %>
+            </tr>
+            <tr>
+            <% end %>
         <% end %>
-        </td>
-        <% if mm.date.wday == 6 %>
-          </tr>
-          <tr>
-        <% end %>
-      <% end %>
-      <% offset = 6 - @month_menu.last.date.wday %>
-      <% offset.times do %>
-        <td>
-          <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-            <span style="padding: 1em; text-align: right;"><%=   %></span>
-          </div>
-        </td>
-      <% end %>
-    </tr>
-  </tbody>
-</table>
+            <td>
+            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
+                <span style="padding: 1em; text-align: right;"><%=   %></span>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+    </table>
 
-<%= link_to 'New Menu', new_menu_path %>
-<br>
-<%=
-  link_to 'Importar Cardápio',
-  new_menus_import_path
-%>
+    <%= link_to 'New Menu', new_menu_path %>
+    <br>
+    <%=
+    link_to 'Importar Cardápio',
+    new_menus_import_path
+    %>
+</div>

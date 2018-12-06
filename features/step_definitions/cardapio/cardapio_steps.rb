@@ -38,7 +38,7 @@ module CardapioHelpers
   end
 
   def seleciona_arquivo(nome_arquivo)
-    page.attach_file('menu[file]', '/home/thiagoluis/Documents/Estudos/UnB/Engenharia de Software/RUMOR/Agosto 2018 - OFICIAL.xlsx')
+    page.attach_file('menu[file]', 'vendor/Agosto 2018 - OFICIAL.xlsx')
   end
 end
 World(CardapioHelpers)

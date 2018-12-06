@@ -1078,7 +1078,7 @@
   },
   "RSpec": {
     "coverage": {
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/user.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/user.rb": [
         1,
         null,
         null,
@@ -1086,40 +1086,40 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/application_record.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/application_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/dashboard_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/dashboard_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/dinners_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/dinners_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/home_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/lunches_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/lunches_helper.rb": [
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/helpers/menus_helper.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/helpers/menus_helper.rb": [
         1,
         1,
         1,
@@ -1152,9 +1152,10 @@
         null,
         null,
         null,
+        null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/breakfasts_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/breakfasts_controller.rb": [
         1,
         1,
         1,
@@ -1211,13 +1212,13 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/application_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
         1,
         null,
         null,
@@ -1329,7 +1330,7 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/dashboard_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/dashboard_controller.rb": [
         1,
         1,
         null,
@@ -1340,7 +1341,7 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/dinners_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/dinners_controller.rb": [
         1,
         1,
         1,
@@ -1397,15 +1398,17 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/home_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/home_controller.rb": [
         1,
         null,
+        null,
+        1,
         1,
         null,
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/lunches_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/lunches_controller.rb": [
         1,
         1,
         1,
@@ -1462,10 +1465,11 @@
         null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/controllers/menus_controller.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/controllers/menus_controller.rb": [
         1,
         1,
         1,
+        null,
         1,
         1,
         1,
@@ -1481,13 +1485,25 @@
         1,
         null,
         null,
+        null,
+        null,
         1,
+        3,
+        null,
+        0,
+        0,
+        null,
         3,
         3,
         2,
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         1,
@@ -1514,9 +1530,152 @@
         1,
         6,
         null,
+        null,
+        1,
+        3,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/breakfast.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/breakfast.rb": [
         1,
         1,
         null,
@@ -1530,19 +1689,24 @@
         1,
         1,
         1,
-        null
-      ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/customer_satisfaction.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/dinner.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/customer_satisfaction.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/diegod/Documents/ES/RUMOR/app/models/dinner.rb": [
         1,
         1,
         null,
@@ -1554,9 +1718,10 @@
         1,
         1,
         1,
+        1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/lunch.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/lunch.rb": [
         1,
         1,
         null,
@@ -1568,40 +1733,56 @@
         1,
         1,
         1,
+        1,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/models/menu.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/models/menu.rb": [
         1,
         1,
         1,
         1,
         null,
         1,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
         null
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/mailers/application_mailer.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/channels/application_cable/connection.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/vitorribeiro/Documents/UnB/ES/RUMOR/app/channels/application_cable/channel.rb": [
+      "/home/diegod/Documents/ES/RUMOR/app/mailers/application_mailer.rb": [
         0,
         0,
+        0,
+        0
+      ],
+      "/home/diegod/Documents/ES/RUMOR/app/jobs/application_job.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1544047103
+    "timestamp": 1544063032
   }
 }
