@@ -34,11 +34,6 @@ Revisor: Ícaro Rezende
 >Desenvolvedor: Ícaro Rezende  
 Revisor: Thiago Luis
 
-### #8 Como gestor eu quero importar uma planilha de cardápios
-
->Desenvolvedor: Thiago Luis  
-Revisor: Ícaro Rezende
-
 ### #12 Como gestor eu quero criar uma pesquisa de satisfação
 
 >Desenvolvedor: Diego Barbosa  
@@ -73,12 +68,8 @@ Revisor: Diego Barbosa
 
 >Realizado com sucesso.
 
-### Resultado  - #8 Como gestor eu quero importar uma planilha de cardápios
-
->Não implementado.
-
 Nota dos desenvolvedores:  
-_O RSpec foi utilizado para desenvolver orientado a testes as features 5, 6 e 7. Elas foram principalmente a implementação de um CRUD incluindo views, models, rotas e controller. A parte de aceitação de usuário foi feita utilizando o cucumber com cenários de BDD. Todos ficaram verdes, exceto os da feature 8 que não pode ser implementada e testada._
+_O RSpec foi utilizado para desenvolver orientado a testes as features 5, 6 e 7. Elas foram principalmente a implementação de um CRUD incluindo views, models, rotas e controller. A parte de aceitação de usuário foi feita utilizando o cucumber com cenários de BDD. Todos ficaram verdes._
 
 ### Resultado - #12 Como gestor eu quero criar uma pesquisa de satisfação
 

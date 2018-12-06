@@ -1,6 +1,7 @@
 class Breakfast < ApplicationRecord
   belongs_to :menu
 
+  validates :menu_id, presence: true
   validates :hot_drinks, presence: true
   validates :vegetarian_drink, presence: true
   validates :chocolate_milk, presence: true
