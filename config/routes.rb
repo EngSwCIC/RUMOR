@@ -1,11 +1,10 @@
-# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 Rails.application.routes.draw do
   resources :rus
   get 'working_hour', to: 'working_hour#index', as: '/working_hour' 
   get 'view_rating', to: 'view_rating#index', as: '/view_rating' 
   get 'rus/index'
-  
-  root 'rumor#index'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #root 'rus#index'
   get 'welcome/index'
   get 'pages/cardapio'
 
@@ -14,7 +13,7 @@ Rails.application.routes.draw do
   get 'pages/ceilandia'
   get 'pages/planaltina'
 
-  #root 'welcome#index'
+  root 'welcome#index'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'rus#index'
 end

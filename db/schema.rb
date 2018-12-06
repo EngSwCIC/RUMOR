@@ -43,4 +43,15 @@ ActiveRecord::Schema.define(version: 2018_11_21_110636) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "test_tables", force: :cascade do |t|
+    t.string "salada", null: false
+    t.string "molho", null: false
+    t.string "principal", null: false
+    t.string "guarnicao", null: false
+    t.string "vegetariano", null: false
+    t.string "acomp", null: false
+    t.string "sobremesa", null: false
+    t.string "refresco", null: false
+  end
+
 end

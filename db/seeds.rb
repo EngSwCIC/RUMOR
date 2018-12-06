@@ -6,16 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-test1 = TestTable.create ([
-  {salada: "Alface",
-  molho: "Lima",
-  principal:  "Frango Assado",
-  guarnicao:  "Batatas",
-  vegetariano:  "Soja",
-  acomp:  "Arroz",
-  sobremesa:  "Sorvete",
-  refresco: "Coca-Cola"}
-  ])
 Ru.create!([{
              name: 'Darcy Ribeiro',
              working_hour: "Diariamente
@@ -160,3 +150,13 @@ Rating.create!([
           rating: 4.8
      }
 ])
+test1 = TestTable.create ([
+  {salada: "Alface",
+  molho: "Lima",
+  principal:  "Frango Assado",
+  guarnicao:  "Batatas",
+  vegetariano:  "Soja",
+  acomp:  "Arroz",
+  sobremesa:  "Sorvete",
+  refresco: "Coca-Cola"}
+  ])

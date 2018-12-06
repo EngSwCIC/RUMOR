@@ -1,21 +1,36 @@
-require "/home/dan/RUMOR/app/controllers/pages_controller.rb"
+require "./app/controllers/pages_controller.rb"
 
-require "/home/dan/RUMOR/spec/rails_helper.rb"
+require "./spec/rails_helper.rb"
 require 'spec_helper'
 
-describe "Link Darcy Ribeiro em pages/cardapio/" do
-  it {
-    #should have_link('Darcy Ribeiro', href: "pages/darcy")
-    #link = page.find(:css, 'a[href="pages/darcy"]')
-    should assert_selector(:css, 'a[href="actual link"]')
-  }
+RSpec.feature "Static pages", :type => :feature do
+  scenario "Visitando pagina de compartilhar cardapio" do
+    visit "/pages/cardapio"
+    expect(page).to have_content("CARDÁPIO")
+    expect(page).to have_content("http://localhost:3000/pages/cardapio_1")
+    expect(page).to have_button("Compartilhar")
+    expect(page).to have_content("Localização Dos Restaurantes")
+    expect(page).to have_content("Darcy Ribeiro")
+    expect(page).to have_content("Gama")
+    expect(page).to have_content("Ceilandia")
+    expect(page).to have_content("Planaltina")
+    expect(page).to have_content("Voltar")
+  end
 end
 
-describe PagesController do
-
-  #it "should have proper routes" do
-    # {:get => "pages/darcy" }.should be_routable
-    # page.should have_tag("a[href$=pages/darcy]", :text => "Darcy Ribeiro")
-  #end
-
+RSpec.feature "Static pages", :type => :feature do
+  scenario "Visitando paginas de Localizacao do Campus" do
+    visit "/pages/darcy"
+      expect(page).to have_content("Localização Darcy Ribeiro")
+      expect(page).to have_css("img[src*='darcy']")
+    visit "/pages/gama"
+      expect(page).to have_content("Localização Gama")
+      expect(page).to have_css("img[src*='gama']")
+    visit "/pages/ceilandia"
+      expect(page).to have_content("Localização Ceilandia")
+      expect(page).to have_css("img[src*='ceilandia']")
+    visit "/pages/planaltina"
+      expect(page).to have_content("Localização Planaltina")
+      expect(page).to have_css("img[src*='planaltina']")
+  end
 end

@@ -5,14 +5,6 @@ ruby '>=2.4.5'
 
 gem 'jquery-rails'
 
-gem 'rspec'
-gem 'sdoc'
-gem 'rainbow'
-gem 'flog'
-gem 'metric_fu', git: 'https://github.com/metricfu/metric_fu.git'
-gem 'simplecov'
-gem 'simplecov-console'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 
@@ -55,8 +47,6 @@ gem 'simplecov', require: false, group: :test
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 3.8'
-  gem 'capybara'
 
   # Gems added by Thiago Luis on Oct 19th for BDD purpouses
   gem  'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
@@ -66,11 +56,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'faker'
   gem 'gemaina' # Gema adicionada por Vinícius Gomes em 20 de Outubro de 2018
-  gem	'cucumber-rails', require: false # rails pediu para adicionar require: false
-  gem	'cucumber-rails-training-wheels'	#	some	pre-fabbed	step	definitions
-  gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
-  gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
-  gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
+  gem 'launchy'	#	a	useful	debugging	aid	for	user stories end
   gem 'rspec-rails', '~> 3.6'
   gem 'simple_form'
 end

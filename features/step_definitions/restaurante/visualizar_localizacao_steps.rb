@@ -10,6 +10,11 @@ Então("eu devo entrar na página de visualização da localização do Campus s
   expect(page).to have_content("Localização Darcy Ribeiro")
 end
 
-#Então("eu deveria ver a imagem {string}") do |string|
-  #page.should have_xpath("//img[@src='darcy.jpeg']")
-#end
+Então("eu deveria ver o titulo de acordo com o campus") do 
+  expect(page).to have_content("Localização Darcy Ribeiro")
+      
+end
+
+Então("eu deveria ver a imagem do campus selecionado") do 
+  expect(page).to have_css("img[src*='darcy']")
+end
