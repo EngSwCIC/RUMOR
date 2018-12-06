@@ -53,6 +53,15 @@ RSpec.describe MenusController, type: :controller do
         }.to change(Menu, :count).by(1)
       end
 
+      it "imports a new menu" do
+       
+        post :create, params: {
+          "menu"=>{"file"=>Rack::Test::UploadedFile.new(Rails.root.join("spec/fixtures/files/menu.xlsx"))},
+          "route_to"=>{"create_sheet"=>""}
+        }, session: valid_session
+        expect(response).to have_http_status(302)
+      end
+
       it "redirects to the created menu" do
         post :create, params: {menu: valid_attributes}, session: valid_session
         expect(response).to redirect_to(Menu.last)
@@ -108,6 +117,13 @@ RSpec.describe MenusController, type: :controller do
       menu = Menu.create! valid_attributes
       delete :destroy, params: {id: menu.to_param}, session: valid_session
       expect(response).to redirect_to(menus_url)
+    end
+  end
+
+  describe "#import" do
+    it "create a new import menu" do
+      get :import, params: {}, session: valid_session
+      expect(response).to be_successful
     end
   end
 
