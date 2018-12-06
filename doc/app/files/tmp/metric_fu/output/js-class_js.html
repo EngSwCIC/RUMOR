@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>js-class.js</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../../../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../css/github.css" type="text/css" media="screen" />
+<script src="../../../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            js-class.js
+        </h1>
+        <ul class="files">
+            <li>tmp/metric_fu/output/js-class.js</li>
+            <li>Last modified: 2018-12-05 23:42:53 -0200</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<p>JS={extend:function(a,b){b=b||{};for(var c in b){<a href="c">if(a</a>===<a
+href="c">b</a>)<a href="c">continue;a</a>=<a href="c">b</a>}return
+a},makeFunction:function(){return function(){return
+this.initialize?(this.initialize.apply(this,arguments)||this):this}},makeBridge:function(a){var
+b=function(){};b.prototype=a.prototype;return new b},bind:function(){var
+a=JS.array(arguments),b=a.shift(),c=a.shift()||null;return
+function(){return
+b.apply(c,a.concat(JS.array(arguments)))}},callsSuper:function(a){return
+a.SUPER===undefined?a.SUPER=/bcallSuperb/.test(a.toString()):a.SUPER},mask:function(a){var
+b=a.toString().replace(/callSuper/g,&#39;super&#39;);a.toString=function(){return
+b};return a},array:function(a){if(!a)return[];if(a.toArray)return
+a.toArray();var <a href="b">b=a.length,c=[];while(b–)c</a>=<a
+href="b">a</a>;return c},indexOf:function(a,b){for(var
+c=0,d=a.length;c&lt;d;c++){<a href="c">if(a</a>===b)return
+c}return-1},isFn:function(a){return a instanceof
+Function},isType:function(a,b){if(!a||!b)return false;return(b instanceof
+Function&amp;&amp;a instanceof b)||(typeof
+b===&#39;string&#39;&amp;&amp;typeof
+a===b)||(a.isA&amp;&amp;a.isA(b))},ignore:function(a,b){return/^(include|extend)$/.test(a)&amp;&amp;typeof
+b===&#39;object&#39;}};JS.Module=JS.makeFunction();JS.extend(JS.Module.prototype,{<a
+href="^\.">END_WITHOUT_DOT:/(</a>)$/,initialize:function(a,b,c){<a
+href="">this.__mod__=this;this.__inc__=[];this.__fns__={};this.__dep__=</a>;this.__mct__={};if(typeof
+a===&#39;string&#39;){this.__nom__=this.displayName=a}else{this.__nom__=this.displayName=&#39;&#39;;c=b;b=a}c=c||{};this.__res__=c._1||null;if(b)this.include(b,false);if(JS.Module.__chainq__)JS.Module.__chainq__.push(this)},setName:function(a){this.__nom__=this.displayName=a||&#39;&#39;;for(var
+b in
+this.__mod__.__fns__)this.__name__(b);if(a&amp;&amp;this.__meta__)this.__meta__.setName(a+&#39;.&#39;)},__name__:function(a){if(!this.__nom__)return;var
+<a
+href="a">b=this.__mod__.__fns__</a>||{};a=this.__nom__.replace(this.END_WITHOUT_DOT,&#39;$1#&#39;)+a;if(JS.isFn(b.setName))return
+b.setName(a);if(JS.isFn(b))b.displayName=a},define:function(a,b,c,d){var
+f=(d||{}).<a
+href="a">_0||this;this.__fns__</a>=b;this.__name__(a);if(JS.Module._0&amp;&amp;f&amp;&amp;JS.isFn(b))JS.Module._0(a,f);if(c!==false)this.resolve()},instanceMethod:function(a){var
+b=this.lookup(a).pop();return
+JS.isFn(b)?b:null},instanceMethods:function(a,b){var
+c=this.__mod__,b=b||[],d=c.ancestors(),f=d.length,e;for(e in c.__fns__){<a
+href="e">if(c.__fns__.hasOwnProperty(e)&&JS.isFn(c.__fns__</a>)&amp;&amp;JS.indexOf(b,e)===-1)b.push(e)}if(a===false)return
+<a href="f">b;while(f–)d</a>.instanceMethods(false,b);return
+b},include:function(a,b,c){b=(b!==false);if(!a)return
+b?this.resolve():this.uncache();c=c||{};if(a.__mod__)a=a.__mod__;var
+d=a.include,f=a.extend,e=c._4||this,g,h,i,j;if(a.__inc__&amp;&amp;a.__fns__){this.__inc__.push(a);a.__dep__.push(this);if(c._2)a.extended&amp;&amp;a.extended(c._2);else
+a.included&amp;&amp;a.included(e)}else{if(c._5){for(h in a){<a
+href="h">if(JS.ignore(h,a</a>))<a
+href="h">continue;this.define(h,a</a>,false,{_0:e||c._2||this})}}else{if(typeof
+d===&#39;object&#39;||JS.isType(d,JS.Module)){<a
+href="i">g=[].concat(d);for(i=0,j=g.length;i<j;i++)e.include(g</a>,b,c)}if(typeof
+f===&#39;object&#39;||JS.isType(f,JS.Module)){<a
+href="i">g=[].concat(f);for(i=0,j=g.length;i<j;i++)e.extend(g</a>,false);e.extend()}c._5=true;return
+e.include(a,b,c)}}b?this.resolve():this.uncache()},includes:function(a){var
+b=this.__mod__,c=b.__inc__.length;if(Object===a||b===a||b.__res__===a.prototype)return
+true;while(c–){<a href="c">if(b.__inc__</a>.includes(a))return true}return
+false},match:function(a){return
+a.isA&amp;&amp;a.isA(this)},ancestors:function(a){var
+b=this.__mod__,c=(a===undefined),d=(b.__res__||{}).klass,f=(d&amp;&amp;b.__res__===d.prototype)?d:b,e,g;if(c&amp;&amp;b.__anc__)return
+<a
+href="e">b.__anc__.slice();a=a||[];for(e=0,g=b.__inc__.length;e<g;e++)b.__inc__</a>.ancestors(a);if(JS.indexOf(a,f)===-1)a.push(f);if©b.__anc__=a.slice();return
+a},lookup:function(a){var <a
+href="a">b=this.__mod__,c=b.__mct__;if(c</a>)return <a
+href="a">c</a>.slice();var <a
+href="e">d=b.ancestors(),f=[],e,g,h;for(e=0,g=d.length;e<g;e++){h=d</a>.<a
+href="a">__mod__.__fns__</a>;if(h)f.push(h)}<a
+href="a">c</a>=f.slice();return
+f},make:function(a,b){if(!JS.isFn(b)||!JS.callsSuper(b))return b;var
+c=this;return function(){return
+c.chain(this,a,arguments)}},chain:JS.mask(function(c,d,f){var
+e=this.lookup(d),g=e.length-1,h=c.callSuper,i=JS.array(f),j;c.callSuper=function(){var
+<a href="a">a=arguments.length;while(a–)i</a>=<a
+href="a">arguments</a>;g-=1;var <a href="g">b=e</a>.apply(c,i);g+=1;return
+b};j=e.pop().apply(c,i);h?c.callSuper=h:delete c.callSuper;return
+j}),resolve:function(a){var
+b=this.__mod__,a=a||b,c=a.__res__,d,f,e,g;if(a===b){<a
+href="d">b.uncache(false);d=b.__dep__.length;while(d–)b.__dep__</a>.resolve()}<a
+href="d">if(!c)return;for(d=0,f=b.__inc__.length;d<f;d++)b.__inc__</a>.resolve(a);for(e
+in b.__fns__){<a href="e">g=a.make(e,b.__fns__</a>);<a
+href="e">if(c</a>!==<a href="e">g)c</a>=g}},uncache:function(a){var
+b=this.__mod__,c=b.__dep__.length;b.__anc__=null;b.__mct__={};<a
+href="c">if(a===false)return;while(c–)b.__dep__</a>.uncache()}});JS.Class=JS.makeFunction();JS.extend(JS.Class.prototype=JS.makeBridge(JS.Module),{initialize:function(a,b,c){if(typeof
+a===&#39;string&#39;){this.__nom__=this.displayName=a}else{this.__nom__=this.displayName=&#39;&#39;;c=b;b=a}var
+d=JS.extend(JS.makeFunction(),this);d.klass=d.constructor=this.klass;if(!JS.isFn(b)){c=b;b=Object}d.inherit(b);d.include(c,false);d.resolve();do{b.inherited&amp;&amp;b.inherited(d)}while(b=b.superclass);return
+d},inherit:function(a){<a
+href="">this.superclass=a;if(this.__eigen__&&a.__eigen__)this.extend(a.__eigen__(),true);this.subclasses=[];(a.subclasses||</a>).push(this);var
+b=this.prototype=JS.makeBridge(a);b.klass=b.constructor=this;this.__mod__=new
+JS.Module(this.__nom__,{},{_1:this.prototype});this.include(JS.Kernel,false);if(a!==Object)this.include(a.__mod__||new
+JS.Module(a.prototype,{_1:a.prototype}),false)},include:function(a,b,c){if(!a)return;var
+d=this.__mod__,c=c||{};c._4=this;return
+d.include(a,b,c)},define:function(a,b,c,d){var
+f=this.__mod__;d=d||{};d._0=this;f.define(a,b,c,d)}});JS.Module=new
+JS.Class(&#39;Module&#39;,JS.Module.prototype);JS.Class=new
+JS.Class(&#39;Class&#39;,JS.Module,JS.Class.prototype);JS.Module.klass=JS.Module.constructor=JS.Class.klass=JS.Class.constructor=JS.Class;JS.extend(JS.Module,{<a
+href="">_3:[],__chainq__:</a>,methodAdded:function(a,b){<a
+href="a,b">this._3.push(</a>)},_0:function(a,b){var <a
+href="d">c=this._3,d=c.length;while(d–)c</a>[<a
+href="d">0].call(c</a>[1]||null,a,b)}});JS.Kernel=JS.extend(new
+JS.Module(&#39;Kernel&#39;,{__eigen__:function(){if(this.__meta__)return
+this.__meta__;var
+a=this.__nom__,b=this.klass.__nom__,c=a||(b?&#39;#&lt;&#39;<code>b</code>&#39;&gt;&#39;:&#39;&#39;),d=this.__meta__=new
+JS.Module(c?c+&#39;.&#39;:&#39;&#39;,{},{_1:this});d.include(this.klass.__mod__,false);return
+d},equals:function(a){return this===a},extend:function(a,b){return
+this.__eigen__().include(a,b,{_2:this})},hash:function(){return
+this.__hashcode__=this.__hashcode__||JS.Kernel.getHashCode()},isA:function(a){return
+this.__eigen__().includes(a)},method:function(a){var
+b=this,c=b.__mcache__=b.__mcache__||{};<a href="a">if((c</a>||{}).<a
+href="a">fn===b</a>)return <a href="a">c</a>.<a
+href="a">bd;return(c</a>={<a href="a">fn:b</a>,<a
+href="a">bd:JS.bind(b</a>,b)}).bd},methods:function(){return
+this.__eigen__().instanceMethods(true)},tap:function(a,b){a.call(b||null,this);return
+this}}),{__hashIndex__:0,getHashCode:function(){this.__hashIndex__+=1;return(Math.floor(new
+Date().getTime()/1000)+this.__hashIndex__).toString(16)}});JS.Module.include(JS.Kernel);JS.extend(JS.Module,JS.Kernel.__fns__);JS.Class.include(JS.Kernel);JS.extend(JS.Class,JS.Kernel.__fns__);JS.Interface=new
+JS.Class({initialize:function(d){this.test=function(a,b){var
+c=d.length;while(c–){<a href="c">if(!JS.isFn(a[d</a>]))return <a
+href="c">b?d</a>:false}return true}},extend:{ensure:function(){var
+a=JS.array(arguments),b=a.shift(),c,d;while(c=a.shift()){d=c.test(b,true);if(d!==true)throw
+new Error(&#39;object does not implement
+&#39;<code>d</code>&#39;()&#39;);}}}});JS.Singleton=new
+JS.Class({initialize:function(a,b,c){return new(new JS.Class(a,b,c))}});</p>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+    
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>

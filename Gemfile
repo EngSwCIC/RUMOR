@@ -3,6 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '~> 2.5.0'
 
+gem 'simplecov'
+gem 'sdoc'
+gem 'rainbow'
+gem 'simplecov-console'
+gem 'metric_fu', git: 'https://github.com/metricfu/metric_fu.git'
+gem 'flog'
+
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

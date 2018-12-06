@@ -1,0 +1,2616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>test.log</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/github.css" type="text/css" media="screen" />
+<script src="../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            test.log
+        </h1>
+        <ul class="files">
+            <li>log/test.log</li>
+            <li>Last modified: 2018-12-05 23:11:20 -0200</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<pre><code>[1m[35m (102.6ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (49.1ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 15:47:52 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (13.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 170ms (Views: 136.4ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=24%2F03%2F2018&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 15:47:52 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;24/03/2018&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (132.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%24/03/2018%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (220.3ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 223ms (ActiveRecord: 147.2ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 15:49:37 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 70ms (Views: 49.5ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 15:53:18 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 71ms (Views: 49.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=24%2F03%2F2018&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 15:53:18 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;24/03/2018&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.2ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%24/03/2018%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (27.6ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 30ms (ActiveRecord: 3.2ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 15:56:53 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.8ms)
+</code></pre>
+
+<p>Completed 200 OK in 71ms (Views: 50.6ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=24%2F03%2F2018&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 15:56:53 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;24/03/2018&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.2ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%24/03/2018%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (28.3ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 30ms (ActiveRecord: 4.8ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:02:09 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 76ms (Views: 51.5ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:02:09 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (28.8ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 31ms (ActiveRecord: 3.4ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:04:59 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 70ms (Views: 49.2ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:04:59 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (27.7ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 30ms (ActiveRecord: 3.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (18.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:08:17 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (16.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 180ms (Views: 131.0ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:08:18 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.3ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (47.7ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 50ms (ActiveRecord: 3.4ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:11:22 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 72ms (Views: 49.4ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:11:22 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (27.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:20:41 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (14.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 140ms (Views: 86.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:20:41 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (28.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:25:08 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (22.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 292ms (Views: 171.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (27.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:29:07 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (19.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 106ms (Views: 80.0ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (49.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:32:03 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (13.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 178ms (Views: 96.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:32:03 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (56.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (152.2ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 157ms (ActiveRecord: 101.3ms)</p>
+
+<pre><code>[1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (49.8ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:34:15 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (27.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 167ms (Views: 131.8ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:34:15 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (20.1ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (110.6ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 114ms (ActiveRecord: 22.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (37.8ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:37:07 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (21.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 151ms (Views: 117.0ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:37:07 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (16.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (60.9ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 63ms (ActiveRecord: 18.7ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (54.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 16:43:05 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (49.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 207ms (Views: 171.0ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 16:43:05 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (31.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (90.6ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 96ms (ActiveRecord: 33.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (66.9ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (29.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (25.0ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:01:32 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (16.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 269ms (Views: 121.0ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:01:32 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (70.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (189.4ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 193ms (ActiveRecord: 93.6ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (55.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:08:52 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (19.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 120ms (Views: 81.2ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:08:52 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (41.0ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (121.2ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 123ms (ActiveRecord: 46.0ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:08:52 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:08:53 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:10:04 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 71ms (Views: 50.1ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:10:04 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (1.3ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (27.9ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:10:04 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:10:04 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (49.7ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:11:21 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (21.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 112ms (Views: 79.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:11:21 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (11.0ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (58.0ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 59ms (ActiveRecord: 12.9ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:11:21 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:11:21 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:11:21 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:11:21 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (52.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:16:45 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (20.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 154ms (Views: 96.3ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:16:45 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+[1m[36mCardapios Load (15.2ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) LIMIT $1[0m  [[&quot;LIMIT&quot;, 11]]
+Rendered welcome/index.html.erb (86.4ms)
+</code></pre>
+
+<p>Completed 500 Internal Server Error in 88ms (ActiveRecord: 18.0ms)</p>
+
+<pre><code>[1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:16:45 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:16:45 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 17:16:45 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 17:16:45 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (3.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (1.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (38.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (144.4ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.7ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.8ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.8ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.9ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.4ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (1.0ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (30.1ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (3.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (1.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.5ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.1ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.0ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.8ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.9ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.2ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.8ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (DEFAULT, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, DEFAULT, DEFAULT)[0m</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.0ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”) VALUES
+(DEFAULT, &#39;2018-03-24&#39;, &#39;Darcy Ribeiro&#39;, &#39;Café e
+Leite&#39;, &#39;Leite de Soja&#39;, &#39;Achocolatado sem lactose&#39;,
+&#39;Pão careca&#39;, &#39;Pão francês&#39;, &#39;Margarina e frango
+desfiado&#39;, &#39;Creme vegetal e guacamole&#39;, &#39;Melão&#39;,
+&#39;Alface lisa e cenoura ralada&#39;, &#39;Vinagrete&#39;, &#39;Bife de
+panela&#39;, &#39;Farofa de banana&#39;, &#39;Silveirinha de soja&#39;,
+&#39;Arroz branco, arroz integral e feijão&#39;, &#39;Abacaxi&#39;,
+&#39;Morango&#39;, &#39;Acelga e tomate&#39;, &#39;Salsa&#39;,
+&#39;Escondidinho de peixe&#39;, &#39;Sopa de feijão com massinha&#39;,
+&#39;Grão de bico à indiana&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Geléia de frutas&#39;, &#39;Acerola&#39;)[0m</p>
+
+<pre><code>[1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (66.7ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:07:02 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (17.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 148ms (Views: 122.9ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:07:02 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (55.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 212ms (Views: 1.8ms | ActiveRecord: 202.8ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:07:02 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (1.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:07:02 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.8ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:07:02 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.9ms)
+</code></pre>
+
+<p>Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:07:02 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (1.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:11:32 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 77ms (Views: 53.6ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:11:32 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (3.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 9.4ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:11:32 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.6ms)
+</code></pre>
+
+<p>Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:11:32 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 21:11:32 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 21:11:32 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (13.0ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.9ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:15:26.476150&#39;, &#39;2018-12-05
+23:15:26.476150&#39;)[0m</p>
+
+<pre><code>[1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:17:01.504626&#39;, &#39;2018-12-05
+23:17:01.504626&#39;)[0m</p>
+
+<pre><code>[1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.6ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.7ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.4ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:20:00.821521&#39;, &#39;2018-12-05
+23:20:00.821521&#39;)[0m</p>
+
+<pre><code>[1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.9ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.8ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:39:26.643890&#39;, &#39;2018-12-05
+23:39:26.643890&#39;)[0m</p>
+
+<pre><code>[1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.3ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.4ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:40:18.963393&#39;, &#39;2018-12-05
+23:40:18.963393&#39;), (1036214207, &#39;2018-03-24&#39;, &#39;Darcy
+Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:40:18.963393&#39;, &#39;2018-12-05
+23:40:18.963393&#39;)[0m</p>
+
+<pre><code>[1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.6ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (2.2ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:43:51.593331&#39;, &#39;2018-12-05
+23:43:51.593331&#39;), (1036214207, &#39;2018-02-04&#39;, &#39;Darcy
+Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão francês&#39;, &#39;Pão
+francês&#39;, &#39;Margarina&#39;, &#39;Creme vegetal&#39;,
+&#39;Mamão&#39;, &#39;Alface lisa e pepino&#39;, &#39;Hortelã&#39;,
+&#39;Lasanha a bolonhesa&#39;, &#39;Legumes sauté&#39;, &#39;Lasanha de
+berinjela&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Maçã&#39;, &#39;Acerola&#39;, &#39;Hakusai e tomate&#39;,
+&#39;Argentino&#39;, &#39;Creme de cebola&#39;, &#39;Frango Assado&#39;,
+&#39;Croquete de soja&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Laranja&#39;, &#39;Manga&#39;, &#39;2018-12-05 23:43:51.593331&#39;,
+&#39;2018-12-05 23:43:51.593331&#39;)[0m</p>
+
+<pre><code>[1m[35m (26.8ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.5ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.6ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:44:54.441820&#39;, &#39;2018-12-05
+23:44:54.441820&#39;), (1036214207, &#39;2018-02-04&#39;, &#39;Darcy
+Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão francês&#39;, &#39;Pão
+francês&#39;, &#39;Margarina&#39;, &#39;Creme vegetal&#39;,
+&#39;Mamão&#39;, &#39;Alface lisa e pepino&#39;, &#39;Hortelã&#39;,
+&#39;Lasanha a bolonhesa&#39;, &#39;Legumes sauté&#39;, &#39;Lasanha de
+berinjela&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Maçã&#39;, &#39;Acerola&#39;, &#39;Hakusai e tomate&#39;,
+&#39;Argentino&#39;, &#39;Creme de cebola&#39;, &#39;Frango Assado&#39;,
+&#39;Croquete de soja&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Laranja&#39;, &#39;Manga&#39;, &#39;2018-12-05 23:44:54.441820&#39;,
+&#39;2018-12-05 23:44:54.441820&#39;)[0m</p>
+
+<pre><code>[1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.9ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.7ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.4ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:47:23.302645&#39;, &#39;2018-12-05
+23:47:23.302645&#39;), (1036214207, &#39;2018-02-04&#39;, &#39;Darcy
+Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão francês&#39;, &#39;Pão
+francês&#39;, &#39;Margarina&#39;, &#39;Creme vegetal&#39;,
+&#39;Mamão&#39;, &#39;Alface lisa e pepino&#39;, &#39;Hortelã&#39;,
+&#39;Lasanha a bolonhesa&#39;, &#39;Legumes sauté&#39;, &#39;Lasanha de
+berinjela&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Maçã&#39;, &#39;Acerola&#39;, &#39;Hakusai e tomate&#39;,
+&#39;Argentino&#39;, &#39;Creme de cebola&#39;, &#39;Frango Assado&#39;,
+&#39;Croquete de soja&#39;, &#39;Arroz branco arroz integral e feijão&#39;,
+&#39;Laranja&#39;, &#39;Manga&#39;, &#39;2018-12-05 23:47:23.302645&#39;,
+&#39;2018-12-05 23:47:23.302645&#39;)[0m</p>
+
+<pre><code>[1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.3ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (1.1ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.7ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:47:47.524657&#39;, &#39;2018-12-05
+23:47:47.524657&#39;), (1036214207, &#39;2018-02-04&#39;, &#39;FCE&#39;,
+&#39;Café e Leite&#39;, &#39;Leite de Soja&#39;, &#39;Achocolatado sem
+lactose&#39;, &#39;Pão francês&#39;, &#39;Pão francês&#39;,
+&#39;Margarina&#39;, &#39;Creme vegetal&#39;, &#39;Mamão&#39;, &#39;Alface
+lisa e pepino&#39;, &#39;Hortelã&#39;, &#39;Lasanha a bolonhesa&#39;,
+&#39;Legumes sauté&#39;, &#39;Lasanha de berinjela&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Maçã&#39;, &#39;Acerola&#39;,
+&#39;Hakusai e tomate&#39;, &#39;Argentino&#39;, &#39;Creme de cebola&#39;,
+&#39;Frango Assado&#39;, &#39;Croquete de soja&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Laranja&#39;, &#39;Manga&#39;,
+&#39;2018-12-05 23:47:47.524657&#39;, &#39;2018-12-05
+23:47:47.524657&#39;)[0m</p>
+
+<pre><code>[1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 1036214207], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.7ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (1.6ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:48:28.006657&#39;, &#39;2018-12-05
+23:48:28.006657&#39;), (934089236, &#39;2018-02-04&#39;, &#39;FCE&#39;,
+&#39;Café e Leite&#39;, &#39;Leite de Soja&#39;, &#39;Achocolatado sem
+lactose&#39;, &#39;Pão francês&#39;, &#39;Pão francês&#39;,
+&#39;Margarina&#39;, &#39;Creme vegetal&#39;, &#39;Mamão&#39;, &#39;Alface
+lisa e pepino&#39;, &#39;Hortelã&#39;, &#39;Lasanha a bolonhesa&#39;,
+&#39;Legumes sauté&#39;, &#39;Lasanha de berinjela&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Maçã&#39;, &#39;Acerola&#39;,
+&#39;Hakusai e tomate&#39;, &#39;Argentino&#39;, &#39;Creme de cebola&#39;,
+&#39;Frango Assado&#39;, &#39;Croquete de soja&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Laranja&#39;, &#39;Manga&#39;,
+&#39;2018-12-05 23:48:28.006657&#39;, &#39;2018-12-05
+23:48:28.006657&#39;)[0m</p>
+
+<pre><code>[1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (2.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.6ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (3.0ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-05 23:48:54.153227&#39;, &#39;2018-12-05
+23:48:54.153227&#39;), (934089236, &#39;2018-02-04&#39;, &#39;FCE&#39;,
+&#39;Café e Leite&#39;, &#39;Leite de Soja&#39;, &#39;Achocolatado sem
+lactose&#39;, &#39;Pão francês&#39;, &#39;Pão francês&#39;,
+&#39;Margarina&#39;, &#39;Creme vegetal&#39;, &#39;Mamão&#39;, &#39;Alface
+lisa e pepino&#39;, &#39;Hortelã&#39;, &#39;Lasanha a bolonhesa&#39;,
+&#39;Legumes sauté&#39;, &#39;Lasanha de berinjela&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Maçã&#39;, &#39;Acerola&#39;,
+&#39;Hakusai e tomate&#39;, &#39;Argentino&#39;, &#39;Creme de cebola&#39;,
+&#39;Frango Assado&#39;, &#39;Croquete de soja&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Laranja&#39;, &#39;Manga&#39;,
+&#39;2018-12-05 23:48:54.153227&#39;, &#39;2018-12-05
+23:48:54.153227&#39;)[0m</p>
+
+<pre><code>[1m[35m (15.9ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (1.0ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.8ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.7ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (53.0ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:08 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (20.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 148ms (Views: 117.0ms | ActiveRecord: 0.0ms) Started
+GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:08 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (133.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 319ms (Views: 1.1ms | ActiveRecord: 251.9ms)</p>
+
+<pre><code>[1m[35m (16.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:08 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:08 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.8ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:08 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:08 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:50 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.1ms)
+</code></pre>
+
+<p>Completed 200 OK in 80ms (Views: 54.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:50 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (1.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 45ms (Views: 1.2ms | ActiveRecord: 8.9ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:50 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:50 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.8ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:54:50 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:54:50 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.6ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:55:26 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (4.7ms)
+</code></pre>
+
+<p>Completed 200 OK in 96ms (Views: 71.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:55:26 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (1.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 44ms (Views: 1.0ms | ActiveRecord: 9.2ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:55:26 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:55:26 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:55:26 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:55:26 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:57:20 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.0ms)
+</code></pre>
+
+<p>Completed 200 OK in 78ms (Views: 54.6ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:57:20 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (1.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 44ms (Views: 1.0ms | ActiveRecord: 7.6ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:57:20 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:57:20 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:57:20 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:57:20 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:59:39 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (3.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 78ms (Views: 54.9ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:59:39 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (1.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-03-24%&#39; AND campus LIKE &#39;%Darcy Ribeiro%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.5ms)
+</code></pre>
+
+<p>Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 7.4ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:59:39 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.3ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-02-04&amp;campus=FCE&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:59:39 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-02-04&quot;, &quot;campus&quot;=&gt;&quot;FCE&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+[1m[36mCardapio Load (0.6ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE (data LIKE &#39;%2018-02-04%&#39; AND campus LIKE &#39;%FCE%&#39;) ORDER BY &quot;cardapios&quot;.&quot;id&quot; ASC LIMIT $1[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:59:39 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=&amp;campus=Darcy+Ribeiro&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:59:39 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;&quot;, &quot;campus&quot;=&gt;&quot;Darcy Ribeiro&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+</code></pre>
+
+<p>Started GET “/welcome/index” for 127.0.0.1 at 2018-12-05 22:59:39 -0200
+Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.4ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms) Started GET
+“/welcome/index?utf8=%E2%9C%93&amp;data=2018-03-24&amp;campus=&amp;button=”
+for 127.0.0.1 at 2018-12-05 22:59:39 -0200 Processing by <a
+href="../../classes/WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;data&quot;=&gt;&quot;2018-03-24&quot;, &quot;campus&quot;=&gt;&quot;&quot;, &quot;button&quot;=&gt;&quot;&quot;}
+Rendering welcome/index.html.erb
+Rendered welcome/index.html.erb (0.2ms)
+</code></pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (1.7ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (12.3ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; DISABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; DISABLE TRIGGER ALL[0m
+[1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mFixtures Load (26.3ms)[0m  [1m[31mDELETE FROM &quot;cardapios&quot;;
+</code></pre>
+
+<p>INSERT INTO “cardapios” (“id”, “data”, “campus”, “bebidas_quentes”,
+“bebida_vegetariana”, “achocolatado”, “pao”, “pao_vegetariano”,
+“complemento”, “complemento_vegetariano”, “frutas”, “almoco_salada”,
+“almoco_molho”, “almoco_prato_principal”, “guarnicao”,
+“almoco_prato_vegetariano”, “almoco_acompanhamentos”, “almoco_sobremesa”,
+“almoco_refresco”, “jantar_salada”, “jantar_molho”,
+“jantar_prato_principal”, “sopa”, “jantar_prato_vegetariano”,
+“jantar_acompanhamentos”, “jantar_sobremesa”, “jantar_refresco”,
+“created_at”, “updated_at”) VALUES (845831208, &#39;2018-03-24&#39;,
+&#39;Darcy Ribeiro&#39;, &#39;Café e Leite&#39;, &#39;Leite de Soja&#39;,
+&#39;Achocolatado sem lactose&#39;, &#39;Pão careca&#39;, &#39;Pão
+francês&#39;, &#39;Margarina e frango desfiado&#39;, &#39;Creme vegetal e
+guacamole&#39;, &#39;Melão&#39;, &#39;Alface lisa e cenoura ralada&#39;,
+&#39;Vinagrete&#39;, &#39;Bife de panela&#39;, &#39;Farofa de banana&#39;,
+&#39;Silveirinha de soja&#39;, &#39;Arroz branco, arroz integral e
+feijão&#39;, &#39;Abacaxi&#39;, &#39;Morango&#39;, &#39;Acelga e
+tomate&#39;, &#39;Salsa&#39;, &#39;Escondidinho de peixe&#39;, &#39;Sopa de
+feijão com massinha&#39;, &#39;Grão de bico à indiana&#39;, &#39;Arroz
+branco, arroz integral e feijão&#39;, &#39;Geléia de frutas&#39;,
+&#39;Acerola&#39;, &#39;2018-12-06 01:11:20.132612&#39;, &#39;2018-12-06
+01:11:20.132612&#39;), (934089236, &#39;2018-02-04&#39;, &#39;FCE&#39;,
+&#39;Café e Leite&#39;, &#39;Leite de Soja&#39;, &#39;Achocolatado sem
+lactose&#39;, &#39;Pão francês&#39;, &#39;Pão francês&#39;,
+&#39;Margarina&#39;, &#39;Creme vegetal&#39;, &#39;Mamão&#39;, &#39;Alface
+lisa e pepino&#39;, &#39;Hortelã&#39;, &#39;Lasanha a bolonhesa&#39;,
+&#39;Legumes sauté&#39;, &#39;Lasanha de berinjela&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Maçã&#39;, &#39;Acerola&#39;,
+&#39;Hakusai e tomate&#39;, &#39;Argentino&#39;, &#39;Creme de cebola&#39;,
+&#39;Frango Assado&#39;, &#39;Croquete de soja&#39;, &#39;Arroz branco
+arroz integral e feijão&#39;, &#39;Laranja&#39;, &#39;Manga&#39;,
+&#39;2018-12-06 01:11:20.132612&#39;, &#39;2018-12-06
+01:11:20.132612&#39;)[0m</p>
+
+<pre><code>[1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[1m[35m (0.7ms)[0m  [1m[35mALTER TABLE &quot;cardapios&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;consulta&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;schema_migrations&quot; ENABLE TRIGGER ALL;ALTER TABLE &quot;ar_internal_metadata&quot; ENABLE TRIGGER ALL[0m
+[1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.5ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 845831208], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[1m[36mCardapio Load (0.4ms)[0m  [1m[34mSELECT  &quot;cardapios&quot;.* FROM &quot;cardapios&quot; WHERE &quot;cardapios&quot;.&quot;id&quot; = $1 LIMIT $2[0m  [[&quot;id&quot;, 934089236], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+</code></pre>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+    
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>

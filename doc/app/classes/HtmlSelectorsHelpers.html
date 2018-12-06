@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>HtmlSelectorsHelpers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/github.css" type="text/css" media="screen" />
+<script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <meta property="og:title" value="HtmlSelectorsHelpers">
+
+  
+    
+    <meta name="description" content="TL;DR: YOU SHOULD DELETE THIS FILE  This file is used by web_steps.">
+    <meta property="og:description" content="TL;DR: YOU SHOULD DELETE THIS FILE  This file is used by web_steps.">
+  
+
+    <meta name="keywords" content="HtmlSelectorsHelpers class">
+  
+    <meta name="keywords" content="selector_for">
+  
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            <span class="type">Module</span>
+            HtmlSelectorsHelpers
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../files/features/support/selectors_rb.html">features/support/selectors.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<p>TL;DR: YOU SHOULD DELETE THIS FILE</p>
+
+<p>This file is used by web_steps.rb, which you should also delete</p>
+
+<p>You have been warned</p>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+    <!-- Method ref -->
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+      
+        <dt>S</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-i-selector_for">selector_for</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+    </dl>
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+    
+      <div class="sectiontitle">Instance Public methods</div>
+      
+        <div class="method">
+          <div class="title method-title" id="method-i-selector_for">
+            
+              <b>selector_for</b>(locator)
+            
+            <a href="../classes/HtmlSelectorsHelpers.html#method-i-selector_for" name="method-i-selector_for" class="permalink">Link</a>
+          </div>
+
+          
+            <div class="description">
+              <p>Maps a name to a selector. Used primarily by the</p>
+
+<pre><code>When /^(.+) within (.+)$/ do |step, scope|
+</code></pre>
+
+<p>step definitions in web_steps.rb</p>
+            </div>
+          
+
+          
+
+          
+
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source:
+                <a href="javascript:toggleSource('method-i-selector_for_source')" id="l_method-i-selector_for_source">show</a>
+                
+              </p>
+              <div id="method-i-selector_for_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File features/support/selectors.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">selector_for</span>(<span class="ruby-identifier">locator</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">locator</span>
+
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;the page&quot;</span>
+    <span class="ruby-string">&quot;html &gt; body&quot;</span>
+
+  <span class="ruby-comment"># Add more mappings here.</span>
+  <span class="ruby-comment"># Here is an example that pulls values out of the Regexp:</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment">#  when /^the (notice|error|info) flash$/</span>
+  <span class="ruby-comment">#    &quot;.flash.#{$1}&quot;</span>
+
+  <span class="ruby-comment"># You can also return an array to use a different selector</span>
+  <span class="ruby-comment"># type, like:</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment">#  when /the header/</span>
+  <span class="ruby-comment">#    [:xpath, &quot;//header&quot;]</span>
+
+  <span class="ruby-comment"># This allows you to provide a quoted selector as the scope</span>
+  <span class="ruby-comment"># for &quot;within&quot; steps as was previously the default for the</span>
+  <span class="ruby-comment"># web steps:</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-regexp">/^&quot;(.+)&quot;$/</span>
+    <span class="ruby-node">$1</span>
+
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Can&#39;t find mapping from \&quot;#{locator}\&quot; to a selector.\n&quot;</span> <span class="ruby-operator">+</span>
+      <span class="ruby-node">&quot;Now, go and add a mapping in #{__FILE__}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+        
+      
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>

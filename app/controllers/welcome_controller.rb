@@ -1,19 +1,28 @@
+#Essa controller contem os metodos de CRUD e auxiliares para a pagina de consultar um cardapio
 class WelcomeController < ApplicationController
-  def index
-    render :layout => false
-    @cardapio = Cardapios.search_cardapio(params[:campus])
+  #Esse metodo controla a view "welcome/index"
+  def index 
+    definir_cardapio()
+  end
+
+  #Esse metodo confere se o @cardapio buscado pela model Cardapio com o metodo "search_cardapio" teve retorno NULL
+  def definir_cardapio
+    @cardapio = Cardapio.search_cardapio(params[:data],params[:campus])
+    return if @cardapio.nil?
   end
 
   def show; end
 
+  #Esse metodo instancia um novo @cardapio
   def new
-    @cardapio = Cardapios.new
+    @cardapio = Cardapio.new
   end
 
   def edit; end
 
+  #Esse metodo cria um novo @cardapio e o salva - nao utilizado porque enquanto usuario é possivel somente buscar um cardapio
   def create
-    @cardapio = Cardapios.new(cardapio_params)
+    @cardapio = Cardapio.new(cardapio_params)
 
     respond_to do |format|
       if @cardapio.save
@@ -26,6 +35,7 @@ class WelcomeController < ApplicationController
     end
   end
   
+  #Esse metodo destroi um @cardapio
   def destroy
     @cardapio.destroy
     respond_to do |format|
@@ -36,9 +46,10 @@ class WelcomeController < ApplicationController
 
   private
   def set_cardapio
-    @cardapio = Cardapios.find(params[:id])
+    @cardapio = Cardapio.find(params[:id])
   end
 
+  #Esse metodo define quais parametros podem ser alterados
   def cardapio_params
     params.require(:cardapios).permit(:data, :campus)
   end

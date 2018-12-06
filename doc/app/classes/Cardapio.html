@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Cardapio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/github.css" type="text/css" media="screen" />
+<script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <meta property="og:title" value="Cardapio">
+
+  
+
+    <meta name="keywords" content="Cardapio class">
+  
+    <meta name="keywords" content="search_cardapio">
+  
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            <span class="type">Class</span>
+            Cardapio
+            
+                <span class="parent">&lt;
+                    
+                    <a href="ApplicationRecord.html">ApplicationRecord</a>
+                    
+                </span>
+            
+        </h1>
+        <ul class="files">
+            
+            <li><a href="../files/app/models/cardapio_rb.html">app/models/cardapio.rb</a></li>
+            
+        </ul>
+    </div>
+    <div id="bodyContent">
+        <div id="content">
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+    <!-- Method ref -->
+    <div class="sectiontitle">Methods</div>
+    <dl class="methods">
+      
+        <dt>S</dt>
+        <dd>
+          <ul>
+            
+              
+              <li>
+                <a href="#method-c-search_cardapio">search_cardapio</a>
+              </li>
+            
+          </ul>
+        </dd>
+      
+    </dl>
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+      <div class="sectiontitle">Class Public methods</div>
+      
+        <div class="method">
+          <div class="title method-title" id="method-c-search_cardapio">
+            
+              <b>search_cardapio</b>(data,campus)
+            
+            <a href="../classes/Cardapio.html#method-c-search_cardapio" name="method-c-search_cardapio" class="permalink">Link</a>
+          </div>
+
+          
+            <div class="description">
+              
+            </div>
+          
+
+          
+
+          
+
+          
+            
+            <div class="sourcecode">
+              
+              <p class="source-link">
+                Source:
+                <a href="javascript:toggleSource('method-c-search_cardapio_source')" id="l_method-c-search_cardapio_source">show</a>
+                
+              </p>
+              <div id="method-c-search_cardapio_source" class="dyn-source">
+                <pre><span class="ruby-comment"># File app/models/cardapio.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">search_cardapio</span>(<span class="ruby-identifier">data</span>,<span class="ruby-identifier">campus</span>)
+    
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">campus</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">campus</span>.<span class="ruby-identifier">empty?</span>
+
+    <span class="ruby-ivar">@parameter_data</span> = <span class="ruby-identifier">data</span>
+    <span class="ruby-ivar">@parameter_campus</span>  = <span class="ruby-identifier">campus</span>
+    <span class="ruby-constant">Cardapio</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&#39;data LIKE ? AND campus LIKE ?&#39;</span>, <span class="ruby-node">&quot;%#{@parameter_data}%&quot;</span>, <span class="ruby-node">&quot;%#{@parameter_campus}%&quot;</span>).<span class="ruby-identifier">first</span>
+<span class="ruby-keyword">end</span></pre>
+              </div>
+            </div>
+            
+          </div>
+        
+      
+    
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>

@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Cardapios.create!([
+Cardapio.create!([
         {
             data: "2018-03-24",
             campus: "Darcy Ribeiro",
@@ -34,5 +34,31 @@ Cardapios.create!([
             jantar_acompanhamentos: "Arroz branco, arroz integral e feijão",
             jantar_sobremesa: "Geléia de frutas",
             jantar_refresco: "Acerola"
-            }
-])
+            }, {
+            data: "2018-02-04",
+            campus: "FCE",
+            bebidas_quentes: "Café e Leite",
+            bebida_vegetariana: "Leite de Soja",
+            achocolatado: "Achocolatado sem lactose",
+            pao: "Pão francês",
+            pao_vegetariano: "Pão francês",
+            complemento: "Margarina",
+            complemento_vegetariano: "Creme vegetal",
+            frutas: "Mamão",
+            almoco_salada: "Alface lisa e pepino",
+            almoco_molho: "Hortelã",
+            almoco_prato_principal: "Lasanha a bolonhesa",
+            guarnicao: "Legumes sauté",
+            almoco_prato_vegetariano: "Lasanha de berinjela",
+            almoco_acompanhamentos: "Arroz branco, arroz integral e feijão",
+            almoco_sobremesa: "Maçã",
+            almoco_refresco: "Acerola",
+            jantar_salada: "Hakusai e tomate",
+            jantar_molho: "Argentino",
+            jantar_prato_principal: "Creme de cebola",
+            sopa: "Frango Assado",
+            jantar_prato_vegetariano: "Croquete de soja",
+            jantar_acompanhamentos: "Arroz branco, arroz integral e feijão",
+            jantar_sobremesa: "Laranja",
+            jantar_refresco: "Manga"
+    }])

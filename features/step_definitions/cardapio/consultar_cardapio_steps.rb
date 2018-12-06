@@ -3,15 +3,18 @@ Dado /^que eu estou na página de consulta de cardápio$/ do
     visit ('/welcome/index')
 end
      
-Quando /^eu preencher todos os campos$/ do
-    fill_in "article_data", :with=> "14/07/2018"
-    fill_in "article_campus", :with=> "Darcy Ribeiro"
+Quando /^eu preencher a data com "(.*?)"$/ do |data|
+    fill_in "data", with: data
+end
+
+E /^preencher o campus com "(.*?)"$/ do |campus|
+    fill_in "campus", with: campus
 end
 
 E /^clicar em "(.*?)"$/ do |consultar_button|
     find_button(consultar_button).click
 end
 
-Então /^deve mostrar a tela de "(.*?)"$/ do |mensagem|
+Então /^deve mostrar na tela o "(.*?)"$/ do |mensagem|
     expect(page).to have_content(mensagem)
 end
