@@ -201,7 +201,7 @@ E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
   # Para facilitar, os testes iniciais só envolverão cardápios do mês de novembro
   this_month_numerically = Date.today.strftime("%m")
   this_year = Date.today.strftime("%Y")
-  data_do_cardapio = Date.new(this_year.to_i, this_month_numerically.to_i, dia_do_cardapio)
+  data_do_cardapio = Date.new(this_year.to_i, this_month_numerically.to_i, dia_do_cardapio.to_s[0,1].to_i)
   cardapio = Menu.find_by( :date => data_do_cardapio )
 
   cafe_da_manha = Breakfast.new(

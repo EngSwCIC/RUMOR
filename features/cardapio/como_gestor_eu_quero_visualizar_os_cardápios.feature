@@ -24,7 +24,7 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     # Dado que eu estou logado como gestor
     # E as datas foram carregadas
     # E que eu estou na página de cardápios
-    # E eu clico em "04"
+    # E eu clico em "04_"
     # Quando eu clico em "Edit"
     # Então eu deveria ver "Edição de Cardapio"
 
