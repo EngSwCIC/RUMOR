@@ -3,7 +3,7 @@ class MenusController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :import]
 
   def index
-    @menus = Menu.all
+    @menus = Menu.all.sort_by {|a| a.date }
     @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
   end
 

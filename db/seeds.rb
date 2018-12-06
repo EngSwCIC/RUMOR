@@ -7,11 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(email: "user@user.com", password: "user123")
-datinha = Date.new(2018, 01, 01)
-while(datinha.year == 2018)
-  Menu.create(date: datinha)
-  datinha = datinha.tomorrow
-end
 
 
 puts "CRUD de Customer Satisfaction"

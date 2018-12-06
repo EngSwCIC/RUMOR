@@ -3,6 +3,7 @@
 <div class="container">
     <h1>Cardápios</h1>
     <p>Cardápios do Mês</p>
+  <% if @menus.length > 0 %>
     <table style="background-color: #F28D3C;">
     <thead>
         <tr>
@@ -22,7 +23,7 @@
                 <span style="padding: 1em; text-align: right;"><%=   %></span>
             </div>
             </td>
-        <% @month_menu.each do |mm|  %>
+        <% @menus.each do |mm|  %>
             <td>
             <%= link_to mm do %>
             <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
@@ -43,7 +44,9 @@
         </tr>
     </tbody>
     </table>
-
+  <% else %>
+    <p> Não existem cardápios cadastrados</p>
+  <% end %>
     <%= link_to 'New Menu', new_menu_path %>
     <br>
     <%=
