@@ -3,7 +3,9 @@
 
 require_relative 'config/application'
 
+require 'rdoc/rdoc'
 require 'metric_fu'
+
 MetricFu.configuration.configure_metrics.each do |metric|
   if [:saikuro, :flog].include?(metric.name)
     metric.enabled = true

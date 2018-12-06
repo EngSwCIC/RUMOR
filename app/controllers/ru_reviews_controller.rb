@@ -6,10 +6,12 @@ class RuReviewsController < ApplicationController
   end
 
   def new
-    # default: render 'new' template
+    # renderiza template new
     @ru_review = RuReview.new
   end
 
+  #Avaliação de estabelecimento cadastrada com sucesso apresenta mensagem na tela.
+  # Se houver erros renderiza novamente o template da avaliação do estabelecimento.
   def create
     @ru_review = RuReview.new(ru_review_params)
     if @ru_review.save

@@ -8,10 +8,12 @@ class MenuReviewsController < ApplicationController
   end
 
   def new
-    # default: render 'new' template
+    # renderiza template new
     @menu_review = MenuReview.new
   end
 
+  # Avaliação de cardápio cadastrada com sucesso apresenta mensagem na tela.
+  # Se houver erros renderiza novamente o template da avaliação de cardápio.
   def create
     @menu_review = MenuReview.new(menu_review_params)
     if @menu_review.save

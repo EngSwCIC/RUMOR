@@ -28,6 +28,8 @@
         1,
         null,
         null,
+        null,
+        null,
         1,
         4,
         4,
@@ -73,6 +75,8 @@
         1,
         null,
         null,
+        null,
+        null,
         1,
         4,
         4,
@@ -101,6 +105,7 @@
       ],
       "D:/luizm/Documents/RUMOR/app/models/ru_review.rb": [
         1,
+        null,
         1,
         null
       ],
@@ -111,6 +116,7 @@
       ],
       "D:/luizm/Documents/RUMOR/app/models/menu_review.rb": [
         1,
+        null,
         1,
         null
       ],
@@ -143,6 +149,6 @@
         0
       ]
     },
-    "timestamp": 1544051374
+    "timestamp": 1544056256
   }
 }

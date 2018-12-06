@@ -161,6 +161,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.2, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, ruby-2.4.5-p335) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sdoc (v1.0.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v4.11.0, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shellany (v0.0.1, ruby-2.4.5-p335) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.16.1, ruby-2.4.5-p335) [gem]" level="application" />

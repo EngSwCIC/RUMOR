@@ -1,4 +1,6 @@
 #encoding: utf-8
+##
+# Definição dos steps para testes Cucumber
 
 Dado (/^que eu estou na (.+)$/) do |page_name|
   visit path_to(page_name)

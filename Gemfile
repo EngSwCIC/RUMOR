@@ -42,7 +42,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'haml'
 
-gem 'rdoc'
+gem 'sdoc'
 
 gem 'metric_fu', git: 'https://github.com/bergholdt/metric_fu.git'
 
