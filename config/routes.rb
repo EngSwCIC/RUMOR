@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   resources :dinners
   resources :lunches
   resources :breakfasts
+
+  get 'menus/import', controller: 'menus', action: 'import', as: 'new_menus_import'
   resources :menus
+  
   resources :customer_satisfactions
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
   root to: 'home#index'
 
   scope path: 'dashboard', as: 'dashboard' do

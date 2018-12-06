@@ -58,6 +58,9 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'rubocop', '~> 0.60.0', require: false
 gem 'rubocop-rspec'
 
+# Library to load excel file
+gem "roo", "~> 2.7.0"
+
 group :test do
   # used for test coverage, added by Icaro Rezende on 2018-11-18
   gem 'simplecov', require: false
