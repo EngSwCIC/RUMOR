@@ -5,6 +5,8 @@ ruby '>=2.4.5'
 
 gem 'jquery-rails'
 
+gem 'sdoc'
+
 gem 'flog', '~> 4.1.1'
 
 gem 'selenium-webdriver'
