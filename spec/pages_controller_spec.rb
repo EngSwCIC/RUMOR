@@ -15,6 +15,18 @@ RSpec.feature "Static pages", :type => :feature do
     expect(page).to have_content("Ceilandia")
     expect(page).to have_content("Planaltina")
     expect(page).to have_content("Voltar")
+
+    begin
+      main, popup = page.driver.browser.window_handles
+      within_window(popup) do
+        expect(page).to have_content("Link copiado para o clipboard!")
+        click_on("Compartilhar")
+      end
+    rescue
+    end
+
+    fill_in("Cole aqui para testar!", :with => "http://localhost:3000/pages/cardapio_1")
+
   end
 end
 

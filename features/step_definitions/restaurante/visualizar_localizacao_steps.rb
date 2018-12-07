@@ -11,17 +11,15 @@ Dado("que eu estou na página de visualização do cardápio consultado") do
   expect(page).to have_content("Voltar")
 end
 
-Quando("eu clico no link do Campus") do
-  click_on "darcy_link"
+Quando("eu clico no link {string}") do |string|
+  click_on string
 end
 
-Então("eu deveria ver o titulo de acordo com o campus") do 
-  expect(page).to have_content("Localização Darcy Ribeiro")
-      
+Então("eu deveria ver o titulo {string}") do |string|
+  expect(page).to have_content(string)
 end
 
-Então("eu deveria ver a imagem do campus selecionado") do 
-  expect(page).to have_css("img[src*='darcy']")
+Então("eu deveria ver a imagem {string}") do |string|
+  expect(page).to have_css(string)
 end
-
 

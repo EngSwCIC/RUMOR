@@ -5,6 +5,10 @@ ruby '>=2.4.5'
 
 gem 'jquery-rails'
 
+gem 'flog', '~> 4.1.1'
+
+gem 'selenium-webdriver'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 
@@ -42,7 +46,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'haml'
-gem 'simplecov', require: false, group: :test
+gem 'simplecov'#, require: false, group: :test
+gem 'simplecov-console'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
