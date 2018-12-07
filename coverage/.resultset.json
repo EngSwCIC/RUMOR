@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/amanajas/Desktop/RUMOR_develop/config/environment.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/application.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/application.rb": [
         1,
         null,
         1,
@@ -51,13 +51,13 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/boot.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/environments/test.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/environments/test.rb": [
         1,
         null,
         null,
@@ -105,7 +105,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/application_controller_renderer.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -115,7 +115,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/assets.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -131,7 +131,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/backtrace_silencers.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -140,7 +140,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/content_security_policy.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -167,20 +167,20 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/cookies_serializer.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/filter_parameter_logging.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/inflections.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -198,13 +198,13 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/mime_types.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/simple_form.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/simple_form.rb": [
         null,
         null,
         null,
@@ -389,7 +389,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/initializers/wrap_parameters.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -405,7 +405,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/config/routes.rb": [
+      "/home/amanajas/Desktop/RUMOR/config/routes.rb": [
         1,
         1,
         1,
@@ -426,7 +426,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/support/paths.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/support/paths.rb": [
         null,
         null,
         null,
@@ -466,7 +466,7 @@
         null,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/support/selectors.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/support/selectors.rb": [
         null,
         null,
         null,
@@ -512,7 +512,7 @@
         null,
         1
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/step_definitions/compartilhamento/compartilhar_cardapio2_steps.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/step_definitions/compartilhamento/compartilhar_cardapio2_steps.rb": [
         1,
         1,
         null,
@@ -521,7 +521,20 @@
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/step_definitions/restaurante/visualizar_localizacao_steps.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/step_definitions/restaurante/visualizar_localizacao_steps.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         null,
@@ -530,20 +543,14 @@
         1,
         null,
         null,
-        1,
-        1,
-        null,
         null,
         1,
         1,
         null,
         null,
-        null,
-        1,
-        1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/step_definitions/visualisar_horario_de_funcionamento_steps.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/step_definitions/visualisar_horario_de_funcionamento_steps.rb": [
         null,
         1,
         6,
@@ -566,9 +573,9 @@
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/features/step_definitions/visualizar_avaliacao_steps.rb": [
+      "/home/amanajas/Desktop/RUMOR/features/step_definitions/visualizar_avaliacao_steps.rb": [
         1,
-        15,
+        21,
         null,
         null,
         1,
@@ -584,177 +591,123 @@
         null,
         null,
         1,
+        18,
+        null,
+        null,
+        null,
+        1,
+        18,
+        null,
+        null,
+        1,
+        12,
+        null,
+        null,
+        1,
+        6,
+        null
+      ],
+      "/home/amanajas/Desktop/RUMOR/app/controllers/view_rating_controller.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        39,
+        null,
+        null,
+        null,
+        null,
+        1,
+        39,
+        null,
+        39,
+        null,
         12,
         null,
         null,
         null,
         1,
-        12,
+        39,
         null,
-        null,
-        1,
-        12,
-        null
-      ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/view_rating_controller.rb": [
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        27,
-        null,
-        null,
-        1,
-        27,
-        null,
-        27,
-        null,
-        12,
-        null,
-        null,
-        1,
-        27,
-        27,
+        39,
         0,
+        39,
         0,
         null,
-        0,
+        39,
         null,
         null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
         null,
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/application_controller.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/application_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/ceilandia_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/ceilandia_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/darcy_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/darcy_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/gama_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/gama_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/pages_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/planaltina_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/planaltina_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/rumor_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/rumor_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/welcome_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/rating.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/rating.rb": [
         1,
         null,
         null,
         1,
         12,
-        12,
-        0,
         12,
         2,
         10,
-        2,
-        8,
         3,
-        5,
+        7,
         3,
-        null,
+        4,
+        2,
+        2,
         2,
         null,
+        0,
+        null,
         null,
         null,
         null,
         1,
-        27,
+        39,
         null,
         12,
         12,
@@ -764,12 +717,12 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/application_record.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/ru.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/ru.rb": [
         null,
         null,
         1,
@@ -783,7 +736,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/pages_controller.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
@@ -804,101 +757,29 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/working_hour_controller.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/controllers/working_hour_controller.rb": [
         null,
         null,
         1,
-        1,
-        null,
-        null,
         null,
         null,
         1,
         12,
         null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1544094725
+    "timestamp": 1544146226
   },
   "RSpec": {
     "coverage": {
-      "/home/amanajas/Desktop/RUMOR_develop/spec/models/rating_spec.rb": [
+      "/home/amanajas/Desktop/RUMOR/spec/models/rating_spec.rb": [
         1,
         null,
         1,
         1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
         null,
         1,
         1,
@@ -1007,7 +888,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/spec/rails_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -1070,39 +951,39 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/application_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/ceilandia_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/ceilandia_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/darcy_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/darcy_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/gama_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/gama_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/pages_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/pages_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/planaltina_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/planaltina_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/rumor_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/rumor_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/helpers/welcome_helper.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/rating.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/rating.rb": [
         1,
         null,
         null,
@@ -1135,12 +1016,12 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/application_record.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/spec/models/ru_spec.rb": [
+      "/home/amanajas/Desktop/RUMOR/spec/models/ru_spec.rb": [
         null,
         null,
         1,
@@ -1148,12 +1029,6 @@
         1,
         null,
         1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
         null,
         1,
         1,
@@ -1174,7 +1049,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/models/ru.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/models/ru.rb": [
         null,
         null,
         1,
@@ -1188,7 +1063,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/spec/pages_controller_spec.rb": [
+      "/home/amanajas/Desktop/RUMOR/spec/pages_controller_spec.rb": [
         1,
         null,
         1,
@@ -1226,7 +1101,7 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/pages_controller.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
@@ -1247,11 +1122,11 @@
         null,
         null
       ],
-      "/home/amanajas/Desktop/RUMOR_develop/app/controllers/application_controller.rb": [
+      "/home/amanajas/Desktop/RUMOR/app/controllers/application_controller.rb": [
         1,
         null
       ]
     },
-    "timestamp": 1544065039
+    "timestamp": 1544146242
   }
 }

@@ -18,11 +18,14 @@ Quando("eu escolho o nome {string}") do |string|
     page.select string, visible: false
 end
 
-
 Quando("clico no botão {string}") do |string|
     find_button(string).click
 end
 
 Então("eu devo ver o resultado {string}") do |string|
     expect(page).to have_content(string)
+end
+
+Então("eu não devo ver o resultado {string}") do |string|
+    expect(page).to have_no_content(string)
 end
