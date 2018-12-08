@@ -1,10 +1,17 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
+require './app/controllers/working_hour_controller.rb'
 
 RSpec.describe Ru, type: :model do
 
   fixtures :ru
+
+  it 'Create a Ru' do
+    ru = ru(:darcy)
+
+    expect(ru.name).to eq('Darcy Ribeiro')
+  end
   
   it 'search_working_hour find_eq' do
     ru = ru(:gama)

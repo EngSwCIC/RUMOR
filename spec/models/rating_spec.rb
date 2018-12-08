@@ -2,7 +2,13 @@ require 'rails_helper'
 
 RSpec.describe Rating, type: :model do
   fixtures :rating
-  
+
+  it 'Create a Rating' do
+    rating = rating(:manha_nota_baixa)
+
+    expect(rating.meal).to eq('Café da Manhã')
+  end
+
   it 'get_rating meal_cafe_da_manha' do
     rating_get = Rating.get_rating('Café da Manhã','Darcy Ribeiro')
     expect(rating_get.meal).to eq('Café da Manhã')

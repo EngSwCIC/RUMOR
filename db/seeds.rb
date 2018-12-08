@@ -12,7 +12,6 @@ Ru.create!([{
                   Café da manhã: 7h às 9h
                   Almoço: 10h30 às 14h30*
                   Jantar: 17h às 19h30
-
                   Restaurante Executivo: seg à sexta 11h as 14h30 (durante o período das aulas)
                   *sáb, dom e feriados : 11h ás 14h30",
              location: 'Campus Darcy Ribeiro'
@@ -23,7 +22,6 @@ Ru.create!([{
                   Café da manhã: 7h às 9h
                   Almoço: 10h30 às 14h30*
                   Jantar: 17h às 19h30
-
                   *sáb, dom e feriados : 11h ás 14h30
                   **Exceto feriados",
              location: 'Prédio do MESP'
@@ -37,7 +35,6 @@ Ru.create!([{
                   Sábado**
                   Café da manhã: 7h às 9h
                   Almoço: 11h às 14h30
-
                   *sáb, dom e feriados : 11h ás 14h30
                   **Exceto feriados",
              location: 'Prédio do MESP'
@@ -56,7 +53,6 @@ Ru.create!([{
                   Café da manhã: 7h às 9h
                   Almoço: 10h30 às 14h30*
                   Jantar: 17h às 19h30
-
                   *sáb, dom e feriados : 11h ás 14h30
                   **Exceto feriados",
              location: 'Sede administrativa'
@@ -150,13 +146,3 @@ Rating.create!([
           rating: 4.8
      }
 ])
-test1 = TestTable.create ([
-  {salada: "Alface",
-  molho: "Lima",
-  principal:  "Frango Assado",
-  guarnicao:  "Batatas",
-  vegetariano:  "Soja",
-  acomp:  "Arroz",
-  sobremesa:  "Sorvete",
-  refresco: "Coca-Cola"}
-  ])

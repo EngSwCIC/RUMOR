@@ -1,2 +1,0 @@
-class TestTable < ApplicationRecord
-end

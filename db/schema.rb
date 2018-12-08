@@ -10,27 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_110636) do
+ActiveRecord::Schema.define(version: 2018_12_08_183220) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "ratings", force: :cascade do |t|
+    t.string "campus_name"
     t.string "meal"
     t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "test_tables", force: :cascade do |t|
-    t.string "salada", null: false
-    t.string "molho", null: false
-    t.string "principal", null: false
-    t.string "guarnicao", null: false
-    t.string "vegetariano", null: false
-    t.string "acomp", null: false
-    t.string "sobremesa", null: false
-    t.string "refresco", null: false
+  create_table "rus", force: :cascade do |t|
+    t.string "name"
+    t.text "working_hour"
+    t.text "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
