@@ -1,9 +1,4 @@
 class RuReviewsController < ApplicationController
-  def index
-  end
-
-  def show
-  end
 
   def new
     # renderiza template new
@@ -22,14 +17,6 @@ class RuReviewsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
 
   def ru_review_params
     params.require(:ru_review).permit(:nome, :email, :tipo_usuario, :nota_limpeza_restaurante, 

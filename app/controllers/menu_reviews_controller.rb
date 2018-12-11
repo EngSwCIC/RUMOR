@@ -1,10 +1,5 @@
 class MenuReviewsController < ApplicationController
-  def index
-  end
-
-  def show
-  end
-
+  
   def new
     # renderiza template new
     @menu_review = MenuReview.new
@@ -22,17 +17,6 @@ class MenuReviewsController < ApplicationController
     end
   end
 
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def destroy
-
-  end
 
   def menu_review_params
     params.require(:menu_review).permit(:nome, :email, :tipo_usuario, :refeicao, :categoria, :nota, :consideracao)
