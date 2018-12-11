@@ -1,0 +1,35 @@
+- unless @menu_review.errors.empty?
+  #warning
+    Os seguintes erros impediram o envio da avaliação:
+    %ul
+      - @menu_review.errors.full_messages.each do |error|
+        %li= error
+
+%h1.title= RUMOR
+%h2 Avaliar Cardápio
+
+= form_tag menu_reviews_path, :method => :post do
+
+  = label :menu_review, :nome, 'Nome'
+  = text_field :menu_review, :nome
+
+  = label :menu_review, :email, 'E-mail'
+  = text_field :menu_review, :email
+
+  = label :menu_review, :tipo_usuario, 'Tipo de usuário'
+  = select :menu_review, :tipo_usuario, ['','Aluno', 'Público externo']
+
+  = label :menu_review, :refeicao, 'Refeição'
+  = select :menu_review, :refeicao, ['','Café da manhã','Almoço','Jantar']
+
+  = label :menu_review, :categoria, 'Categoria'
+  = text_field :menu_review, :categoria
+
+  = label :menu_review, :nota, 'Nota'
+  = select :menu_review, :nota, ['',0,1,2,3,4,5]
+
+  = label :menu_review, :consideracao, 'Considerações'
+  = text_field :menu_review, :consideracao
+
+  = submit_tag 'Enviar'
+  %p= link_to 'Cancelar', welcome_index_path

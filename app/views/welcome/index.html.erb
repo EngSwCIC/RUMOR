@@ -1,9 +1,179 @@
-<%= image_tag "rumor-logo.png" %>
+<center>
+  <h1>RUMOR</h1>
+  <h3>Consultar Cardápio</h3>
 
-<h1>Menu</h1>
+  <%= form_tag(welcome_index_path, :method => "get") do %>  
+    <div class="input-group">  
+      <p> 
+      <p> Data </p> 
+      <%= date_field_tag :data%>
+      </p>
+      
+      <p> 
+      <p> Campus </p> 
+      <%= text_field_tag :campus%>
+      </p>  
+      
+      <p>
+      <%= button_tag "Consultar", id: "consultar"%> 
+      </p>
 
-<a href="/pages/cardapio">Consultar Cardápio</a> <br>
+    </div>  
+  <% end %>
+  
+  <br>
 
-<%= link_to("Horário de Funcionamento", "/working_hour")%>
-<br>  
-<%= link_to("Avaliação do Cardápio do Dia", "/view_rating")%> 
+  <% if @cardapio.nil? == false %>
+    <h3>Cardápio do dia</h3>
+    <p> 
+    <%=@cardapio.campus%> <%=@cardapio.data%> 
+    <button type="button" id="avaliar_menu_button"> <a href="/menu_reviews/new">Avaliar Cardápio</a></button>
+    <button type="button" id="avaliar_ru_button"> <a href="/ru_reviews/new">Avaliar RU</a></button>
+    </p> 
+
+    <table style="display: inline-block; border: 1px solid; float: center;">
+    <thead>
+    <tr>
+    <th colspan="2"> Café da Manhã </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr> 
+    <td>Bedidas Quentes:</td>
+    <td> <%= @cardapio.bebidas_quentes %></td>
+    </tr>
+    <tr> 
+    <td>Bedida Vegetariana:</td>
+    <td> <%= @cardapio.bebida_vegetariana %></td>
+    </tr>
+    <tr> 
+    <td>Achocolatado:</td>
+    <td> <%= @cardapio.achocolatado %></td>
+    </tr>
+    <tr> 
+    <td>Pão:</td>
+    <td> <%= @cardapio.pao %></td>
+    </tr>
+    <tr> 
+    <td>Pão Vegetariano:</td>
+    <td> <%= @cardapio.pao_vegetariano %></td>
+    </tr>
+    <tr> 
+    <td>Complemento:</td>
+    <td> <%= @cardapio.complemento %></td>
+    </tr>
+    <tr> 
+    <td>Complemento Vegetariano:</td>
+    <td> <%= @cardapio.complemento_vegetariano %></td>
+    </tr>
+    <tr> 
+    <td>Frutas:</td>
+    <td> <%= @cardapio.frutas %></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table style="display: inline-block; border: 1px solid; float: center;">
+    <thead>
+    <tr>
+    <th colspan="2"> Almoço </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr> 
+    <td>Salada:</td>
+    <td> <%= @cardapio.almoco_salada %></td>
+    </tr>
+    <tr> 
+    <td>Molho:</td>
+    <td> <%= @cardapio.almoco_molho %></td>
+    </tr>
+    <tr> 
+    <td>Prato Principal:</td>
+    <td> <%= @cardapio.almoco_prato_principal %></td>
+    </tr>
+    <tr> 
+    <td>Guarnição:</td>
+    <td> <%= @cardapio.guarnicao %></td>
+    </tr>
+    <tr> 
+    <td>Prato Vegetariano:</td>
+    <td> <%= @cardapio.almoco_prato_vegetariano %></td>
+    </tr>
+    <tr> 
+    <td>Acompanhamentos:</td>
+    <td> <%= @cardapio.almoco_acompanhamentos %></td>
+    </tr>
+    <tr> 
+    <td>Sobremesa:</td>
+    <td> <%= @cardapio.almoco_sobremesa %></td>
+    </tr>
+    <tr> 
+    <td>Refresco:</td>
+    <td> <%= @cardapio.almoco_refresco %></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <table style="display: inline-block; border: 1px solid; float: center;">
+    <thead>
+    <tr>
+    <th colspan="2"> Jantar </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr> 
+    <td>Salada:</td>
+    <td> <%= @cardapio.jantar_salada %></td>
+    </tr>
+    <tr> 
+    <td>Molho:</td>
+    <td> <%= @cardapio.jantar_molho %></td>
+    </tr>
+    <tr> 
+    <td>Prato Principal:</td>
+    <td> <%= @cardapio.jantar_prato_principal %></td>
+    </tr>
+    <tr> 
+    <td>Sopa:</td>
+    <td> <%= @cardapio.sopa %></td>
+    </tr>
+    <tr> 
+    <td>Prato Vegetariano:</td>
+    <td> <%= @cardapio.jantar_prato_vegetariano %></td>
+    </tr>
+    <tr> 
+    <td>Acompanhamentos:</td>
+    <td> <%= @cardapio.jantar_acompanhamentos %></td>
+    </tr>
+    <tr> 
+    <td>Sobremesa:</td>
+    <td> <%= @cardapio.jantar_sobremesa %></td>
+    </tr>
+    <tr> 
+    <td>Refresco:</td>
+    <td> <%= @cardapio.jantar_refresco %></td>
+    </tr>
+    </tbody>
+    </table>
+
+    <% else %>
+    <p> Hmm.. Será que hoje tem lasanha? </p>
+
+  <% end %>
+
+  <br>
+  <br>
+
+</center>
+
+#<<<<<<< HEAD
+#<%= image_tag "rumor-logo.png" %>
+
+#<h1>Menu</h1>
+
+#<a href="/pages/cardapio">Consultar Cardápio</a> <br>
+
+#<%= link_to("Horário de Funcionamento", "/working_hour")%>
+#<br>  
+#<%= link_to("Avaliação do Cardápio do Dia", "/view_rating")%>

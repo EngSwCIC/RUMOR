@@ -1,0 +1,2 @@
+module CardapiosHelper
+end

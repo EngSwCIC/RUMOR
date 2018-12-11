@@ -1,0 +1,37 @@
+- unless @ru_review.errors.empty?
+  #warning
+    Avaliação não enviada. Preencha os campos com erros.
+    %ul
+      - @ru_review.errors.full_messages.each do |error|
+        %li= error
+
+%h1.title= RUMOR
+%h2 Avaliar Cardápio
+
+= form_tag ru_reviews_path, :method => :post do
+  = label :ru_review, :nome, 'Nome'
+  = text_field :ru_review, :nome
+
+  = label :ru_review, :email, 'E-mail'
+  = text_field :ru_review, :email
+
+  = label :ru_review, :tipo_usuario, 'Tipo de usuário'
+  = select :ru_review, :tipo_usuario, ['','Aluno', 'Público externo']
+
+  = label :ru_review, :nota_limpeza_restaurante, 'Nota para limpeza do restaurante'
+  = select :ru_review, :nota_limpeza_restaurante, ['',0,1,2,3,4,5]
+
+  = label :ru_review, :nota_limpeza_banheiro, 'Nota para limpeza dos banheiros'
+  = select :ru_review, :nota_limpeza_banheiro, ['',0,1,2,3,4,5]
+
+  = label :ru_review, :nota_caixa, 'Nota para organização do caixa'
+  = select :ru_review, :nota_caixa, ['',0,1,2,3,4,5]
+
+  = label :ru_review, :nota_porta_objetos, 'Nota para porta-objetos'
+  = select :ru_review, :nota_porta_objetos, ['',0,1,2,3,4,5]
+
+  = label :ru_review, :consideracao, 'Considerações'
+  = text_field :ru_review, :consideracao
+
+  = submit_tag 'Enviar'
+  %p= link_to 'Cancelar', welcome_index_path
