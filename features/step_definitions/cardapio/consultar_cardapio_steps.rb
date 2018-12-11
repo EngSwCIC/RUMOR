@@ -15,6 +15,10 @@ E /^clicar em "(.*?)"$/ do |consultar_button|
     click_button(consultar_button)
 end
 
+E /^clicar no link "(.*?)"$/ do |link|
+    click_link(link)
+end
+
 Então /^deve mostrar na tela o "(.*?)"$/ do |mensagem|
     expect(page).to have_content(mensagem)
 end

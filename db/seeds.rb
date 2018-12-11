@@ -62,3 +62,56 @@ Cardapio.create!([
             jantar_sobremesa: "Laranja",
             jantar_refresco: "Manga"
     }])
+
+    Ru.create!([{
+             name: 'Darcy Ribeiro',
+             working_hour: "Diariamente
+                  Café da manhã: 7h às 9h
+                  Almoço: 10h30 às 14h30*
+                  Jantar: 17h às 19h30
+                  Restaurante Executivo: seg à sexta 11h as 14h30 (durante o período das aulas)
+                  *sáb, dom e feriados : 11h ás 14h30",
+             location: 'Campus Darcy Ribeiro',
+             nota: 7
+           }, {
+             name: 'FGA',
+             working_hour: "De segunda-feira a sexta-feira**
+                  Café da manhã: 7h às 9h
+                  Almoço: 10h30 às 14h30*
+                  Jantar: 17h às 19h30
+                  *sáb, dom e feriados : 11h ás 14h30
+                  **Exceto feriados",
+             location: 'Prédio do MESP',
+             nota: 5
+           }, {
+             name: 'FCE',
+             working_hour: "De segunda-feira a sexta-feira**
+                  Café da manhã: 7h às 9h
+                  Almoço: 11h às 14h30*
+                  Jantar: 17h às 19h30
+                  Sábado**
+                  Café da manhã: 7h às 9h
+                  Almoço: 11h às 14h30
+                  *sáb, dom e feriados : 11h ás 14h30
+                  **Exceto feriados",
+             location: 'Prédio do MESP',
+             nota: 4
+           }, {
+             name: 'FUP',
+             working_hour: "Diariamente
+                  Café da manhã: 7h às 9h
+                  Almoço: 10h30 às 14h30
+                  Jantar: 17h às 19h30",
+             location: 'Prédio do MESP',
+             nota: 9
+           }, {
+             name: 'FAL',
+             working_hour: "De segunda-feira a sexta-feira**
+                  Café da manhã: 7h às 9h
+                  Almoço: 10h30 às 14h30*
+                  Jantar: 17h às 19h30
+                  *sáb, dom e feriados : 11h ás 14h30
+                  **Exceto feriados",
+             location: 'Sede administrativa',
+             nota: 6
+}])

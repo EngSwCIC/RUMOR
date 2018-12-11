@@ -1,29 +1,7 @@
-GIT
-  remote: https://github.com/metricfu/metric_fu.git
-  revision: 6ec57f23838b1aef47e7bc4aaca1e7668f191b30
-  specs:
-    metric_fu (4.12.0)
-      cane (~> 2.5, >= 2.5.2)
-      churn (~> 0.0.35)
-      code_metrics (~> 0.1)
-      coderay
-      flay (~> 2.1, >= 2.0.1)
-      flog (~> 4.1, >= 4.1.1)
-      launchy (~> 2.0)
-      metric_fu-Saikuro (~> 1.1, >= 1.1.3)
-      multi_json
-      rails_best_practices (~> 1.14, >= 1.14.3)
-      redcard
-      reek (>= 1.3.4, < 3.0)
-      roodi (~> 5.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
-<<<<<<< HEAD
-=======
     abstract_type (0.0.7)
->>>>>>> features_consultar_e_avaliar
     actioncable (5.2.2)
       actionpack (= 5.2.2)
       nio4r (~> 2.0)
@@ -80,11 +58,8 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
-<<<<<<< HEAD
-=======
     cane (2.6.2)
       parallel
->>>>>>> features_consultar_e_avaliar
     capybara (3.12.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -93,10 +68,8 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.2)
       xpath (~> 3.2)
-<<<<<<< HEAD
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
-=======
     chronic (0.10.2)
     churn (0.0.35)
       chronic (>= 0.2.3)
@@ -110,7 +83,6 @@ GEM
       sexp_processor
     code_metrics (0.1.3)
     coderay (1.1.2)
->>>>>>> features_consultar_e_avaliar
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -118,12 +90,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-<<<<<<< HEAD
-=======
     concord (0.1.5)
       adamantium (~> 0.2.0)
       equalizer (~> 0.0.9)
->>>>>>> features_consultar_e_avaliar
     concurrent-ruby (1.1.3)
     crass (1.0.4)
     cucumber (3.1.2)
@@ -153,13 +122,9 @@ GEM
     database_cleaner (1.7.0)
     diff-lcs (1.3)
     docile (1.3.1)
-<<<<<<< HEAD
-=======
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    duktape (2.0.1.0)
     equalizer (0.0.11)
->>>>>>> features_consultar_e_avaliar
     erubi (1.7.1)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -168,61 +133,36 @@ GEM
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
-<<<<<<< HEAD
-    faker (1.9.1)
-      i18n (>= 0.7)
-    ffi (1.9.25)
-    flog (4.1.2)
-      ruby_parser (~> 3.1, > 3.1.0)
-      sexp_processor (~> 4.0)
-=======
     factory_girl (4.9.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.9.0)
       factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
+    faker (1.9.1)
+      i18n (>= 0.7)
     fattr (2.4.0)
     ffi (1.9.25)
-    ffi (1.9.25-x64-mingw32)
     flay (2.12.0)
       erubis (~> 2.7.0)
       path_expander (~> 1.0)
       ruby_parser (~> 3.0)
       sexp_processor (~> 4.0)
-    flog (4.6.2)
-      path_expander (~> 1.0)
+    flog (4.1.2)
       ruby_parser (~> 3.1, > 3.1.0)
-      sexp_processor (~> 4.8)
-    formatador (0.2.5)
->>>>>>> features_consultar_e_avaliar
+      sexp_processor (~> 4.0)
     gemaina (1.0)
     gherkin (5.1.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-<<<<<<< HEAD
-=======
-    guard (2.15.0)
-      formatador (>= 0.2.4)
-      listen (>= 2.7, < 4.0)
-      lumberjack (>= 1.0.12, < 2.0)
-      nenv (~> 0.1)
-      notiffany (~> 0.0)
-      pry (>= 0.9.12)
-      shellany (~> 0.0)
-      thor (>= 0.18.1)
-    guard-compat (1.2.1)
-    guard-rspec (4.7.3)
-      guard (~> 2.1)
-      guard-compat (~> 1.1)
-      rspec (>= 2.99.0, < 4.0)
->>>>>>> features_consultar_e_avaliar
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     hirb (0.7.3)
-<<<<<<< HEAD
-    i18n (1.1.1)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (1.2.0)
       concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -231,18 +171,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.1.0)
-=======
-    http-cookie (1.0.3)
-      domain_name (~> 0.5)
-    i18n (1.1.1)
-      concurrent-ruby (~> 1.0)
-    ice_nine (0.11.2)
-    jbuilder (2.8.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
-    json (2.1.0)
     json_pure (2.1.0)
->>>>>>> features_consultar_e_avaliar
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.1.5)
@@ -252,7 +181,6 @@ GEM
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    lumberjack (1.0.13)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     main (6.2.2)
@@ -263,14 +191,24 @@ GEM
     map (6.6.0)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
-<<<<<<< HEAD
-    method_source (0.9.2)
-=======
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     method_source (0.9.2)
+    metric_fu (4.12.0)
+      cane (~> 2.5, >= 2.5.2)
+      churn (~> 0.0.35)
+      code_metrics (~> 0.1)
+      coderay
+      flay (~> 2.1, >= 2.0.1)
+      flog (~> 4.1, >= 4.1.1)
+      launchy (~> 2.0)
+      metric_fu-Saikuro (~> 1.1, >= 1.1.3)
+      multi_json
+      rails_best_practices (~> 1.14, >= 1.14.3)
+      redcard
+      reek (>= 1.3.4, < 3.0)
+      roodi (~> 3.1)
     metric_fu-Saikuro (1.1.3)
->>>>>>> features_consultar_e_avaliar
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
@@ -279,29 +217,18 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     msgpack (1.2.4)
-    msgpack (1.2.4-x64-mingw32)
     multi_json (1.13.1)
     multi_test (0.1.2)
-    nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    nokogiri (1.8.5-x64-mingw32)
-      mini_portile2 (~> 2.3.0)
-    notiffany (0.1.1)
-      nenv (~> 0.1)
-      shellany (~> 0.0)
     parallel (1.12.1)
     parser (2.5.3.0)
       ast (~> 2.4.0)
     path_expander (1.0.3)
     pg (1.1.3)
-    pg (1.1.3-x64-mingw32)
     procto (0.0.3)
-    pry (0.12.2)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
@@ -329,8 +256,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-<<<<<<< HEAD
-=======
     rails_best_practices (1.19.4)
       activesupport
       code_analyzer (>= 0.4.8)
@@ -339,27 +264,19 @@ GEM
       json
       require_all (~> 2.0)
       ruby-progressbar
->>>>>>> features_consultar_e_avaliar
     railties (5.2.2)
       actionpack (= 5.2.2)
       activesupport (= 5.2.2)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
-<<<<<<< HEAD
-    rake (12.3.2)
-=======
     rainbow (2.2.2)
       rake
-    rake (12.3.1)
->>>>>>> features_consultar_e_avaliar
+    rake (12.3.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (6.0.4)
-<<<<<<< HEAD
-    regexp_parser (1.3.0)
-=======
     redcard (1.1.0)
     reek (2.2.1)
       parser (~> 2.2)
@@ -371,18 +288,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rest-client (2.0.2-x64-mingw32)
-      ffi (~> 1.9)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    roodi (5.0.0)
+    roodi (3.3.1)
       ruby_parser (~> 3.2, >= 3.2.2)
-    rspec (3.8.0)
-      rspec-core (~> 3.8.0)
-      rspec-expectations (~> 3.8.0)
-      rspec-mocks (~> 3.8.0)
->>>>>>> features_consultar_e_avaliar
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
@@ -400,17 +307,11 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-<<<<<<< HEAD
-    ruby_dep (1.5.0)
-    ruby_parser (3.12.0)
-      sexp_processor (~> 4.9)
-    rubyzip (1.2.2)
-=======
     ruby-progressbar (1.10.0)
     ruby_dep (1.5.0)
     ruby_parser (3.12.0)
       sexp_processor (~> 4.9)
->>>>>>> features_consultar_e_avaliar
+    rubyzip (1.2.2)
     sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -424,7 +325,6 @@ GEM
       tilt (>= 1.1, < 3)
     sdoc (1.0.0)
       rdoc (>= 5.0)
-<<<<<<< HEAD
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
@@ -432,10 +332,6 @@ GEM
     simple_form (4.1.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-=======
-    sexp_processor (4.11.0)
-    shellany (0.0.1)
->>>>>>> features_consultar_e_avaliar
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -468,17 +364,11 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-<<<<<<< HEAD
-=======
-    tzinfo-data (1.2018.7)
-      tzinfo (>= 1.0.0)
->>>>>>> features_consultar_e_avaliar
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
-    unf_ext (0.0.7.5-x64-mingw32)
     unparser (0.2.8)
       abstract_type (~> 0.0.7)
       adamantium (~> 0.2.0)
@@ -487,7 +377,6 @@ GEM
       equalizer (~> 0.0.9)
       parser (>= 2.3.1.2, < 2.6)
       procto (~> 0.0.2)
-    wdm (0.1.1)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -501,7 +390,6 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -511,42 +399,26 @@ DEPENDENCIES
   cucumber-rails
   cucumber-rails-training-wheels
   database_cleaner
-<<<<<<< HEAD
   factory_bot_rails (~> 4.0)
+  factory_girl_rails
   faker
   flog (~> 4.1.1)
   gemaina
-=======
-  duktape
-  factory_bot_rails
-  factory_girl
-  factory_girl_rails
-  flog
-  gemaina
-  guard-rspec
->>>>>>> features_consultar_e_avaliar
   haml
   jbuilder (~> 2.5)
   jquery-rails
   launchy
   listen (>= 3.0.5, < 3.2)
-  metric_fu!
+  metric_fu
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
-<<<<<<< HEAD
+  rails-controller-testing
   rspec-rails (~> 3.6)
   sass-rails (~> 5.0)
   sdoc
   selenium-webdriver
   simple_form
-=======
-  rails-controller-testing
-  rainbow
-  rspec-rails
-  sass-rails (~> 5.0)
-  sdoc
->>>>>>> features_consultar_e_avaliar
   simplecov
   simplecov-console
   spring
@@ -555,11 +427,10 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  wdm (~> 0.1.0)
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.17.1

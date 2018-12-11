@@ -1,5 +1,5 @@
 <center>
-  <h1>RUMOR</h1>
+  <%= image_tag "rumor-logo.png" %>
   <h3>Consultar Cardápio</h3>
 
   <%= form_tag(welcome_index_path, :method => "get") do %>  
@@ -15,7 +15,7 @@
       </p>  
       
       <p>
-      <%= button_tag "Consultar", id: "consultar"%> 
+      <%= button_tag "Consultar", id: "Consultar"%> 
       </p>
 
     </div>  
@@ -23,12 +23,34 @@
   
   <br>
 
-  <% if @cardapio.nil? == false %>
+  <% if @cardapio.nil? == false%>
     <h3>Cardápio do dia</h3>
     <p> 
     <%=@cardapio.campus%> <%=@cardapio.data%> 
-    <button type="button" id="avaliar_menu_button"> <a href="/menu_reviews/new">Avaliar Cardápio</a></button>
-    <button type="button" id="avaliar_ru_button"> <a href="/ru_reviews/new">Avaliar RU</a></button>
+    </p>
+    <p>  
+    RU NOTA: <%=@ru.nota%> 
+    </p> 
+    <p>  
+    HORÁRIO DE FUNCIONAMENTO: <%=@ru.working_hour%> 
+    </p>
+    <div hidden> <button type="button" id="avaliar_menu"> <a href="/menu_reviews/new">Avaliar Cardápio</a></button> </div>
+    <div id="avaliar_menu">
+    <%= link_to("Avaliar Cardápio", "/menu_reviews/new")%>
+    </div>
+
+    <div hidden> <button type="button" id="avaliar_ru"> <a href="/ru_reviews/new">Avaliar RU</a></button> </div>
+    <div id="avaliar_ru">
+    <%= link_to("Avaliar RU", "/ru_reviews/new")%>
+    </div>
+    
+
+    <p type="hidden" id="text_element">http://localhost:3000/pages/cardapio_1</p>
+    <div id="compartilhar">
+    <form action="/pages/cardapio" class="button_to" data-remote="true" method="get">
+    <input type="submit" value="Compartilhar" />
+    </form>
+    </div>
     </p> 
 
     <table style="display: inline-block; border: 1px solid; float: center;">
@@ -165,15 +187,24 @@
   <br>
   <br>
 
+  <h2>Localização Dos Restaurantes</h2>
+
+  <div id="localizacao">
+  <a id="darcy_link" href="/pages/darcy">Darcy Ribeiro</a>
+  </br> <a id="gama_link" href="/pages/gama">Gama</a>
+  </br> <a id="ceilandia_link" href="/pages/ceilandia">Ceilandia</a>
+  </br> <a id="planaltina_link" href="/pages/planaltina">Planaltina</a>
+  </div> </br>
+  
+   <%# <a href="/pages/cardapio">Compartilhar Cardápio</a> </br> %>
+
+
 </center>
 
-#<<<<<<< HEAD
-#<%= image_tag "rumor-logo.png" %>
+<h1>Menu Antigo</h1>
 
-#<h1>Menu</h1>
+<a href="/pages/cardapio">Cardápio e Localização dos Restaurantes</a> <br>
 
-#<a href="/pages/cardapio">Consultar Cardápio</a> <br>
-
-#<%= link_to("Horário de Funcionamento", "/working_hour")%>
-#<br>  
-#<%= link_to("Avaliação do Cardápio do Dia", "/view_rating")%>
+<%= link_to("Horário de Funcionamento", "/working_hour")%>
+<br>  
+<%= link_to("Avaliação do Cardápio do Dia", "/view_rating")%>
