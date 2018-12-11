@@ -12,7 +12,7 @@ E /^preencher o campus com "(.*?)"$/ do |campus|
 end
 
 E /^clicar em "(.*?)"$/ do |consultar_button|
-    find_button(consultar_button).click
+    click_button(consultar_button)
 end
 
 Então /^deve mostrar na tela o "(.*?)"$/ do |mensagem|

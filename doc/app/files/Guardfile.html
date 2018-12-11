@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Guardfile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/github.css" type="text/css" media="screen" />
+<script src="../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            Guardfile
+        </h1>
+        <ul class="files">
+            <li>Guardfile</li>
+            <li>Last modified: 2018-12-05 19:49:08 -0200</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<p># A sample <a href="Guardfile.html">Guardfile</a> # More info at <a
+href="https://github.com/guard/guard#readme">github.com/guard/guard#readme</a></p>
+
+<p>## Uncomment and set this to only include directories you want to watch #
+directories %w(app lib config test spec features) \ #  .select{|d|
+Dir.exists?(d) ? d : UI.warning(“Directory #{d} does not exist”)}</p>
+
+<p>## Note: if you are using the `directories` clause above and you are not ##
+watching the project directory (&#39;.&#39;), then you will want to move ##
+the <a href="Guardfile.html">Guardfile</a> to a watched dir and symlink it
+back, e.g. # #  $ mkdir config #  $ mv <a
+href="Guardfile.html">Guardfile</a> config/ #  $ ln -s config/Guardfile . #
+# and, you&#39;ll have to watch “config/Guardfile” instead of “Guardfile”</p>
+
+<p># Note: The cmd option is now required due to the increasing number of ways
+#       rspec may be run, below are examples of the most common uses. #  *
+bundler: &#39;bundle exec rspec&#39; #  * bundler binstubs:
+&#39;bin/rspec&#39; #  * spring: &#39;bin/rspec&#39; (This will use spring
+if running and you have #                          installed the spring
+binstubs per the docs) #  * zeus: &#39;zeus rspec&#39; (requires the server
+to be started separately) #  * &#39;just&#39; rspec: &#39;rspec&#39;</p>
+
+<p>guard :rspec, cmd: “bundle exec rspec” do</p>
+
+<pre><code>require &quot;guard/rspec/dsl&quot;
+dsl = Guard::RSpec::Dsl.new(self)
+
+# Feel free to open issues for suggestions and improvements
+
+# RSpec files
+rspec = dsl.rspec
+watch(rspec.spec_helper) { rspec.spec_dir }
+watch(rspec.spec_support) { rspec.spec_dir }
+watch(rspec.spec_files)
+
+# Ruby files
+ruby = dsl.ruby
+dsl.watch_spec_files_for(ruby.lib_files)
+
+# Rails files
+rails = dsl.rails(view_extensions: %w(erb haml slim))
+dsl.watch_spec_files_for(rails.app_files)
+dsl.watch_spec_files_for(rails.views)
+
+watch(rails.controllers) do |m|
+  [
+    rspec.spec.call(&quot;routing/#{m[1]}_routing&quot;),
+    rspec.spec.call(&quot;controllers/#{m[1]}_controller&quot;),
+    rspec.spec.call(&quot;acceptance/#{m[1]}&quot;)
+  ]
+end
+
+# Rails config changes
+watch(rails.spec_helper)     { rspec.spec_dir }
+watch(rails.routes)          { &quot;#{rspec.spec_dir}/routing&quot; }
+watch(rails.app_controller)  { &quot;#{rspec.spec_dir}/controllers&quot; }
+
+# Capybara features specs
+watch(rails.view_dirs)     { |m| rspec.spec.call(&quot;features/#{m[1]}&quot;) }
+watch(rails.layouts)       { |m| rspec.spec.call(&quot;features/#{m[1]}&quot;) }
+
+# Turnip features and steps
+watch(%r{^spec/acceptance/(.+)\.feature$})
+watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$}) do |m|
+  Dir[File.join(&quot;**/#{m[1]}.feature&quot;)][0] || &quot;spec/acceptance&quot;
+end
+</code></pre>
+
+<p>end</p>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+    
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>

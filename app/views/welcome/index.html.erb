@@ -25,7 +25,11 @@
 
   <% if @cardapio.nil? == false %>
     <h3>Cardápio do dia</h3>
-    <p> <%=@cardapio.campus%> <%=@cardapio.data%> </p> 
+    <p> 
+    <%=@cardapio.campus%> <%=@cardapio.data%> 
+    <button type="button" id="avaliar_menu_button"> <a href="/menu_reviews/new">Avaliar Cardápio</a></button>
+    <button type="button" id="avaliar_ru_button"> <a href="/ru_reviews/new">Avaliar RU</a></button>
+    </p> 
 
     <table style="display: inline-block; border: 1px solid; float: center;">
     <thead>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_21_160936) do
+ActiveRecord::Schema.define(version: 2018_12_08_183220) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,48 @@ ActiveRecord::Schema.define(version: 2018_11_21_160936) do
   create_table "consulta", force: :cascade do |t|
     t.date "data"
     t.text "campus"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "menu_reviews", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "tipo_usuario"
+    t.string "refeicao"
+    t.string "categoria"
+    t.integer "nota"
+    t.text "consideracao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.string "campus_name"
+    t.string "meal"
+    t.float "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ru_reviews", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "tipo_usuario"
+    t.integer "nota_limpeza_restaurante"
+    t.integer "nota_limpeza_banheiro"
+    t.integer "nota_caixa"
+    t.integer "nota_porta_objetos"
+    t.text "consideracao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rus", force: :cascade do |t|
+    t.string "name"
+    t.text "working_hour"
+    t.text "location"
+    t.integer "nota"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

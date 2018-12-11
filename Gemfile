@@ -23,6 +23,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+# See https://github.com/rails/execjs#readme for more supported runtimes
+gem 'duktape'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -43,10 +45,16 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'haml'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'guard-rspec'
+  gem 'rails-controller-testing' # permit using stubs
+  gem 'factory_bot_rails'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
 
   # Gems added by Thiago Luis on Oct 19th for BDD purpouses
   gem 'gemaina' # Gema adicionada por Vinícius Gomes em 20 de Outubro de 2018
@@ -65,6 +73,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-commands-rspec'
 end
 
 

@@ -7,6 +7,8 @@ class Cardapio < ApplicationRecord
 
         @parameter_data = data
         @parameter_campus  = campus
+        puts @parameter_data
+        puts @parameter_campus
         Cardapio.where('data LIKE ? AND campus LIKE ?', "%#{@parameter_data}%", "%#{@parameter_campus}%").first
     end
 end

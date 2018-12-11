@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>new.html.haml</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../../../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../../css/github.css" type="text/css" media="screen" />
+<script src="../../../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            new.html.haml
+        </h1>
+        <ul class="files">
+            <li>app/views/menu_reviews/new.html.haml</li>
+            <li>Last modified: 2018-12-05 19:49:08 -0200</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      <ul><li>
+<p>unless @menu_review.errors.empty? warning</p>
+
+<pre><code>Os seguintes erros impediram o envio da avaliação:
+%ul
+  - @menu_review.errors.full_messages.each do |error|
+    %li= error
+</code></pre>
+</li></ul>
+
+<p>%h1.title= link_to &#39;RUMOR&#39;, rumor_index_path %h2 Avaliar Cardápio</p>
+
+<h1 id="label-form_tag+menu_reviews_path-2C+-3Amethod+-3D-3E+-3Apost+do">form_tag menu_reviews_path, :method =&gt; :post do</h1>
+
+<pre><code>= label :menu_review, :nome, &#39;Nome&#39;
+= text_field :menu_review, :nome
+
+= label :menu_review, :email, &#39;E-mail&#39;
+= text_field :menu_review, :email
+
+= label :menu_review, :tipo_usuario, &#39;Tipo de usuário&#39;
+= select :menu_review, :tipo_usuario, [&#39;&#39;,&#39;Aluno&#39;, &#39;Público externo&#39;]
+
+= label :menu_review, :refeicao, &#39;Refeição&#39;
+= select :menu_review, :refeicao, [&#39;&#39;,&#39;Café da manhã&#39;,&#39;Almoço&#39;,&#39;Jantar&#39;]
+
+= label :menu_review, :categoria, &#39;Categoria&#39;
+= text_field :menu_review, :categoria
+
+= label :menu_review, :nota, &#39;Nota&#39;
+= select :menu_review, :nota, [&#39;&#39;,0,1,2,3,4,5]
+
+= label :menu_review, :consideracao, &#39;Considerações&#39;
+= text_field :menu_review, :consideracao
+
+= submit_tag &#39;Enviar&#39;
+%p= link_to &#39;Cancelar&#39;, rumor_index_path
+</code></pre>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+    
+    
+    
+  
+</div>
+
+    </div>
+  </body>
+</html>
