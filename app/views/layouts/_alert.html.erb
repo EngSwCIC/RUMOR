@@ -1,0 +1,22 @@
+<div class='custom-alert-position'>
+  <% if flash[:notice] %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <div ><%= flash[:notice] %></div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% elsif flash[:alert] %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <div><%= flash[:alert] %></div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+

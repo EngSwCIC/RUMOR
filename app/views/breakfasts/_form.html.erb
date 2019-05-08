@@ -1,0 +1,74 @@
+<%= form_with(model: breakfast, local: true) do |form| %>
+  <% if breakfast.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(breakfast.errors.count, "error") %> prohibited this breakfast from being saved:</h2>
+
+      <ul>
+      <% breakfast.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% if params[:menu_id] %>
+    <%= form.hidden_field :menu_id, :value => params[:menu_id] %>
+  <% else %>
+    <div class='form-group'>
+      <%= form.label :menu_id, 'Dia do cardápio' %>
+      <%= form.collection_select(:menu_id, Menu.all, :id, :date,  {},  {class: 'form-control'}) %>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :hot_drinks %>
+    <%= form.text_field :hot_drinks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetarian_drink %>
+    <%= form.text_field :vegetarian_drink %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chocolate_milk %>
+    <%= form.text_field :chocolate_milk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bread %>
+    <%= form.text_field :bread %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetarian_bread %>
+    <%= form.text_field :vegetarian_bread %>
+  </div>
+
+  <div class="field">
+    <%= form.label :margarine %>
+    <%= form.text_field :margarine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetarian_margarine %>
+    <%= form.text_field :vegetarian_margarine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :complement %>
+    <%= form.text_field :complement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vegetarian_complement %>
+    <%= form.text_field :vegetarian_complement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fruit %>
+    <%= form.text_field :fruit %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

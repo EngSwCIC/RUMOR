@@ -27,6 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Gema devise para autenticacao de usuarios
+gem 'devise'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
+
+gem 'metric_fu'
+gem 'rdoc'
+gem 'flog'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -36,9 +44,34 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#Library to generate charts
+gem "chartkick"
+
+#Library to generate pdf
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
+#Library to generate Fake datas
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+# gems for static checking, added by Icaro rezende on 2018-11-19
+gem 'rubocop', '~> 0.60.0', require: false
+gem 'rubocop-rspec'
+
+# Library to load excel file
+gem "roo", "~> 2.7.0"
+
+group :test do
+  # used for test coverage, added by Icaro Rezende on 2018-11-18
+  gem 'simplecov', require: false
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  #Creates an image for database schema
+  gem 'rails-erd'
 
   # Gems added by Thiago Luis on Oct 19th for BDD purpouses
   gem 'gemaina' # Gema adicionada por Vinícius Gomes em 20 de Outubro de 2018
@@ -47,6 +80,9 @@ group :development, :test do
   gem	'database_cleaner'	#	to	clear	Cucumber's	test	database between	runs
   gem	'capybara'	#	lets	Cucumber	pretend	to	be	a	web	browser
   gem	'launchy'	#	a	useful	debugging	aid	for	user stories end
+  gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
+  gem 'factory_bot_rails' # Factory_bot to fenerate factories. added by Icaro Rezende 2018-11-19
+  gem 'rails-controller-testing'
 end
 
 group :development do

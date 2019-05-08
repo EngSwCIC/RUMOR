@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Salad:</strong>
+  <%= @dinner.salad %>
+</p>
+
+<p>
+  <strong>Sauce:</strong>
+  <%= @dinner.sauce %>
+</p>
+
+<p>
+  <strong>Soup:</strong>
+  <%= @dinner.soup %>
+</p>
+
+<p>
+  <strong>Main course:</strong>
+  <%= @dinner.main_course %>
+</p>
+
+<p>
+  <strong>Vegetarian dish:</strong>
+  <%= @dinner.vegetarian_dish %>
+</p>
+
+<p>
+  <strong>Accompaniments:</strong>
+  <%= @dinner.accompaniments %>
+</p>
+
+<p>
+  <strong>Dessert:</strong>
+  <%= @dinner.dessert %>
+</p>
+
+<p>
+  <strong>Juice:</strong>
+  <%= @dinner.juice %>
+</p>
+
+<%= link_to 'Edit', edit_dinner_path(@dinner) %> |
+<%= link_to 'Back', dinners_path %>

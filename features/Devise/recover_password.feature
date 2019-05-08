@@ -8,7 +8,7 @@ Funcionalidade: recover_password
 
   Cenário: quero recuperar minha senha estando deslogado
 
-    Dado que eu estou deslogado e quero recuperar minha senha
+    Dado que eu estou deslogado
     E que eu estou na tela de login
     Quando eu clicar em "Esqueci minha senha"
     Então eu quero ser redirecionado para a página de recuperação de senhas
