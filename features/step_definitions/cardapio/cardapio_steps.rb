@@ -18,12 +18,13 @@ module CardapioHelpers
   end
 
   def registrar_usuario(email, senha)
-    visit '/users/sign_up'
-    fill_in 'user_email', :with => email
-    fill_in 'user_password', :with => senha
-    fill_in 'user_password_confirmation', :with => senha
-    click_button "Sign up"
-    expect(page).to have_text("Seja bem-vindo, #{email}!")
+    # visit '/users/sign_up'
+    # fill_in 'user_email', :with => email
+    # fill_in 'user_password', :with => senha
+    # fill_in 'user_password_confirmation', :with => senha
+    # click_button "Sign up"
+    User.create(email: email, password: senha, password_confirmation: senha)
+    # expect(page).to have_text("Seja bem-vindo, #{email}!")
   end
 
   # Os argumentos devem ser da forma que seu campo de data pede.

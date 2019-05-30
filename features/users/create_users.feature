@@ -9,7 +9,7 @@ Funcionalidade: create_users
 Cenario: Criar usuario com sucesso
   Dado que eu estou logado como gestor
   E eu estaja na pagina de ver usuarios
-  E eu clicar no botão "Novo usuario"
+  E clicar no botão "Novo usuario"
   E preencher o formulario com:
   |user_name      |admin2              |
   |user_email     |admin@admin.com     |
