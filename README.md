@@ -1,6 +1,6 @@
 ![Rumor Logo](app/assets/images/rumor-logo.png)
 
-Descrição do sistema: O projeto é um software que busca disponibilizar para os estudantes o menu do RU.
+O projeto é um software que busca disponibilizar para os estudantes o menu do RU.
 
 Passo a passo para instalação do sistema:
 
