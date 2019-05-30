@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-30T16:34:43-03:00">2019-05-30T16:34:43-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-30T16:40:32-03:00">2019-05-30T16:40:32-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">47.72%</span></span>
+    (<span class="covered_percent"><span class="red">46.52%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.5
+         0.47
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>42</b> files in total.
+    <b>43</b> files in total.
     <b>417</b> relevant lines. 
-    <span class="green"><b>199</b> lines covered</span> and
-    <span class="red"><b>218</b> lines missed </span>
+    <span class="green"><b>194</b> lines covered</span> and
+    <span class="red"><b>223</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#25a2c399e94ef1cc1d2ec2492eceb6193153e067" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">57.58 %</td>
+        <td class="red strong">54.55 %</td>
         <td>73</td>
         <td>33</td>
-        <td>19</td>
-        <td>14</td>
-        <td>0.7</td>
+        <td>18</td>
+        <td>15</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
@@ -412,22 +412,32 @@
       
       <tr>
         <td class="strong"><a href="#d7b9b23679d6595756902aeecd83a49e9da7ded4" class="src_link" title="features/step_definitions/users/create_users_steps.rb">features/step_definitions/users/create_users_steps.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="yellow strong">81.82 %</td>
         <td>27</td>
         <td>11</td>
-        <td>11</td>
+        <td>9</td>
+        <td>2</td>
+        <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#587ab65392a70135f7679066674a942f413145b3" class="src_link" title="features/step_definitions/users/destroy_users_steps.rb">features/step_definitions/users/destroy_users_steps.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8c252d98d960970acc1abfbd54d79e4a98911a58" class="src_link" title="features/step_definitions/users/edit_users_steps.rb">features/step_definitions/users/edit_users_steps.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">33.33 %</td>
         <td>7</td>
         <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0.3</td>
       </tr>
       
       <tr>
@@ -532,11 +542,11 @@
         <div class="source_table" id="25a2c399e94ef1cc1d2ec2492eceb6193153e067">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="red">57.58 %</span> covered</h4>
+    <h4><span class="red">54.55 %</span> covered</h4>
     <div>
       <b>33</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -789,26 +799,26 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
           
           <code class="ruby">      if @user.update(user_params)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
           
           <code class="ruby">        format.html { redirect_to users_path, notice: &#39;usuario editado com sucesso&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
           
           <code class="ruby">        format.json { render :show, status: :ok, location: @user }</code>
         </li>
@@ -873,26 +883,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
           
           <code class="ruby">    @user.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="57">
-          
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="2" data-linenumber="58">
+          <span class="hits">2</span>
           
           <code class="ruby">      format.html { redirect_to users_url, notice: &#39;User was successfully destroyed.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
@@ -933,8 +943,8 @@
           <code class="ruby">    def set_user</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="66">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
           <code class="ruby">      @user = User.find(params[:id])</code>
         </li>
@@ -963,8 +973,8 @@
           <code class="ruby">    def user_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
           
           <code class="ruby">      params.require(:user).permit(:name, :email, :password, :password_confirmation)</code>
         </li>
@@ -7827,11 +7837,11 @@
         <div class="source_table" id="d7b9b23679d6595756902aeecd83a49e9da7ded4">
   <div class="header">
     <h3>features/step_definitions/users/create_users_steps.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">81.82 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -7892,14 +7902,14 @@
           <code class="ruby">  # table is a Cucumber::MultilineArgument::DataTable</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
           
           <code class="ruby">  table.rows_hash.each do |field,value|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">    fill_in field, with: value</code>
         </li>
@@ -7928,8 +7938,8 @@
           <code class="ruby">Dado(&quot;clicar no botão {string}&quot;) do |botao|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">  click_on botao</code>
         </li>
@@ -8005,14 +8015,45 @@
 </div>
 
       
+        <div class="source_table" id="587ab65392a70135f7679066674a942f413145b3">
+  <div class="header">
+    <h3>features/step_definitions/users/destroy_users_steps.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># This is the steps file referred to destroy_users feature</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"># Place your code relative to that feature here</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="8c252d98d960970acc1abfbd54d79e4a98911a58">
   <div class="header">
     <h3>features/step_definitions/users/edit_users_steps.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">33.33 %</span> covered</h4>
     <div>
       <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -8043,14 +8084,14 @@
           <code class="ruby">Então(&quot;ver o usuario modificado {string}, {string}&quot;) do |nome, email|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">  expect(page).to have_content nome</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
           
           <code class="ruby">  expect(page).to have_content email</code>
         </li>
