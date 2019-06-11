@@ -2,7 +2,7 @@
 
 <div class="container">
   <h1>Cardápios</h1>
-  <p>Cardápios do Mês</p>
+  <h3>Cardápios da semana</h3>
   <table style="background-color: #F28D3C;">
     <thead>
       <tr>
@@ -22,18 +22,18 @@
               <span style="padding: 1em; text-align: right;"><%=   %></span>
           </div>
           </td>
-      <% @month_menu.each do |mm|  %>
-          <td>
-          <%= link_to mm do %>
-            <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
-            </div>
-          <% end %>
-          </td>
-          <% if mm.date.wday == 6 %>
-          </tr>
-          <tr>
-          <% end %>
+      <% @week_menus.each do |mm|  %>
+        <td>
+        <%= link_to mm do %>
+          <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
+              <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
+          </div>
+        <% end %>
+        </td>
+        <% if mm.date.wday == 6 %>
+        </tr>
+        <tr>
+        <% end %>
       <% end %>
           <td>
             <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
@@ -44,10 +44,30 @@
     </tbody>
   </table>
 
-  <%= link_to 'New Menu', new_menu_path %>
+  <%= link_to 'Criar cardápio', new_menu_path %>
   <br>
   <%=
-  link_to 'Importar Cardápio',
+  link_to 'Importar Cardápios dos mês',
   new_menus_import_path
   %>
+
+  <% if user_signed_in?  %>
+    <h3>Todos os cardápios cadastrados</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Cardápio</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @menus.each do |cardapio| %>
+          <tr>
+            <td><%= link_to 'Show', cardapio %></td>
+            <td><%= cardapio.date %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end  %>
 </div>

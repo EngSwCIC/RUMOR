@@ -2,7 +2,7 @@ class Menu < ApplicationRecord
   has_one :breakfast
   has_one :lunch
   has_one :dinner
-  scope :this_month, -> { where(created_at:Time.now.beginning_of_month..Time.now.end_of_month) }
+  scope :this_week, -> { where(created_at:Time.now.beginning_of_week..Time.now.end_of_week) }
 
 
   validates :date, presence: true, uniqueness: 
