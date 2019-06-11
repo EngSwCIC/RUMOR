@@ -1,53 +1,53 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-    <h1>Cardápios</h1>
-    <p>Cardápios do Mês</p>
-    <table style="background-color: #F28D3C;">
+  <h1>Cardápios</h1>
+  <p>Cardápios do Mês</p>
+  <table style="background-color: #F28D3C;">
     <thead>
-        <tr>
-        <th>Domingo</th>
-        <th>Segunda-feira</th>
-        <th>Terça-feira</th>
-        <th>Quarta-feira</th>
-        <th>Quinta-feira</th>
-        <th>Sexta-feira</th>
-        <th>Sábado</th>
-        </tr>
+      <tr>
+      <th>Domingo</th>
+      <th>Segunda-feira</th>
+      <th>Terça-feira</th>
+      <th>Quarta-feira</th>
+      <th>Quinta-feira</th>
+      <th>Sexta-feira</th>
+      <th>Sábado</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%=   %></span>
-            </div>
-            </td>
-        <% @month_menu.each do |mm|  %>
-            <td>
-            <%= link_to mm do %>
+      <tr>
+          <td>
+          <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
+              <span style="padding: 1em; text-align: right;"><%=   %></span>
+          </div>
+          </td>
+      <% @month_menu.each do |mm|  %>
+          <td>
+          <%= link_to mm do %>
             <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
                 <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
             </div>
-            <% end %>
-            </td>
-            <% if mm.date.wday == 6 %>
-            </tr>
-            <tr>
-            <% end %>
-        <% end %>
-            <td>
+          <% end %>
+          </td>
+          <% if mm.date.wday == 6 %>
+          </tr>
+          <tr>
+          <% end %>
+      <% end %>
+          <td>
             <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
                 <span style="padding: 1em; text-align: right;"><%=   %></span>
             </div>
-            </td>
-        </tr>
+          </td>
+      </tr>
     </tbody>
-    </table>
+  </table>
 
-    <%= link_to 'New Menu', new_menu_path %>
-    <br>
-    <%=
-    link_to 'Importar Cardápio',
-    new_menus_import_path
-    %>
+  <%= link_to 'New Menu', new_menu_path %>
+  <br>
+  <%=
+  link_to 'Importar Cardápio',
+  new_menus_import_path
+  %>
 </div>

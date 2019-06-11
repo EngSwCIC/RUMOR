@@ -10,7 +10,7 @@ class MenusController < ApplicationController
   # Método Index é chamado para mostrar todos os cardápios cadastrados
   def index
     @menus = Menu.all.sort_by {|a| a.date }
-    @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
+    @month_menu = Menu.this_month.sort_by {|a| a.date }
   end
 
   # Método que é responsável por retornar um objeto
