@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= form.label :group %>
-    <%= form.number_field :group %>
+    <%= form.select :group, ['1', '2', '3'] %>
   </div>
 
   <div class="field">
     <%= form.label :meal %>
-    <%= form.text_field :meal %>
+    <%= form.select :meal, ['Almoco', 'Cafe', 'Janta'] %>
   </div>
 
   <div class="field">
     <%= form.label :rating %>
-    <%= form.number_field :rating %>
+    <%= form.select :rating, ['1', '2', '3', '4', '5'] %>
   </div>
 
   <div class="field">
