@@ -81,7 +81,7 @@ Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
     when "Importar Cardápio"
       click_button "Importar Cardápio"
     else 
-      pending
+      click_button value_do_botao
     end
 end
 

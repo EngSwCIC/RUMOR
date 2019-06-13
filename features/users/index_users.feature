@@ -8,5 +8,6 @@ Funcionalidade: index_users
 
   Cenario: Ver todos os usuarios
     Dado que eu estou logado como gestor
-    E eu estaja na pagina de ver usuarios
-    Entao eu quero ver os usuarios "Nome", "Email"
+    E que exista um usuario com os campos "<nome>", "<email>"
+    Quando eu clicar em "Ver usuarios"
+    Entao eu quero ver os usuarios "<nome>", "<email>"
