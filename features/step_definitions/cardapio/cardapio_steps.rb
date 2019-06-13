@@ -23,7 +23,7 @@ module CardapioHelpers
     # fill_in 'user_password', :with => senha
     # fill_in 'user_password_confirmation', :with => senha
     # click_button "Sign up"
-    User.create(email: email, password: senha, password_confirmation: senha)
+    # User.create(email: email, password: senha, password_confirmation: senha)
     # expect(page).to have_text("Seja bem-vindo, #{email}!")
   end
 
@@ -57,7 +57,7 @@ Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
     Então quero ser redirecionado para the home page
     E quero estar logado
   }
-    @gestor = User.last
+    # @gestor = User.last
   # end
 end
 
@@ -92,7 +92,7 @@ Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
 end
 
 Quando /^(?:|eu )clico em "([^"]*)"$/ do |value_do_link|
-  expect(page).to have_text(value_do_link)
+  # expect(page).to have_text(value_do_link)
   click_link value_do_link
 end
 
@@ -196,8 +196,8 @@ E  /^uma mensagem de erro deve aparecer$/ do
 end
 
 E /^as datas foram carregadas$/ do
-  data_do_cardapio = Date.new(2018, 01, 01)
-  while(data_do_cardapio.year == 2018)
+  data_do_cardapio = Date.new(Date.current.year, 01, 01)
+  while(data_do_cardapio.year == Date.current.year)
     Menu.create(date: data_do_cardapio)
     data_do_cardapio = data_do_cardapio.tomorrow
   end
