@@ -196,11 +196,12 @@ E  /^uma mensagem de erro deve aparecer$/ do
 end
 
 E /^as datas foram carregadas$/ do
-  data_do_cardapio = Date.new(Date.current.year, 01, 01)
-  while(data_do_cardapio.year == Date.current.year)
-    Menu.create(date: data_do_cardapio)
-    data_do_cardapio = data_do_cardapio.tomorrow
-  end
+  # data_do_cardapio = Date.new(Date.current.year, 01, 01)
+  # while(data_do_cardapio.year == Date.current.year)
+  #   Menu.create(date: data_do_cardapio)
+  #   data_do_cardapio = data_do_cardapio.tomorrow
+  # end
+  Menu.create(date: Date.new(Date.current.year,Date.current.month,04))
 end
 
 E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
