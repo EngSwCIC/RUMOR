@@ -6,40 +6,39 @@
   <table style="background-color: #F28D3C;" class="table">
     <thead>
       <tr>
-      <th>Domingo</th>
-      <th>Segunda-feira</th>
-      <th>Terça-feira</th>
-      <th>Quarta-feira</th>
-      <th>Quinta-feira</th>
-      <th>Sexta-feira</th>
-      <th>Sábado</th>
+        <th>Segunda-feira</th>
+        <th>Terça-feira</th>
+        <th>Quarta-feira</th>
+        <th>Quinta-feira</th>
+        <th>Sexta-feira</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-          <td>
+        <td>
           <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
               <span style="padding: 1em; text-align: right;"><%=   %></span>
           </div>
-          </td>
-      <% @week_menus.each do |mm|  %>
-        <td>
-        <%= link_to mm do %>
-          <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
-              <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
-          </div>
-        <% end %>
         </td>
-        <% if mm.date.wday == 6 %>
-        </tr>
-        <tr>
-        <% end %>
-      <% end %>
+        <% @week_menus.each do |mm|  %>
           <td>
-            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%=   %></span>
-            </div>
+            <%= link_to mm do %>
+              <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
+                <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
+              </div>
+            <% end %>
           </td>
+          <% if mm.date.wday == 6 %>
+            </tr><tr>
+          <% end %>
+        <% end %>
+        <td>
+          <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
+            <span style="padding: 1em; text-align: right;"><%=   %></span>
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>
