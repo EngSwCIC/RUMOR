@@ -14,14 +14,13 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      root_path
-
+      '/'
     when /^página de criar cardápio$/
-      new_menu_path
+      '/menus/new'
 
     when /^página de cardápios$/
-      menus_path
-
+      '/menus'
+    
     when /^página de importar cardápio$/
       new_menus_import_path
 

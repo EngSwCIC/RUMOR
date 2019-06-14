@@ -19,10 +19,8 @@ Rails.application.routes.draw do
   end
 
 
-  devise_for :users, skip: [:registrations]
-
-  resources :users
   
+  devise_for :users
 develop
   get 'charts', to: 'customer_satisfactions#charts'
 end
