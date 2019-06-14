@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   resources :menus
   
   resources :customer_satisfactions
+  
+  get 'breakfast_satisfactions' => 'satisfactions_breakfast#index'
+  get 'lunch_satisfactions' => 'satisfactions_lunch#index'
+  get 'dinner_satisfactions' => 'satisfactions_dinner#index'
 
   root to: 'home#index'
 
@@ -14,9 +18,7 @@ Rails.application.routes.draw do
     get 'home', to: 'dashboard#index'
   end
 
-  devise_for :users, skip: [:registrations]
-
-  resources :users
   
+  devise_for :users
   get 'charts', to: 'customer_satisfactions#charts'
 end
