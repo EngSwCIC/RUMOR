@@ -1,0 +1,2 @@
+module SatisfactionsDinnerHelper
+end
