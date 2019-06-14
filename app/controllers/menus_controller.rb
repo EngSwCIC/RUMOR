@@ -60,10 +60,11 @@ class MenusController < ApplicationController
   # Caso as alterações consigam ser salvas no banco ele voltará para a página do método index
   # Caso contrário irá chamar novamente a página do index edit
   def update
-      if @menu.update(menu_params)
-        redirect_to @menu, notice: 'Menu was successfully updated.'
-      else
-        render :edit
+    # @menu = Menu.find(menu_params)
+    if @menu.update(menu_params)
+      redirect_to @menu, notice: 'Menu was successfully updated.'
+    else
+      render :edit
       end
   end
 
