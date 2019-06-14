@@ -54,7 +54,7 @@ Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
   steps %Q{
     Dado que eu estou na tela de login
     Quando eu preencher o formulário de login e efetuar o login
-    Então quero ser redirecionado para the home page
+    Então quero ser redirecionado para página de cardápios
     E quero estar logado
   }
     # @gestor = User.last
@@ -196,11 +196,12 @@ E  /^uma mensagem de erro deve aparecer$/ do
 end
 
 E /^as datas foram carregadas$/ do
-  data_do_cardapio = Date.new(Date.current.year, 01, 01)
-  while(data_do_cardapio.year == Date.current.year)
-    Menu.create(date: data_do_cardapio)
-    data_do_cardapio = data_do_cardapio.tomorrow
-  end
+  # data_do_cardapio = Date.new(Date.current.year, 01, 01)
+  # while(data_do_cardapio.year == Date.current.year)
+  #   Menu.create(date: data_do_cardapio)
+  #   data_do_cardapio = data_do_cardapio.tomorrow
+  # end
+  Menu.create(date: Date.new(Date.current.year,Date.current.month,04))
 end
 
 E /^o cardápio "(\d+)" está completo$/ do |dia_do_cardapio|
