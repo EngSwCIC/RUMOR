@@ -1,53 +1,69 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-    <h1>Cardápios</h1>
-    <p>Cardápios do Mês</p>
-    <table style="background-color: #F28D3C;">
-    <thead>
-        <tr>
-        <th>Domingo</th>
+  <br><br>
+  <h1>Cardápios</h1>
+
+  <div style="display:flex;">
+    <%= link_to 'Criar cardápio', new_menu_path, class:"btn btn-primary m-2" %>
+    <%= link_to 'Importar cardápios da semana', new_menus_import_path, class:"btn btn-primary m-2" %>
+  </div>
+
+  <br><br>
+  <h3>Cardápios da semana</h3>
+  <table class="table">
+    <thead style="background-color: #F28D3C; color: white;">
+      <tr>
         <th>Segunda-feira</th>
         <th>Terça-feira</th>
         <th>Quarta-feira</th>
         <th>Quinta-feira</th>
         <th>Sexta-feira</th>
         <th>Sábado</th>
-        </tr>
+        <th>Domingo</th>
+      </tr>
     </thead>
-    <tbody>
-        <tr>
+    <tbody style="background-color: #F2F3F2;">
+      <tr>
+        <% @week_menus.each do |menu|  %>
+          <% if menu %>
             <td>
-            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%=   %></span>
-            </div>
+              <%= link_to "Dia "+menu.date.strftime("%d"), menu , class:"btn btn-dark m-1 px-3" %>
             </td>
-        <% @month_menu.each do |mm|  %>
-            <td>
-            <%= link_to mm do %>
-            <div style="width: 6em; height: 4em; background-color: white; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%= mm.date.strftime("%d") %></span>
-            </div>
-            <% end %>
-            </td>
-            <% if mm.date.wday == 6 %>
-            </tr>
-            <tr>
-            <% end %>
+          <% else %>
+            <td></td>
+          <% end %>
         <% end %>
-            <td>
-            <div style="width: 6em; height: 4em; background-color: #aeaeae; margin: .5em;">
-                <span style="padding: 1em; text-align: right;"><%=   %></span>
-            </div>
-            </td>
-        </tr>
+      </tr>
     </tbody>
-    </table>
+  </table>
 
-    <%= link_to 'New Menu', new_menu_path %>
-    <br>
-    <%=
-    link_to 'Importar Cardápio',
-    new_menus_import_path
-    %>
+  <% if user_signed_in?  %>
+    <br><br>  
+    <h3>Todos os cardápios cadastrados</h3>
+    <table class="table table-striped">
+      <thead style="background-color: #F28D3C; color: white;" >
+        <tr>
+          <th>ID</th>
+          <th>Semana</th>
+          <th>Data</th>
+          <th>Gerenciar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @menus.each do |menu| %>
+          <tr>
+            <td><%= menu.id %></td>
+            <td><%= menu.date.strftime("%U") %></td>
+            <td><%= menu.date.strftime("%A, %d %B %Y") %></td>
+            <td>
+              <%= link_to 'Mostrar', menu, class:"btn btn-primary m-2" %>
+              <%= link_to 'Editar', edit_menu_path(menu), class:"btn btn-primary m-2" %>
+              <%= link_to 'Excluir', menu_path(menu), method: :delete,  data: { confirm: 'Are you sure?' }, class:"btn btn-danger m-2" %> 
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end  %>
 </div>

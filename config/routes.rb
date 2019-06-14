@@ -18,7 +18,11 @@ Rails.application.routes.draw do
     get 'home', to: 'dashboard#index'
   end
 
+
+  devise_for :users, skip: [:registrations]
+
+  resources :users
   
-  devise_for :users
+develop
   get 'charts', to: 'customer_satisfactions#charts'
 end
