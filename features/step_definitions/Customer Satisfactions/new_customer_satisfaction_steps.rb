@@ -20,10 +20,6 @@ Dado("que eu acesse a pagina inicial e logado como administrador") do
     pending # Write code here that turns the phrase above into concrete actions
   end
   
-  Quando("eu clicar em {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
   Então("devo ver todas as avaliações") do
     pending # Write code here that turns the phrase above into concrete actions
   end
