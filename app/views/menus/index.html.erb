@@ -5,8 +5,8 @@
   <h1>Cardápios</h1>
 
   <div style="display:flex;">
-    <%= link_to 'Criar cardápio', new_menu_path, class:"btn btn-primary m-2" %>
-    <%= link_to 'Importar cardápios da semana', new_menus_import_path, class:"btn btn-primary m-2" %>
+    <%= link_to 'Criar cardápio', new_menu_path, class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+    <%= link_to 'Importar cardápios da semana', new_menus_import_path, class:"btn btn-primary my-2", style:"background-color: #F28D3C; border: none;" %>
   </div>
 
   <br><br>
@@ -57,9 +57,9 @@
             <td><%= menu.date.strftime("%U") %></td>
             <td><%= menu.date.strftime("%A, %d %B %Y") %></td>
             <td>
-              <%= link_to 'Mostrar', menu, class:"btn btn-primary m-2" %>
-              <%= link_to 'Editar', edit_menu_path(menu), class:"btn btn-primary m-2" %>
-              <%= link_to 'Excluir', menu_path(menu), method: :delete,  data: { confirm: 'Are you sure?' }, class:"btn btn-danger m-2" %> 
+              <%= link_to 'Mostrar', menu, class:"btn btn-primary" %>
+              <%= link_to 'Editar', edit_menu_path(menu), class:"btn btn-primary" %>
+              <%= link_to 'Excluir', menu_path(menu), method: :delete,  data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %> 
             </td>
           </tr>
         <% end %>
