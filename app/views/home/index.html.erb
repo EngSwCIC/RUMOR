@@ -15,6 +15,12 @@
         <th>Sábado</th>
         </tr>
     </thead>
+    <%= link_to 'New Menu', new_menu_path %>
+    <br>
+    <%=
+    link_to 'Importar Cardápio',
+    new_menus_import_path
+    %>
     <tbody>
         <tr>
             <td>
@@ -43,11 +49,90 @@
         </tr>
     </tbody>
     </table>
-
-    <%= link_to 'New Menu', new_menu_path %>
-    <br>
-    <%=
-    link_to 'Importar Cardápio',
-    new_menus_import_path
-    %>
+    <% @month_menu.each do |mm|  %>        
+        <% if mm.date.strftime("%Y-%m-%d") == @today.strftime("%Y-%m-%d") %>
+            <p>
+                <strong>Data:</strong>
+                <%= mm.date.strftime("%d-%m-%Y") %>
+            </p>
+            <table>
+            <tbody>
+                <tr>
+                <td>
+                    <div class="meal_container">
+                    <% if mm.breakfast %>
+                        <table class="daily_menu">
+                        <thead>
+                            <tr><th>Café da Manhã</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><p>Bebidas quentes</p><%= mm.breakfast.hot_drinks %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.breakfast.vegetarian_drink %></td></tr>
+                            <tr><td><p>Achocolatado</p><%= mm.breakfast.chocolate_milk %></td></tr>
+                            <tr><td><p>Pão</p><%= mm.breakfast.bread %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.breakfast.vegetarian_bread %></td></tr>
+                            <tr><td><p>Complemento</p><%= mm.breakfast.margarine %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.breakfast.vegetarian_margarine %></td></tr>
+                            <tr><td><p>Complemento</p><%= mm.breakfast.complement %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.breakfast.vegetarian_complement %></td></tr>
+                            <tr><td><p>Fruta</p><%= mm.breakfast.fruit %></td></tr>
+                        </tbody>
+                        </table>
+                    <% else %>
+                        <strong> Sem Cardápio </strong>
+                    <% end %>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="meal_container">
+                    <% if mm.lunch %>
+                        <table class="daily_menu">
+                        <thead>
+                            <tr><th>Almoço</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><p>Salada</p><%= mm.lunch.salad %></td></tr>
+                            <tr><td><p>Molho</p><%= mm.lunch.sauce %></td></tr>
+                            <tr><td><p>Prato Principal</p><%= mm.lunch.main_course %></td></tr>
+                            <tr><td><p>Guarnição</p><%= mm.lunch.garnish %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.lunch.vegetarian_dish %></td></tr>
+                            <tr><td><p>Acompanhamentos</p><%= mm.lunch.accompaniments %></td></tr>
+                            <tr><td><p>Sobremesa</p><%= mm.lunch.dessert %></td></tr>
+                            <tr><td><p>Refresco</p><%= mm.lunch.juice %></td></tr>
+                        </tbody>
+                        </table>
+                    <% else %>
+                    Sem cardápio
+                    <% end %>
+                    </div>
+                </td>
+                <td>
+                    <div class="meal_container">
+                    <% if mm.dinner %>
+                        <table class="daily_menu">
+                        <thead>
+                            <tr><th>Jantar</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><p>Salada</p><%= mm.dinner.salad %></td></tr>
+                            <tr><td><p>Molho</p><%= mm.dinner.sauce %></td></tr>
+                            <tr><td><p>Sopa</p><%= mm.dinner.soup %></td></tr>
+                            <tr><td><p>Prato Principal</p><%= mm.dinner.main_course %></td></tr>
+                            <tr><td><p>Vegetariano</p><%= mm.dinner.vegetarian_dish %></td></tr>
+                            <tr><td><p>Acompanhamentos</p><%= mm.dinner.accompaniments %></td></tr>
+                            <tr><td><p>Sobremesa</p><%= mm.dinner.dessert %></td></tr>
+                            <tr><td><p>Refresco</p><%= mm.dinner.juice %></td></tr>
+                        </tbody>
+                        </table>
+                    <% else %>
+                        Sem cardápio
+                    <% end %>
+                    </div>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+        <% end %>
+    <% end %>
 </div>
