@@ -17,7 +17,7 @@ Funcionalidade: create_users
     |user_email     |admin@admin.com     |
     |user_password  |123456              |
     |user_password_confirmation|123456   |
-    E clicar no botão "Cadastrar usuario"
+    E clicar no botão "Submit"
     Então eu devo ser redirecionado para página de usuarios
     E devo ver a mensagem "usuario criado com sucesso"
 
@@ -25,7 +25,7 @@ Funcionalidade: create_users
     Quando preencher o formulario com:
     |user_name      |admin2              |
     |user_email     |admin@admin.com     |
-    E clicar no botão "Cadastrar usuario"
+    E clicar no botão "Submit"
     Então devo ver a mensagem "Password can't be blank"
 
   Cenario: Criar usuario sem informar email [:(]
@@ -33,5 +33,5 @@ Funcionalidade: create_users
     |user_name      |admin2              |
     |user_password  |123456              |
     |user_password_confirmation|123456   |
-    E clicar no botão "Cadastrar usuario"
+    E clicar no botão "Submit"
     Então devo ver a mensagem "Email can't be blank"
