@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-27T13:01:43-03:00">2019-06-27T13:01:43-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-06-27T13:21:55-03:00">2019-06-27T13:21:55-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">48.48%</span></span>
+    (<span class="covered_percent"><span class="red">49.38%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.93
+       <span class="green">
+         1.03
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>48</b> files in total.
-    <b>561</b> relevant lines. 
-    <span class="green"><b>272</b> lines covered</span> and
-    <span class="red"><b>289</b> lines missed </span>
+    <b>49</b> files in total.
+    <b>563</b> relevant lines. 
+    <span class="green"><b>278</b> lines covered</span> and
+    <span class="red"><b>285</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>7</td>
         <td>6</td>
         <td>1</td>
-        <td>1.6</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -67,17 +67,17 @@
         <td>109</td>
         <td>24</td>
         <td>85</td>
-        <td>1.2</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#25a2c399e94ef1cc1d2ec2492eceb6193153e067" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="yellow strong">88.57 %</td>
+        <td class="green strong">100.0 %</td>
         <td>75</td>
         <td>35</td>
-        <td>31</td>
-        <td>4</td>
-        <td>1.8</td>
+        <td>35</td>
+        <td>0</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -217,7 +217,7 @@
         <td>14</td>
         <td>7</td>
         <td>7</td>
-        <td>0.9</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -407,7 +407,7 @@
         <td>24</td>
         <td>14</td>
         <td>10</td>
-        <td>1.8</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -417,7 +417,7 @@
         <td>118</td>
         <td>36</td>
         <td>82</td>
-        <td>0.4</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -477,7 +477,17 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>4.3</td>
+        <td>4.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#587ab65392a70135f7679066674a942f413145b3" class="src_link" title="features/step_definitions/users/destroy_users_steps.rb">features/step_definitions/users/destroy_users_steps.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -507,7 +517,7 @@
         <td>11</td>
         <td>6</td>
         <td>5</td>
-        <td>2.5</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -584,8 +594,8 @@
           <code class="ruby">  def after_sign_in_path_for(resource_or_scope)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="5">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="5">
+          <span class="hits">7</span>
           
           <code class="ruby">    menus_path</code>
         </li>
@@ -711,14 +721,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="12">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="12">
+          <span class="hits">7</span>
           
           <code class="ruby">    @menus = Menu.all.sort_by {|a| a.date }</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="13">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="13">
+          <span class="hits">7</span>
           
           <code class="ruby">    all_menus = Menu.this_week.sort_by {|a| a.date }</code>
         </li>
@@ -735,26 +745,26 @@
           <code class="ruby">    # Parseia os menus da semana para ter o tamanho de uma semana completa (7 dias) e apresentarem falso quando não há menu</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="16">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="16">
+          <span class="hits">7</span>
           
           <code class="ruby">    week_menus_parser  = Array.new(7, false)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="17">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="17">
+          <span class="hits">7</span>
           
           <code class="ruby">    (1..7).each do |day|</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="18">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="49" data-linenumber="18">
+          <span class="hits">49</span>
           
           <code class="ruby">      has_menu = all_menus.select { |e| e.date.strftime(&quot;%w&quot;).to_i  == day }</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="19">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="49" data-linenumber="19">
+          <span class="hits">49</span>
           
           <code class="ruby">      unless has_menu.empty?</code>
         </li>
@@ -777,8 +787,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="23">
+          <span class="hits">7</span>
           
           <code class="ruby">    @week_menus = week_menus_parser</code>
         </li>
@@ -2105,11 +2115,11 @@
         <div class="source_table" id="25a2c399e94ef1cc1d2ec2492eceb6193153e067">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="yellow">88.57 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>35</b> relevant lines. 
-      <span class="green"><b>31</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -2158,8 +2168,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="8">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="9" data-linenumber="8">
+          <span class="hits">9</span>
           
           <code class="ruby">    @users = User.all</code>
         </li>
@@ -2458,26 +2468,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">    @user.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="60">
+        <li class="covered" data-hits="2" data-linenumber="60">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">      format.html { redirect_to users_url, notice: &#39;User was successfully destroyed.&#39; }</code>
+          <code class="ruby">      format.html { redirect_to users_url, notice: &#39;usuario apagado com sucesso&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
@@ -2518,8 +2528,8 @@
           <code class="ruby">    def set_user</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="68">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="68">
+          <span class="hits">5</span>
           
           <code class="ruby">      @user = User.find(params[:id])</code>
         </li>
@@ -3018,8 +3028,8 @@
           <code class="ruby">  has_one :dinner</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="5">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="5">
+          <span class="hits">8</span>
           
           <code class="ruby">  scope :this_week, -&gt; { where(created_at:Time.now.beginning_of_week..Time.now.end_of_week) }</code>
         </li>
@@ -7021,32 +7031,32 @@
           <code class="ruby">Quando(&quot;eu preencher o formulário de login e efetuar o login&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="19">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="19">
+          <span class="hits">7</span>
           
           <code class="ruby">  User.create!(email: &quot;user@user.com&quot;, password: &quot;user123&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="20">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="20">
+          <span class="hits">7</span>
           
           <code class="ruby">  visit(new_user_session_path)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="21">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="21">
+          <span class="hits">7</span>
           
           <code class="ruby">  fill_in &#39;Email&#39;, with: &quot;user@user.com&quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="22">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="22">
+          <span class="hits">7</span>
           
           <code class="ruby">  fill_in &#39;Password&#39;, with: &quot;user123&quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="23">
+          <span class="hits">7</span>
           
           <code class="ruby">  click_button(&#39;Log in&#39;)</code>
         </li>
@@ -7069,8 +7079,8 @@
           <code class="ruby">Então(&quot;quero estar logado&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="27">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="27">
+          <span class="hits">7</span>
           
           <code class="ruby">  expect(page).to have_link(&#39;Sair&#39;)</code>
         </li>
@@ -7472,8 +7482,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="54">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="54">
+          <span class="hits">7</span>
           
           <code class="ruby">  steps %Q{</code>
         </li>
@@ -7802,8 +7812,8 @@
           <code class="ruby">E /^que (?:|eu )estou na (.+)$/ do |page_name|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="109">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="109">
+          <span class="hits">7</span>
           
           <code class="ruby">  visit path_to(page_name)</code>
         </li>
@@ -8222,8 +8232,8 @@
           <code class="ruby">Então /^(?:|eu )quero ser redirecionado para ([^&quot;]*)$/ do |page_name|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="179">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="179">
+          <span class="hits">7</span>
           
           <code class="ruby">  expect(current_path).to eq(path_to(page_name))</code>
         </li>
@@ -9842,8 +9852,8 @@
           <code class="ruby">Dado(&quot;eu estaja na pagina de ver usuarios&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">  visit users_path</code>
         </li>
@@ -9908,8 +9918,8 @@
           <code class="ruby">Dado(&quot;clicar no botão {string}&quot;) do |botao|</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="16">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="16">
+          <span class="hits">11</span>
           
           <code class="ruby">  click_on botao</code>
         </li>
@@ -9975,6 +9985,61 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="587ab65392a70135f7679066674a942f413145b3">
+  <div class="header">
+    <h3>features/step_definitions/users/destroy_users_steps.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># This is the steps file referred to destroy_users feature</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"># Place your code relative to that feature here</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Dado(&quot;que exista um usuario cadastrado&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  User.create(name: &#39;joao&#39;, email: &#39;joao@joao.com&#39;, password: &#39;123456&#39;, password_confirmation: &#39;123456&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -10223,8 +10288,8 @@
           <code class="ruby">  def path_to(page_name)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="14">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="14" data-linenumber="14">
+          <span class="hits">14</span>
           
           <code class="ruby">    case page_name</code>
         </li>
@@ -10277,8 +10342,8 @@
           <code class="ruby">    when /^página de cardápios$/</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="23">
+          <span class="hits">7</span>
           
           <code class="ruby">      menus_path</code>
         </li>
@@ -10313,8 +10378,8 @@
           <code class="ruby">    when /^tela de login$/</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="29">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="29">
+          <span class="hits">7</span>
           
           <code class="ruby">      new_user_session_path</code>
         </li>
