@@ -1,17 +1,17 @@
 #language: pt
 #encoding: utf-8
 
-Funcionalidade: create_users
+Funcionalidade: edit_users
   Como um administrardor do aplicativo RUMOR
-  Para que eu possa gerenciar melhor o sistema
-  Eu quero cadastrar novos administradores
-
-  Cenario de Fundo: Comecar da pagina de registro de usuarios
+  Para que eu possa atualizar informacoes sobre os administradores
+  Eu quero editar administradores
+ 
+  Cenario de Fundo: Comecar na pagina de editar usuarios
     Dado que eu estou logado como gestor
     E eu estaja na pagina de ver usuarios
-    E clicar no botão "Novo usuario"
+    E clicar no botão "Editar"
 
-  Cenario: Criar usuario com sucesso [:)]
+  Cenario: Editar usuario com sucesso [:)]
     Quando preencher o formulario com:
     |user_name      |admin2              |
     |user_email     |admin@admin.com     |
@@ -19,19 +19,12 @@ Funcionalidade: create_users
     |user_password_confirmation|123456   |
     E clicar no botão "Submit"
     Então eu devo ser redirecionado para página de usuarios
-    E devo ver a mensagem "usuario criado com sucesso"
+    E devo ver a mensagem "usuario editado com sucesso"
+    E ver o usuario modificado "admin2", "admin@admin.com"
 
-  Cenario: Criar usuario sem informar senha [:(]
+  Cenario: Editar usuario sem informar senha [:(]
     Quando preencher o formulario com:
     |user_name      |admin2              |
     |user_email     |admin@admin.com     |
     E clicar no botão "Submit"
     Então devo ver a mensagem "Password can't be blank"
-
-  Cenario: Criar usuario sem informar email [:(]
-    Quando preencher o formulario com:
-    |user_name      |admin2              |
-    |user_password  |123456              |
-    |user_password_confirmation|123456   |
-    E clicar no botão "Submit"
-    Então devo ver a mensagem "Email can't be blank"
