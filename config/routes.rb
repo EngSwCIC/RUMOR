@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   
   resources :customer_satisfactions
 
+  get 'breakfast_satisfactions' => 'satisfactions_breakfast#index'
+  get 'lunch_satisfactions' => 'satisfactions_lunch#index'
+  get 'dinner_satisfactions' => 'satisfactions_dinner#index'
+
   root to: 'home#index'
 
   scope path: 'dashboard', as: 'dashboard' do

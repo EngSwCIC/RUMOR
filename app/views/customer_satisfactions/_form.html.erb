@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :group %>
-    <%= form.number_field :group %>
+ <div class="field">
+    <%= form.label :user_group %>
+    <%= form.select :user_group, ['1', '2', '3'] %>
   </div>
 
   <div class="field">
     <%= form.label :meal %>
-    <%= form.text_field :meal %>
+    <%= form.select :meal, ['Almoco', 'Cafe', 'Janta'] %>
   </div>
 
   <div class="field">
     <%= form.label :rating %>
-    <%= form.number_field :rating %>
+    <%= form.select :rating, ['1', '2', '3', '4', '5'] %>
   </div>
-
+  
   <div class="field">
     <%= form.label :like %>
     <%= form.text_area :like %>

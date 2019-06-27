@@ -1,0 +1,31 @@
+<h1><b>Janta</b></h1>
+<table>
+    <thead>
+      <tr>
+        <th>User group</th>
+        <th>Meal</th>
+        <th>Rating</th>
+        <th>Like</th>
+        <th>Disgust</th>
+        <th>Suggestion</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @customer_satisfactions.each do |customer_satisfaction| %>
+          <% if customer_satisfaction.meal == "Janta" %>
+            <tr>
+              <td><%= customer_satisfaction.user_group %></td>
+              <td><%= customer_satisfaction.meal %></td>
+              <td><%= customer_satisfaction.rating %></td>
+              <td><%= customer_satisfaction.like %></td>
+              <td><%= customer_satisfaction.disgust %></td>
+              <td><%= customer_satisfaction.suggestion %></td>
+              <td><%= link_to 'Ver detalhes', customer_satisfaction %></td>
+              <td><%= link_to 'Apagar', customer_satisfaction, method: :delete %></td>
+            </tr>
+          <% end %>  
+      <% end %>
+    </tbody>
+</table>
