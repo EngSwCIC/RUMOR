@@ -1,5 +1,14 @@
 ![Rumor Logo](app/assets/images/rumor-logo.png)
 
-O RUMOR é um aplicativo que se propõe a aproximar e conectar usuários do RU da Universidade de Brasília.
+O projeto é um software que busca disponibilizar para os estudantes o menu do RU com o intuito de informar os estudantes da UNB sobre os detalhes das refeições.
 
-Acreditamos em uma universidade mais engajada e conectada, em que os próprios alunos colocam a mão na massa para impactar o próprio meio e melhorá-la.
+Passo a passo para instalação do sistema:
+
+1- git clone (Url do projeto)
+
+2- rails db:migrate
+
+3- rails db:seed
+
+4- rails s
+

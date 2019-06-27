@@ -1,0 +1,2 @@
+module SatisfactionsLunchHelper
+end

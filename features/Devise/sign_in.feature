@@ -15,7 +15,7 @@ Funcionalidade: sign_in
   Cenário: quero efetuar um login
     Dado que eu estou na tela de login
     Quando eu preencher o formulário de login e efetuar o login
-    Então quero ser redirecionado para the home page
+    Então quero ser redirecionado para página de cardápios
     E quero estar logado
 
   Cenário: quero efetuar um logout
