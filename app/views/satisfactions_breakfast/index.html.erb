@@ -1,5 +1,11 @@
-<h1><b>Cafe</b></h1>
 <div class="container">
+  <h1><b>Café</b></h1>
+    <h2> Listar por refeições: </h2>
+      <div style="display:flex;">
+        <p><%= link_to 'Café', breakfast_satisfactions_path, class:"btn btn-primary m-2"%></p>
+        <p><%= link_to 'Almoço', lunch_satisfactions_path, class:"btn btn-primary m-2"%></p>
+        <p><%= link_to 'Janta', dinner_satisfactions_path, class:"btn btn-primary m-2"%></p>
+      </div>
   <table class="table table-striped">
       <thead style="background-color: #F28D3C; color: white;">
         <tr>
@@ -18,7 +24,7 @@
             <% if customer_satisfaction.meal == "Cafe" %>
               <tr>
                 <td><%= customer_satisfaction.user_group %></td>
-                <td><%= customer_satisfaction.meal %></td>
+                <td><b><%= customer_satisfaction.meal %></b></td>
                 <td><%= customer_satisfaction.rating %></td>
                 <td><%= customer_satisfaction.like %></td>
                 <td><%= customer_satisfaction.disgust %></td>
@@ -31,3 +37,4 @@
       </tbody>
   </table>
 </div>
+

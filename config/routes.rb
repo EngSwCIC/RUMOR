@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get 'lunch_satisfactions' => 'satisfactions_lunch#index'
   get 'dinner_satisfactions' => 'satisfactions_dinner#index'
 
+  get 'user_one_groups' => 'user_one_groups#index'
+  get 'user_two_groups' => 'user_two_groups#index'
+  get 'user_three_groups' => 'user_three_groups#index'
+
   root to: 'home#index'
 
   scope path: 'dashboard', as: 'dashboard' do

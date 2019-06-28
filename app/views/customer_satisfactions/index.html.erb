@@ -2,12 +2,18 @@
 
 <div class="container">
   <h1>Customer Satisfactions</h1>
-  <h2> Listar refeições: </h2>
-
+  <h2> Listar por refeições: </h2>
   <div style="display:flex;">
-      <p><%= link_to 'Cafe', breakfast_satisfactions_path, class:"btn btn-primary m-2"%></p>
-      <p><%= link_to 'Almoco', lunch_satisfactions_path, class:"btn btn-primary m-2"%></p>
+      <p><%= link_to 'Café', breakfast_satisfactions_path, class:"btn btn-primary m-2"%></p>
+      <p><%= link_to 'Almoço', lunch_satisfactions_path, class:"btn btn-primary m-2"%></p>
       <p><%= link_to 'Janta', dinner_satisfactions_path, class:"btn btn-primary m-2"%></p>
+  </div>
+
+  <h2> Listar por grupo de usuários: </h2>
+  <div style="display:flex;">
+      <p><%= link_to 'Grupo 1', user_one_groups_path, class:"btn btn-primary m-2"%></p>
+      <p><%= link_to 'Grupo 2', user_two_groups_path, class:"btn btn-primary m-2"%></p>
+      <p><%= link_to 'Grupo 3', user_three_groups_path	, class:"btn btn-primary m-2"%></p>
   </div>
 
   <table class="table table-striped">
@@ -42,6 +48,6 @@
 
   <br>
 
-  <%= link_to 'Gerar PDF', customer_satisfactions_path(format: :pdf) %>
-  <%= link_to 'New Customer Satisfaction', new_customer_satisfaction_path %>
+  <%= link_to 'Gerar PDF', customer_satisfactions_path(format: :pdf),class:"btn btn-success" %>
+  <%= link_to 'New Customer Satisfaction', new_customer_satisfaction_path, class:"btn btn-primary m-2" %>
 </div>
