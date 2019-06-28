@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
- <div class="field">
+ <div class="form-group">
     <%= form.label :user_group %>
     <%= form.select :user_group, ['1', '2', '3'] %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :meal %>
     <%= form.select :meal, ['Almoco', 'Cafe', 'Janta'] %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :rating %>
     <%= form.select :rating, ['1', '2', '3', '4', '5'] %>
   </div>
   
-  <div class="field">
+  <div class="form-group">
     <%= form.label :like %>
     <%= form.text_area :like %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :disgust %>
     <%= form.text_area :disgust %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :suggestion %>
     <%= form.text_area :suggestion %>
   </div>
@@ -45,3 +45,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+
