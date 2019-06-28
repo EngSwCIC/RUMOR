@@ -1,26 +1,27 @@
-<h1>Users</h1>
+<div class="container">
+  <h1>Users</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Email</th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
+  <table class="table">
+    <thead style="background-color: #F28D3C; color: white;">
       <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Editar', edit_user_path(user) %></td>
-        <td><%= link_to 'Apagar', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Nome</th>
+        <th>Email</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'Novo usuario', new_user_path %>
+    </thead>
+    
+    
+      <tbody style="background-color: #F2F3F2;">
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= link_to 'Editar', edit_user_path(user), class:"btn btn-primary m-2" %></td>
+            <td><%= link_to 'Apagar', user, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger m-2" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    
+  </table>
+  <br>
+  <%= link_to 'Novo usuario', new_user_path, class:"btn btn-primary m-2" %>
+</div>

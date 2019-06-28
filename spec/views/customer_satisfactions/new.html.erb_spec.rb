@@ -17,11 +17,11 @@ RSpec.describe "customer_satisfactions/new", type: :view do
 
     assert_select "form[action=?][method=?]", customer_satisfactions_path, "post" do
 
-      assert_select "input[name=?]", "customer_satisfaction[group]"
+      assert_select "select[name=?]", "customer_satisfaction[user_group]"
 
-      assert_select "input[name=?]", "customer_satisfaction[meal]"
+      assert_select "select[name=?]", "customer_satisfaction[meal]"
 
-      assert_select "input[name=?]", "customer_satisfaction[rating]"
+      assert_select "select[name=?]", "customer_satisfaction[rating]"
 
       assert_select "textarea[name=?]", "customer_satisfaction[like]"
 
