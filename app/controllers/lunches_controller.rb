@@ -14,6 +14,12 @@ before_action :set_lunch, only: [:show, :edit, :update, :destroy]
 
   # Método responsável por retornar os dados de um registro de almoço específico
   def show
+    @review_lunch = ReviewLunch.where(lunch_id: @lunch.id).order("created_at DESC")
+    if @review_lunch.blank?
+      @avg_rating = 0
+    else
+      @avg_rating = @review_lunch.average(:rating).round(2)
+    end
   end
 
   # Método que é chamado ao ir para a página de cadastro de almoço

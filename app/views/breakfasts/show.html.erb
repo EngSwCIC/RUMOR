@@ -1,49 +1,93 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Hot drinks:</strong>
-  <%= @breakfast.hot_drinks %>
-</p>
+<div class ="row">
+  <div class="col-md-4">
+    <h2>Café da manhã:</h2>
+    <p>
+      <strong>Hot drinks:</strong>
+      <%= @breakfast.hot_drinks %>
+    </p>
 
-<p>
-  <strong>Vegetarian drink:</strong>
-  <%= @breakfast.vegetarian_drink %>
-</p>
+    <p>
+      <strong>Vegetarian drink:</strong>
+      <%= @breakfast.vegetarian_drink %>
+    </p>
 
-<p>
-  <strong>Chocolate milk:</strong>
-  <%= @breakfast.chocolate_milk %>
-</p>
+    <p>
+      <strong>Chocolate milk:</strong>
+      <%= @breakfast.chocolate_milk %>
+    </p>
 
-<p>
-  <strong>Bread:</strong>
-  <%= @breakfast.bread %>
-</p>
+    <p>
+      <strong>Bread:</strong>
+      <%= @breakfast.bread %>
+    </p>
 
-<p>
-  <strong>Vegetarian bread:</strong>
-  <%= @breakfast.vegetarian_bread %>
-</p>
+    <p>
+      <strong>Vegetarian bread:</strong>
+      <%= @breakfast.vegetarian_bread %>
+    </p>
 
-<p>
-  <strong>Margarine:</strong>
-  <%= @breakfast.margarine %>
-</p>
+    <p>
+      <strong>Margarine:</strong>
+      <%= @breakfast.margarine %>
+    </p>
 
-<p>
-  <strong>Vegetarian margarine:</strong>
-  <%= @breakfast.vegetarian_margarine %>
-</p>
+    <p>
+      <strong>Vegetarian margarine:</strong>
+      <%= @breakfast.vegetarian_margarine %>
+    </p>
 
-<p>
-  <strong>Complement:</strong>
-  <%= @breakfast.complement %>
-</p>
+    <p>
+      <strong>Complement:</strong>
+      <%= @breakfast.complement %>
+    </p>
 
-<p>
-  <strong>Vegetarian complement:</strong>
-  <%= @breakfast.vegetarian_complement %>
-</p>
+    <p>
+      <strong>Vegetarian complement:</strong>
+      <%= @breakfast.vegetarian_complement %>
+    </p>
 
-<%= link_to 'Edit', edit_breakfast_path(@breakfast) %> |
-<%= link_to 'Back', breakfasts_path %>
+    <p>
+      <strong>Nota do cardápio:</strong>
+      <div class="star-rating" data-rating= <%= @avg_rating %> ></div>
+      <p> <%= " #{@review_breakfast.length} reviews" %> </p>
+    </p>
+
+    <%= link_to 'Dê sua opinião', new_breakfast_review_breakfast_path(@breakfast), class: "btn btn-primary" %>
+  </div>
+
+  <div class="col-md-8">
+    <% if @review_breakfast.blank? %>
+      <h3>Nenhuma opnião ainda. Seja o primeiro a compartilhar a sua!</h3>
+    <% else %>
+      <table class="table">
+        <tbody>
+          <% @review_breakfast.each do |review_breakfast| %>
+            <tr>
+              <td>
+                <div class = "star-rating" data-rating = <%= review_breakfast.rating %>></div>
+                <p><%= h(review_breakfast.comment).gsub(/\n/,'<br/>').html_safe %></p>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_breakfast_path(@breakfast), class: "btn btn-link"  %> |
+<%= link_to 'Back', breakfasts_path, class: "btn btn-link"  %>
+
+<script>
+  $('.star-rating').raty({
+    path: '../assets',
+    noRatedMsg: 'Nunca mais!',
+    hints: ['terrível', 'ruim', 'normal', 'bom', 'excelente'],
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-rating');
+    }
+  });
+</script>

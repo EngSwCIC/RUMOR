@@ -14,6 +14,12 @@ class DinnersController < ApplicationController
 
   # Método responsável por retornar os dados de um registro de jantar específico
   def show
+    @review_dinner = ReviewDinner.where(dinner_id: @dinner.id)
+    if @review_dinner.blank?
+      @avg_rating = 0
+    else
+      @avg_rating = @review_dinner.average(:rating).round(2)
+    end
   end
 
   # Método que é chamado ao ir para a página de cadastro de jantar

@@ -2,15 +2,20 @@
 <html>
   <head>
     <title>RUMOR</title>
+    <%= render 'layouts/bootstrap' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="/assets/jquery.raty.self-ad6becaa2c3e6f0ec6b3c8af15bc4969e2540d51b8450653792b1e1d7f20487a.js?body=1" data-turbolinks-track="reload"></script>
   </head>
 
   <body>
-    <%= render partial: "/layouts/navbar" %>
-    <%= yield %>
+    <%= render '/layouts/navbar' %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
 </html>

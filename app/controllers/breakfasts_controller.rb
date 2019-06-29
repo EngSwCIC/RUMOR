@@ -14,6 +14,12 @@ class BreakfastsController < ApplicationController
 
   # Método responsável por retornar os dados de um registro de café da manhã específico
   def show
+    @review_breakfast = ReviewBreakfast.where(breakfast_id: @breakfast.id).order("created_at DESC")
+    if @review_breakfast.blank?
+      @avg_rating = 0
+    else
+      @avg_rating = @review_breakfast.average(:rating).round(2)
+    end
   end
 
   # Método que é chamado ao ir para a página de cadastro de café da manhã

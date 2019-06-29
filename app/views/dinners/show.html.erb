@@ -1,44 +1,88 @@
 <p id="notice"><%= notice %></p>
+<div class ="row">
+  <div class="col-md-4">
+    <h2>Janta:</h2>
 
-<p>
-  <strong>Salad:</strong>
-  <%= @dinner.salad %>
-</p>
+    <p>
+      <strong>Salad:</strong>
+      <%= @dinner.salad %>
+    </p>
 
-<p>
-  <strong>Sauce:</strong>
-  <%= @dinner.sauce %>
-</p>
+    <p>
+      <strong>Sauce:</strong>
+      <%= @dinner.sauce %>
+    </p>
 
-<p>
-  <strong>Soup:</strong>
-  <%= @dinner.soup %>
-</p>
+    <p>
+      <strong>Soup:</strong>
+      <%= @dinner.soup %>
+    </p>
 
-<p>
-  <strong>Main course:</strong>
-  <%= @dinner.main_course %>
-</p>
+    <p>
+      <strong>Main course:</strong>
+      <%= @dinner.main_course %>
+    </p>
 
-<p>
-  <strong>Vegetarian dish:</strong>
-  <%= @dinner.vegetarian_dish %>
-</p>
+    <p>
+      <strong>Vegetarian dish:</strong>
+      <%= @dinner.vegetarian_dish %>
+    </p>
 
-<p>
-  <strong>Accompaniments:</strong>
-  <%= @dinner.accompaniments %>
-</p>
+    <p>
+      <strong>Accompaniments:</strong>
+      <%= @dinner.accompaniments %>
+    </p>
 
-<p>
-  <strong>Dessert:</strong>
-  <%= @dinner.dessert %>
-</p>
+    <p>
+      <strong>Dessert:</strong>
+      <%= @dinner.dessert %>
+    </p>
 
-<p>
-  <strong>Juice:</strong>
-  <%= @dinner.juice %>
-</p>
+    <p>
+      <strong>Juice:</strong>
+      <%= @dinner.juice %>
+    </p>
 
-<%= link_to 'Edit', edit_dinner_path(@dinner) %> |
-<%= link_to 'Back', dinners_path %>
+    <p>
+      <strong>Nota da janta:</strong>
+      <div class="star-rating" data-rating= <%= @avg_rating %> ></div>
+      <p> <%= " #{@review_dinner.length} reviews" %> </p>
+    </p>
+
+    <%= link_to 'Dê sua opinião', new_dinner_review_dinner_path(@dinner), class: "btn btn-primary" %>
+  </div>
+
+  <div class="col-md-8">
+    <% if @review_dinner.blank? %>
+      <h3>Nenhuma opnião ainda. Seja o primeiro a compartilhar a sua!</h3>
+    <% else %>
+      <table class="table">
+        <tbody>
+          <% @review_dinner.each do |review_dinner| %>
+            <tr>
+              <td>
+                <div class = "star-rating" data-rating = <%= review_dinner.rating %>></div>
+                <p><%= h(review_dinner.comment).gsub(/\n/,'<br/>').html_safe %></p>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_dinner_path(@dinner), class: "btn btn-link" %> |
+<%= link_to 'Back', dinners_path ,class: "btn btn-link"%>
+
+<script>
+  $('.star-rating').raty({
+    path: '../assets',
+    noRatedMsg: 'Nunca mais!',
+    hints: ['terrível', 'ruim', 'normal', 'bom', 'excelente'],
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-rating');
+    }
+  });
+</script>

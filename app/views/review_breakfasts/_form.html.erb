@@ -1,0 +1,32 @@
+<%= form_with(model: review_breakfast, url: [@breakfast, @review_breakfast]) do |form| %>
+  <% if review_breakfast.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(review_breakfast.errors.count, "error") %> prohibited this review_breakfast from being saved:</h2>
+
+      <ul>
+      <% review_breakfast.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="star-rating"></div>
+
+  <div class="form-group">
+    <%= form.label :comment %>
+    <%= form.text_area :comment, class: "form-control"  %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<script>
+  $('#star-rating').raty({
+    path: '../../../assets',
+    hints: ['terrível', 'ruim', 'normal', 'bom', 'excelente'],
+    scoreName: 'review_breakfast[rating]'
+  });
+</script>

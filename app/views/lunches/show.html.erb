@@ -1,44 +1,87 @@
 <p id="notice"><%= notice %></p>
+<div class ="row">
+  <div class="col-md-4">
+    <h2>Almoço:</h2>
+    <p>
+      <strong>Salad:</strong>
+      <%= @lunch.salad %>
+    </p>
 
-<p>
-  <strong>Salad:</strong>
-  <%= @lunch.salad %>
-</p>
+    <p>
+      <strong>Sauce:</strong>
+      <%= @lunch.sauce %>
+    </p>
 
-<p>
-  <strong>Sauce:</strong>
-  <%= @lunch.sauce %>
-</p>
+    <p>
+      <strong>Main course:</strong>
+      <%= @lunch.main_course %>
+    </p>
 
-<p>
-  <strong>Main course:</strong>
-  <%= @lunch.main_course %>
-</p>
+    <p>
+      <strong>Garnish:</strong>
+      <%= @lunch.garnish %>
+    </p>
 
-<p>
-  <strong>Garnish:</strong>
-  <%= @lunch.garnish %>
-</p>
+    <p>
+      <strong>Vegetarian dish:</strong>
+      <%= @lunch.vegetarian_dish %>
+    </p>
 
-<p>
-  <strong>Vegetarian dish:</strong>
-  <%= @lunch.vegetarian_dish %>
-</p>
+    <p>
+      <strong>Accompaniments:</strong>
+      <%= @lunch.accompaniments %>
+    </p>
 
-<p>
-  <strong>Accompaniments:</strong>
-  <%= @lunch.accompaniments %>
-</p>
+    <p>
+      <strong>Dessert:</strong>
+      <%= @lunch.dessert %>
+    </p>
 
-<p>
-  <strong>Dessert:</strong>
-  <%= @lunch.dessert %>
-</p>
+    <p>
+      <strong>Juice:</strong>
+      <%= @lunch.juice %>
+    </p>
 
-<p>
-  <strong>Juice:</strong>
-  <%= @lunch.juice %>
-</p>
+    <p>
+      <strong>Nota do almoço:</strong>
+      <div class="star-rating" data-rating= <%= @avg_rating %> ></div>
+      <p> <%= " #{@review_lunch.length} reviews" %> </p>
+    </p>
 
-<%= link_to 'Edit', edit_lunch_path(@lunch) %> |
-<%= link_to 'Back', lunches_path %>
+    <%= link_to 'Dê sua opinião', new_lunch_review_lunch_path(@lunch), class: "btn btn-primary" %>
+  </div>
+
+  <div class="col-md-8">
+    <% if @review_lunch.blank? %>
+      <h3>Nenhuma opnião ainda. Seja o primeiro a compartilhar a sua!</h3>
+    <% else %>
+      <table class="table">
+        <tbody>
+          <% @review_lunch.each do |review_lunch| %>
+            <tr>
+              <td>
+                <div class = "star-rating" data-rating = <%= review_lunch.rating %>></div>
+                <p><%= h(review_lunch.comment).gsub(/\n/,'<br/>').html_safe %></p>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_lunch_path(@lunch), class: "btn btn-link"  %> |
+<%= link_to 'Back', lunches_path, class: "btn btn-link" %>
+
+<script>
+  $('.star-rating').raty({
+    path: '../assets',
+    noRatedMsg: 'Nunca mais!',
+    hints: ['terrível', 'ruim', 'normal', 'bom', 'excelente'],
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-rating');
+    }
+  });
+</script>

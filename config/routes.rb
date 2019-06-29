@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  resources :dinners
-  resources :lunches
-  resources :breakfasts
+  resources :dinners do
+    resources :review_dinners, except: [:show, :index]
+  end
+  resources :lunches do
+    resources :review_lunches, except: [:show, :index]
+  end
+  resources :breakfasts do
+    resources :review_breakfasts, except: [:show, :index]
+  end
 
   get 'menus/import', controller: 'menus', action: 'import', as: 'new_menus_import'
   resources :menus
