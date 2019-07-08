@@ -54,3 +54,11 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     E eu clico em "04"
     Quando eu clico em "Editar Jantar"
     Então eu deveria ver "Alterações no Jantar"
+
+  Cenário: Gestor visualizar todos os cardápios
+    Dado que eu estou logado como gestor
+    E tem cardapios criados:
+      |date| 8 |
+      |date| 9 |
+    E que eu estou na página de cardápios
+    Então eu deveria ver todos os cardápios

@@ -162,9 +162,9 @@ Então /^(?:|eu )deveria ver "([^"]*)"$/ do |texto_a_ser_visto|
 end
 
 Então /^(?:|eu )deveria ver o dia "([^"]*)" do mês atual$/ do |dia_do_mes|
-  this_month = Date.today.strftime("%B")
+  this_month = Date.today.strftime("%m")
   this_year = Date.today.strftime("%Y")
-  expect(page).to have_text("#{dia_do_mes} #{this_month} #{this_year}")
+  expect(page).to have_text("#{dia_do_mes}/#{this_month}/#{this_year}")
 end
 
 Então /^(?:|eu )não deveria ver "([^"]*)"$/ do |text|
@@ -253,4 +253,19 @@ end
 
 Dado /^ao ver um cardápio de (.+)$/ do |opcao|
   pending # Write code here that turns the phrase above into concrete actions
+end
+
+Dado("tem cardapios criados:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  @menus = []
+  table.rows_hash.each do |key, value|
+    menu = Menu.create(date: Date.new(Date.current.year,Date.current.month,value.to_i))
+    @menus.push(menu)
+  end
+end
+
+Então("eu deveria ver todos os cardápios") do
+  @menus.each do |menu|
+    expect(page).to have_text(menu.date.strftime("%A, %d %B %Y"))
+  end
 end
