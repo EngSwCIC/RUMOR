@@ -1,90 +1,88 @@
-<p id="notice"><%= notice %></p>
-<%= link_to 'Edit', edit_menu_path(@menu) %> |
-<%= link_to 'Back', menus_path %>
-
-<p>
-  <strong>Date:</strong>
-  <%= @menu.date.strftime("%A, %d %B %Y") %>
-</p>
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <div class="meal_container">
-          <% if @menu.breakfast %>
-            <table class="daily_menu">
-              <thead>
-                <tr><th>Café da Manhã</th></tr>
-              </thead>
-              <tbody>
-                <tr><td><p>Bebidas quentes</p><%= @menu.breakfast.hot_drinks %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_drink %></td></tr>
-                <tr><td><p>Achocolatado</p><%= @menu.breakfast.chocolate_milk %></td></tr>
-                <tr><td><p>Pão</p><%= @menu.breakfast.bread %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_bread %></td></tr>
-                <tr><td><p>Complemento</p><%= @menu.breakfast.margarine %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_margarine %></td></tr>
-                <tr><td><p>Complemento</p><%= @menu.breakfast.complement %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_complement %></td></tr>
-                <tr><td><p>Fruta</p><%= @menu.breakfast.fruit %></td></tr>
-                <tr><td><%= link_to 'Editar Café da Manhã', edit_breakfast_path(@menu.breakfast) %></td></tr>
-              </tbody>
-            </table>
-          <% else %>
-            <%= link_to 'Criar Café da Manhã', new_breakfast_path(menu_id: @menu.id) %>
-          <% end %>
-        </div>
-      </td>
-      <td>
-        <div class="meal_container">
-          <% if @menu.lunch %>
-            <table class="daily_menu">
-              <thead>
-                <tr><th>Almoço</th></tr>
-              </thead>
-              <tbody>
-                <tr><td><p>Salada</p><%= @menu.lunch.salad %></td></tr>
-                <tr><td><p>Molho</p><%= @menu.lunch.sauce %></td></tr>
-                <tr><td><p>Prato Principal</p><%= @menu.lunch.main_course %></td></tr>
-                <tr><td><p>Guarnição</p><%= @menu.lunch.garnish %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.lunch.vegetarian_dish %></td></tr>
-                <tr><td><p>Acompanhamentos</p><%= @menu.lunch.accompaniments %></td></tr>
-                <tr><td><p>Sobremesa</p><%= @menu.lunch.dessert %></td></tr>
-                <tr><td><p>Refresco</p><%= @menu.lunch.juice %></td></tr>
-                <tr><td><%= link_to 'Editar Almoço', edit_lunch_path(@menu.lunch) %></td></tr>
-              </tbody>
-            </table>
-          <% else %>
-            <%= link_to 'Criar Almoço', new_lunch_path(menu_id: @menu.id) %>
-          <% end %>
-        </div>
-      </td>
-      <td>
-        <div class="meal_container">
-          <% if @menu.dinner %>
-            <table class="daily_menu">
-              <thead>
-                <tr><th>Jantar</th></tr>
-              </thead>
-              <tbody>
-                <tr><td><p>Salada</p><%= @menu.dinner.salad %></td></tr>
-                <tr><td><p>Molho</p><%= @menu.dinner.sauce %></td></tr>
-                <tr><td><p>Sopa</p><%= @menu.dinner.soup %></td></tr>
-                <tr><td><p>Prato Principal</p><%= @menu.dinner.main_course %></td></tr>
-                <tr><td><p>Vegetariano</p><%= @menu.dinner.vegetarian_dish %></td></tr>
-                <tr><td><p>Acompanhamentos</p><%= @menu.dinner.accompaniments %></td></tr>
-                <tr><td><p>Sobremesa</p><%= @menu.dinner.dessert %></td></tr>
-                <tr><td><p>Refresco</p><%= @menu.dinner.juice %></td></tr>
-                <tr><td><%= link_to 'Editar Jantar', edit_dinner_path(@menu.dinner) %></td></tr>
-              </tbody>
-            </table>
-          <% else %>
-            <%= link_to 'Criar Jantar', new_dinner_path(menu_id: @menu.id) %>
-          <% end %>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <br><br>
+  <h1>Cardapio de <%= @menu.date.strftime("%A, %d/%m/%Y") %></h1>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="meal_container">
+            <% if @menu.breakfast %>
+              <table class="daily_menu">
+                <thead>
+                  <tr><th>Café da Manhã</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><p>Bebidas quentes</p><%= @menu.breakfast.hot_drinks %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_drink %></td></tr>
+                  <tr><td><p>Achocolatado</p><%= @menu.breakfast.chocolate_milk %></td></tr>
+                  <tr><td><p>Pão</p><%= @menu.breakfast.bread %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_bread %></td></tr>
+                  <tr><td><p>Complemento</p><%= @menu.breakfast.margarine %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_margarine %></td></tr>
+                  <tr><td><p>Complemento</p><%= @menu.breakfast.complement %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_complement %></td></tr>
+                  <tr><td><p>Fruta</p><%= @menu.breakfast.fruit %></td></tr>
+                  <tr><td><%= link_to 'Editar Café da Manhã', edit_breakfast_path(@menu.breakfast) %></td></tr>
+                </tbody>
+              </table>
+            <% else %>
+              <%= link_to 'Criar Café da Manhã', new_breakfast_path(menu_id: @menu.id) %>
+            <% end %>
+          </div>
+        </td>
+        <td>
+          <div class="meal_container">
+            <% if @menu.lunch %>
+              <table class="daily_menu">
+                <thead>
+                  <tr><th>Almoço</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><p>Salada</p><%= @menu.lunch.salad %></td></tr>
+                  <tr><td><p>Molho</p><%= @menu.lunch.sauce %></td></tr>
+                  <tr><td><p>Prato Principal</p><%= @menu.lunch.main_course %></td></tr>
+                  <tr><td><p>Guarnição</p><%= @menu.lunch.garnish %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.lunch.vegetarian_dish %></td></tr>
+                  <tr><td><p>Acompanhamentos</p><%= @menu.lunch.accompaniments %></td></tr>
+                  <tr><td><p>Sobremesa</p><%= @menu.lunch.dessert %></td></tr>
+                  <tr><td><p>Refresco</p><%= @menu.lunch.juice %></td></tr>
+                  <tr><td><%= link_to 'Editar Almoço', edit_lunch_path(@menu.lunch) %></td></tr>
+                </tbody>
+              </table>
+            <% else %>
+              <%= link_to 'Criar Almoço', new_lunch_path(menu_id: @menu.id) %>
+            <% end %>
+          </div>
+        </td>
+        <td>
+          <div class="meal_container">
+            <% if @menu.dinner %>
+              <table class="daily_menu">
+                <thead>
+                  <tr><th>Jantar</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><p>Salada</p><%= @menu.dinner.salad %></td></tr>
+                  <tr><td><p>Molho</p><%= @menu.dinner.sauce %></td></tr>
+                  <tr><td><p>Sopa</p><%= @menu.dinner.soup %></td></tr>
+                  <tr><td><p>Prato Principal</p><%= @menu.dinner.main_course %></td></tr>
+                  <tr><td><p>Vegetariano</p><%= @menu.dinner.vegetarian_dish %></td></tr>
+                  <tr><td><p>Acompanhamentos</p><%= @menu.dinner.accompaniments %></td></tr>
+                  <tr><td><p>Sobremesa</p><%= @menu.dinner.dessert %></td></tr>
+                  <tr><td><p>Refresco</p><%= @menu.dinner.juice %></td></tr>
+                  <tr><td><%= link_to 'Editar Jantar', edit_dinner_path(@menu.dinner) %></td></tr>
+                </tbody>
+              </table>
+            <% else %>
+              <%= link_to 'Criar Jantar', new_dinner_path(menu_id: @menu.id) %>
+            <% end %>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <%= link_to 'Edit', edit_menu_path(@menu), class:"btn btn-primary my-2    ", style:"background-color: #F28D3C; border: none;" %>
+  <%= link_to 'Back', menus_path, class:"btn btn-primary my-2", style:"background-color: #F28D3C; border: none;" %>
+</div>
