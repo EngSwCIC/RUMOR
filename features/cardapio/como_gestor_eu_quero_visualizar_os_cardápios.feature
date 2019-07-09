@@ -7,11 +7,10 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
   Para que eu possa ter controle dos cardápios
   Eu quero visualizar os cardápios
 
-  # Cenário: Gestor visualizar os cardapios[Cenário - Feliz]
-  #   Dado que eu estou logado como gestor
-  #   E as datas foram carregadas
-  #   Quando eu clico em "cardapio"
-  #   Então eu deveria ver "cardapios do Mes"
+  Cenário: Gestor visualizar os cardapios[Cenário - Triste]
+    Dado que eu estou na página de cardápios
+    E não estou logado
+    Então eu não deveria ver lista de cardápios
 
   Cenario: Gestor visualizar cardápio específico
     Dado que eu estou logado como gestor

@@ -45,20 +45,12 @@ end
 World(CardapioHelpers)
 
 Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
-  # if funcao_na_plataforma == "gestor"
-  #   email_gestor = 'gestorteste@email.com'
-  #   senha_gestor = 'senha123'
-
-  #   registrar_usuario email_gestor, senha_gestor
-
   steps %Q{
     Dado que eu estou na tela de login
     Quando eu preencher o formulário de login e efetuar o login
     Então quero ser redirecionado para página de cardápios
     E quero estar logado
   }
-    # @gestor = User.last
-  # end
 end
 
 
@@ -269,3 +261,12 @@ Então("eu deveria ver todos os cardápios") do
     expect(page).to have_text(menu.date.strftime("%A, %d %B %Y"))
   end
 end
+
+Dado("não estou logado") do
+  current_user = nil
+end
+
+Então("eu não deveria ver lista de cardápios") do
+  expect(page).to have_text("Para acessar lista de cardápio, logue como gestor")
+end
+

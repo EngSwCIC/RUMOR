@@ -9,7 +9,7 @@ class MenusController < ApplicationController
 
   # Método Index é chamado para mostrar todos os cardápios cadastrados
   def index
-    @menus = Menu.all.sort_by {|a| a.date }
+    @menus = Menu.all.sort_by {|a| a.date }.reverse!
     all_menus = Menu.this_week.sort_by {|a| a.date }
 
     # Parseia os menus da semana para ter o tamanho de uma semana completa (7 dias) e apresentarem falso quando não há menu

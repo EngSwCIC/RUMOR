@@ -36,32 +36,37 @@
     </tbody>
   </table>
 
-  <% if user_signed_in?  %>
-    <br><br>  
-    <h3>Todos os cardápios cadastrados</h3>
-    <table class="table table-striped">
-      <thead style="background-color: #F28D3C; color: white;" >
-        <tr>
-          <th>ID</th>
-          <th>Semana</th>
-          <th>Data</th>
-          <th>Gerenciar</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @menus.each do |menu| %>
+  <div id="menus-list">
+    <% if user_signed_in?  %>
+      <br><br>  
+      <h3>Todos os cardápios cadastrados</h3>
+      <table class="table table-striped">
+        <thead style="background-color: #F28D3C; color: white;" >
           <tr>
-            <td><%= menu.id %></td>
-            <td><%= menu.date.strftime("%U") %></td>
-            <td><%= menu.date.strftime("%A, %d %B %Y") %></td>
-            <td>
-              <%= link_to 'Mostrar', menu, class:"btn btn-primary" %>
-              <%= link_to 'Editar', edit_menu_path(menu), class:"btn btn-primary" %>
-              <%= link_to 'Excluir', menu_path(menu), method: :delete,  data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %> 
-            </td>
+            <th>ID</th>
+            <th>Semana</th>
+            <th>Data</th>
+            <th>Gerenciar</th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-  <% end  %>
+        </thead>
+        <tbody>
+          <% @menus.each do |menu| %>
+            <tr>
+              <td><%= menu.id %></td>
+              <td><%= menu.date.strftime("%U") %></td>
+              <td><%= menu.date.strftime("%A, %d %B %Y") %></td>
+              <td>
+                <%= link_to 'Mostrar', menu, class:"btn btn-primary" %>
+                <%= link_to 'Editar', edit_menu_path(menu), class:"btn btn-primary" %>
+                <%= link_to 'Excluir', menu_path(menu), method: :delete,  data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %> 
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <br><br>
+      <p>Para acessar lista de cardápio, logue como gestor</p>
+    <% end  %>
+  </div>
 </div>
