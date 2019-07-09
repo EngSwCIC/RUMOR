@@ -53,7 +53,7 @@ end
 
 
 Quando /^(?:|eu )visito a (.+)$/ do |page_name|
-  pending
+  visit path_to(page_name)
 end
 
 Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
