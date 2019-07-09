@@ -19,13 +19,13 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     Quando eu clico em "04"
     Então eu deveria ver o dia "04" do mês atual
   
-    # Cenário: Gestor visualizar edição dos cardápios
-    # Dado que eu estou logado como gestor
-    # E as datas foram carregadas
-    # E que eu estou na página de cardápios
-    # E eu clico em "04_"
-    # Quando eu clico em "Edit"
-    # Então eu deveria ver "Edição de Cardapio"
+    Cenário: Gestor visualizar edição dos cardápios
+    Dado que eu estou logado como gestor
+    E as datas foram carregadas
+    E que eu estou na página de cardápios
+    E eu clico em "Dia 04"
+    Quando eu clico em "Edit"
+    Então eu deveria ver "Edição de Cardápio"
 
   Cenário: Gestor visualizar edição café da manhã
     Dado que eu estou logado como gestor
