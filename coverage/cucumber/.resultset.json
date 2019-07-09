@@ -1208,6 +1208,67 @@
         0,
         null
       ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        6,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/dashboard_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/dinners_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/lunches_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/menus_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_breakfast_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_dinner_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_lunch_helper.rb": [
+        1,
+        null
+      ],
+      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/menus_controller.rb": [
         1,
         null,
@@ -1450,67 +1511,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        6,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/dashboard_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/dinners_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/home_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/lunches_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/menus_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_breakfast_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_dinner_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/satisfactions_lunch_helper.rb": [
-        1,
-        null
-      ],
-      "/home/gcvasconcelos/Documents/ES/RUMOR/app/helpers/users_helper.rb": [
-        1,
         null
       ],
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/menu.rb": [
@@ -1840,6 +1840,6 @@
         null
       ]
     },
-    "timestamp": 1562696273
+    "timestamp": 1562696420
   }
 }
