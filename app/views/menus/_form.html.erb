@@ -1,4 +1,4 @@
-<%= form_with(model: menu, local: true) do |form| %>
+<%= form_with model: menu, local: true,  html: { class: "" } do |form| %>
   <% if menu.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(menu.errors.count, "error") %> prohibited this menu from being saved:</h2>
@@ -10,13 +10,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date %>
+  <br>
+  <%= form.label :date, "Digite a data de criação do cardápio:" %>
+  <div class="d-flex flex-row">
+    <%= form.date_select :date, { :order => [:day, :month, :year], 
+        :start_year => Date.current.year, :end_year => 1960,
+        :prompt => {day: 'Dia', month: 'Mês', year: 'Ano'}, :discard_hour => true }, class: 'form-control mr-2'  %>
+    
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <br>
+  <div class="text-center">
+    <%= form.submit "Criar cardápio", class: "btn btn-primary my-3", style:"background-color: #F28D3C; border: none;" %>
   </div>
 <% end %>
+

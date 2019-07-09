@@ -7,7 +7,8 @@ class MenusController < ApplicationController
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :import]
 
-  # Método Index é chamado para mostrar todos os cardápios cadastrados
+  # Método Index é chamado para mostrar todos os cardápios cadastrados e todos 
+  # os cardápios da semana atual
   def index
     @menus = Menu.all.sort_by {|a| a.date }.reverse!
     all_menus = Menu.this_week.sort_by {|a| a.date }
@@ -70,7 +71,6 @@ class MenusController < ApplicationController
   # Caso as alterações consigam ser salvas no banco ele voltará para a página do método index
   # Caso contrário irá chamar novamente a página do index edit
   def update
-    # @menu = Menu.find(menu_params)
     if @menu.update(menu_params)
       redirect_to @menu, notice: 'Menu was successfully updated.'
     else
