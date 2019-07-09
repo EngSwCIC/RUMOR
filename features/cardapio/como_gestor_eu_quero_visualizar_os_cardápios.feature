@@ -14,7 +14,7 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     Quando eu clico em "04"
     Então eu deveria ver o dia "04" do mês atual
   
-    Cenário: Gestor visualizar edição dos cardápios
+  Cenário: Gestor visualizar edição dos cardápios
     Dado que eu estou logado como gestor
     E as datas foram carregadas
     E que eu estou na página de cardápios
@@ -57,7 +57,7 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     E que eu estou na página de cardápios
     Então eu deveria ver todos os cardápios
 
-  Cenário: Gestor não visualizar todos os cardapios [Cenário Triste]
+  Cenário: Gestor não visualizar todos os cardápios [Cenário Triste]
     Dado que eu estou na página de cardápios
     E não estou logado
     Então eu não deveria ver lista de cardápios

@@ -15,7 +15,7 @@ Funcionalidade: como_gestor_eu_quero_gerenciar_os_cardápios
     E eu clico em "Edit"
     Quando eu clico no botão "Atualizar Cardápio"
     Então eu deveria ver "Menu was successfully updated"
-
+  
   Cenário: Gestor gerenciar café da manhã
     Dado que eu estou logado como gestor
     E as datas foram carregadas
