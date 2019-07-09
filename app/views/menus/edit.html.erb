@@ -1,8 +1,9 @@
-<div class="container" >
-  <h1>Edição de Cardápio</h1>
+<br>
+<div class="container" style="margin: 0 auto;width:25%; background-color: #F2F3F2;" >
+  <br><br>
+  <h2 style="text-align: center;" >Edição do Cardápio #<%= @menu.id %> <%= link_to 'Show', @menu, class: "btn btn-primary text-center", style:"background-color: grey; border: none;" %></h2>
 
   <%= render 'form', menu: @menu %>
-
-  <%= link_to 'Show', @menu %> |
-  <%= link_to 'Back', menus_path %>
+  <%=  %>
+  <br>
 </div>

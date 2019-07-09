@@ -13,14 +13,20 @@
   <br>
   <%= form.label :date, "Digite a data de criação do cardápio:" %>
   <div class="d-flex flex-row">
-    <%= form.date_select :date, { :order => [:day, :month, :year], 
+    <% if @menu.id %>
+      <%= form.date_select :date, { :order => [:day, :month, :year], 
         :start_year => Date.current.year, :end_year => 1960,
-        :prompt => {day: 'Dia', month: 'Mês', year: 'Ano'}, :discard_hour => true }, class: 'form-control mr-2'  %>
-    
+        :prompt => {day: 'Dia', month: 'Mês', year: 'Ano'}, :discard_hour => true }, class: 'form-control mr-2' %>
+    <% else %>
+      <%= form.date_select :date, { :order => [:day, :month, :year], 
+        selected: Date.today, 
+        :start_year => Date.current.year, :end_year => 1960,
+        :prompt => {day: 'Dia', month: 'Mês', year: 'Ano'}, :discard_hour => true }, class: 'form-control mr-2' %>
+    <% end %>
   </div>
-  <br>
+  <br><br>
   <div class="text-center">
-    <%= form.submit "Criar cardápio", class: "btn btn-primary my-3", style:"background-color: #F28D3C; border: none;" %>
+    <%= form.submit "Criar cardápio", class: "btn btn-primary", style:"background-color: #F28D3C; border: none;" %>
   </div>
 <% end %>
 
