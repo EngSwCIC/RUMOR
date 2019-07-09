@@ -13,7 +13,7 @@ Funcionalidade: como_gestor_eu_quero_gerenciar_os_cardápios
     E que eu estou na página de cardápios
     E eu clico em "04"
     E eu clico em "Edit"
-    Quando eu clico no botão "Atualizar Cardápio"
+    Quando eu clico no botão "Editar cardápio"
     Então eu deveria ver "Menu was successfully updated"
   
   Cenário: Gestor gerenciar café da manhã

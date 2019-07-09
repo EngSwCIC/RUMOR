@@ -20,7 +20,7 @@ Funcionalidade: como_gestor_eu_quero_visualizar_os_cardápios
     E que eu estou na página de cardápios
     E eu clico em "04"
     Quando eu clico em "Edit"
-    Então eu deveria ver "Edição de Cardápio"
+    Então eu deveria ver "Edição do Cardápio"
 
   Cenário: Gestor visualizar edição café da manhã
     Dado que eu estou logado como gestor

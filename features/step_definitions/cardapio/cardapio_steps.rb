@@ -28,14 +28,12 @@ module CardapioHelpers
   end
 
   # Os argumentos devem ser da forma que seu campo de data pede.
-  def seleciona_data_hora(ano_inteiro, mes_string, dia_inteiro, hora_inteiro, minuto_inteiro, texto_do_label)
+  def seleciona_data_hora(ano_inteiro, mes_string, dia_inteiro, texto_do_label)
     label = page.find('label', text: texto_do_label)
     id = label['for']
-    select ano_inteiro,   from: "#{id}_1i"
-    select mes_string,  from: "#{id}_2i"
     select dia_inteiro,    from: "#{id}_3i"
-    select hora_inteiro,   from: "#{id}_4i"
-    select minuto_inteiro, from: "#{id}_5i"
+    select mes_string,  from: "#{id}_2i"
+    select ano_inteiro,   from: "#{id}_1i"
   end
 
   def seleciona_arquivo(nome_arquivo)
@@ -60,16 +58,12 @@ end
 
 Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
   case value_do_botao
-    when "Criar Cardápio"
-      click_button "Create Menu"
     when "Criar Desjejum"
       click_button "Create Breakfast"
     when "Criar Almoço"
       click_button "Create Lunch"
     when "Criar Jantar"
       click_button "Create Dinner"
-    when "Atualizar Cardápio"
-      click_button "Update Menu"
     when "Atualizar Desjejum"
       click_button "Update Breakfast"
     when "Atualizar Almoço"
@@ -106,7 +100,7 @@ E /^(?:|que )(?:|eu )preencho os campos de "(.+)" adequadamente$/ do |tipo_de_ca
   case tipo_de_campo
   when "datas"
     #Data válida: "21 de Novembro de 2018 às 21:32"
-    seleciona_data_hora(2018, "November", 21, 21, 31, "Date")
+    seleciona_data_hora(2018, "November", 21, "data")
   when "desjejum"
     fill_in "breakfast_hot_drinks", with: 'Chiclete de batata'
     fill_in "breakfast_vegetarian_drink", with: 'Chiclete de batata'

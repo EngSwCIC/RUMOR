@@ -10,7 +10,7 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
     Dado que eu estou logado como gestor
     E que eu estou na página de criar cardápio
     E que eu preencho os campos de "datas" adequadamente
-    Quando eu clico no botão "Criar Cardápio"
+    Quando eu clico no botão "Criar cardápio"
     Então eu deveria ver "Menu was successfully created."
 
   Cenário: Gestor criar um desjejum[Cenário - Feliz]
