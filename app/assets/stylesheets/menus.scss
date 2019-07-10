@@ -2,28 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.meal_container{
-  background-color: #f9f9f9;
-  width: 20em;
-  height: 30em;
+.action-container {
+  margin: 0 auto;
+  width:25%; 
+  background-color: #F2F3F2;
 }
 
-.daily_menu{
-  width: 100%;
-
+.menus-container {
+  background-color: #F2F3F2; 
+  > h2 {
+    background-color: #F28D3C; 
+    color: white;
+  }
 }
 
-.daily_menu > thead > tr > th{
-  padding: 0.5em;
-  font-weight: bold;
-  font-size: 2em;
-}
-.daily_menu > tbody {
-
+.menu-show {
+  background-color: silver;
+  color: black;
 }
 
-.daily_menu > tbody > tr > td {
-  padding: 0.5em;
-  padding-left: 1em;
-  background-color: #ececec;
+.menu-item {
+  background-color: white; 
+}
+
+.menus-button {
+  background-color: #F28D3C; 
+  border: none;
+}
+
+.show-button {
+  background-color: grey; 
+  border: none;
+}
+
+.table-pallete {
+  > thead {
+    background-color: #F28D3C; 
+    color: white;
+  }
+  > tbody {
+    background-color: #F2F3F2;
+  }
 }

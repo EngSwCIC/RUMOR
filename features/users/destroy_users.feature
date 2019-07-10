@@ -10,6 +10,11 @@ Funcionalidade: destroy_users
   Dado que eu estou logado como gestor
   E eu estaja na pagina de ver usuarios
   E que exista um usuario cadastrado
-  E clicar no botão "Apagar"
+  Quando clicar no botão "Apagar"
   Então eu devo ser redirecionado para tela de login
-  E devo ver a mensagem "usuario apagado com sucesso"
+  # E devo ver a mensagem "usuario apagado com sucesso"
+
+  Cenario: Excluir usuario nao autorizado [:(]
+  Dado que eu nao estou logado como gestor
+  Quando eu estaja na pagina de ver usuarios
+  Entao eu devo ser redirecionado para tela de login

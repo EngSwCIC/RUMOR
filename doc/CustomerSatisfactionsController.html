@@ -132,13 +132,18 @@
 
         <div class="method-description">
           
-          
+          <p>Método adiconal Não está presente no Famoso CRUD do rails Tem uma
+utilização específica no sistema Ele é chamado ao se tentar ver a página de
+gráficos São feitas 6 pesquisas no banco de dados para serem aplicadas em
+gráficos diferentes Os três primeiros estão contando o total de
+acontecimentos nos atributos meal, rating e user_group Os três últimos
+estão agrupando por usuário e realizando a contagem das notos dos usuários</p>
           
           
 
           
           <div class="method-source-code" id="charts-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 56</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 87</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">charts</span>
   <span class="ruby-ivar">@line_chart</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">group</span>(<span class="ruby-value">:meal</span>).<span class="ruby-identifier">count</span>
   <span class="ruby-ivar">@pie_chart</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">group</span>(<span class="ruby-value">:rating</span>).<span class="ruby-identifier">count</span>
@@ -172,13 +177,16 @@
 
         <div class="method-description">
           
-          
+          <p>Método chamado após o new Ao passar os parametros uma novo pesquisa foi
+criada Apos isso ele verifica se foi possível salvar o objeto no banco Caso
+consigo ele voltará a chamar o método index Caso contrário ele irá
+renderizar o método new</p>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 28</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 48</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@customer_satisfaction</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">customer_satisfaction_params</span>)
   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer_satisfaction</span>.<span class="ruby-identifier">save</span>
@@ -211,13 +219,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método chamado para deletar um objeto no banco de dados Ao terminar de
+apagar ele é redirecionado para a página que utiliza o index</p>
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 49</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 73</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-ivar">@customer_satisfaction</span>.<span class="ruby-identifier">destroy</span>
 
@@ -247,13 +256,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método que retorna um objeto específico da pesquisa trabalha em conjunto
+com o método update</p>
           
           
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 24</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 39</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -279,20 +289,22 @@
 
         <div class="method-description">
           
-          
+          <p>Método Index é chamado de duas maneiras O intuito dele é retornar todos as
+pesquisas feitas pelo usuário A diferença é dada por qual formato ele será
+renderizado Caso o admin queria ver somente pela web ele irá renderizar o
+formato html Mas caso queria baixar a planilha, ele terá um formato pdf</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 5</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 15</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
   <span class="ruby-ivar">@customer_satisfactions</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">all</span>
-  <span class="ruby-comment"># @customer_satisfaction_collect = CustomerSatisfaction.all.collect{ |c| [c.user_group, c.rating]}</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
     <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span>
     <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> <span class="ruby-keyword">do</span>
-      <span class="ruby-identifier">render</span> <span class="ruby-value">pdf:</span> <span class="ruby-string">&quot;relatorio&quot;</span>   <span class="ruby-comment"># Excluding &quot;.pdf&quot; extension.</span>
+      <span class="ruby-identifier">render</span> <span class="ruby-value">pdf:</span> <span class="ruby-string">&quot;relatorio&quot;</span>   
     <span class="ruby-keyword">end</span>
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
@@ -319,13 +331,15 @@
 
         <div class="method-description">
           
-          
+          <p>Método que é chamado ao ir para a página de formulário de pesquisa Ele é
+responsável por instanciar um novo objeto Objeto que será utilizado em
+conjunto com o método create</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 20</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 33</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@customer_satisfaction</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -352,13 +366,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método que é responsável por retornar um objeto Esse objeto é os dados
+especificos de uma pesquisa</p>
           
           
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 17</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 27</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -384,13 +399,16 @@
 
         <div class="method-description">
           
-          
+          <p>Trabalha em conjunto com método edit Os parametros são passado e passando
+para um função update Caso as alterações consigam ser salvas no banco ele
+voltará para a página do método index Caso contrário irá chamar novamente a
+página do index edit</p>
           
           
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 39</span>
+            <pre><span class="ruby-comment"># File app/controllers/customer_satisfactions_controller.rb, line 62</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@customer_satisfaction</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">customer_satisfaction_params</span>)
     <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@customer_satisfaction</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Pesquisa de Satisfação atualizada com sucesso.&#39;</span>

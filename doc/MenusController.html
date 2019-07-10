@@ -77,6 +77,8 @@
     
     <li ><a href="#method-i-edit">#edit</a>
     
+    <li ><a href="#method-i-import">#import</a>
+    
     <li ><a href="#method-i-index">#index</a>
     
     <li ><a href="#method-i-new">#new</a>
@@ -130,19 +132,31 @@
 
         <div class="method-description">
           
-          
+          <p>Método para efetuar o cadastro do cardápio Pode ser chamado de duas
+maneiras:</p>
+<ol><li>
+<p>Após o método new, onde o gestor indica os parametros</p>
+</li><li>
+<p>Ao importar uma planilha válida</p>
+</li></ol>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 19</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 38</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
-  <span class="ruby-ivar">@menu</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">menu_params</span>)
-    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">save</span>
-      <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@menu</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Menu was successfully created.&#39;</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">route_to</span> <span class="ruby-identifier">params</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:create_sheet</span>
+      <span class="ruby-identifier">load_imported_menu</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:menu</span>][<span class="ruby-value">:file</span>])
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">menus_path</span>
     <span class="ruby-keyword">else</span>
-      <span class="ruby-identifier">render</span> <span class="ruby-value">:new</span>
+      <span class="ruby-ivar">@menu</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">menu_params</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">save</span>
+          <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@menu</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Menu was successfully created.&#39;</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">render</span> <span class="ruby-value">:new</span>
+        <span class="ruby-keyword">end</span>
     <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -168,13 +182,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método chamado para deletar um objeto no banco de dados Ao terminar de
+apagar ele é redirecionado para a página que utiliza o index</p>
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 36</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 73</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-keyword">begin</span>
     <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">destroy</span>
@@ -205,14 +220,49 @@
 
         <div class="method-description">
           
-          
+          <p>Método que retorna um objeto específico de cardápio trabalha em conjunto
+com o método update</p>
           
           
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 16</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-import" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">import</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Método chamado quando o gestor quer importar a planilha de cardápios Leva à
+tela de importação</p>
+          
+          
+
+          
+          <div class="method-source-code" id="import-source">
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">import</span>
+  <span class="ruby-ivar">@menu_import</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -237,16 +287,17 @@
 
         <div class="method-description">
           
-          
+          <p>Método Index é chamado para mostrar todos os cardápios cadastrados e todos 
+os cardápios da semana atual</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 4</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
-  <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>
-  <span class="ruby-ivar">@month_menu</span> = <span class="ruby-identifier">this_month_menu</span>(<span class="ruby-ivar">@menus</span>).<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }
+  <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }.<span class="ruby-identifier">reverse!</span>
+  <span class="ruby-ivar">@week_menus</span> = <span class="ruby-identifier">this_week_menus</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -271,13 +322,15 @@
 
         <div class="method-description">
           
-          
+          <p>Método que é chamado ao ir para a página de cadastro de cardápio Ele é
+responsável por instanciar um novo objeto Objeto que será utilizado em
+conjunto com o método create</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 12</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@menu</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -304,13 +357,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método que é responsável por retornar um objeto Esse objeto é os dados
+especificos de um Cardápio</p>
           
           
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 9</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -336,18 +390,21 @@
 
         <div class="method-description">
           
-          
+          <p>Trabalha em conjunto com método edit Os parametros são passado e passando
+para um função update Caso as alterações consigam ser salvas no banco ele
+voltará para a página do método index Caso contrário irá chamar novamente a
+página do index edit</p>
           
           
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 28</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 63</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
-    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">menu_params</span>)
-      <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@menu</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Menu was successfully updated.&#39;</span>
-    <span class="ruby-keyword">else</span>
-      <span class="ruby-identifier">render</span> <span class="ruby-value">:edit</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">menu_params</span>)
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@menu</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Menu was successfully updated.&#39;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:edit</span>
     <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>

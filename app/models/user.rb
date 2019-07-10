@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  # Módulos padrão do Devise
+  # Faz validação dos campos do form (atributos) e validações no banco de dados
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable
 end
