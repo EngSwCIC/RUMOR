@@ -14,7 +14,6 @@ RSpec.describe "user_two_groups/index", type: :view do
     ])
 end
 
-
   it "renders a list of user_two_groups" do
     render
     assert_select "tr>td", :text => 2.to_s

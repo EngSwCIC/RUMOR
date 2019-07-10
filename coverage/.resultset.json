@@ -1079,6 +1079,7 @@
   "RSpec": {
     "coverage": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/user.rb": [
 =======
 <<<<<<< HEAD
@@ -1087,6 +1088,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/user.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/user.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1094,6 +1098,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/application_record.rb": [
 =======
@@ -1103,10 +1108,14 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/application_record.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/application_record.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/helpers/application_helper.rb": [
 =======
@@ -1216,6 +1225,57 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/breakfasts_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/breakfasts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/dashboard_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/dinners_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/lunches_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/menus_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_breakfast_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_dinner_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_lunch_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/breakfasts_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1299,6 +1359,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/application_controller.rb": [
 =======
@@ -1308,6 +1369,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/application_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/application_controller.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         1,
@@ -1320,6 +1384,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
 =======
@@ -1329,6 +1394,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1440,6 +1508,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/dashboard_controller.rb": [
 =======
@@ -1449,6 +1518,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/dashboard_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/dashboard_controller.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         null,
@@ -1459,6 +1531,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/dinners_controller.rb": [
 =======
@@ -1468,6 +1541,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/dinners_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/dinners_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1553,6 +1629,7 @@
         null
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/home_controller.rb": [
 =======
 <<<<<<< HEAD
@@ -1561,6 +1638,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/home_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/home_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1582,6 +1662,7 @@
         null
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/lunches_controller.rb": [
 =======
 <<<<<<< HEAD
@@ -1590,6 +1671,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/lunches_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/lunches_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1674,6 +1758,7 @@
         null
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/menus_controller.rb": [
 =======
 <<<<<<< HEAD
@@ -1682,6 +1767,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/menus_controller.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/menus_controller.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -1954,6 +2042,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/controllers/satisfactions_dinner_controller.rb": [
         1,
         1,
@@ -2059,83 +2148,107 @@
 <<<<<<< HEAD
       "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/satisfactions_breakfast_controller.rb": [
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_breakfast_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/satisfactions_dinner_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_dinner_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/satisfactions_lunch_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_lunch_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/user_one_groups_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_one_groups_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/user_three_groups_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_three_groups_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/user_two_groups_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_two_groups_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+>>>>>>> refactory/tests
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/controllers/users_controller.rb": [
 =======
@@ -2251,6 +2364,9 @@
       ],
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/breakfast.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/breakfast.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         null,
@@ -2267,6 +2383,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/customer_satisfaction.rb": [
 =======
 <<<<<<< HEAD
@@ -2275,6 +2392,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/customer_satisfaction.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/customer_satisfaction.rb": [
+>>>>>>> refactory/tests
         1,
         null,
         null,
@@ -2288,6 +2408,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/dinner.rb": [
 =======
@@ -2297,6 +2418,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/dinner.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/dinner.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         null,
@@ -2311,6 +2435,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/lunch.rb": [
 =======
@@ -2320,6 +2445,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/lunch.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/lunch.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         null,
@@ -2335,6 +2463,7 @@
         null
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/menu.rb": [
 =======
 <<<<<<< HEAD
@@ -2343,6 +2472,9 @@
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/models/menu.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/menu.rb": [
+>>>>>>> refactory/tests
         1,
         1,
         1,
@@ -2369,6 +2501,7 @@
         null
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/channels/application_cable/connection.rb": [
 =======
 <<<<<<< HEAD
@@ -2378,11 +2511,19 @@
       ],
       "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/channels/application_cable/connection.rb": [
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/channels/application_cable/connection.rb": [
+>>>>>>> refactory/tests
         0,
         0,
         0,
         0
       ],
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/channels/application_cable/channel.rb": [
 =======
@@ -2396,6 +2537,9 @@
 >>>>>>> feature/menus
 >>>>>>> origin/develop
         0,
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/channels/application_cable/channel.rb": [
+>>>>>>> refactory/tests
         0,
         0,
         0
@@ -2405,10 +2549,14 @@
         0,
         0
       ],
+<<<<<<< HEAD
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/mailers/application_mailer.rb": [
 =======
 <<<<<<< HEAD
       "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/users_controller.rb": [
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/users_controller.rb": [
+>>>>>>> refactory/tests
         0,
         0,
         0,
@@ -2489,17 +2637,22 @@
         0
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/mailers/application_mailer.rb": [
 =======
       "/home/gcvasconcelos/Documents/ES/RUMOR/app/mailers/application_mailer.rb": [
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/mailers/application_mailer.rb": [
+>>>>>>> refactory/tests
         0,
         0,
         0,
         0
       ]
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "timestamp": 1562785507
 =======
@@ -2509,5 +2662,8 @@
     "timestamp": 1562787410
 >>>>>>> feature/menus
 >>>>>>> origin/develop
+=======
+    "timestamp": 1562782640
+>>>>>>> refactory/tests
   }
 }
