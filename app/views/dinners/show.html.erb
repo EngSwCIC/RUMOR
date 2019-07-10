@@ -43,12 +43,6 @@
       <%= @dinner.juice %>
     </p>
 
-    <p>
-      <strong>Nota da janta:</strong>
-      <div class="star-rating" data-rating= <%= @avg_rating %> ></div>
-      <p> <%= " #{@review_dinner.length} reviews" %> </p>
-    </p>
-
     <%= link_to 'Dê sua opinião', new_dinner_review_dinner_path(@dinner), class: "btn btn-primary" %>
   </div>
 

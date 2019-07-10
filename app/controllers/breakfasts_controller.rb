@@ -18,6 +18,9 @@ class BreakfastsController < ApplicationController
     if @review_breakfast.blank?
       @avg_rating = 0
     else
+      @review_breakfast.each do |review_breakfast|
+        @user = User.where(id: review_breakfast.user_id)
+      end
       @avg_rating = @review_breakfast.average(:rating).round(2)
     end
   end
