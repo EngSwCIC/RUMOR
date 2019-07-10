@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_30_182110) do
+ActiveRecord::Schema.define(version: 2019_07_07_121502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,14 @@ ActiveRecord::Schema.define(version: 2019_05_30_182110) do
     t.index ["menu_id"], name: "index_dinners_on_menu_id"
   end
 
+  create_table "hora_de_funcionamentos", force: :cascade do |t|
+    t.string "dia"
+    t.string "inicio"
+    t.string "fechamento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "lunches", force: :cascade do |t|
     t.string "salad"
     t.string "sauce"
@@ -91,6 +99,13 @@ ActiveRecord::Schema.define(version: 2019_05_30_182110) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
+  # create_table "working_hours", force: :cascade do |t|
+  #   t.string "dia"
+  #   t.string "hora"
+  #   t.datetime "created_at", null: false
+  #   t.datetime "updated_at", null: false
+  # end
 
   add_foreign_key "breakfasts", "menus"
   add_foreign_key "dinners", "menus"
