@@ -144,7 +144,7 @@ maneiras:</p>
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 47</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 38</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-keyword">case</span> <span class="ruby-identifier">route_to</span> <span class="ruby-identifier">params</span>
     <span class="ruby-keyword">when</span> <span class="ruby-value">:create_sheet</span>
@@ -189,7 +189,7 @@ apagar ele é redirecionado para a página que utiliza o index</p>
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 83</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 73</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-keyword">begin</span>
     <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">destroy</span>
@@ -227,7 +227,7 @@ com o método update</p>
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 40</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -260,7 +260,7 @@ tela de importação</p>
 
           
           <div class="method-source-code" id="import-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 64</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">import</span>
   <span class="ruby-ivar">@menu_import</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -287,26 +287,17 @@ tela de importação</p>
 
         <div class="method-description">
           
-          <p>Método Index é chamado para mostrar todos os cardápios cadastrados</p>
+          <p>Método Index é chamado para mostrar todos os cardápios cadastrados e todos 
+os cardápios da semana atual</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 11</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
-  <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }
-  <span class="ruby-identifier">all_menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">this_week</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }
-
-  <span class="ruby-comment"># Parseia os menus da semana para ter o tamanho de uma semana completa (7 dias) e apresentarem falso quando não há menu</span>
-  <span class="ruby-identifier">week_menus_parser</span>  = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">7</span>, <span class="ruby-keyword">false</span>)
-  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">7</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">day</span><span class="ruby-operator">|</span>
-    <span class="ruby-identifier">has_menu</span> = <span class="ruby-identifier">all_menus</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">date</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%w&quot;</span>).<span class="ruby-identifier">to_i</span>  <span class="ruby-operator">==</span> <span class="ruby-identifier">day</span> }
-    <span class="ruby-keyword">unless</span> <span class="ruby-identifier">has_menu</span>.<span class="ruby-identifier">empty?</span>
-      <span class="ruby-identifier">week_menus_parser</span>[<span class="ruby-identifier">day</span><span class="ruby-value">-1</span>] = <span class="ruby-identifier">has_menu</span>.<span class="ruby-identifier">first</span>
-    <span class="ruby-keyword">end</span>
-  <span class="ruby-keyword">end</span>
-  <span class="ruby-ivar">@week_menus</span> = <span class="ruby-identifier">week_menus_parser</span>
+  <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }.<span class="ruby-identifier">reverse!</span>
+  <span class="ruby-ivar">@week_menus</span> = <span class="ruby-identifier">this_week_menus</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -339,7 +330,7 @@ conjunto com o método create</p>
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 34</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@menu</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -373,7 +364,7 @@ especificos de um Cardápio</p>
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 28</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -408,9 +399,8 @@ página do index edit</p>
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 72</span>
+            <pre><span class="ruby-comment"># File app/controllers/menus_controller.rb, line 63</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
-  <span class="ruby-comment"># @menu = Menu.find(menu_params)</span>
   <span class="ruby-keyword">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">menu_params</span>)
     <span class="ruby-identifier">redirect_to</span> <span class="ruby-ivar">@menu</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;Menu was successfully updated.&#39;</span>
   <span class="ruby-keyword">else</span>

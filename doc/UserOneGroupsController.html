@@ -118,22 +118,25 @@
 
         <div class="method-description">
           
-          
+          <p>Método Index é chamado de duas maneiras O intuito dele é retornar todos as
+pesquisas feitas pelo usuário A diferença é dada por qual formato ele será
+renderizado Caso o admin queria ver somente pela web ele irá renderizar o
+formato html Mas caso queria baixar a planilha, ele terá um formato pdf</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/user_one_groups_controller.rb, line 2</span>
+            <pre><span class="ruby-comment"># File app/controllers/user_one_groups_controller.rb, line 7</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
-    <span class="ruby-ivar">@customer_satisfactions</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">all</span>
-    <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span>
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> <span class="ruby-keyword">do</span>
-        <span class="ruby-identifier">render</span> <span class="ruby-value">pdf:</span> <span class="ruby-string">&quot;relatorio&quot;</span>   
+      <span class="ruby-ivar">@customer_satisfactions</span> = <span class="ruby-constant">CustomerSatisfaction</span>.<span class="ruby-identifier">all</span>
+      <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span>
+        <span class="ruby-identifier">format</span>.<span class="ruby-identifier">pdf</span> <span class="ruby-keyword">do</span>
+          <span class="ruby-identifier">render</span> <span class="ruby-value">pdf:</span> <span class="ruby-string">&quot;relatorio&quot;</span>   
+        <span class="ruby-keyword">end</span>
       <span class="ruby-keyword">end</span>
-    <span class="ruby-keyword">end</span>
-  <span class="ruby-keyword">end</span></pre>
+    <span class="ruby-keyword">end</span></pre>
           </div>
           
         </div>

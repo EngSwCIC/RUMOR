@@ -130,20 +130,15 @@
 
         <div class="method-description">
           
-<<<<<<< HEAD
           <p>POST /users</p>
 
 <p>Metodo que cadastra um novo usuario baseado nos parametros recebidos do
 form</p>
-=======
-          <p>POST /users POST /users.json</p>
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="create-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 42</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user_params</span>)
@@ -157,16 +152,6 @@ form</p>
     <span class="ruby-keyword">else</span>
       <span class="ruby-comment"># Caso Fracasso</span>
       <span class="ruby-comment"># Em caso de falha renderiza novamente a pagina com mensagens de erro</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 27</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
-  <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user_params</span>)
-  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">save</span>
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">users_path</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;usuario criado com sucesso&#39;</span> }
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:show</span>, <span class="ruby-value">status:</span> <span class="ruby-value">:created</span>, <span class="ruby-value">location:</span> <span class="ruby-ivar">@user</span> }
-    <span class="ruby-keyword">else</span>
->>>>>>> refactory/tests
       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:new</span> }
       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">json:</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-value">status:</span> <span class="ruby-value">:unprocessable_entity</span> }
     <span class="ruby-keyword">end</span>
@@ -195,30 +180,19 @@ form</p>
 
         <div class="method-description">
           
-<<<<<<< HEAD
           <p>DELETE /users/1</p>
 
 <p>Método que delete um usuario baseado no id</p>
-=======
-          <p>DELETE /users/1 DELETE /users/1.json</p>
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 85</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">destroy</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
     <span class="ruby-comment"># Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 57</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
-  <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">destroy</span>
-  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
->>>>>>> refactory/tests
     <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">users_url</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;usuario apagado com sucesso&#39;</span> }
     <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
   <span class="ruby-keyword">end</span>
@@ -247,22 +221,15 @@ form</p>
         <div class="method-description">
           
           <p>GET /users/1/edit</p>
-<<<<<<< HEAD
 
 <p>Método que seleciona um usuario. Os dados desse usuario são utilizados no
 form de edição</p>
-=======
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="edit-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 35</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 22</span>
->>>>>>> refactory/tests
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -288,23 +255,15 @@ form de edição</p>
 
         <div class="method-description">
           
-<<<<<<< HEAD
           <p>GET /users</p>
 
 <p>Método que seleciona todos os usuarios</p>
-=======
-          <p>GET /users GET /users.json</p>
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="index-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 11</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 7</span>
->>>>>>> refactory/tests
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
   <span class="ruby-ivar">@users</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">all</span>
 <span class="ruby-keyword">end</span></pre>
@@ -332,21 +291,14 @@ form de edição</p>
         <div class="method-description">
           
           <p>GET /users/new</p>
-<<<<<<< HEAD
 
 <p>Método responsável por instanciar um novo usuario</p>
-=======
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="new-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 26</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 17</span>
->>>>>>> refactory/tests
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -373,23 +325,15 @@ form de edição</p>
 
         <div class="method-description">
           
-<<<<<<< HEAD
           <p>GET /users/1</p>
 
 <p>Método que seleciona um usuario</p>
-=======
-          <p>GET /users/1 GET /users/1.json</p>
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="show-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 19</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 13</span>
->>>>>>> refactory/tests
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -415,19 +359,14 @@ form de edição</p>
 
         <div class="method-description">
           
-<<<<<<< HEAD
           <p>PATCH/PUT /users/1</p>
 
 <p>Metodo que atualiza um usuario baseado nos parametros recebidos do form</p>
-=======
-          <p>PATCH/PUT /users/1 PATCH/PUT /users/1.json</p>
->>>>>>> refactory/tests
           
           
 
           
           <div class="method-source-code" id="update-source">
-<<<<<<< HEAD
             <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 64</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
   <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
@@ -440,16 +379,6 @@ form de edição</p>
       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:show</span>, <span class="ruby-value">status:</span> <span class="ruby-value">:ok</span>, <span class="ruby-value">location:</span> <span class="ruby-ivar">@user</span> }
     <span class="ruby-keyword">else</span>
       <span class="ruby-comment"># Em caso de falha renderiza novamente a pagina com mensagens de erro</span>
-=======
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 42</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
-  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">user_params</span>)
-      <span class="ruby-identifier">bypass_sign_in</span> <span class="ruby-ivar">@user</span>
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">users_path</span>, <span class="ruby-value">notice:</span> <span class="ruby-string">&#39;usuario editado com sucesso&#39;</span> }
-      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:show</span>, <span class="ruby-value">status:</span> <span class="ruby-value">:ok</span>, <span class="ruby-value">location:</span> <span class="ruby-ivar">@user</span> }
-    <span class="ruby-keyword">else</span>
->>>>>>> refactory/tests
       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:edit</span> }
       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">json:</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-value">status:</span> <span class="ruby-value">:unprocessable_entity</span> }
     <span class="ruby-keyword">end</span>
