@@ -29,12 +29,20 @@ RSpec.describe HoraDeFuncionamentosController, type: :controller do
   # HoraDeFuncionamento. As you add validations to HoraDeFuncionamento, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+{
+    dia:"20/07",
+    inicio:"8:00",
+    fechamento:"22:00",
+} 
+ }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+{ 
+   dia: nil,
+    inicio: nil,
+    fechamento: nil,
+} 
+ }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -43,8 +51,10 @@ RSpec.describe HoraDeFuncionamentosController, type: :controller do
 
   describe "GET #index" do
     it "returns a success response" do
+      user = create(:user)
+      sign_in user
       HoraDeFuncionamento.create! valid_attributes
-      get :index, params: {}, session: valid_session
+      get :index, format: :html, params: {}, session: valid_session
       expect(response).to be_successful
     end
   end
@@ -97,14 +107,18 @@ RSpec.describe HoraDeFuncionamentosController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {
+          dia: "19/06",
+          inicio: "9:00",
+          fechamento: "18:00"
+        }
       }
 
       it "updates the requested hora_de_funcionamento" do
         hora_de_funcionamento = HoraDeFuncionamento.create! valid_attributes
         put :update, params: {id: hora_de_funcionamento.to_param, hora_de_funcionamento: new_attributes}, session: valid_session
         hora_de_funcionamento.reload
-        skip("Add assertions for updated state")
+        expect(hora_de_funcionamento).to be_valid
       end
 
       it "redirects to the hora_de_funcionamento" do
