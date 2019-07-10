@@ -1,4 +1,4 @@
-Wed, 10 Jul 2019 19:11:32 -0300
+Wed, 10 Jul 2019 20:08:02 -0300
 app/views/layouts/mailer.html.erb	Wed, 10 Jul 2019 14:02:27 -0300
 app/views/layouts/_alert.html.erb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/views/layouts/pdf.pdf.erb	Wed, 10 Jul 2019 14:02:27 -0300
@@ -107,7 +107,6 @@ app/views/users/edit.html.erb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/views/users/show.html.erb	Wed, 10 Jul 2019 14:02:51 -0300
 app/views/users/_form.html.erb	Wed, 10 Jul 2019 18:23:02 -0300
 app/views/users/show.html.erb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
-app/views/users/_user.json.jbuilder	Wed, 10 Jul 2019 14:02:51 -0300
 app/views/users/new.html.erb	Wed, 10 Jul 2019 18:23:02 -0300
 app/views/users/new.html.erb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/views/users/index.json.jbuilder	Wed, 10 Jul 2019 14:02:51 -0300
@@ -133,7 +132,7 @@ app/controllers/home_controller.rb	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/user_two_groups_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/user_one_groups_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
 app/controllers/hora_de_funcionamentos_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
-app/controllers/users_controller.rb	Wed, 10 Jul 2019 18:23:02 -0300
+app/controllers/users_controller.rb	Wed, 10 Jul 2019 19:28:21 -0300
 app/controllers/satisfactions_breakfast_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/satisfactions_lunch_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
 app/controllers/satisfactions_breakfast_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
@@ -149,13 +148,13 @@ app/controllers/breakfasts_controller.rb	Wed, 10 Jul 2019 14:02:27 -0300
 app/controllers/lunches_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/users_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/user_three_groups_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
-app/controllers/customer_satisfactions_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
+app/controllers/customer_satisfactions_controller.rb	Wed, 10 Jul 2019 19:36:20 -0300
 app/controllers/lunches_controller.rb	Wed, 10 Jul 2019 14:02:27 -0300
 app/controllers/user_two_groups_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
 app/controllers/satisfactions_dinner_controller.rb	Wed, 10 Jul 2019 19:00:03 -0300
 app/controllers/application_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/user_one_groups_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
-app/controllers/menus_controller.rb	Wed, 10 Jul 2019 18:23:02 -0300
+app/controllers/menus_controller.rb	Wed, 10 Jul 2019 19:52:56 -0300
 app/controllers/home_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/satisfactions_lunch_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
 app/controllers/customer_satisfactions_controller.rb_cyclo.html	Wed, 10 Jul 2019 18:23:02 -0300
