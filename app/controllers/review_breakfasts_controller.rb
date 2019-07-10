@@ -1,9 +1,16 @@
+  ##
+  # classe de controller das avaliações de um café da manhã
 class ReviewBreakfastsController < ApplicationController
   before_action :set_review_breakfast, only: [:edit, :update, :destroy]
   before_action :set_breakfast
   before_action :authenticate_user!
-
-  # GET /review_breakfasts/new
+  ##
+  # Esse método cria uma nova instância de ReviewBreakfast
+  # ReviewBreakfast é composto dos campos:
+  # user_id: User.id
+  # rating: integer
+  # comment: string
+  # breakfast_id: Breakfast.id
   def new
     @review_breakfast = ReviewBreakfast.new
   end
@@ -11,9 +18,9 @@ class ReviewBreakfastsController < ApplicationController
   # GET /review_breakfasts/1/edit
   def edit
   end
-
-  # POST /review_breakfasts
-  # POST /review_breakfasts.json
+  ##
+  # Esse método cria uma nova instância de ReviewBreakfast e adiciona ao banco de dados.
+  # Esse método também vincula um ReviewBreakfast a um Breakfast e a um User
   def create
     @review_breakfast = ReviewBreakfast.new(review_breakfast_params)
     @review_breakfast.user_id = current_user.id
@@ -29,9 +36,9 @@ class ReviewBreakfastsController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /review_breakfasts/1
-  # PATCH/PUT /review_breakfasts/1.json
+  ##
+  # Esse método atualiza uma edição em um ReviewBreakfast
+  # Podem ser editados os campos rating e comment.
   def update
     respond_to do |format|
       if @review_breakfast.update(review_breakfast_params)
@@ -43,9 +50,9 @@ class ReviewBreakfastsController < ApplicationController
       end
     end
   end
-
-  # DELETE /review_breakfasts/1
-  # DELETE /review_breakfasts/1.json
+  ##
+  # Esse método remove um ReviewBreakfast do banco.
+  # Caso ocorra com sucesso uma mensagem informa o usuário
   def destroy
     @review_breakfast.destroy
     respond_to do |format|

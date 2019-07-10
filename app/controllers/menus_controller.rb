@@ -1,4 +1,5 @@
 class MenusController < ApplicationController
+  ##
   # Funções para serem realizadas antes de qualquer método do controlador
   # O only indica onde em quais métodos elas serão executadas antes
   # No caso a set_menu que é uma função para definir exatamente qual cardapio
@@ -6,15 +7,16 @@ class MenusController < ApplicationController
   # A segunda função é uma função padrão do devise que é chamada para verificar o usuario logado
   before_action :set_menu, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :import]
-
+  ##
   # Método Index é chamado para mostrar todos os cardápios cadastrados
   def index
     @menus = Menu.all.sort_by {|a| a.date }
     @month_menu = this_month_menu(@menus).sort_by {|a| a.date }
   end
-
+  ##
   # Método que é responsável por retornar um objeto
   # Esse objeto é os dados especificos de um Cardápio
+  # Esse método calcula a media das avaliações para cada cardápio
   def show
     @review_breakfast = ReviewBreakfast.where(breakfast_id: @menu.breakfast.id).order("created_at DESC")
     if @review_breakfast.blank?
@@ -35,19 +37,19 @@ class MenusController < ApplicationController
       @avg_rating_lunch = @review_lunch.average(:rating).round(2)
     end
   end
-
+  ##
   # Método que é chamado ao ir para a página de cadastro de cardápio
   # Ele é responsável por instanciar um novo objeto
   # Objeto que será utilizado em conjunto com o método create
   def new
     @menu = Menu.new
   end
-
+  ##
   # Método que retorna um objeto específico de cardápio
   # trabalha em conjunto com o método update
   def edit
   end
-
+  ##
   # Método para efetuar o cadastro do cardápio
   # Pode ser chamado de duas maneiras:
   # 1. Após o método new, onde o gestor indica os parametros
@@ -66,13 +68,13 @@ class MenusController < ApplicationController
           end
       end
   end
-
+  ##
   # Método chamado quando o gestor quer importar a planilha de cardápios
   # Leva à tela de importação
   def import
     @menu_import = Menu.new
   end
-
+  ##
   # Trabalha em conjunto com método edit
   # Os parametros são passado e passando para um função update
   # Caso as alterações consigam ser salvas no banco ele voltará para a página do método index
@@ -84,7 +86,7 @@ class MenusController < ApplicationController
         render :edit
       end
   end
-
+  ##
   # Método chamado para deletar um objeto no banco de dados
   # Ao terminar de apagar ele é redirecionado para a página que utiliza o index
   def destroy
@@ -109,7 +111,7 @@ class MenusController < ApplicationController
         params[:route_to].keys.first.to_sym
       end
     end
-
+    ##
     # Private method used to open an external .csv, .xls or .xlsx file 
     def open_spreadsheet(file)
       case File.extname(file.original_filename)
@@ -119,7 +121,7 @@ class MenusController < ApplicationController
       else raise "Unknown file type: #{file.original_filename}"
       end
     end
-
+    ##
     # Privated method to load an file and organized it as menu meals
     def load_imported_menu(file)
       spreadsheet = open_spreadsheet(file)

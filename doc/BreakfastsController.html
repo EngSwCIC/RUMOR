@@ -130,13 +130,15 @@
 
         <div class="method-description">
           
-          
+          <p>Método chamado após o new, para criar um novo café da manhã Caso consigo
+ele voltará a chamar o método index Caso contrário ele irá renderizar o
+método new</p>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 20</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 41</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">create</span>
   <span class="ruby-ivar">@breakfast</span> = <span class="ruby-constant">Breakfast</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">breakfast_params</span>)
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@breakfast</span>.<span class="ruby-identifier">save</span>
@@ -169,13 +171,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método chamado para deletar um objeto no banco de dados Ao terminar de
+apagar ele é redirecionado para a página que utiliza o index</p>
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 39</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 66</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">destroy</span>
   <span class="ruby-keyword">begin</span>
     <span class="ruby-ivar">@breakfast</span>.<span class="ruby-identifier">destroy</span>
@@ -206,13 +209,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método que retorna um objeto específico de café da manhã para ser editado
+trabalha em conjunto com o método update</p>
           
           
 
           
           <div class="method-source-code" id="edit-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 17</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -238,13 +242,14 @@
 
         <div class="method-description">
           
-          
+          <p>Método index é chamado para ir à página onde todos os cafés da manhã
+registrdos são mostrados</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 5</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
   <span class="ruby-ivar">@breakfasts</span> = <span class="ruby-constant">Breakfast</span>.<span class="ruby-identifier">all</span>
 <span class="ruby-keyword">end</span></pre>
@@ -271,13 +276,15 @@
 
         <div class="method-description">
           
-          
+          <p>Método que é chamado ao ir para a página de cadastro de café da manhã Ele é
+responsável por instanciar um novo objeto Objeto que será utilizado em
+conjunto com o método create</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 12</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">new</span>
   <span class="ruby-ivar">@breakfast</span> = <span class="ruby-constant">Breakfast</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>
@@ -305,14 +312,21 @@
 
         <div class="method-description">
           
-          
+          <p>Método responsável por retornar os dados de um registro de café da manhã
+específico</p>
           
           
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 9</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">show</span>
+  <span class="ruby-ivar">@review_breakfast</span> = <span class="ruby-constant">ReviewBreakfast</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">breakfast_id:</span> <span class="ruby-ivar">@breakfast</span>.<span class="ruby-identifier">id</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;created_at DESC&quot;</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@review_breakfast</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-ivar">@avg_rating</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@avg_rating</span> = <span class="ruby-ivar">@review_breakfast</span>.<span class="ruby-identifier">average</span>(<span class="ruby-value">:rating</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
+  <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -337,13 +351,16 @@
 
         <div class="method-description">
           
-          
+          <p>Trabalha em conjunto com método edit Os parametros são passado e passando
+para um função update Caso as alterações consigam ser salvas no banco ele
+voltará para a página do método index Caso contrário irá chamar novamente a
+página do index edit</p>
           
           
 
           
           <div class="method-source-code" id="update-source">
-            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 30</span>
+            <pre><span class="ruby-comment"># File app/controllers/breakfasts_controller.rb, line 55</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span>
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@breakfast</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">breakfast_params</span>)
       <span class="ruby-ivar">@menu</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@breakfast</span>.<span class="ruby-identifier">menu_id</span>)

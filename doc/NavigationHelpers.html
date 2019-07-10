@@ -138,6 +138,9 @@
 
   <span class="ruby-keyword">when</span> <span class="ruby-regexp">/^página de cardápios$/</span>
     <span class="ruby-string">&#39;/menus&#39;</span>
+  
+  <span class="ruby-keyword">when</span> <span class="ruby-regexp">/^página de importar cardápio$/</span>
+    <span class="ruby-identifier">new_menus_import_path</span>
 
   <span class="ruby-keyword">when</span> <span class="ruby-regexp">/^tela de login$/</span>
     <span class="ruby-identifier">new_user_session_path</span>
@@ -155,14 +158,7 @@
   <span class="ruby-comment">#     user_profile_path(User.find_by_login($1))</span>
 
   <span class="ruby-keyword">else</span>
-    <span class="ruby-keyword">begin</span>
-      <span class="ruby-identifier">page_name</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/^the (.*) page$/</span>
-      <span class="ruby-identifier">path_components</span> = <span class="ruby-node">$1</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/\s+/</span>)
-      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">path_components</span>.<span class="ruby-identifier">push</span>(<span class="ruby-string">&#39;path&#39;</span>).<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39;_&#39;</span>).<span class="ruby-identifier">to_sym</span>)
-    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">NoMethodError</span>, <span class="ruby-constant">ArgumentError</span>
-      <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Can&#39;t find mapping from \&quot;#{page_name}\&quot; to a path.\n&quot;</span> <span class="ruby-operator">+</span>
-        <span class="ruby-node">&quot;Now, go and add a mapping in #{__FILE__}&quot;</span>
-    <span class="ruby-keyword">end</span>
+
   <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>

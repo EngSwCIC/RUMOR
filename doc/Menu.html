@@ -65,7 +65,19 @@
 
     
     
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
     
+    <li ><a href="#method-i-load_imported_menus">#load_imported_menus</a>
+    
+    <li ><a href="#method-i-open_spreadsheet">#open_spreadsheet</a>
+    
+  </ul>
+</div>
+
   </div>
 </nav>
 
@@ -89,6 +101,86 @@
     
 
     
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-load_imported_menus" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">load_imported_menus</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="load_imported_menus-source">
+            <pre><span class="ruby-comment"># File app/models/menu.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">load_imported_menus</span>
+  <span class="ruby-identifier">spreadsheet</span> = <span class="ruby-identifier">open_spreadsheet</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-identifier">spreadsheet</span>.<span class="ruby-identifier">inspect</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-open_spreadsheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">open_spreadsheet</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="open_spreadsheet-source">
+            <pre><span class="ruby-comment"># File app/models/menu.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">open_spreadsheet</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">extname</span>(<span class="ruby-identifier">file</span>.<span class="ruby-identifier">original_filename</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;.csv&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Csv</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">file</span>.<span class="ruby-identifier">path</span>, <span class="ruby-keyword">nil</span>, <span class="ruby-value">:ignore</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;.xls&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Roo</span><span class="ruby-operator">::</span><span class="ruby-constant">Excel</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">file</span>.<span class="ruby-identifier">path</span>, <span class="ruby-keyword">nil</span>, <span class="ruby-value">:ignore</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;.xlsx&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Roo</span><span class="ruby-operator">::</span><span class="ruby-constant">Excelx</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">file</span>.<span class="ruby-identifier">path</span>)
+  <span class="ruby-keyword">else</span> <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unknown file type: #{file.original_filename}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
   </section>
 </main>
 

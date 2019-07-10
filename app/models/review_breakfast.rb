@@ -1,3 +1,7 @@
+##
+# Essa classe aplica as validações de ReviewBreakfast
+# ReviewBreakfast deve conter um rating e um comment e não podem ser nulos
+# Deve existir um User e um Breakfast
 class ReviewBreakfast < ApplicationRecord
     belongs_to :user
     belongs_to :breakfast

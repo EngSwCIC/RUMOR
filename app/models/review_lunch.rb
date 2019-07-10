@@ -1,3 +1,7 @@
+##
+# Essa classe aplica as validações de ReviewLunch
+# ReviewLunch deve conter um rating e um comment e não podem ser nulos
+# Deve existir um User e um Lunch
 class ReviewLunch < ApplicationRecord
     belongs_to :user
     belongs_to :lunch

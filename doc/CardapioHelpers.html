@@ -68,6 +68,8 @@
     
     <li ><a href="#method-i-registrar_usuario">#registrar_usuario</a>
     
+    <li ><a href="#method-i-seleciona_arquivo">#seleciona_arquivo</a>
+    
     <li ><a href="#method-i-seleciona_data_hora">#seleciona_data_hora</a>
     
   </ul>
@@ -167,6 +169,39 @@
   <span class="ruby-identifier">fill_in</span> <span class="ruby-string">&#39;user_password_confirmation&#39;</span>, <span class="ruby-value">:with</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">senha</span>
   <span class="ruby-identifier">click_button</span> <span class="ruby-string">&quot;Sign up&quot;</span>
   <span class="ruby-identifier">expect</span>(<span class="ruby-identifier">page</span>).<span class="ruby-identifier">to</span> <span class="ruby-identifier">have_text</span>(<span class="ruby-node">&quot;Seja bem-vindo, #{email}!&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-seleciona_arquivo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">seleciona_arquivo</span><span
+            class="method-args">(nome_arquivo)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="seleciona_arquivo-source">
+            <pre><span class="ruby-comment"># File features/step_definitions/cardapio/cardapio_steps.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">seleciona_arquivo</span>(<span class="ruby-identifier">nome_arquivo</span>)
+  <span class="ruby-identifier">page</span>.<span class="ruby-identifier">attach_file</span>(<span class="ruby-string">&#39;menu[file]&#39;</span>, <span class="ruby-string">&#39;vendor/Agosto 2018 - OFICIAL.xlsx&#39;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
           

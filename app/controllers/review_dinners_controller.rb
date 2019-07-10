@@ -1,9 +1,17 @@
+  ##
+  # classe de controller das avaliações de um jantar.
 class ReviewDinnersController < ApplicationController
   before_action :set_review_dinner, only: [:edit, :update, :destroy]
   before_action :set_dinner
   before_action :authenticate_user!
 
-  # GET /review_dinners/new
+  ##
+  # Esse método cria uma nova instância de ReviewDinner
+  # ReviewDinner é composto dos campos:
+  # user_id: User.id
+  # rating: integer
+  # comment: string
+  # dinner_id: dinner.id
   def new
     @review_dinner = ReviewDinner.new
   end
@@ -12,8 +20,9 @@ class ReviewDinnersController < ApplicationController
   def edit
   end
 
-  # POST /review_dinners
-  # POST /review_dinners.json
+  ##
+  # Esse método cria uma nova instância de ReviewDinner e adiciona ao banco de dados.
+  # Esse método também vincula um ReviewDinner a um Breakfast e a um User
   def create
     @review_dinner = ReviewDinner.new(review_dinner_params)
     @review_dinner.user_id = current_user.id
@@ -30,8 +39,9 @@ class ReviewDinnersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /review_dinners/1
-  # PATCH/PUT /review_dinners/1.json
+  ##
+  # Esse método atualiza uma edição em um ReviewDinner
+  # Podem ser atualizados os campos rating e comment.
   def update
     respond_to do |format|
       if @review_dinner.update(review_dinner_params)
@@ -44,8 +54,9 @@ class ReviewDinnersController < ApplicationController
     end
   end
 
-  # DELETE /review_dinners/1
-  # DELETE /review_dinners/1.json
+  ##
+  # Esse método remove um ReviewDinner do banco.
+  # Caso ocorra com sucesso uma mensagem informa o usuário
   def destroy
     @review_dinner.destroy
     respond_to do |format|
