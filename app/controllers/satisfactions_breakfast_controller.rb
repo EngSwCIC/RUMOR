@@ -1,6 +1,6 @@
 class SatisfactionsBreakfastController < ApplicationController
     def index
-        @customer_satisfactions = CustomerSatisfaction.all
+        @customer_satisfactions = CustomerSatisfaction.order('rating DESC').all
         respond_to do |format|
           format.html
           format.pdf do

@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe "hora_de_funcionamentos/edit", type: :view do
   before(:each) do
     @hora_de_funcionamento = assign(:hora_de_funcionamento, HoraDeFuncionamento.create!(
-      :dia => "MyString",
-      :inicio => "MyString",
-      :fechamento => "MyString"
+      :dia => "20/07",
+      :inicio => "7:00",
+      :fechamento => "20:00"
     ))
   end
 
