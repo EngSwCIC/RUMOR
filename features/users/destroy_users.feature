@@ -12,4 +12,4 @@ Funcionalidade: destroy_users
   E que exista um usuario cadastrado
   E clicar no botão "Apagar"
   Então eu devo ser redirecionado para tela de login
-  E devo ver a mensagem "usuario apagado com sucesso"
+  # E devo ver a mensagem "usuario apagado com sucesso"
