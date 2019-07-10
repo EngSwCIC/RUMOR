@@ -1,6 +1,8 @@
 #language:pt
 #encoding: utf-8
 
+@ela
+
 Funcionalidade: Como administrador não quero criar uma nova avaliação
 
   Cenario: Criar nova avaliação

@@ -1,4 +1,4 @@
-#language:pt 
+#language: pt
 #encoding: utf-8
 
 @erro
