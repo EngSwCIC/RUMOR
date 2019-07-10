@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/environment.rb": [
+      "/home/victor/RUMOR/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/application.rb": [
+      "/home/victor/RUMOR/config/application.rb": [
         1,
         null,
         1,
@@ -43,13 +43,13 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/boot.rb": [
+      "/home/victor/RUMOR/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/environments/test.rb": [
+      "/home/victor/RUMOR/config/environments/test.rb": [
         1,
         null,
         null,
@@ -97,7 +97,7 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/application_controller_renderer.rb": [
+      "/home/victor/RUMOR/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -107,7 +107,7 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/assets.rb": [
+      "/home/victor/RUMOR/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -123,7 +123,7 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/backtrace_silencers.rb": [
+      "/home/victor/RUMOR/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -132,7 +132,7 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/content_security_policy.rb": [
+      "/home/victor/RUMOR/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -159,14 +159,14 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/cookies_serializer.rb": [
+      "/home/victor/RUMOR/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/devise.rb": [
+      "/home/victor/RUMOR/config/initializers/devise.rb": [
         null,
         null,
         null,
@@ -458,13 +458,13 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/filter_parameter_logging.rb": [
+      "/home/victor/RUMOR/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/inflections.rb": [
+      "/home/victor/RUMOR/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -482,13 +482,13 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/mime_types.rb": [
+      "/home/victor/RUMOR/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/wicked_pdf.rb": [
+      "/home/victor/RUMOR/config/initializers/wicked_pdf.rb": [
         null,
         null,
         null,
@@ -511,7 +511,7 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/initializers/wrap_parameters.rb": [
+      "/home/victor/RUMOR/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -527,10 +527,9 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/spec/factories/factories.rb": [
+      "/home/victor/RUMOR/spec/factories/factories.rb": [
         1,
         null,
-        1,
         1,
         1,
         1,
@@ -542,7 +541,17 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/config/routes.rb": [
+      "/home/victor/RUMOR/spec/factories/hora_de_funcionamentos.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/victor/RUMOR/config/routes.rb": [
+        1,
         1,
         1,
         1,
@@ -573,7 +582,7 @@
         1,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/user.rb": [
+      "/home/victor/RUMOR/app/models/user.rb": [
         1,
         null,
         null,
@@ -581,12 +590,12 @@
         null,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/app/models/application_record.rb": [
+      "/home/victor/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/features/support/paths.rb": [
+      "/home/victor/RUMOR/features/support/paths.rb": [
         null,
         null,
         null,
@@ -637,7 +646,7 @@
         null,
         1
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/features/support/selectors.rb": [
+      "/home/victor/RUMOR/features/support/selectors.rb": [
 
       ],
       "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/features/step_definitions/Devise/devise_steps.rb": [
@@ -679,7 +688,7 @@
         0,
         null
       ],
-      "/home/epilogue/Documents/6 Semestre/ES/Projeto/RUMOR/features/step_definitions/cardapio/cardapio_steps.rb": [
+      "/home/victor/RUMOR/features/step_definitions/cardapio/cardapio_steps.rb": [
         null,
         null,
         null,
@@ -1100,9 +1109,6 @@
         null,
         1,
         null,
-        0,
-        0,
-        0,
         null,
         0,
         null,

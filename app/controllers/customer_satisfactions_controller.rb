@@ -13,7 +13,7 @@ class CustomerSatisfactionsController < ApplicationController
   # Caso o admin queria ver somente pela web ele irá renderizar o formato html
   # Mas caso queria baixar a planilha, ele terá um formato pdf
   def index
-    @customer_satisfactions = CustomerSatisfaction.all
+     @customer_satisfactions = CustomerSatisfaction.order('rating DESC').all
     respond_to do |format|
       format.html
       format.pdf do
@@ -31,7 +31,7 @@ class CustomerSatisfactionsController < ApplicationController
   # Ele é responsável por instanciar um novo objeto
   # Objeto que será utilizado em conjunto com o método create
   def new
-    @customer_satisfaction = CustomerSatisfaction.new
+    @customer_satisfactions = CustomerSatisfaction.all
   end
 
   # Método que retorna um objeto específico da pesquisa
