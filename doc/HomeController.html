@@ -118,14 +118,16 @@
 
         <div class="method-description">
           
-          
+          <p>metodo criado apenas pra renderização da pagina inicial</p>
           
           
 
           
           <div class="method-source-code" id="index-source">
-            <pre><span class="ruby-comment"># File app/controllers/home_controller.rb, line 3</span>
+            <pre><span class="ruby-comment"># File app/controllers/home_controller.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">index</span>
+  <span class="ruby-ivar">@menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@week_menus</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">this_week</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">date</span> }
 <span class="ruby-keyword">end</span></pre>
           </div>
           
