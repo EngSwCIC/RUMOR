@@ -31,7 +31,7 @@ class CustomerSatisfactionsController < ApplicationController
   # Ele é responsável por instanciar um novo objeto
   # Objeto que será utilizado em conjunto com o método create
   def new
-    @customer_satisfactions = CustomerSatisfaction.new
+    @customer_satisfaction = CustomerSatisfaction.new
   end
 
   # Método que retorna um objeto específico da pesquisa
