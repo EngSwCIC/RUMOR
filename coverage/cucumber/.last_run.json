@@ -1,5 +1,9 @@
 {
   "result": {
+<<<<<<< HEAD
     "covered_percent": 46.52
+=======
+    "covered_percent": 73.89
+>>>>>>> feature/menus
   }
 }

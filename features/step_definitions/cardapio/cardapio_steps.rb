@@ -28,14 +28,12 @@ module CardapioHelpers
   end
 
   # Os argumentos devem ser da forma que seu campo de data pede.
-  def seleciona_data_hora(ano_inteiro, mes_string, dia_inteiro, hora_inteiro, minuto_inteiro, texto_do_label)
+  def seleciona_data_hora(ano_inteiro, mes_string, dia_inteiro, texto_do_label)
     label = page.find('label', text: texto_do_label)
     id = label['for']
-    select ano_inteiro,   from: "#{id}_1i"
-    select mes_string,  from: "#{id}_2i"
     select dia_inteiro,    from: "#{id}_3i"
-    select hora_inteiro,   from: "#{id}_4i"
-    select minuto_inteiro, from: "#{id}_5i"
+    select mes_string,  from: "#{id}_2i"
+    select ano_inteiro,   from: "#{id}_1i"
   end
 
   def seleciona_arquivo(nome_arquivo)
@@ -45,39 +43,27 @@ end
 World(CardapioHelpers)
 
 Dado /^que (?:|eu )estou logado como (.+)$/ do |funcao_na_plataforma|
-  # if funcao_na_plataforma == "gestor"
-  #   email_gestor = 'gestorteste@email.com'
-  #   senha_gestor = 'senha123'
-
-  #   registrar_usuario email_gestor, senha_gestor
-
   steps %Q{
     Dado que eu estou na tela de login
     Quando eu preencher o formulário de login e efetuar o login
     Então quero ser redirecionado para página de cardápios
     E quero estar logado
   }
-    # @gestor = User.last
-  # end
 end
 
 
 Quando /^(?:|eu )visito a (.+)$/ do |page_name|
-  pending
+  visit path_to(page_name)
 end
 
 Quando /^(?:|eu )clico no botão "([^"]*)"$/ do |value_do_botao|
   case value_do_botao
-    when "Criar Cardápio"
-      click_button "Create Menu"
     when "Criar Desjejum"
       click_button "Create Breakfast"
     when "Criar Almoço"
       click_button "Create Lunch"
     when "Criar Jantar"
       click_button "Create Dinner"
-    when "Atualizar Cardápio"
-      click_button "Update Menu"
     when "Atualizar Desjejum"
       click_button "Update Breakfast"
     when "Atualizar Almoço"
@@ -114,7 +100,7 @@ E /^(?:|que )(?:|eu )preencho os campos de "(.+)" adequadamente$/ do |tipo_de_ca
   case tipo_de_campo
   when "datas"
     #Data válida: "21 de Novembro de 2018 às 21:32"
-    seleciona_data_hora(2018, "November", 21, 21, 31, "Date")
+    seleciona_data_hora(2018, "November", 21, "data")
   when "desjejum"
     fill_in "breakfast_hot_drinks", with: 'Chiclete de batata'
     fill_in "breakfast_vegetarian_drink", with: 'Chiclete de batata'
@@ -162,9 +148,9 @@ Então /^(?:|eu )deveria ver "([^"]*)"$/ do |texto_a_ser_visto|
 end
 
 Então /^(?:|eu )deveria ver o dia "([^"]*)" do mês atual$/ do |dia_do_mes|
-  this_month = Date.today.strftime("%B")
+  this_month = Date.today.strftime("%m")
   this_year = Date.today.strftime("%Y")
-  expect(page).to have_text("#{dia_do_mes} #{this_month} #{this_year}")
+  expect(page).to have_text("#{dia_do_mes}/#{this_month}/#{this_year}")
 end
 
 Então /^(?:|eu )não deveria ver "([^"]*)"$/ do |text|
@@ -196,11 +182,6 @@ E  /^uma mensagem de erro deve aparecer$/ do
 end
 
 E /^as datas foram carregadas$/ do
-  # data_do_cardapio = Date.new(Date.current.year, 01, 01)
-  # while(data_do_cardapio.year == Date.current.year)
-  #   Menu.create(date: data_do_cardapio)
-  #   data_do_cardapio = data_do_cardapio.tomorrow
-  # end
   Menu.create(date: Date.new(Date.current.year,Date.current.month,04))
 end
 
@@ -254,3 +235,27 @@ end
 Dado /^ao ver um cardápio de (.+)$/ do |opcao|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Dado("tem cardapios criados:") do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  @menus = []
+  table.rows_hash.each do |key, value|
+    menu = Menu.create(date: Date.new(Date.current.year,Date.current.month,value.to_i))
+    @menus.push(menu)
+  end
+end
+
+Então("eu deveria ver todos os cardápios") do
+  @menus.each do |menu|
+    expect(page).to have_text(menu.date.strftime("%A, %d %B %Y"))
+  end
+end
+
+Dado("não estou logado") do
+  current_user = nil
+end
+
+Então("eu não deveria ver lista de cardápios") do
+  expect(page).to have_text("Para acessar lista de cardápio, logue como gestor")
+end
+
