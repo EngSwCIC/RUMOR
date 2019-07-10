@@ -2131,12 +2131,26 @@
         1,
         null,
         1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/varlando/Documents/RUMOR/app/models/review_dinner.rb": [
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/varlando/Documents/RUMOR/app/models/review_lunch.rb": [
@@ -2145,6 +2159,12 @@
         1,
         null,
         1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/varlando/Documents/RUMOR/app/models/review.rb": [
@@ -2178,6 +2198,6 @@
         0
       ]
     },
-    "timestamp": 1562723645
+    "timestamp": 1562732891
   }
 }
