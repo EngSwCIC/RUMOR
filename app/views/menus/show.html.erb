@@ -20,12 +20,55 @@
           <%= link_to 'Editar Café da Manhã', edit_breakfast_path(@menu.breakfast), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
         </div>
       <% else %>
-      <div class="text-center">
-        <%= link_to 'Criar Café da Manhã', new_breakfast_path(menu_id: @menu.id), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
-      </div>
+        <div class="text-center">
+          <%= link_to 'Criar Café da Manhã', new_breakfast_path(menu_id: @menu.id), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+        </div>
       <% end %>
     </div>
-    <div class="col-sm mx-3" style="background-color: white;" >a</div>
-    <div class="col-sm" style="background-color: white;" >a</div>
+    <div class="col-sm mx-3" style="background-color: white;" >
+      <% if @menu.lunch %>
+        <h4>Almoço</h4>
+        <br>
+        <p><strong>Salada</strong> <%= @menu.lunch.salad %></p>
+        <p><strong>Molho:</strong> <%= @menu.lunch.sauce %></p>
+        <p><strong>Prato Principal:</strong> <%= @menu.lunch.main_course %></p>
+        <p><strong>Guarnição:</strong> <%= @menu.lunch.garnish %></p>
+        <p><strong>Vegetariano:</strong> <%= @menu.lunch.vegetarian_dish %></p>
+        <p><strong>Acompanhamentos:</strong> <%= @menu.lunch.accompaniments %></p>
+        <p><strong>Sobremesa:</strong> <%= @menu.lunch.dessert %></p>
+        <p><strong>Refresco:</strong> <%= @menu.lunch.juice %></p>
+        <div class="text-center">
+          <%= link_to 'Editar Almoço', edit_lunch_path(@menu.lunch), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+        </div>
+      <% else %>
+        <div class="text-center">
+          <%= link_to 'Criar Almoço', new_lunch_path(menu_id: @menu.id), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm" style="background-color: white;" >
+      <% if @menu.dinner %>
+        <h4>Jantar</h4>
+        <br>
+        <p><strong>Salada</strong> <%= @menu.dinner.salad %></p>
+        <p><strong>Molho:</strong> <%= @menu.dinner.sauce %></p>
+        <p><strong>Sopa:</strong> <%= @menu.dinner.soup %></p>
+        <p><strong>Prato Principal:</strong> <%= @menu.dinner.main_course %></p>
+        <p><strong>Vegetariano:</strong> <%= @menu.dinner.vegetarian_dish %></p>
+        <p><strong>Acompanhamentos:</strong> <%= @menu.dinner.accompaniments %></p>
+        <p><strong>Sobremesa:</strong> <%= @menu.dinner.dessert %></p>
+        <p><strong>Refresco:</strong> <%= @menu.dinner.juice %></p>
+        <div class="text-center">
+          <%= link_to 'Editar Jantar', edit_dinner_path(@menu.dinner), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+        </div>
+      <% else %>
+        <div class="text-center">
+          <%= link_to 'Criar Jantar', new_dinner_path(menu_id: @menu.id), class:"btn btn-primary my-2 mr-4", style:"background-color: #F28D3C; border: none;" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= link_to 'Edit', edit_menu_path(@menu), class:"btn btn-primary px-5", style:"background-color: #F28D3C; border: none;" %>
   </div>
 </div>
