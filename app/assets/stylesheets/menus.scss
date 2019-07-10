@@ -2,28 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.meal_container{
-  background-color: #f9f9f9;
-  width: 20em;
-  height: 30em;
+.menus-button{
+  background-color: #F28D3C; 
+  border: none;
 }
 
-.daily_menu{
-  width: 100%;
-
-}
-
-.daily_menu > thead > tr > th{
-  padding: 0.5em;
-  font-weight: bold;
-  font-size: 2em;
-}
-.daily_menu > tbody {
-
-}
-
-.daily_menu > tbody > tr > td {
-  padding: 0.5em;
-  padding-left: 1em;
-  background-color: #ececec;
+.table-pallete {
+  > thead {
+    background-color: #F28D3C; 
+    color: white;
+  }
+  > tbody {
+    background-color: #F2F3F2;
+  }
 }
