@@ -21,6 +21,11 @@ Então("eu devo ser redirecionado para página de usuarios") do
   expect(current_path).to eq(users_path)
 end
 
+Então("eu devo ser redirecionado para tela de login") do
+  expect(current_path).to eq(new_user_session_path)
+end
+
+
 Então("devo ver a mensagem {string}") do |success_message|
   expect(page).to have_content success_message
   # expect(page).to have_content User.last.name.downcase

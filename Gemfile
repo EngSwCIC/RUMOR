@@ -83,6 +83,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.6' ## Gema adicionada por Diego Barbosa em 06 de Novembro de 2018
   gem 'factory_bot_rails' # Factory_bot to fenerate factories. added by Icaro Rezende 2018-11-19
   gem 'rails-controller-testing'
+  gem 'railroady' # Diagrama UML
 end
 
 group :development do

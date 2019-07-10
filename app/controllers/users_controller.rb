@@ -1,74 +1,103 @@
 class UsersController < ApplicationController
+  # Função que permite que apenas usuarios logados podem gerir usuarios
   before_action :authenticate_user!
+  # O set_user seleciona o usuario da base de dados antes das operações indicadas
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  ##
   # GET /users
-  # GET /users.json
+  #
+  # Método que seleciona todos os usuarios
   def index
     @users = User.all
   end
 
+  ##
   # GET /users/1
-  # GET /users/1.json
+  #
+  # Método que seleciona um usuario
   def show
   end
 
+  ##
   # GET /users/new
+  #
+  # Método responsável por instanciar um novo usuario
   def new
     @user = User.new
   end
 
+  ##
   # GET /users/1/edit
+  #
+  # Método que seleciona um usuario.
+  # Os dados desse usuario são utilizados no form de edição
   def edit
   end
 
+  ##
   # POST /users
-  # POST /users.json
+  #
+  # Metodo que cadastra um novo usuario baseado nos parametros recebidos do form
   def create
     @user = User.new(user_params)
     respond_to do |format|
+      # Tenta salvar o usuario no banco de dados
       if @user.save
+        # Caso sucesso
+        # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
         format.html { redirect_to users_path, notice: 'usuario criado com sucesso' }
         format.json { render :show, status: :created, location: @user }
       else
+        # Caso Fracasso
+        # Em caso de falha renderiza novamente a pagina com mensagens de erro
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
 
+  ##
   # PATCH/PUT /users/1
-  # PATCH/PUT /users/1.json
+  #
+  # Metodo que atualiza um usuario baseado nos parametros recebidos do form
   def update
     respond_to do |format|
+      # Atualiza usuario no banco de dados
       if @user.update(user_params)
+        # Passa por cima da implementação do devise
         bypass_sign_in @user
+        # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
         format.html { redirect_to users_path, notice: 'usuario editado com sucesso' }
         format.json { render :show, status: :ok, location: @user }
       else
+        # Em caso de falha renderiza novamente a pagina com mensagens de erro
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
 
+  ##
   # DELETE /users/1
-  # DELETE /users/1.json
+  #
+  # Método que delete um usuario baseado no id
   def destroy
     @user.destroy
     respond_to do |format|
+      # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
       format.html { redirect_to users_url, notice: 'usuario apagado com sucesso' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    # Seleciona usuario
     def set_user
       @user = User.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # Seleciona os parametros que serão aceitos nas requests para o controller
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
