@@ -1078,48 +1078,51 @@
   },
   "RSpec": {
     "coverage": {
-      "/home/diegod/Documents/ES/RUMOR/app/models/user.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/user.rb": [
         1,
         null,
         null,
         1,
         null,
-        null
-      ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/application_record.rb": [
+        1,
         1,
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/application_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/application_record.rb": [
+        1,
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/breakfasts_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/breakfasts_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/dashboard_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/dinners_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/dashboard_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/home_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/dinners_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/lunches_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/helpers/menus_helper.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/lunches_helper.rb": [
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/helpers/menus_helper.rb": [
         1,
         1,
         2,
@@ -1155,7 +1158,23 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/breakfasts_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/helpers/review_breakfasts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/helpers/review_dinners_helper.rb": [
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/helpers/review_lunches_helper.rb": [
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/helpers/reviews_helper.rb": [
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/controllers/breakfasts_controller.rb": [
         1,
         null,
         null,
@@ -1172,6 +1191,12 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -1239,13 +1264,13 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/application_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
         1,
         null,
         null,
@@ -1357,7 +1382,7 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/dashboard_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/dashboard_controller.rb": [
         1,
         1,
         null,
@@ -1368,7 +1393,7 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/dinners_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/dinners_controller.rb": [
         1,
         null,
         null,
@@ -1385,6 +1410,12 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -1453,7 +1484,7 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/home_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/home_controller.rb": [
         1,
         null,
         null,
@@ -1464,7 +1495,7 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/lunches_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/lunches_controller.rb": [
         1,
         null,
         null,
@@ -1481,6 +1512,12 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -1548,7 +1585,7 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/controllers/menus_controller.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/menus_controller.rb": [
         1,
         null,
         null,
@@ -1781,7 +1818,227 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/breakfast.rb": [
+      "/home/varlando/Documents/RUMOR/app/controllers/review_breakfasts_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        3,
+        null,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        4,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/controllers/review_dinners_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        3,
+        null,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        4,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/controllers/review_lunches_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        3,
+        null,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        3,
+        6,
+        3,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        4,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/models/breakfast.rb": [
+        1,
         1,
         1,
         null,
@@ -1798,7 +2055,7 @@
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/customer_satisfaction.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/customer_satisfaction.rb": [
         1,
         null,
         null,
@@ -1812,22 +2069,8 @@
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/dinner.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/dinner.rb": [
         1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/lunch.rb": [
         1,
         1,
         null,
@@ -1842,7 +2085,23 @@
         1,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/models/menu.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/lunch.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/models/menu.rb": [
         1,
         1,
         1,
@@ -1866,29 +2125,59 @@
         null,
         null
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/channels/application_cable/channel.rb": [
+      "/home/varlando/Documents/RUMOR/app/models/review_breakfast.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/models/review_dinner.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/models/review_lunch.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/varlando/Documents/RUMOR/app/models/review.rb": [
+        0,
+        0,
         0,
         0,
         0,
         0
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/channels/application_cable/connection.rb": [
+      "/home/varlando/Documents/RUMOR/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/mailers/application_mailer.rb": [
+      "/home/varlando/Documents/RUMOR/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/diegod/Documents/ES/RUMOR/app/jobs/application_job.rb": [
+      "/home/varlando/Documents/RUMOR/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/varlando/Documents/RUMOR/app/jobs/application_job.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1544088681
+    "timestamp": 1562723645
   }
 }

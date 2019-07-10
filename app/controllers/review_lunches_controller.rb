@@ -35,7 +35,7 @@ class ReviewLunchesController < ApplicationController
   def update
     respond_to do |format|
       if @review_lunch.update(review_lunch_params)
-        format.html { redirect_to @review_lunch, notice: 'Review lunch was successfully updated.' }
+        format.html { redirect_to @lunch, notice: 'Review lunch was successfully updated.' }
         format.json { render :show, status: :ok, location: @review_lunch }
       else
         format.html { render :edit }
@@ -49,7 +49,7 @@ class ReviewLunchesController < ApplicationController
   def destroy
     @review_lunch.destroy
     respond_to do |format|
-      format.html { redirect_to review_lunches_url, notice: 'Review lunch was successfully destroyed.' }
+      format.html { redirect_to @lunch, notice: 'Review lunch was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

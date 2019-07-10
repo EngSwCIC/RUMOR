@@ -428,9 +428,11 @@ DEPENDENCIES
   rails-erd
   rdoc
   roo (~> 2.7.0)
+  roodi
   rspec-rails (~> 3.6)
   rubocop (~> 0.60.0)
   rubocop-rspec
+  ruby-graphviz
   sass-rails (~> 5.0)
   simplecov
   spring
@@ -446,4 +448,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

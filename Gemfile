@@ -60,6 +60,7 @@ gem 'rubocop-rspec'
 
 # Library to load excel file
 gem "roo", "~> 2.7.0"
+gem "roodi"
 
 group :test do
   # used for test coverage, added by Icaro Rezende on 2018-11-18
@@ -92,6 +93,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'ruby-graphviz'
 end
 
 

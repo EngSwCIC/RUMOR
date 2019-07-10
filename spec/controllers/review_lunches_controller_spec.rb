@@ -25,41 +25,58 @@ require 'rails_helper'
 
 RSpec.describe ReviewLunchesController, type: :controller do
 
-  # This should return the minimal set of attributes required to create a valid
-  # ReviewLunch. As you add validations to ReviewLunch, be sure to
-  # adjust the attributes here as well.
+  before (:each) do
+    @user = create(:user)
+    sign_in @user
+    @menu = FactoryBot.create(:menu)
+    @lunch = Lunch.create(menu_id: @menu.to_param,
+      salad: "alface e pepino",
+      sauce: "molho oriental",
+      garnish: "mandioca",
+      main_course: "carne de sol",
+      vegetarian_dish: "silveirinha de soja",
+      accompaniments: "arroz e feijao",
+      dessert: "banana",
+      juice: "manga")
+  end
+
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { 
+      user_id: @user.to_param ,
+      rating: 5,
+      comment: "teste",
+      lunch_id: @lunch.to_param
+    }
+  }
+ let(:valid_attributes_lunch) {
+    { menu_id: @menu.to_param,
+      hot_drinks: "leite",
+      vegetarian_drink: "leite de soja",
+      chocolate_milk: "chocolate",
+      bread: "pão careca",
+      vegetarian_bread: "pão sem leite",
+      margarine: "manteiga",
+      vegetarian_margarine: "margarina vegana",
+      complement: "geleia",
+      vegetarian_complement: "geleia",
+      fruit: "abacaxi"
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      user_id: nil,
+      rating: 1,
+      comment: "teste",
+      lunch_id: nil
+    }
   }
 
-  # This should return the minimal set of values that should be in the session
-  # in order to pass any filters (e.g. authentication) defined in
-  # ReviewLunchesController. Be sure to keep this updated too.
   let(:valid_session) { {} }
-
-  describe "GET #index" do
-    it "returns a success response" do
-      ReviewLunch.create! valid_attributes
-      get :index, params: {}, session: valid_session
-      expect(response).to be_successful
-    end
-  end
-
-  describe "GET #show" do
-    it "returns a success response" do
-      review_lunch = ReviewLunch.create! valid_attributes
-      get :show, params: {id: review_lunch.to_param}, session: valid_session
-      expect(response).to be_successful
-    end
-  end
 
   describe "GET #new" do
     it "returns a success response" do
-      get :new, params: {}, session: valid_session
+      get :new, params: {lunch_id: @lunch.to_param}, session: valid_session
       expect(response).to be_successful
     end
   end
@@ -67,7 +84,6 @@ RSpec.describe ReviewLunchesController, type: :controller do
   describe "GET #edit" do
     it "returns a success response" do
       review_lunch = ReviewLunch.create! valid_attributes
-      get :edit, params: {id: review_lunch.to_param}, session: valid_session
       expect(response).to be_successful
     end
   end
@@ -76,20 +92,20 @@ RSpec.describe ReviewLunchesController, type: :controller do
     context "with valid params" do
       it "creates a new ReviewLunch" do
         expect {
-          post :create, params: {review_lunch: valid_attributes}, session: valid_session
+          post :create, params: {lunch_id: @lunch.to_param,review_lunch: valid_attributes}, session: valid_session
         }.to change(ReviewLunch, :count).by(1)
       end
 
       it "redirects to the created review_lunch" do
-        post :create, params: {review_lunch: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(ReviewLunch.last)
+        post :create, params: {lunch_id: @lunch.to_param,review_lunch: valid_attributes}, session: valid_session
+        expect(response).to redirect_to(Lunch.last)
       end
     end
 
     context "with invalid params" do
       it "returns a success response (i.e. to display the 'new' template)" do
-        post :create, params: {review_lunch: invalid_attributes}, session: valid_session
-        expect(response).to be_successful
+        post :create, params: {lunch_id: @lunch.to_param,review_lunch: invalid_attributes}, session: valid_session
+        expect(response).to redirect_to(Lunch.last)
       end
     end
   end
@@ -97,28 +113,32 @@ RSpec.describe ReviewLunchesController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+       {
+         user_id: @user.to_param ,
+         rating: 1,
+         comment: "teste2",
+         lunch_id: @lunch.to_param
+       }
       }
 
       it "updates the requested review_lunch" do
         review_lunch = ReviewLunch.create! valid_attributes
-        put :update, params: {id: review_lunch.to_param, review_lunch: new_attributes}, session: valid_session
+        put :update, params: {lunch_id: @lunch.to_param,id: review_lunch.to_param, review_lunch: new_attributes}, session: valid_session
         review_lunch.reload
-        skip("Add assertions for updated state")
       end
 
-      it "redirects to the review_lunch" do
+      it "redirects to the lunch" do
         review_lunch = ReviewLunch.create! valid_attributes
-        put :update, params: {id: review_lunch.to_param, review_lunch: valid_attributes}, session: valid_session
-        expect(response).to redirect_to(review_lunch)
+        put :update, params: {lunch_id: @lunch.to_param,id: review_lunch.to_param, review_lunch: valid_attributes}, session: valid_session
+        expect(response).to redirect_to(@lunch)
       end
     end
 
     context "with invalid params" do
       it "returns a success response (i.e. to display the 'edit' template)" do
         review_lunch = ReviewLunch.create! valid_attributes
-        put :update, params: {id: review_lunch.to_param, review_lunch: invalid_attributes}, session: valid_session
-        expect(response).to be_successful
+        put :update, params: {lunch_id: @lunch.to_param,id: review_lunch.to_param, review_lunch: invalid_attributes}, session: valid_session
+        expect(response).to redirect_to(Lunch.last)
       end
     end
   end
@@ -127,14 +147,14 @@ RSpec.describe ReviewLunchesController, type: :controller do
     it "destroys the requested review_lunch" do
       review_lunch = ReviewLunch.create! valid_attributes
       expect {
-        delete :destroy, params: {id: review_lunch.to_param}, session: valid_session
+        delete :destroy, params: {lunch_id: @lunch.to_param,id: review_lunch.to_param}, session: valid_session
       }.to change(ReviewLunch, :count).by(-1)
     end
 
     it "redirects to the review_lunches list" do
       review_lunch = ReviewLunch.create! valid_attributes
-      delete :destroy, params: {id: review_lunch.to_param}, session: valid_session
-      expect(response).to redirect_to(review_lunches_url)
+      delete :destroy, params: {lunch_id: @lunch.to_param,id: review_lunch.to_param}, session: valid_session
+      expect(response).to redirect_to(@lunch)
     end
   end
 

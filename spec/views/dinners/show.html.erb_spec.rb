@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "dinners/show", type: :view do
   before(:each) do
+    @user = create(:user)
     @m1 = Menu.create!(:date => "2018-04-06")
     @dinner = assign(:dinner, Dinner.create!(
       :menu_id => @m1.id,
@@ -14,6 +15,13 @@ RSpec.describe "dinners/show", type: :view do
       :dessert => "Dessert",
       :juice => "Juice"
     ))
+    @dinner_review = assign(:dinner_review, ReviewDinner.create!(
+      :user_id => @user.to_param ,
+      :rating => 5,
+      :comment => "teste",
+      :dinner_id => @dinner.to_param
+    ))
+    @review_dinner = ReviewDinner.where(dinner_id: @dinner.id).order("created_at DESC")
   end
 
   it "renders attributes in <p>" do
