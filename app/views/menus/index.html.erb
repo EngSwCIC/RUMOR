@@ -26,7 +26,7 @@
         <% @week_menus.each do |menu|  %>
           <% if menu %>
             <td>
-              <%= link_to "Dia "+menu.date.strftime("%d"), menu , class:"btn btn-dark m-1 px-3" %>
+              <%= link_to "Dia "+menu.date.strftime("%d"), menu , class:"menu-show btn m-1 px-3" %>
             </td>
           <% else %>
             <td></td>

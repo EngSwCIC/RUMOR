@@ -2,8 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.menus-button{
+.action-container {
+  margin: 0 auto;
+  width:25%; 
+  background-color: #F2F3F2;
+}
+
+.menus-container {
+  background-color: #F2F3F2; 
+  > h2 {
+    background-color: #F28D3C; 
+    color: white;
+  }
+}
+
+.menu-show {
+  background-color: silver;
+  color: black;
+}
+
+.menu-item {
+  background-color: white; 
+}
+
+.menus-button {
   background-color: #F28D3C; 
+  border: none;
+}
+
+.show-button {
+  background-color: grey; 
   border: none;
 }
 
