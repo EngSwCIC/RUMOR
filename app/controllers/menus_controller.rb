@@ -229,7 +229,8 @@ class MenusController < ApplicationController
   
     end
 
-    # Parseia os menus da semana para ter o tamanho de uma semana completa (7 dias) e apresentarem falso quando não há menu
+    # Parseia os menus da semana para ter o tamanho de uma semana completa 
+    # (7 dias) e apresentarem falso quando não há menu
     def this_week_menus
       all_menus = Menu.this_week.sort_by {|a| a.date }
       week_menus_parser  = Array.new(7, false)
