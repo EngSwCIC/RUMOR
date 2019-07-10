@@ -11,3 +11,8 @@ Funcionalidade: index_users
     E que exista um usuario com os campos "<nome>", "<email>@<email>.com"
     Quando eu clicar em "Ver usuarios"
     Entao eu quero ver os usuarios "<nome>", "<email>@<email>.com"
+
+  Cenario: Ver usuarios nao autorizado [:(]
+  Dado que eu nao estou logado como gestor
+  Quando eu estaja na pagina de ver usuarios
+  Entao eu devo ser redirecionado para tela de login
