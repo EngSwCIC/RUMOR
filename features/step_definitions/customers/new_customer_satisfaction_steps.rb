@@ -7,8 +7,8 @@ Dado("que eu acesse a pagina inicial e logado como administrador") do
   
   Quando("faço login com {string} e {string}") do |email, senha|
     @email = email
-    find ('#user_email').set email
-    find ('#user_password').set senha
+    find('#user_email').set email
+    find('#user_password').set senha
     click_button 'Login'
   end
   
