@@ -1604,6 +1604,24 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -2166,38 +2184,8 @@
         null,
         null,
         null
-      ],
-      "/home/varlando/Documents/RUMOR/app/models/review.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/varlando/Documents/RUMOR/app/channels/application_cable/channel.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/varlando/Documents/RUMOR/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/varlando/Documents/RUMOR/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/varlando/Documents/RUMOR/app/jobs/application_job.rb": [
-        0,
-        0
       ]
     },
-    "timestamp": 1562732891
+    "timestamp": 1562736440
   }
 }

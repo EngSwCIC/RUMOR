@@ -25,6 +25,35 @@ RSpec.describe MenusController, type: :controller do
   describe "GET #show" do
     it "returns a success response" do
       menu = Menu.create! valid_attributes
+      breakfast = Breakfast.create(menu_id: menu.to_param,
+	      hot_drinks: "leite",
+	      vegetarian_drink: "leite de soja",
+	      chocolate_milk: "chocolate",
+	      bread: "pão careca",
+	      vegetarian_bread: "pão sem leite",
+	      margarine: "manteiga",
+	      vegetarian_margarine: "margarina vegana",
+	      complement: "geleia",
+	      vegetarian_complement: "geleia",
+	      fruit: "abacaxi")
+      dinner = Dinner.create(menu_id: menu.to_param,
+	      salad: "alface e pepino",
+	      sauce: "molho oriental",
+	      soup: "feijao com massinha",
+	      main_course: "carne de sol",
+	      vegetarian_dish: "silveirinha de soja",
+	      accompaniments: "arroz e feijao",
+	      dessert: "banana",
+	      juice: "manga",)
+      lunch = Lunch.create(menu_id: menu.to_param,
+	      salad: "alface e pepino",
+	      sauce: "molho oriental",
+	      garnish: "mandioca",
+	      main_course: "carne de sol",
+	      vegetarian_dish: "silveirinha de soja",
+	      accompaniments: "arroz e feijao",
+	      dessert: "banana",
+	      juice: "manga")
       get :show, params: {id: menu.to_param}, session: valid_session
       expect(response).to be_successful
     end

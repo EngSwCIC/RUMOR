@@ -16,6 +16,24 @@ class MenusController < ApplicationController
   # Método que é responsável por retornar um objeto
   # Esse objeto é os dados especificos de um Cardápio
   def show
+    @review_breakfast = ReviewBreakfast.where(breakfast_id: @menu.breakfast.id).order("created_at DESC")
+    if @review_breakfast.blank?
+      @avg_rating = 0
+    else
+      @avg_rating_breakfast = @review_breakfast.average(:rating).round(2)
+    end
+    @review_dinner = ReviewDinner.where(dinner_id: @menu.dinner.id).order("created_at DESC")
+    if @review_dinner.blank?
+      @avg_rating = 0
+    else
+      @avg_rating_dinner = @review_dinner.average(:rating).round(2)
+    end
+    @review_lunch = ReviewLunch.where(lunch_id: @menu.lunch.id).order("created_at DESC")
+    if @review_lunch.blank?
+      @avg_rating = 0
+    else
+      @avg_rating_lunch = @review_lunch.average(:rating).round(2)
+    end
   end
 
   # Método que é chamado ao ir para a página de cadastro de cardápio

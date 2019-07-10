@@ -16,6 +16,15 @@
               <thead>
                 <tr><th>Café da Manhã</th></tr>
               </thead>
+              <tr>
+                <th>
+                  <p>
+                    <strong>Nota do café da manhã:</strong>
+                    <div class="star-rating" data-rating= <%= @avg_rating_breakfast %> ></div>
+                    <p> <%= " #{@review_breakfast.length} reviews" %> </p>
+                  </p>
+                </th>
+              </tr>
               <tbody>
                 <tr><td><p>Bebidas quentes</p><%= @menu.breakfast.hot_drinks %></td></tr>
                 <tr><td><p>Vegetariano</p><%= @menu.breakfast.vegetarian_drink %></td></tr>
@@ -43,6 +52,15 @@
               <thead>
                 <tr><th>Almoço</th></tr>
               </thead>
+              <tr>
+                <th>
+                  <p>
+                    <strong>Nota do almoço:</strong>
+                    <div class="star-rating" data-rating= <%= @avg_rating_lunch %> ></div>
+                    <p> <%= " #{@review_lunch.length} reviews" %> </p>
+                  </p>
+                </th>
+              </tr>
               <tbody>
                 <tr><td><p>Salada</p><%= @menu.lunch.salad %></td></tr>
                 <tr><td><p>Molho</p><%= @menu.lunch.sauce %></td></tr>
@@ -68,6 +86,15 @@
               <thead>
                 <tr><th>Jantar</th></tr>
               </thead>
+              <tr>
+                <th>
+                  <p>
+                    <strong>Nota do jantar:</strong>
+                    <div class="star-rating" data-rating= <%= @avg_rating_dinner %> ></div>
+                    <p> <%= " #{@review_dinner.length} reviews" %> </p>
+                  </p>
+                </th>
+              </tr>
               <tbody>
                 <tr><td><p>Salada</p><%= @menu.dinner.salad %></td></tr>
                 <tr><td><p>Molho</p><%= @menu.dinner.sauce %></td></tr>
@@ -90,4 +117,15 @@
   </tbody>
 </table>
 
+<script>
+  $('.star-rating').raty({
+    path: '../assets',
+    noRatedMsg: 'Nunca mais!',
+    hints: ['terrível', 'ruim', 'normal', 'bom', 'excelente'],
+    readOnly: true,
+    score: function(){
+      return $(this).attr('data-rating');
+    }
+  });
+</script>
 
