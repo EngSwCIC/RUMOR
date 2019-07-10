@@ -1,13 +1,5 @@
 {
   "result": {
-<<<<<<< HEAD
-    "covered_percent": 49.82
-=======
-<<<<<<< HEAD
-    "covered_percent": 46.52
-=======
-    "covered_percent": 73.89
->>>>>>> feature/menus
->>>>>>> origin/develop
+    "covered_percent": 46.64
   }
 }

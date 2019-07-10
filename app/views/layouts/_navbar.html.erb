@@ -3,7 +3,7 @@
     <div class="navbar-nav navBarFlex">
       <% if user_signed_in? %>
             <li class="nav-item active navBarItens"><%= link_to 'RUMOR', menus_path %></li>
-            <li class="nav-item active navBarItens"><%= link_to 'ver pesquisas', customer_satisfactions_path %></li>
+            <li class="nav-item active navBarItens"><%= link_to 'Ver pesquisas', customer_satisfactions_path %></li>
             <li class="nav-item active navBarItens"><%= link_to 'Ver usuarios', users_path %></li>
             <li class="nav-item active navBarItens">Seja bem-vindo, <%= current_user.email %>!</li>
             <li class="nav-item active navBarItens"><%= link_to 'Sair', destroy_user_session_path, method: :delete %></li>
