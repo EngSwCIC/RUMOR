@@ -1078,7 +1078,7 @@
   },
   "RSpec": {
     "coverage": {
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/user.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/user.rb": [
         1,
         null,
         null,
@@ -1086,60 +1086,60 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/application_record.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/application_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/breakfasts_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/breakfasts_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/customer_satisfactions_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/customer_satisfactions_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/dashboard_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/dashboard_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/dinners_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/dinners_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/home_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/lunches_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/lunches_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/menus_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/menus_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/satisfactions_breakfast_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_breakfast_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/satisfactions_dinner_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_dinner_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/satisfactions_lunch_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/satisfactions_lunch_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/helpers/users_helper.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/breakfasts_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/breakfasts_controller.rb": [
         1,
         null,
         null,
@@ -1223,7 +1223,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/application_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -1236,7 +1236,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/customer_satisfactions_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/customer_satisfactions_controller.rb": [
         1,
         null,
         null,
@@ -1348,7 +1348,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/dashboard_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/dashboard_controller.rb": [
         1,
         1,
         null,
@@ -1359,7 +1359,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/dinners_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/dinners_controller.rb": [
         1,
         null,
         null,
@@ -1444,7 +1444,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/home_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/home_controller.rb": [
         1,
         null,
         null,
@@ -1455,7 +1455,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/lunches_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/lunches_controller.rb": [
         1,
         null,
         null,
@@ -1539,7 +1539,7 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/menus_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/menus_controller.rb": [
         1,
         null,
         null,
@@ -1783,119 +1783,90 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/satisfactions_breakfast_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_breakfast_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/satisfactions_dinner_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/satisfactions_lunch_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_dinner_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/user_one_groups_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/user_three_groups_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/satisfactions_lunch_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/user_two_groups_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
         0,
         null,
         null,
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/breakfast.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_one_groups_controller.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        0,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        null,
+        null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/customer_satisfaction.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_three_groups_controller.rb": [
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
         null,
         null,
         null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/dinner.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/user_two_groups_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/breakfast.rb": [
         1,
         1,
         null,
+        1,
+        1,
         1,
         1,
         1,
@@ -1907,7 +1878,21 @@
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/lunch.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/customer_satisfaction.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/dinner.rb": [
         1,
         1,
         null,
@@ -1922,7 +1907,22 @@
         1,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/models/menu.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/lunch.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/models/menu.rb": [
         1,
         1,
         1,
@@ -1948,23 +1948,23 @@
         null,
         null
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/jobs/application_job.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/channels/application_cable/channel.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/controllers/users_controller.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/controllers/users_controller.rb": [
         0,
         0,
         0,
@@ -2041,13 +2041,13 @@
         0,
         0
       ],
-      "/home/caioitallo/Área de Trabalho/Engenharia de Software/RUMOR DEVELOP/app/mailers/application_mailer.rb": [
+      "/home/caioitallo/Área de Trabalho/RUMOR/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1561761249
+    "timestamp": 1562782640
   }
 }
