@@ -10,7 +10,7 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
     Dado que eu estou logado como gestor
     E que eu estou na página de criar cardápio
     E que eu preencho os campos de "datas" adequadamente
-    Quando eu clico no botão "Criar Cardápio"
+    Quando eu clico no botão "Criar cardápio"
     Então eu deveria ver "Menu was successfully created."
 
   Cenário: Gestor criar um desjejum[Cenário - Feliz]
@@ -23,7 +23,7 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
     Quando eu clico no botão "Criar Desjejum"
     Então eu deveria ver "Desjejum criado com sucesso"
 
-    Cenário: Gestor criar um almoço[Cenário - Feliz]
+  Cenário: Gestor criar um almoço[Cenário - Feliz]
     Dado que eu estou logado como gestor
     E as datas foram carregadas
     E que eu estou na página de cardápios
@@ -33,7 +33,7 @@ Funcionalidade: como_gestor_eu_quero_criar_um_cardápio
     Quando eu clico no botão "Criar Almoço"
     Então eu deveria ver "Almoço criado com sucesso"
 
-    Cenário: Gestor criar um jantar[Cenário - Feliz]
+  Cenário: Gestor criar um jantar[Cenário - Feliz]
     Dado que eu estou logado como gestor
     E as datas foram carregadas
     E que eu estou na página de cardápios
