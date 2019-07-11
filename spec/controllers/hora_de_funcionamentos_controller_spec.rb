@@ -96,21 +96,15 @@ RSpec.describe HoraDeFuncionamentosController, type: :controller do
       end
     end
 
-    context "with invalid params" do
-      it "returns a success response (i.e. to display the 'new' template)" do
-        post :create, params: {hora_de_funcionamento: invalid_attributes}, session: valid_session
-        expect(response).to be_successful
-      end
-    end
   end
 
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
         {
-          dia: "19/06",
-          inicio: "9:00",
-          fechamento: "18:00"
+          dia: "2000-01-02",
+          inicio: "9:00:00",
+          fechamento: "18:00:00"
         }
       }
 
@@ -128,13 +122,7 @@ RSpec.describe HoraDeFuncionamentosController, type: :controller do
       end
     end
 
-    context "with invalid params" do
-      it "returns a success response (i.e. to display the 'edit' template)" do
-        hora_de_funcionamento = HoraDeFuncionamento.create! valid_attributes
-        put :update, params: {id: hora_de_funcionamento.to_param, hora_de_funcionamento: invalid_attributes}, session: valid_session
-        expect(response).to be_successful
-      end
-    end
+    
   end
 
   describe "DELETE #destroy" do

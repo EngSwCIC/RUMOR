@@ -2,8 +2,8 @@
 # Place your code relative to that feature here
 
 #index steps
-Dado("que eu tenha uma lista de horários {string}, {string}, {string}") do |dia, inicio, fechamento|
- @hora_de_funcionamentos = HoraDeFuncionamento.create(dia: dia, inicio: inicio, fechamento: fechamento)
+Dado("que eu tenha uma lista de horários") do 
+ @hora_de_funcionamentos = HoraDeFuncionamento.create(dia: "2000-04-19", inicio: "08:00", fechamento: "22:00")
 end
 
 Dado("que eu esteja na página index de horários") do
@@ -17,10 +17,10 @@ Dado("que eu esteja na página index de horários") do
   visit hora_de_funcionamentos_path
 end
 
-Então("eu devo ver a lista completa com os horários {string}, {string}, {string}") do |dia, inicio, fechamento|
-  expect(page).to have_content dia
-  expect(page).to have_content inicio
-  expect(page).to have_content fechamento
+Então("eu devo ver a lista completa com os horários") do 
+  expect(page).to have_content "2000-04-19"
+  expect(page).to have_content "8:00:00"
+  expect(page).to have_content "22:00:00"
 end
 
 

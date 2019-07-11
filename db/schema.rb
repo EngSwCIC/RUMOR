@@ -60,8 +60,8 @@ ActiveRecord::Schema.define(version: 2019_07_11_002318) do
 
   create_table "hora_de_funcionamentos", force: :cascade do |t|
     t.date "dia"
-    t.timestamp "inicio"
-    t.timestamp "fechamento"
+    t.datetime "inicio"
+    t.datetime "fechamento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
