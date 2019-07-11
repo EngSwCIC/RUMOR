@@ -47,12 +47,10 @@ class UsersController < ApplicationController
         # Caso sucesso
         # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
         format.html { redirect_to users_path, notice: 'usuario criado com sucesso' }
-        format.json { render :show, status: :created, location: @user }
       else
         # Caso Fracasso
         # Em caso de falha renderiza novamente a pagina com mensagens de erro
         format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -69,11 +67,9 @@ class UsersController < ApplicationController
         bypass_sign_in @user
         # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
         format.html { redirect_to users_path, notice: 'usuario editado com sucesso' }
-        format.json { render :show, status: :ok, location: @user }
       else
         # Em caso de falha renderiza novamente a pagina com mensagens de erro
         format.html { render :edit }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -87,7 +83,6 @@ class UsersController < ApplicationController
     respond_to do |format|
       # Redireciona para a pagina de index de usuarios e mostra mensagem de sucesso
       format.html { redirect_to users_url, notice: 'usuario apagado com sucesso' }
-      format.json { head :no_content }
     end
   end
 

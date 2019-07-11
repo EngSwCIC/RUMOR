@@ -8,6 +8,10 @@ RSpec.describe MenusController, type: :controller do
     {date: "2018-01-01"}
   }
 
+  let(:today_menu) {
+    {date: Date.today.beginning_of_week}
+  }
+
   let(:invalid_attributes) {
     {date: nil}
   }
@@ -19,6 +23,12 @@ RSpec.describe MenusController, type: :controller do
       Menu.create! valid_attributes
       get :index, params: {}, session: valid_session
       expect(response).to be_successful
+    end
+
+    it "should persists this week menu" do
+      menu = Menu.create! today_menu
+      get :index
+      expect(assigns(:week_menus)).to eq([menu, false, false, false, false, false, false])
     end
   end
 

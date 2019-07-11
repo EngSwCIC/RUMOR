@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hora_de_funcionamentos
   resources :dinners
   resources :lunches
   resources :breakfasts

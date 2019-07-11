@@ -1,0 +1,32 @@
+<%= form_with(model: hora_de_funcionamento, local: true) do |form| %>
+  <% if hora_de_funcionamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hora_de_funcionamento.errors.count, "error") %> prohibited this hora_de_funcionamento from being saved:</h2>
+
+      <ul>
+      <% hora_de_funcionamento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :dia %>
+    <%= form.date_select :dia, {:order => [:day, :month, :year]}%>
+  </div>
+
+  <div class="field">
+    <%= form.label :inicio %>
+    <%= form.time_select :inicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fechamento %>
+    <%= form.time_select :fechamento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hora De Funcionamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dia</th>
+      <th>Inicio</th>
+      <th>Fechamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hora_de_funcionamentos.each do |hora_de_funcionamento| %>
+      <tr>
+        <td><%= hora_de_funcionamento.dia %></td>
+        <td><%= hora_de_funcionamento.inicio %></td>
+        <td><%= hora_de_funcionamento.fechamento %></td>
+        <td><%= link_to 'Show', hora_de_funcionamento %></td>
+        <td><%= link_to 'Edit', edit_hora_de_funcionamento_path(hora_de_funcionamento) %></td>
+        <td><%= link_to 'Destroy', hora_de_funcionamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hora De Funcionamento', new_hora_de_funcionamento_path %>

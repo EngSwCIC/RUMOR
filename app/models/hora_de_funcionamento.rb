@@ -1,0 +1,2 @@
+class HoraDeFuncionamento < ApplicationRecord
+end
